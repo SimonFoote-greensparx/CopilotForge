@@ -117,6 +117,150 @@ People rules for adoption data, agreed in writing: [To confirm: purposes, access
 
 ---
 
+<!-- template: adoption-support-model -->
+# Copilot adoption support model
+
+Template id: `adoption-support-model`
+
+Responsible skill: `copilot-adoption:adoption-support-model`. The support summary also feeds the support row of the
+`adoption-plan` template.
+
+Use this document to agree where every kind of Copilot need goes, who answers it and how the programme learns from it.
+Every fact the organisation must supply is marked `[To confirm: ...]`; replace the marker when the fact is confirmed,
+and never fill it with a guess. Example rows are fictional and are there to be replaced or deleted. Support data is
+reported by category, team or audience only, never for named individuals. Support for individual agents and AI
+solutions is set out in each solution's own support model, not here.
+
+## 1. Summary
+
+| Field | Entry |
+|---|---|
+| Audiences in scope | [To confirm: organisation, business unit or waves] |
+| Copilot experiences in scope | [To confirm: for example Copilot Chat, Microsoft 365 Copilot, Copilot Cowork, agent awareness] |
+| Support model owner | [To confirm: name and role] |
+| IT service owner | [To confirm: name and role] |
+| Security and privacy owner for the data exposure route | [To confirm: name and role] |
+| Linked adoption plan | [To confirm: reference] |
+| Linked Champions charter | [To confirm: reference, or "none yet"] |
+| Status | Draft / Agreed / Superseded |
+| Review date | [To confirm: date] |
+
+## 2. Support principles
+
+Agree these with the owners above. Edit to fit, but keep the intent.
+
+- Each kind of need has one route, and users can find it from the getting-started page.
+- Champions give first-line peer guidance within their agreed time and boundary; they are not the help desk.
+- Suspected data exposure is reported immediately through the security route, at any hour it is staffed.
+- Reports of wrong, harmful or misleading answers are recorded and reviewed, never closed as user error alone.
+- Repeated questions are fixed at source, in guidance, onboarding or scenarios.
+
+## 3. Support tiers
+
+| Tier | Handles | Owner | Hours | How users reach it |
+|---|---|---|---|---|
+| Self-help | Getting started, approved use, starting scenarios, known issues | [To confirm] | Always available | [To confirm: page or site] |
+| Peer guidance (Champions) | How-to questions in their own teams, prompt tips | [To confirm: Champions programme owner] | [To confirm: within agreed Champion time] | [To confirm: community channel, local Champion] |
+| Office hours | Demonstrations, discussion, recurring themes | [To confirm] | [To confirm: rhythm] | [To confirm: calendar link location] |
+| Service desk | Access, licence assignment, sign-in, app faults, errors | [To confirm] | [To confirm] | [To confirm: portal or phone route] |
+| Admin and vendor escalation | Tenant settings, service issues, Microsoft support requests | [To confirm: administrator role] | [To confirm] | Via the service desk only |
+| Security route | Suspected data exposure, oversharing, sensitive content in answers | [To confirm] | [To confirm: including out of hours] | [To confirm: route] |
+| Intake | Ideas for shared prompts, Cowork tasks, agents or automation | [To confirm: intake owner or CoE] | [To confirm] | [To confirm: form or channel] |
+
+## 4. Triage categories and routing
+
+| Category | Fictional example | First route | Escalation | Target response |
+|---|---|---|---|---|
+| How-to | "How do I summarise a long thread?" | Self-help, then Champions or office hours | Adoption lead for repeated themes | [To confirm] |
+| Access | "Copilot isn't showing in my app" | Service desk | Administrators | [To confirm] |
+| Fault | An error affecting many users | Service desk | Administrators, then Microsoft support | [To confirm] |
+| Answer quality | "It gave me a wrong figure from a report" | Verification guidance; record the pattern | Adoption lead; agent owner where an agent is involved | [To confirm] |
+| Data concern | "It showed me a document I shouldn't see" | Security route immediately | Permissions remediation owner | [To confirm] |
+| Harmful or inappropriate output | "The answer was offensive" | Security route or responsible AI contact | [To confirm: responsible AI owner] | [To confirm] |
+| Idea | "Could an agent prepare onboarding packs?" | Intake | CoE | [To confirm] |
+
+## 5. Self-help content
+
+| Item | Audience | Owner | Last reviewed | Next review |
+|---|---|---|---|---|
+| Getting started | All | [To confirm] | [To confirm] | [To confirm] |
+| Approved-use guidance in plain words | All | [To confirm] | [To confirm] | [To confirm] |
+| Starting scenarios by audience (from the `scenario-catalogue`) | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Known issues | All | [To confirm] | [To confirm] | [To confirm] |
+| How to report a data concern | All | [To confirm] | [To confirm] | [To confirm] |
+| How to submit an idea | All | [To confirm] | [To confirm] | [To confirm] |
+
+## 6. Service desk readiness
+
+| Item | Entry | Ready? |
+|---|---|---|
+| Knowledge articles for access and common faults | [To confirm: list] | Yes / No |
+| Triage script that recognises how-to questions and routes them | [To confirm] | Yes / No |
+| Category codes for Copilot contacts | [To confirm] | Yes / No |
+| Escalation route to administrators | [To confirm] | Yes / No |
+| Process for raising requests with Microsoft support | [To confirm: who can raise them] | Yes / No |
+
+## 7. Champion boundary in support
+
+| Champions do | Champions do not | Where that goes instead |
+|---|---|---|
+| Answer how-to questions in their own teams | Handle access, licence or fault requests | Service desk |
+| Show good practice and verification | Assess data exposure or permissions | Security route |
+| Point people to self-help and office hours | Approve agents, connectors or shared solutions | Intake and governance route |
+| Pass on repeated themes | Run formal training | Learning calendar |
+
+Agreed Champion time for support: [To confirm: share of the agreed commitment, confirmed with managers]
+
+## 8. Capacity plan
+
+| Period | Expected demand | Extra capacity | Owner |
+|---|---|---|---|
+| Weeks after each launch wave | [To confirm: estimate from pilots or earlier waves] | [To confirm: for example additional office hours] | [To confirm] |
+| Steady state | [To confirm] | [To confirm] | [To confirm] |
+| After a significant Copilot change | [To confirm] | [To confirm] | [To confirm] |
+
+## 9. Feedback loop
+
+| Field | Entry |
+|---|---|
+| Theme review rhythm | [To confirm: for example monthly] |
+| Who attends | [To confirm: adoption lead, service desk, guidance owners, Champion representative] |
+| Where fixes go | Guidance, onboarding, scenarios, knowledge owners, training |
+| How changes are published to users | [To confirm] |
+
+## 10. Measures
+
+Reported by category, team or audience above the agreed minimum group size of [To confirm: size].
+
+| Measure | Baseline | Target | Source | Owner |
+|---|---|---|---|---|
+| Contacts by category | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Share resolved through self-help or peer guidance | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Time to resolve access issues | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Data concerns handled within the agreed time | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Repeat themes fixed at source | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 11. Pre-launch walk-through
+
+Walk one sample contact from each category through its route before the first wave.
+
+| Category | Walked through on | Result | Issue and owner |
+|---|---|---|---|
+| [To confirm] | [To confirm: date] | Pass / Fail | [To confirm] |
+
+## 12. Approval
+
+| Role | Name | Decision | Date |
+|---|---|---|---|
+| Adoption lead | [To confirm] | [To confirm] | [To confirm] |
+| IT service owner | [To confirm] | [To confirm] | [To confirm] |
+| Security and privacy owner | [To confirm] | [To confirm] | [To confirm] |
+| Champions programme owner | [To confirm] | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
 <!-- template: agent-brief -->
 # Agent brief
 
@@ -254,6 +398,102 @@ Measured at team or role level, never for individual staff.
 
 ---
 
+<!-- template: agent-card -->
+# Agent card
+
+Template id: `agent-card`
+
+Responsible skill: `m365-agents:agent-ownership`. The knowledge list is completed with `m365-agents:agent-grounding`,
+lifecycle state and history with `m365-agents:agent-lifecycle`, and value evidence with
+`m365-agents:agent-value-measurement`.
+
+One card per agent, kept current from build to retirement and linked from the solution register. Every fact the
+organisation must supply is marked `[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it
+with a guess. Example rows are fictional and are there to be replaced or deleted. Nobody is recorded as an owner until
+they have accepted in writing.
+
+## 1. Agent identity
+
+| Field | Entry |
+|---|---|
+| Agent name | [To confirm] |
+| Purpose (one sentence with the measure it improves) | [To confirm] |
+| Link to agent brief | [To confirm: location of the `agent-brief`] |
+| Build path and environment | [To confirm: for example Agent Builder or Copilot Studio, and environment or zone] |
+| Risk tier (0-4) | [To confirm: tier and date classified] |
+| Intended audience and sharing scope | [To confirm: named groups] |
+| Solution register reference | [To confirm] |
+| Lifecycle state | Live / Under change / Under review / Deprecated / Retired |
+| Next review date | [To confirm] |
+
+## 2. Owners
+
+| Role | Name and job role | Deputy | Accepted in writing (date) |
+|---|---|---|---|
+| Business owner | [To confirm] | [To confirm] | [To confirm] |
+| Executive sponsor (tier 3 and above) | [To confirm, or "not required at this tier"] | Not applicable | [To confirm] |
+| Technical owner (team and named lead) | [To confirm] | [To confirm] | [To confirm] |
+| Maker | [To confirm] | Not applicable | [To confirm] |
+
+From tier 2, the business owner and technical owner are different people, and the maker is not the sole owner.
+
+## 3. Knowledge sources and knowledge owners
+
+| Source | Location and scope | Knowledge owner | Owner told the agent depends on it (date) | Readiness verdict | Source review date |
+|---|---|---|---|---|---|
+| Fictional example: Travel and expenses policy | Fictional example: Policies library, travel folder only | Fictional example: Head of finance operations | [To confirm] | Ready | [To confirm] |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Web content used: Yes / No. Answers restricted to named sources: Yes / No / Not supported. Reason: [To confirm]
+
+## 4. Actions and connectors
+
+| Action or connector | System | Read or write | Identity it runs under | User confirmation required | Accountable owner |
+|---|---|---|---|---|---|
+| [To confirm, or "none"] | [To confirm] | [To confirm] | [To confirm] | Yes / No | [To confirm] |
+
+## 5. Support route
+
+| Field | Entry |
+|---|---|
+| Where users report a wrong answer or fault | [To confirm] |
+| Who triages | [To confirm] |
+| Who fixes instructions, knowledge and configuration | [To confirm] |
+| Where the route is shown to users | [To confirm: for example agent description or welcome message] |
+
+## 6. Change rules
+
+| Rule | Entry |
+|---|---|
+| Who may edit instructions and knowledge | [To confirm] |
+| Who approves significant changes | [To confirm] |
+| Where the change log and evaluation set are kept | [To confirm] |
+
+## 7. Lifecycle history
+
+| Date | Event (release, change, review, deprecation, retirement) | Decision and reason | Decided by |
+|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Retirement criteria agreed at release: [To confirm]
+
+## 8. Value evidence
+
+| Measure (from the brief) | Baseline | Latest result | Level reported | Date |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | Audience or team level only | [To confirm] |
+
+## 9. Succession
+
+| Event | What happens | Within |
+|---|---|---|
+| An owner leaves or changes role | Deputy covers; role reassigned and accepted in writing | [To confirm: agreed period] |
+| No business owner can be found | Agent moves to Under review | Immediately |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
 <!-- template: agent-release-checklist -->
 # Agent release checklist
 
@@ -348,6 +588,136 @@ Tick only when evidence is attached. "N/A" requires a reason.
 |---|---|---|---|
 | Business owner | [To confirm] | [To confirm] | [To confirm] |
 | CoE or release lead | [To confirm] | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: ai-communications-plan -->
+# AI communications plan
+
+Template id: `ai-communications-plan`
+
+Responsible skill: `change-and-communications:ai-communication-strategy`. Section 2 is completed with
+`change-and-communications:ai-stakeholder-mapping` and `change-and-communications:people-change-impact`; section 6 with
+`change-and-communications:manager-enablement`; section 7 includes campaigns from
+`change-and-communications:adoption-campaign-plan` and stories from `change-and-communications:success-stories`.
+
+Use this plan for one AI change, programme or wave. Every fact the organisation must supply is marked
+`[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it with a guess. Example rows are
+fictional and are there to be replaced or deleted. Stakeholders are recorded as groups and offices, and listening data
+is reported by theme and group above the agreed minimum group size, never for named individuals.
+
+## 1. Summary
+
+| Field | Entry |
+|---|---|
+| Change in scope | [To confirm: what is changing, for whom, from when] |
+| AI experiences involved | [To confirm: for example Copilot Chat, Microsoft 365 Copilot, a named agent, a Cowork pattern] |
+| Executive sponsor | [To confirm: role] |
+| Change lead (plan owner) | [To confirm: role] |
+| Outcome the sponsor wants people to understand | [To confirm: one sentence] |
+| Linked adoption plan | [To confirm: `adoption-plan` reference, or "none"] |
+| Agreed minimum reporting group size | [To confirm: agreed with HR and the data protection lead] |
+| Plan status | Draft / Agreed by sponsor / Superseded |
+| Review date | [To confirm: date] |
+
+## 2. Stakeholders and impact
+
+| Stakeholder group or office | Interest or impact | Influence | Engagement mode | Main concerns (their words) | Relationship owner | Rhythm |
+|---|---|---|---|---|---|---|
+| Fictional example: contact centre team leaders | High | Lower | Involve | "When do we get time to learn this?" | Change lead | Fortnightly during wave |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Groups with consultation or information rights, and the agreed sequence before any announcement:
+[To confirm: confirmed by HR and the legal adviser]
+
+## 3. Narrative and core messages
+
+Narrative (why, what will be different, what the organisation will not do, what it asks of people):
+[To confirm: a few plain sentences agreed by the sponsor]
+
+| Core message | Evidence or reason behind it | Audiences that need it most |
+|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] |
+
+## 4. Hard questions and agreed answers
+
+Answers must be agreed by the named approvers and must match the organisation's actual configuration. Where a decision
+is pending, say so and give the date it is expected.
+
+| Question | Agreed answer | Approved by | Date | Review date |
+|---|---|---|---|---|
+| Is this about reducing jobs? | [To confirm: position agreed by the sponsor and HR] | [To confirm] | [To confirm] | [To confirm] |
+| Will my use of AI be monitored, and by whom? | [To confirm: agreed with the DPO] | [To confirm] | [To confirm] | [To confirm] |
+| What happens to my prompts and files? | [To confirm: from configuration and current source records] | [To confirm] | [To confirm] | [To confirm] |
+| What am I not allowed to do? | [To confirm: link to approved-use guidance] | [To confirm] | [To confirm] | [To confirm] |
+| Who is responsible if the AI gets something wrong? | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| [To confirm: further recurring questions] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 5. Audience, message, sender and channel matrix
+
+| Audience | What they need to know or do | Sender | Channel | Timing | Next step offered |
+|---|---|---|---|---|---|
+| Fictional example: managers of wave 1 teams | Why, what changes for their team, agreed answers, their role | Change lead, then sponsor | Briefing session and talking points | Two weeks before their teams | Team conversation guide |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 6. Managers and change network
+
+| Group | Briefing before teams hear | Materials | Owner | Date |
+|---|---|---|---|---|
+| Line managers in scope | [To confirm: yes, and how far ahead] | [To confirm: briefing pack, conversation guide, team norms canvas] | [To confirm] | [To confirm] |
+| Change agents | [To confirm] | [To confirm: briefing pack and feedback form] | [To confirm] | [To confirm] |
+
+Statement on what managers may and may not do with AI usage information, agreed with HR and the DPO:
+[To confirm]
+
+## 7. Calendar by phase
+
+| Phase | Item | Audience | Sender | Channel | Date | Status |
+|---|---|---|---|---|---|---|
+| Awareness | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Readiness | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Launch | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Sustain (campaigns, stories, changes) | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 8. Listening and response
+
+| Listening route | Owner | How often reviewed | Where answers are published |
+|---|---|---|---|
+| Open question channel | [To confirm] | [To confirm] | [To confirm] |
+| Questions collected at sessions | [To confirm] | [To confirm] | [To confirm] |
+| Group-level pulse questions | [To confirm] | [To confirm] | [To confirm] |
+| Manager and change network themes | [To confirm] | [To confirm] | [To confirm] |
+
+Route for concerns that reveal a security, data protection or responsible AI issue: [To confirm]
+
+## 9. Approval path
+
+| Message sensitivity | Approvers | Lead time needed |
+|---|---|---|
+| Routine updates and tips | [To confirm: for example adoption lead] | [To confirm] |
+| Jobs, monitoring, employee data or consultation | [To confirm: sponsor, HR, DPO, legal adviser, employee representatives where required] | [To confirm] |
+| Statements about product capability or data handling | [To confirm: adoption lead with security and data protection leads] | [To confirm] |
+
+## 10. Measures
+
+Measured at group level above the minimum group size, never for individuals. Reach figures are context, not results.
+
+| Measure | Baseline (before first broad message) | Source | Owner | Rhythm |
+|---|---|---|---|---|
+| People can say why the organisation is adopting AI | [To confirm] | [To confirm: pulse question] | [To confirm] | [To confirm] |
+| People know what is allowed and where to get help | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Confidence to raise concerns | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Time to publish answers to new questions | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 11. Approval
+
+| Role | Name | Decision | Date |
+|---|---|---|---|
+| Executive sponsor | [To confirm] | [To confirm] | [To confirm] |
+| HR lead (sections 2, 4 and 6) | [To confirm] | [To confirm] | [To confirm] |
+| Data protection lead (sections 4, 6 and 10) | [To confirm] | [To confirm] | [To confirm] |
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
 
@@ -519,6 +889,271 @@ is recorded in writing.
 | [To confirm: sponsor role] | | |
 | [To confirm: information security role] | | |
 | [To confirm: data protection role] | | |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: ai-impact-assessment-record -->
+# AI impact assessment record
+
+Template id: `ai-impact-assessment-record`
+
+Responsible skill: `responsible-ai:ai-impact-assessment`. Sections 5 to 8 are completed with
+`responsible-ai:human-oversight`, `responsible-ai:ai-transparency`, `responsible-ai:fairness-review` and
+`responsible-ai:escalation-and-appeal`; section 2 records the screen from `responsible-ai:prohibited-use-review`; and
+section 10 is used only through `responsible-ai:ai-risk-acceptance`.
+
+Every fact the organisation must supply is marked `[To confirm: ...]`. Example rows are fictional. Each residual
+concern is classified **blocking** or **advisory** and names the impact, the fix and an owner. The responsible AI gate
+is mandatory and blocking from risk tier 3, and from tier 2 when outputs inform decisions about people. A blocking
+concern is not traded against a date. Legal and data protection questions end with the legal adviser and the DPO.
+
+## 1. Solution and context
+
+| Field | Entry |
+|---|---|
+| Solution name | [To confirm: name] |
+| Purpose in one sentence | [To confirm: what the solution is for] |
+| Business owner (role) | [To confirm: accountable role] |
+| Platform route | [To confirm: for example Copilot, agent, Copilot Studio, Foundry, automation] |
+| Risk tier and rationale | [To confirm: tier 0-4 from risk classification] |
+| Stage of assessment | Design / Pre-release / Change / Periodic review |
+| Related records | [To confirm: AI risk assessment, privacy assessment or DPIA references] |
+| Assessors and date | [To confirm: reviewer roles and date] |
+
+## 2. Prohibited use screen
+
+| Question | Entry |
+|---|---|
+| Indicators checked | [To confirm: monitoring, scoring, emotion inference, manipulation, unreviewed decisions, sensitive inference] |
+| Provider terms confirmed by | [To confirm: role and date] |
+| Legal advice reference, if needed | [To confirm] |
+| Verdict | Stop / Restrict with conditions / Proceed |
+| Conditions | [To confirm] |
+
+## 3. Affected people
+
+| Group | Relationship (user, subject of outputs, worker whose role changes, other) | What they need from the solution | What they could lose or fear | Consulted? How? |
+|---|---|---|---|---|
+| Fictional example: customers whose claims are triaged | Subject of outputs | Fair, timely triage | Wrongly delayed claim | Customer panel, [To confirm: date] |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 4. Uses and impacts
+
+| ID | Use (intended or foreseeable misuse) | Group affected | Potential impact | Severity (minor, moderate, serious, severe) | Likelihood (rare, possible, likely) | Reversible? |
+|---|---|---|---|---|---|---|
+| Fictional example I1 | Foreseeable: advisers copy triage priority into final decisions | Customers | Claim declined without full review | Serious | Possible | Partly |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 5. Human oversight
+
+Summary of the `human-oversight-plan`: [To confirm: oversight mode per output or action, reviewer role, capacity check
+result, authority to overturn]
+
+## 6. Transparency
+
+| Audience | What they are told | When and where | Wording owner |
+|---|---|---|---|
+| [To confirm: users] | [To confirm] | [To confirm] | [To confirm] |
+| [To confirm: affected people who are not users] | [To confirm] | [To confirm] | [To confirm] |
+
+## 7. Fairness
+
+| Group or difference tested | Type of risk (quality of service, allocation, representation) | Test cases and coverage | Result | Finding |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 8. Escalation and appeal
+
+| Route | Entry |
+|---|---|
+| How people reach a person during an interaction | [To confirm] |
+| How people question an outcome afterwards | [To confirm] |
+| Reviewing role and authority to overturn | [To confirm] |
+| Timescales, as set by the process owner | [To confirm] |
+| How appeal themes reach the solution owner | [To confirm] |
+
+## 9. Mitigations and residual concerns
+
+| ID | Impact ID | Mitigation | Tested? Evidence | Residual concern | Blocking or advisory | Fix | Owner | Due | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| Fictional example R1 | I1 | Priority shown as advisory; adviser must record reason | Pending | Advisers may still rely on priority under time pressure | Blocking | Capacity check and seeded-error test with advisers | Fictional example: claims operations manager | [To confirm] | Open |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | Blocking / Advisory | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 10. Verdict and review
+
+| Field | Entry |
+|---|---|
+| Verdict | Pass / Pass with advisory concerns / Blocked |
+| Risk acceptance reference (only where a concern is disputed) | [To confirm] |
+| Review trigger (scope, audience, data, autonomy change) | [To confirm] |
+| Next scheduled review | [To confirm: date] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: ai-learning-plan -->
+# AI learning plan
+
+Template id: `ai-learning-plan`
+
+Responsible skill: `learning-and-skills:ai-role-curriculum`. Sections are completed with
+`learning-and-skills:ai-skills-needs-analysis` (section 2), `learning-and-skills:ai-learning-pathway` (section 3),
+`learning-and-skills:practice-labs` (section 5), `learning-and-skills:learning-evidence-rubric` (section 6),
+`learning-and-skills:facilitator-guide` (section 7), `learning-and-skills:office-hours` (section 8),
+`learning-and-skills:advanced-pathways` (section 9) and `learning-and-skills:skills-measurement` (section 10).
+
+Use this plan for one organisation, business unit or rollout wave. Every fact the organisation must supply is marked
+`[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it with a guess. Example rows are
+fictional and are there to be replaced or deleted. Learning is verified by demonstrated practice, not attendance. All
+skills and learning data in this plan is reported at role or team level above the agreed minimum group size, and is
+never used to assess, score or rank individuals.
+
+## 1. Plan details
+
+| Field | Entry |
+|---|---|
+| Scope | [To confirm: organisation, business unit or wave] |
+| Learning Lead | [To confirm: name and role] |
+| Sponsor | [To confirm: name and role] |
+| Linked adoption plan | [To confirm: reference to the `adoption-plan` for this scope] |
+| Linked Champions programme | [To confirm: charter reference, or "none yet"] |
+| Approved tools and agents by group | [To confirm: reference to the approved list; never assumed] |
+| Minimum group size for reporting | [To confirm: agreed with the data protection lead] |
+| Learning records retention | [To confirm: agreed with the data protection lead] |
+| Plan status | Draft / Agreed by sponsor / Superseded |
+| Version, date and next review | [To confirm] |
+
+## 2. Needs by role
+
+One row per role and skill area with a gap. Skill areas: safe and approved use, verification, everyday productivity,
+working with agents, delegating work, building.
+
+| Role | Future work with AI | Skill area | Gap rating (None / Light / Substantial / Critical) | Evidence and confidence | Response type | Priority this wave |
+|---|---|---|---|---|---|---|
+| Fictional example - account manager | Prepares client meetings with Copilot summarising recent mail and documents | Verification | Substantial | Survey and Champion observations; medium confidence | Curriculum module with practice | High |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Deliberately deferred this wave, and why: [To confirm]
+
+## 3. Pathway levels
+
+| Level | Who it is for | Behaviour at this level | Exit evidence | Open now? | Level owner | Review point |
+|---|---|---|---|---|---|---|
+| Foundation | Everyone with approved AI access | [To confirm] | Safe use and a verified output on a real, non-sensitive task | [To confirm] | [To confirm] | [To confirm] |
+| Applied | Roles with defined scenarios | [To confirm] | Rubric evidence on two role scenarios | [To confirm] | [To confirm] | [To confirm] |
+| Proficient | Frequent users, team leads, people who help others | [To confirm] | A reusable pattern or delegated task a colleague has used | [To confirm] | [To confirm] | [To confirm] |
+| Advanced | Makers, power users, specialists | See section 9 | Set by each track | [To confirm] | [To confirm] | [To confirm] |
+
+| Movement rule | Entry |
+|---|---|
+| Skipping a level by evidence | [To confirm: allowed for all levels, or exceptions] |
+| Equivalence with Champion capabilities | [To confirm: agreed with the Champions programme owner, or "not yet agreed"] |
+| Any level that is a condition of access | [To confirm: sponsor decision with HR involvement, or "none"] |
+| Refresher triggers | [To confirm: for example a change in what people see, a new approved agent, a change to approved-use guidance] |
+
+## 4. Role curricula
+
+Complete one block per priority role.
+
+| Field | Entry |
+|---|---|
+| Role and approximate headcount | [To confirm] |
+| Business owner who confirms the curriculum | [To confirm: name and role] |
+| Agreed learning time per month | [To confirm: agreed with the business owner] |
+| Working pattern and default formats | [To confirm] |
+| Pathway levels covered | [To confirm] |
+| Content owner and delivery owner | [To confirm] |
+| Review date | [To confirm] |
+
+| Module | Learning outcome (observable work) | Scenario | Format | Practice task | Evidence expected | Time | Access confirmed? |
+|---|---|---|---|---|---|---|---|
+| Fictional example - Checking client summaries | Prepares a meeting brief with Copilot and checks every date and figure against the source | Meeting preparation | Live session, practice on own work the same week | Brief for a real upcoming meeting, checked against the source documents | Prompt, output and check described, at Meets on the rubric | [To confirm] | [To confirm] |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Deferred modules and reasons (for example pending access or scenario not ready): [To confirm]
+
+## 5. Practice environment
+
+| Lab | Type (own-work / shared scenario pack / maker sandbox / specialist lab) | Purpose | Location and who can reach it | Data allowed | Owner | Reset routine | Expiry | Security review date |
+|---|---|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | Fictional or synthetic only, unless own-work practice | [To confirm] | [To confirm] | [To confirm] | [To confirm, or "not required" for own-work practice] |
+
+Lab rules for learners (what may and may not enter, sharing limits, how to report a problem): [To confirm]
+
+## 6. Evidence rubric
+
+A level is evidenced when its required dimensions are at least Meets. Strong is used for feedback only and never
+creates a status.
+
+| Dimension | Not yet | Meets | Strong |
+|---|---|---|---|
+| Real work | Demo or invented task | A task from the person's own role or an assigned lab exercise | A recurring task valued by the team |
+| Safe use | Sensitive data shared, or an unapproved tool used | Approved tools only; nothing that should not have been shared | Explains what was deliberately left out and why |
+| Verification | Output used without checking | Output checked against its source; the check is described | The check is built into a reusable pattern |
+| Judgement | No sense of limits | Notes where AI did not help or got it wrong | Explains when they would not use AI for this task |
+| Transfer | Only the author could repeat it | Someone else could follow it | A colleague has used it |
+
+| Checking arrangement | Entry |
+|---|---|
+| Who checks evidence at each level | [To confirm] |
+| Calibration rhythm and exemplars used | [To confirm] |
+| Submission route and access | [To confirm: access-restricted route in governed storage] |
+| What is recorded, and for how long | [To confirm: agreed with the data protection lead] |
+
+> Fictional example: a learner shows the prompt used to summarise a supplier contract, the summary, and a note that
+> they compared every date and value with the contract and corrected one date. Verification is at Meets.
+
+## 7. Sessions and facilitation
+
+| Session | Module | Facilitator guide reference | Facilitators | Rhythm | Pre-flight check owner | Last tested against current product |
+|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 8. Office hours
+
+| Format (open drop-in / themed / bookable / maker / embedded) | Audience | Rhythm and time | Hosts and agreed time | Booking route |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+| Triage route | Where it goes |
+|---|---|
+| Faults, access, licence not applied | [To confirm: service desk route] |
+| Suspected data exposure or inappropriate output | [To confirm: security reporting route] |
+| Ideas for agents, automation or scenarios | [To confirm: intake route] |
+| Licensing or data protection questions | [To confirm: licensing owner or DPO] |
+
+Theme review owner and rhythm (themes recorded without names): [To confirm]
+
+## 9. Advanced pathways
+
+| Track | Audience by declared role | Entry conditions | Learning environment | Mentors and agreed time | Evidence to complete | Track owner | Open now? |
+|---|---|---|---|---|---|---|---|
+| [To confirm: for example power user, agent maker, automation maker, developer, AI specialist] | [To confirm] | Proficient evidence, approved access, maker commitments accepted | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Route from a learning build into intake and release: [To confirm: agreed with platform governance]
+
+## 10. Measures
+
+All measures are reported at role or team level above the minimum group size in section 1.
+
+| Measure | Definition | Source | Baseline | Target | Owner | Rhythm |
+|---|---|---|---|---|---|---|
+| Declared skills change | Change by skill area and role against the needs baseline, same survey wording | Repeat survey | [To confirm] | [To confirm] | Learning Lead | Each wave |
+| Verified evidence rate | Share of each role with evidence at each level | Aggregate evidence records | [To confirm] | [To confirm] | Learning Lead | [To confirm] |
+| Progression | Movement between levels; time from access to foundation evidence | Aggregate evidence records | [To confirm] | [To confirm] | Learning Lead | [To confirm] |
+| Link to adoption | Adoption measures for groups with high and low evidence rates, read as association only | Adoption measures from the adoption lead | [To confirm] | Not targeted | Learning Lead with adoption lead | Each wave |
+
+## 11. Review and agreement
+
+| Role | Name | Date | Comment |
+|---|---|---|---|
+| Learning Lead | [To confirm] | [To confirm] | |
+| Sponsor | [To confirm] | [To confirm] | |
+| Data protection lead (records, retention, minimum group size) | [To confirm] | [To confirm] | |
+| Business owners of priority roles | [To confirm] | [To confirm] | |
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
 
@@ -893,6 +1528,654 @@ Record each platform capability a committed initiative depends on and the source
 
 ---
 
+<!-- template: ai-vision-and-principles -->
+# AI vision and principles
+
+Template id: `ai-vision-and-principles`
+Responsible skill: `ai-strategy:ai-vision`
+
+One page the leadership team agrees and every manager can explain. It records how ambitious the organisation intends to
+be with AI, why, what work will look like, and the stances it will hold. Measurable outcomes, decision-rule principles
+and the "where AI is not appropriate" list follow in `ai-strategy:strategic-outcomes`. Anything not yet agreed stays
+marked `[To confirm: ...]`.
+
+## 1. Purpose link
+
+| Field | Value |
+|---|---|
+| Organisation purpose or mission, in one sentence | [To confirm: purpose] |
+| Current strategic priorities AI could help with | [To confirm: two to four priorities from the business strategy] |
+| Maturity archetype and assessment date | [To confirm: archetype and date, or "assessment not yet run"] |
+
+## 2. Ambition level
+
+| Field | Value |
+|---|---|
+| Chosen level (foundational, augmented or transformed) | [To confirm: level] |
+| Why this level, given maturity and investment | [To confirm: reasoning] |
+| What would have to be true to move up a level | [To confirm: conditions] |
+| Investment leaders are prepared to commit, in outline | [To confirm: outline, detailed in the investment case] |
+
+## 3. Vision statement
+
+No more than two sentences. Describe a change in how work or service happens, not a product.
+
+[To confirm: vision statement]
+
+Fictional example, for illustration only: "Our people spend their time on judgement and care, with AI handling the
+searching, drafting and summarising, so the people we serve get faster, better-informed answers."
+
+## 4. Narrative of change
+
+Half a page on how work will feel different in two to three years.
+
+| Perspective | What changes |
+|---|---|
+| A typical working day for staff | [To confirm: narrative] |
+| A customer, citizen or service-user interaction | [To confirm: narrative] |
+| A manager's role | [To confirm: narrative] |
+| Roles expected to change most, as agreed with HR | [To confirm: roles and how, or "none identified"] |
+
+## 5. Guiding principles
+
+No more than six. Each is a stance the organisation will hold under pressure.
+
+| Principle | What it means in practice | Who it reassures |
+|---|---|---|
+| [To confirm: principle 1, for example on accountability] | [To confirm: practical meaning] | [To confirm: staff, customers, regulators] |
+| [To confirm: principle 2, for example on transparency] | [To confirm: practical meaning] | [To confirm: audience] |
+| [To confirm: principle 3, for example on data] | [To confirm: practical meaning] | [To confirm: audience] |
+| [To confirm: principle 4, for example on people and skills] | [To confirm: practical meaning] | [To confirm: audience] |
+| [To confirm: principle 5, for example on experimentation and risk] | [To confirm: practical meaning] | [To confirm: audience] |
+
+## 6. Commitments to staff
+
+| Commitment | Value |
+|---|---|
+| What leaders commit to on learning and support | [To confirm: commitment] |
+| How staff can raise concerns about AI | [To confirm: route] |
+| Wording on roles and jobs, reviewed by HR | [To confirm: wording and HR review date] |
+
+## 7. Testing and approval
+
+| Field | Value |
+|---|---|
+| Staff groups who tested the draft (by role or group) | [To confirm: groups] |
+| What changed after testing | [To confirm: changes] |
+| Data protection officer and HR review | [To confirm: dates and comments] |
+| Owner (normally the executive sponsor, by role) | [To confirm: role] |
+| Approved by and date | [To confirm: approving body and date] |
+| Publication route and manager briefing date | [To confirm: route and date] |
+| Next review date | [To confirm: date, normally with `ai-strategy:strategy-refresh`] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: alm-and-environment-plan -->
+# ALM and environment plan
+
+Template id: `alm-and-environment-plan`
+
+Responsible skill: `copilot-studio:studio-alm`. The environment section is completed with
+`copilot-studio:studio-environments`, and connection details with `copilot-studio:studio-connectors` and
+`copilot-studio:studio-authentication`.
+
+Use this plan before a Copilot Studio agent moves beyond the environment it was built in, and update it whenever the
+agent's design or environments change. Every fact the organisation must supply is marked `[To confirm: ...]`; replace
+the marker when the fact is confirmed, and never fill it with a guess. Example rows are fictional and are there to be
+replaced or deleted. Never record secrets, passwords or keys in this plan.
+
+## 1. Summary
+
+| Field | Entry |
+|---|---|
+| Agent or solution name | [To confirm] |
+| Solution design reference (`studio-solution-design`) | [To confirm] |
+| Business owner | [To confirm] |
+| Technical owner and co-owner | [To confirm] |
+| Risk tier (0-4) | [To confirm] |
+| Release approver(s) by tier | [To confirm: from the organisation's release policy] |
+| Plan version and date | [To confirm] |
+
+## 2. Environments
+
+| Stage | Environment name | Governance zone | Managed Environment | Security group | Data policy | Admin owner | Who may make changes |
+|---|---|---|---|---|---|---|---|
+| Development | Fictional example: Finance agents - dev | Team collaboration | Yes | Fictional example: Finance agent makers | [To confirm] | [To confirm] | Named makers |
+| Test | [To confirm] | [To confirm] | Yes / No | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Production | [To confirm] | [To confirm] | Yes / No | [To confirm] | [To confirm] | [To confirm] | Pipeline only |
+
+Environment routing for new makers in this area: [To confirm]
+
+Agent settings that differ by environment (sharing limits, web knowledge, unauthenticated agents, analytics, transcripts): [To confirm]
+
+## 3. Solutions
+
+| Solution | Publisher | Contents (agent, flows, connectors, tables, child agents) | Owner | Depends on |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm: shared solutions] |
+
+Shared component solutions used by this agent, and their owners and release cadence: [To confirm, or "none"]
+
+## 4. Environment variables
+
+| Variable | Purpose | Development value | Test value | Production value | Owner |
+|---|---|---|---|---|---|
+| Fictional example: Policy site URL | Knowledge location | Fictional example: dev site | [To confirm] | [To confirm] | [To confirm] |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 5. Connection references and identities
+
+| Connection reference | Connector | Account type (end user / service account) | Development connection owner | Test connection owner | Production connection owner | Approval |
+|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm: approver and date] |
+
+Secrets and certificates (location in the managed store, not the value) and renewal dates:
+
+| Item | Used by | Stored in | Renewal date | Owner |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 6. Knowledge per environment
+
+| Knowledge source | Development location | Test location | Production location | Post-import check |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 7. Pipelines and source control
+
+| Item | Entry |
+|---|---|
+| Pipeline route (development to test to production) | [To confirm] |
+| Import type into test and production | Managed / [To confirm: reason if otherwise] |
+| Source control repository and branch approach | [To confirm, or "not yet used"] |
+| Automated checks in the pipeline | [To confirm] |
+| Who can run the production stage | [To confirm] |
+
+## 8. Release process
+
+| Step | Evidence | Responsible role |
+|---|---|---|
+| Change recorded with version number | Release record | [To confirm] |
+| Regression pack run in test | Results compared with baseline | [To confirm] |
+| Reviewer checks for this tier | Reviewer findings resolved | [To confirm] |
+| Business owner approval | Recorded decision | [To confirm] |
+| Import to production | Pipeline run record | [To confirm] |
+| Post-import checks (knowledge, connections, channels, sign-in) | Check results | [To confirm] |
+
+Emergency change route, and how emergency changes are replayed in development: [To confirm]
+
+## 9. Rollback
+
+| Item | Entry |
+|---|---|
+| Previous version kept | [To confirm: location of the previous managed solution] |
+| Rollback method | [To confirm: re-import, unpublish a channel, narrow sharing] |
+| Who can roll back | [To confirm] |
+| Rollback rehearsed (tier 3 and above) | Yes / No, date [To confirm] |
+
+## 10. Release history
+
+| Version | Date | Summary of change | Regression result | Approver |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 11. Agreement
+
+| Role | Name | Date |
+|---|---|---|
+| Technical owner | [To confirm] | [To confirm] |
+| Platform or environment owner | [To confirm] | [To confirm] |
+| Business owner | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: architecture-decision-record -->
+# Architecture decision record
+
+Template id: `architecture-decision-record`
+
+Responsible skill: `ai-architecture:platform-selection`. The same record is used for other architecture decisions, for
+example by `ai-architecture:ai-integration-patterns`, `ai-architecture:grounding-patterns` and
+`ai-architecture:environment-topology`.
+
+One record per significant decision. Every fact the organisation must supply is marked `[To confirm: ...]`; never record
+an estimate as a measured figure. Product availability, licensing, limits and regional support change often: cite the
+source record you checked and the date, and route licensing questions to the Microsoft licensing guide or a licensing
+partner. Example content is fictional.
+
+## 1. Decision summary
+
+| Field | Entry |
+|---|---|
+| Record reference | [To confirm: reference] |
+| Title (the decision in one line) | [To confirm: for example "Build the site report agent in Copilot Studio"] |
+| Solution or portfolio scope | [To confirm: solution name and brief reference] |
+| Risk tier and rationale reference | [To confirm: tier 0-4 and classification reference] |
+| Status | [To confirm: proposed, accepted, superseded or retired] |
+| Decision owner (role) | [To confirm: role] |
+| Date decided | [To confirm: date] |
+| Supersedes or superseded by | [To confirm: record reference, or "none"] |
+
+## 2. Context
+
+Describe the need without naming a product: who uses the solution, through which surface, what it knows, what it does in
+other systems and who answers for it.
+
+[To confirm: one or two paragraphs]
+
+Constraints that apply (platform strategy, approved platforms, residency, skills, budget):
+
+[To confirm: list of constraints with their source]
+
+## 3. Options considered
+
+List every option seriously considered, including the one chosen. A record with only the chosen option is incomplete.
+
+| Option | Summary | First disqualifying reason, if any |
+|---|---|---|
+| [To confirm: option] | [To confirm: summary] | [To confirm: reason, or "none"] |
+| [To confirm: option] | [To confirm: summary] | [To confirm: reason, or "none"] |
+| [To confirm: option] | [To confirm: summary] | [To confirm: reason, or "none"] |
+
+## 4. Gates applied to the leading option
+
+| Gate | Question | Answer | Evidence or source checked, with date |
+|---|---|---|---|
+| Identity | Can every action run under the user or a narrowly scoped service identity? | Yes / No / To confirm | [To confirm] |
+| Data | Can grounding stay permission-trimmed and inside agreed boundaries? | Yes / No / To confirm | [To confirm] |
+| Operability | Can the named operating team monitor, change and support it? | Yes / No / To confirm | [To confirm] |
+| Lifecycle | Can changes be tested, promoted and rolled back? | Yes / No / To confirm | [To confirm] |
+| Evaluation | Can the tier's evaluation requirements be met and evidenced? | Yes / No / To confirm | [To confirm] |
+| Cost | Is run cost understood well enough to fund, per the licensing guide or partner? | Yes / No / To confirm | [To confirm] |
+
+## 5. Decision
+
+[To confirm: the decision, stated plainly, with the part of the solution it applies to where the solution has several parts]
+
+## 6. Consequences
+
+| Consequence | Positive or negative | Owner of any follow-up |
+|---|---|---|
+| [To confirm: consequence] | [To confirm] | [To confirm: role] |
+
+Preconditions that must be met before build or release:
+
+[To confirm: list, or "none"]
+
+## 7. Volatile facts relied on
+
+| Fact | Source record | Date checked | Recheck by |
+|---|---|---|---|
+| [To confirm: capability, region, limit or entitlement] | [To confirm: source id] | [To confirm] | [To confirm] |
+
+## 8. Revisit triggers
+
+Conditions that would reopen this decision, for example a second channel, write actions in a new system, a model
+retirement or a change in residency commitments.
+
+[To confirm: triggers]
+
+## 9. Review and sign-off
+
+| Role | Decision or finding | Date |
+|---|---|---|
+| Decision owner | [To confirm] | [To confirm] |
+| Design authority reviewer (tier 2 and above) | [To confirm: approved, approved with advisory findings, or blocking findings reference] | [To confirm] |
+| Security and privacy reviewer (where identity or data gates apply) | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: automation-design -->
+# Automation design
+
+Template id: `automation-design`
+
+Responsible skill: `automation:automation-process-design`. The review section is completed with
+`automation:human-in-the-loop`, the exceptions section with `automation:exception-handling`, the connectors section with
+`automation:automation-connector-governance` and the monitoring section with `automation:automation-monitoring`.
+
+Complete this design before build starts on any automation with AI steps or at risk tier 2 and above, and update it
+whenever the process, policy or systems change. Every fact the organisation must supply is marked `[To confirm: ...]`.
+Example rows are fictional. A design is ready for build only when every branch has a written rule, every AI step has a
+fallback and every exception has an owner.
+
+## 1. Automation and ownership
+
+| Field | Entry |
+|---|---|
+| Automation name | [To confirm] |
+| Process it supports | [To confirm] |
+| Automation assessment reference | [To confirm] |
+| Process owner (business) | [To confirm: name and role] |
+| Technical owner | [To confirm: team and role] |
+| Exception owner(s) | [To confirm: role and team for each exception type] |
+| Risk tier | [To confirm: tier and date set] |
+| Target environment | [To confirm: environment and governance zone] |
+
+## 2. Process changes made before automation
+
+| Step removed, consolidated or changed | Reason | Agreed by | Date |
+|---|---|---|---|
+| Fictional example: manual re-keying of order into second system | Duplicate of system integration | Process owner | [To confirm] |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Input changes requested at source (forms, templates, supplier files):
+
+| Input | Change | Owner | Status |
+|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | Requested / Agreed / Done |
+
+## 3. Future-state steps
+
+Step type is one of Human, Flow, AI step, Desktop flow, Approval.
+
+| No. | Step | Type | Input | Output | Rule or task | Owner | Exception route |
+|---|---|---|---|---|---|---|---|
+| 1 | Fictional example: receive supplier invoice | Flow | Email with attachment | Stored file and item key | Trigger on shared mailbox, filter by sender domain | Technical owner | Not a supplier: route to accounts queue |
+| 2 | Fictional example: extract invoice fields | AI step | Invoice file | Supplier, number, date, total, currency | See section 4 | Technical owner | Low confidence: review queue |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 4. AI step definitions
+
+Complete one block per AI step.
+
+| Field | Entry |
+|---|---|
+| Step number and name | [To confirm] |
+| Why AI is needed here (input unstructured or output is language) | [To confirm] |
+| Task, stated precisely | [To confirm: for example extract these six fields; classify into these categories] |
+| Model or AI capability, and where it is deployed | [To confirm: check source records before naming a capability] |
+| Output shape (fields and allowed values) | [To confirm] |
+| Validation rules applied before use | [To confirm] |
+| Confidence or validity threshold, and who agreed it | [To confirm: threshold, owner and date agreed, before testing] |
+| Fallback when validation fails or confidence is low | [To confirm] |
+| Evaluation sample (size, source, location) | [To confirm] |
+| Accuracy achieved in testing | [To confirm] |
+
+## 5. Human review and approval
+
+| Effect point | Review mode | Reviewer role | Information shown | Time limit | Escalation and delegate | Outcome on timeout |
+|---|---|---|---|---|---|---|
+| Fictional example: payment released | Approval before effect | Accounts approver | Invoice, extracted fields, confidence, purchase order match | 2 working days | Finance team lead; named delegate | Hold and escalate |
+| [To confirm] | None / Sampled / On exception / Approval / Two-person | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Reviewer capacity: expected items per day [To confirm] multiplied by review minutes per item [To confirm], against
+declared capacity [To confirm].
+
+Evidence required before any step moves to a lighter review mode: [To confirm].
+
+## 6. Exceptions and failure handling
+
+| Failure or exception class | Response | Retry rule | Owner | Response time |
+|---|---|---|---|---|
+| Transient technical | [To confirm] | [To confirm: attempts, delay, cap; idempotent steps only] | [To confirm] | [To confirm] |
+| Permanent technical | [To confirm] | No retry | [To confirm] | [To confirm] |
+| AI output invalid | [To confirm] | At most one controlled retry | [To confirm] | [To confirm] |
+| AI low confidence or filtered | Route to review with reason | No retry | [To confirm] | [To confirm] |
+| Business exception | [To confirm] | Not applicable | [To confirm] | [To confirm] |
+| Partial run | [To confirm: resume from checkpoint or compensate] | [To confirm] | [To confirm] | [To confirm] |
+
+Exception queue location: [To confirm].
+
+## 7. Systems, connectors and connections
+
+| Connector or system | Operations used | Data carried | Permitted in target environment | Production identity | Connection owner |
+|---|---|---|---|---|---|
+| [To confirm] | Read / Create / Update / Delete / Send | [To confirm] | Yes / Exception requested | [To confirm: service account or service principal, never personal] | [To confirm] |
+
+Connector exceptions: [To confirm: reference, approver and review date, or none].
+
+## 8. Monitoring and alerts
+
+| Signal | Threshold | Alert to | Expected response |
+|---|---|---|---|
+| Run failure | [To confirm] | [To confirm] | [To confirm] |
+| Missing runs (heartbeat) | [To confirm: expected minimum per period] | [To confirm] | [To confirm] |
+| Exception queue age | [To confirm] | [To confirm] | [To confirm] |
+| AI validation failure, low confidence and override rates | [To confirm: baseline from testing] | [To confirm] | Re-test against evaluation sample |
+| Connection and credential expiry | [To confirm: warning period] | [To confirm] | [To confirm] |
+
+## 9. Value baseline
+
+| Measure | Baseline | Source and period | Target |
+|---|---|---|---|
+| Cycle time | [To confirm] | [To confirm] | [To confirm] |
+| Handling effort per item | [To confirm] | [To confirm] | [To confirm] |
+| Error or rework rate | [To confirm] | [To confirm] | [To confirm] |
+| Expected review and exception effort after go-live | [To confirm] | Estimate | Not applicable |
+
+## 10. Reviews and sign-off
+
+| Reviewer | Required from tier | Finding summary | Blocking or advisory | Status |
+|---|---|---|---|---|
+| Design authority | 2 | [To confirm] | Blocking / Advisory | Open / Closed |
+| Security and privacy | 2 | [To confirm] | Blocking / Advisory | Open / Closed |
+| Responsible AI | 3 | [To confirm] | Blocking / Advisory | Open / Closed |
+
+| Role | Name | Decision | Date |
+|---|---|---|---|
+| Process owner | [To confirm] | Approved / Not approved | [To confirm] |
+| Technical owner | [To confirm] | Approved / Not approved | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: benefits-register -->
+# Benefits register
+
+Template id: `benefits-register`
+
+Responsible skill: `value-realisation:benefit-realisation-plan`. Benefit statements are written with
+`value-realisation:benefit-hypothesis`, owners agreed with `value-realisation:benefit-owner` and baselines designed with
+`value-realisation:baseline-design`.
+
+How to use this template: keep one register per initiative or one for the whole portfolio, in a place the organisation
+already uses and can secure. Every report and dashboard reads its value figures from this register and keeps no copy of
+its own. Record owners as roles. Report at team, role or process level only, never for named individuals. Mark
+everything the organisation has not yet supplied as `[To confirm: ...]`; never fill a gap with an estimate presented as
+a measurement. Rows marked "fictional example" show the level of detail expected and must be replaced.
+
+## 1. Register context
+
+| Field | Value |
+|---|---|
+| Register scope (initiative or portfolio) | [To confirm] |
+| Approved case or cases covered | [To confirm: case reference and approval date] |
+| Register owner (role) | [To confirm: Benefits Realisation Lead or equivalent] |
+| Finance contact (role) | [To confirm] |
+| Review forum and frequency | [To confirm: for example value review, quarterly] |
+| Minimum group size for staff and usage measures | [To confirm: agreed with data protection officer and HR] |
+| Edit rights | [To confirm: roles allowed to update entries] |
+| Last updated | [To confirm: date] |
+
+## 2. Benefit statements
+
+Benefit type: time released, quality, financial, experience, risk reduction, capability. Class (financial benefits
+only): cashable, non-cashable, cost avoidance, revenue.
+
+| ID | Benefit statement (one change, one measure) | Initiative | Type | Class | Strategic outcome served | Owner (role) | Deputy (role) | Dis-benefits recorded |
+|---|---|---|---|---|---|---|---|---|
+| B01 (fictional example) | Median working days from request to issued proposal for the bid team falls | Proposal drafting agent | Time released | Non-cashable | Faster response to customers | Head of bids | Bids operations manager | Added review time for drafts; agent run cost |
+| B02 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| B03 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 3. Measurement
+
+| ID | Measure definition | Baseline (value, window, date) | Baseline design | Target range and date | Method after launch | Data source and owner | Confidence |
+|---|---|---|---|---|---|---|---|
+| B01 (fictional example) | Working days from request logged to proposal issued, excluding requests withdrawn | [To confirm: measured value] over six months before launch | Comparison group with before and after | [To confirm: range] by second quarter after launch | System extract plus monthly sample review | Bid tracking system, bids operations manager | Medium |
+| B02 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| B03 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 4. Realisation profile and enablers
+
+| ID | Expected level by period (range) | Enabling changes and decisions | Enabler owner (role) | Enabler due date | Adoption level assumed | Quality guard (if any) |
+|---|---|---|---|---|---|---|
+| B01 (fictional example) | Q1 none; Q2 partial; Q3 full range | Old proposal template withdrawn; decision on use of released time | Head of bids | [To confirm] | Bid writers using the agent routinely on new requests | Sampled proposals meet the bid quality checklist at no worse than baseline |
+| B02 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| B03 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 5. Status and results
+
+Status: not ready, on track, at risk, off track, realised, retired.
+
+| ID | Measurement point (date) | Result (range) | Evidence reference | Variance against profile | Tolerance | Status | Owner commentary | Action and due date |
+|---|---|---|---|---|---|---|---|---|
+| B01 | [To confirm] | | | | [To confirm] | Not ready | | |
+| B02 | [To confirm] | | | | [To confirm] | Not ready | | |
+| B03 | [To confirm] | | | | [To confirm] | Not ready | | |
+
+## 6. Financial summary (from finance-agreed figures only)
+
+Report each class as a separate total. Never add them together into one headline.
+
+| Class | Planned to date | Realised to date | Evidence standard | Finance agreement (role and date) |
+|---|---|---|---|---|
+| Cashable | [To confirm] | | [To confirm] | [To confirm] |
+| Non-cashable | [To confirm] | | [To confirm] | [To confirm] |
+| Cost avoidance | [To confirm] | | [To confirm] | [To confirm] |
+| Revenue | [To confirm] | | [To confirm] | [To confirm] |
+
+## 7. Overlaps and apportionment
+
+| Benefit IDs sharing an effect | Shared process or population | Apportionment method | Agreed by (role and date) |
+|---|---|---|---|
+| [To confirm] | | | |
+
+## 8. Closed and retired benefits
+
+| ID | Closed as realised or retired | Date | Reason or evidence | Handed to (business-as-usual role) |
+|---|---|---|---|---|
+| [To confirm] | | | | |
+
+## 9. Change log
+
+| Date | Change (baseline, target, owner, status) | Reason | Agreed by (role) |
+|---|---|---|---|
+| [To confirm] | | | |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: business-case -->
+# AI initiative business case
+
+Template id: `business-case`
+Responsible skill: `opportunity-management:business-case`
+
+A proportionate case for one significant AI initiative. Choose the size first: for a light case, complete sections 1 to
+6 and 9 briefly; for a full case, complete everything. The programme-level funding case uses the `investment-case`
+template instead. Draw on existing records (the `opportunity-canvas`, the value hypothesis and the effort assessment)
+rather than writing new content. Anything not yet known stays marked `[To confirm: ...]`.
+
+## 1. Decision requested
+
+| Field | Value |
+|---|---|
+| Opportunity reference and backlog stage | [To confirm: reference and stage] |
+| Case size (light or full) and why | [To confirm: size and reason, for example cost, risk tier, reach or cross-unit funding] |
+| Decision requested, of whom and by when | [To confirm: one paragraph] |
+| What happens if the answer is no | [To confirm: consequence] |
+| Business owner presenting the case (by role) | [To confirm: role] |
+
+## 2. Problem and outcome
+
+| Field | Value |
+|---|---|
+| Framed problem statement | [To confirm: from the canvas] |
+| Affected roles and approximate numbers | [To confirm: roles and numbers] |
+| Strategic outcome supported | [To confirm: outcome or "none"] |
+| Risk tier and reviewer gates required | [To confirm: tier and gates] |
+
+## 3. Options
+
+At least three, including doing nothing and a non-AI or lower-rung option.
+
+| Option | Description | Expected value (range) | Cost (build, assure, run) | Main risks |
+|---|---|---|---|---|
+| Do nothing | [To confirm: what continues] | [To confirm: none or range] | [To confirm: cost of doing nothing] | [To confirm: risks] |
+| Non-AI or lower-rung option | [To confirm: process change, automation, training or adoption scenario] | [To confirm: range] | [To confirm: costs] | [To confirm: risks] |
+| Recommended AI option | [To confirm: pattern and scope] | [To confirm: range] | [To confirm: costs] | [To confirm: risks] |
+
+Why the recommended option beats the non-AI option: [To confirm: reasoning]
+
+## 4. Costs of the recommended option
+
+For a stated period. Licence and consumption figures come from the organisation's agreements or a licensing partner.
+
+| Cost | Range | Confidence | Owner (role) |
+|---|---|---|---|
+| Build (design, configuration or code, knowledge preparation, integration) | [To confirm: range] | [To confirm: high, medium or low] | [To confirm: role] |
+| Assure (testing, evaluation, reviews) | [To confirm: range] | [To confirm: confidence] | [To confirm: role] |
+| Run per year (owner time, knowledge upkeep, review cycles, support, consumption) | [To confirm: range] | [To confirm: confidence] | [To confirm: role] |
+| Adoption (learning, communications, Champions support) | [To confirm: range] | [To confirm: confidence] | [To confirm: role] |
+| Retirement | [To confirm: range] | [To confirm: confidence] | [To confirm: role] |
+
+## 5. Benefits
+
+From the agreed value hypothesis only.
+
+| Field | Value |
+|---|---|
+| Mechanism of change | [To confirm: mechanism] |
+| Primary measure and baseline (with date and method) | [To confirm: measure and baseline] |
+| Expected range and timing | [To confirm: low to high, and by when] |
+| Cashable and non-cashable split, agreed with finance | [To confirm: split and finance role] |
+| Position at the low end of the range | [To confirm: summary] |
+| Benefit owner (role) | [To confirm: role] |
+
+## 6. Risks
+
+| Risk | Likelihood and effect | Mitigation | Owner (role) |
+|---|---|---|---|
+| Delivery | [To confirm: assessment] | [To confirm: mitigation] | [To confirm: role] |
+| Adoption | [To confirm: assessment] | [To confirm: mitigation] | [To confirm: role] |
+| Knowledge or data readiness | [To confirm: assessment] | [To confirm: mitigation] | [To confirm: role] |
+| Security and privacy (per risk tier) | [To confirm: assessment] | [To confirm: mitigation] | [To confirm: role] |
+| Responsible AI (tier 3 and 4: impact assessment and oversight) | [To confirm: assessment] | [To confirm: mitigation] | [To confirm: role] |
+
+## 7. Evaluation and quality (full case)
+
+| Field | Value |
+|---|---|
+| How quality will be tested before release | [To confirm: approach] |
+| Acceptance threshold agreed with the business owner | [To confirm: threshold] |
+| How quality is re-checked after changes | [To confirm: approach] |
+
+## 8. Sensitivity (full case)
+
+| Scenario | Effect on the case |
+|---|---|
+| Adoption at half the planned level | [To confirm: effect] |
+| Run cost at the top of the range | [To confirm: effect] |
+| Benefits at the low end of the range | [To confirm: effect] |
+
+## 9. Exit points and decision
+
+| Checkpoint | Date | Result that would stop or redesign the initiative |
+|---|---|---|
+| [To confirm: for example end of pilot] | [To confirm: date] | [To confirm: disproof condition from the value hypothesis] |
+| [To confirm: for example six months after release] | [To confirm: date] | [To confirm: condition] |
+
+| Field | Value |
+|---|---|
+| Reviewer findings (blocking or advisory) | [To confirm: findings, or "none required at this tier"] |
+| Finance review (role and date) | [To confirm: role and date] |
+| Decision and conditions | [To confirm: decision and conditions] |
+| Decided by and date | [To confirm: body and date] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
 <!-- template: champion-capability-framework -->
 # Champion capability framework and evidence rubric
 
@@ -1110,6 +2393,167 @@ Rate each criterion Not yet, Meets or Strong. All four at Meets completes stage 
 
 ---
 
+<!-- template: champion-guide -->
+# Copilot Champions guide
+
+Template id: `champion-guide`
+
+Responsible skill: `champions:champion-recruitment`. The guide summarises the programme set out in the
+`champion-programme-charter`, and is the source that self-service guidance or an advisor agent designed through
+`champions:champion-advisor` explains to participants.
+
+This is the guide prospective and current Champions read. Write it in plain language for participants, not for the
+programme team. Every fact the organisation must supply is marked `[To confirm: ...]`; replace the marker when the
+fact is confirmed, and never fill it with a guess. Example content is fictional and is there to be replaced or deleted.
+Champions are selected on declared interest, skills and availability, and the programme never ranks individuals.
+
+## Guide details
+
+| Field | Entry |
+|---|---|
+| Programme name | [To confirm] |
+| Programme owner and contact route | [To confirm: role and channel, not a personal phone number] |
+| Executive sponsor | [To confirm: name and role] |
+| Version | [To confirm] |
+| Last reviewed | [To confirm: date] |
+| Next review | [To confirm: date] |
+
+## 1. Why the programme exists
+
+[To confirm: the purpose statement from the charter, in one or two sentences]
+
+> Fictional example: "We want every team to have someone who can show colleagues how to use Copilot safely and
+> usefully in their own work, and who helps good ideas reach the right place."
+
+## 2. What a Champion does, and what a Champion does not do
+
+| Champions do | Champions do not |
+|---|---|
+| Use Copilot safely and responsibly in their own work, and show others how | Replace the service desk or formal training |
+| Share prompts, examples and success stories | Approve solutions, agents or releases |
+| Help colleagues in their own team with "how do I" questions | Act as solution architects |
+| Promote approved tools and the organisation's AI guidance | Make governance or policy decisions |
+| Spot ideas and send them to the right route | Build high-risk or externally facing solutions outside the Centre of Excellence |
+| Take part in the community and give feedback | Become a queue for every AI request |
+
+Where things go instead: faults and access to [To confirm: service desk route]; suspected data exposure to [To
+confirm: security route]; ideas to [To confirm: intake route]; formal training to [To confirm: learning calendar].
+
+## 3. Time commitment
+
+| Field | Entry |
+|---|---|
+| Time agreed for the role | [To confirm: for example hours per month] |
+| How your manager confirms it | [To confirm: manager confirmation in section 11] |
+| What happens if your workload changes | Talk to your manager and the programme owner; you can pause or step back at any time without it being treated as failure |
+
+## 4. Who can join
+
+Anyone in scope who wants the role and whose manager agrees the time. You do not need to be an expert: there is a
+training route for people still learning. We aim for Champions in every team, site and type of role, including
+frontline and part-time colleagues.
+
+In scope: [To confirm: business units, locations, roles]
+
+Selection uses only what you tell us (your interest, skills and availability) and the coverage the programme needs. It
+never uses performance ratings, talent lists or Copilot usage data. If there are more volunteers than places, we
+prioritise teams and sites without a Champion and offer everyone else the waiting list and open learning sessions.
+
+## 5. The journey
+
+| Stage | What you do | How it is confirmed |
+|---|---|---|
+| 1. Join the community | Agree time with your manager, join the community and the learning sessions | Manager confirmation |
+| 2. Verify Chat capability | Show effective, responsible use of Copilot Chat | Training route or evidence route, assessed against published criteria |
+| 3. Verify productivity capability | Create useful, checked outputs with Copilot across the Microsoft 365 apps | Training route or evidence route |
+| 4. Verify agent capability | Explain agents, judge good use cases and, where approved, configure and test a basic agent | Training route or evidence route |
+| 5. Complete a Champion Challenge | Deliver one practical contribution that helps others | Challenge assessment |
+| 6. Recognised Champion | Keep modelling good practice and supporting colleagues | Renewal at [To confirm: period] |
+
+Detailed criteria: [To confirm: link to the published capability framework and challenge catalogue]
+
+## 6. Two routes to each capability
+
+| Route | For whom | What it involves |
+|---|---|---|
+| Training route | People building their skills | [To confirm: sessions plus a guided exercise on your own work] |
+| Evidence route | Experienced users | [To confirm: submit practical evidence directly against the criteria] |
+
+Both routes are assessed against the same criteria. Assessors judge the evidence, not the person. If you disagree with
+an outcome, you can ask for a review: [To confirm: appeal route].
+
+## 7. Recognition and what it opens
+
+| Milestone | Recognition | What it opens |
+|---|---|---|
+| Each capability verified | [To confirm: for example a badge] | The next stage |
+| Challenge completed | [To confirm: for example a showcase] | Eligibility for recognition |
+| Recognised Champion | [To confirm] | [To confirm: advanced materials, pilots, specialist pathways that have an agreed owner] |
+
+Recognition is based on verified capability and contribution, never on attendance or how much you use Copilot.
+
+## 8. Community and learning
+
+| Element | Where and when |
+|---|---|
+| Community space | [To confirm: channel or community] |
+| Regular community call | [To confirm: rhythm] |
+| Learning sessions | [To confirm: calendar location; which sessions count towards which stage] |
+| Office hours | [To confirm] |
+
+## 9. Staying safe
+
+- Follow the organisation's approved-use guidance: [To confirm: link].
+- Never share examples that contain personal or confidential information in the community or in evidence.
+- If Copilot shows you something you should not see, report it straight away through [To confirm: security route].
+- Being a Champion does not give you extra access or admin rights.
+
+## 10. Your information
+
+| Field | Entry |
+|---|---|
+| What the programme holds about you | [To confirm: for example name, team, location, stage, evidence outcomes] |
+| Who can see it | [To confirm: programme owner and assessors only] |
+| How long it is kept | [To confirm: retention period] |
+| Questions about your data | [To confirm: data protection contact] |
+
+Programme measures are reported only at programme level. Nobody is ranked.
+
+## 11. Expression of interest and manager confirmation
+
+Expression of interest
+
+| Question | Your answer |
+|---|---|
+| Name, team and location | [To confirm] |
+| Why you would like to be a Champion | [To confirm] |
+| How you already use Copilot or similar tools, if at all | [To confirm] |
+| Languages you could support colleagues in, if relevant | [To confirm] |
+| Time you can give, agreed with your manager | [To confirm] |
+
+Manager confirmation
+
+| Statement | Confirmed |
+|---|---|
+| I agree to the time commitment in section 3 | Yes / No |
+| I understand what Champions do and do not do (section 2) | Yes / No |
+| I will review the time with my colleague after the first quarter | Yes / No |
+| Manager name, role and date | [To confirm] |
+
+## 12. Frequently asked questions
+
+| Question | Answer |
+|---|---|
+| Do I need to be an expert? | No. The training route is designed for people still learning. |
+| Will this affect my performance review? | [To confirm: HR position; by default, Champion status is not linked to pay or promotion] |
+| Can I step back? | Yes, at any time. You become an alumnus and can return later. |
+| What if colleagues ask me to fix access problems? | Point them to [To confirm: service desk route]; that is outside the Champion role. |
+| Where do I send an idea for an agent? | [To confirm: intake route] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
 <!-- template: champion-programme-charter -->
 # Champions programme charter
 
@@ -1281,6 +2725,158 @@ group size of [To confirm: size]. No individual is ranked.
 | Executive sponsor | [To confirm] | [To confirm] | [To confirm] |
 | HR | [To confirm] | [To confirm] | [To confirm] |
 | Centre of Excellence lead | [To confirm] | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: code-solution-brief -->
+# Code solution brief
+
+Template id: `code-solution-brief`
+
+Responsible skill: `copilot-code:code-solution-brief`. The assessment section is completed with
+`copilot-code:code-use-case-assessment`, and the acceptance criteria are broken into work items with
+`copilot-code:requirements-to-build`.
+
+Use this brief before an AI-assisted build starts, and keep it in the repository alongside the code. Every fact the
+organisation must supply is marked `[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it
+with a guess. Example rows are fictional and are there to be replaced or deleted. Never include real personal data or
+secrets in this brief.
+
+## 1. Summary
+
+| Field | Entry |
+|---|---|
+| Working name | [To confirm] |
+| Opportunity or intake reference | [To confirm] |
+| Business owner (accountable for outcomes) | [To confirm: name and role; owner has agreed this brief] |
+| Engineering owner (accountable for the software) | [To confirm: name or team; owner has agreed] |
+| Risk tier (0-4) | [To confirm: tier from risk classification, with date] |
+| Route | Prototype with end date / Production build |
+| Brief version and status | [To confirm: version] Draft / Agreed / Superseded |
+
+## 2. Assessment
+
+| Question | Answer |
+|---|---|
+| Current workaround and its cost | [To confirm] |
+| Alternatives considered (no build, existing product, configuration, Power Platform, agent, Cowork task) and why rejected | [To confirm] |
+| Ownership test: business owner, engineering owner, organisation-controlled repository, review capacity, support route | [To confirm: each confirmed yes or no] |
+| Verdict | [To confirm: production build / prototype only, with reasons] |
+
+## 3. Outcome
+
+One sentence naming the users, the job and the measure.
+
+> Fictional example: "Site managers record safety inspections on a tablet and the weekly compliance report is produced
+> automatically, so the report is on time and nobody re-keys data."
+
+[To confirm: outcome statement]
+
+## 4. Users and roles
+
+| Role | Approximate number | What they can do | What they must not be able to do |
+|---|---|---|---|
+| Fictional example: site manager | Fictional example: forty | Create and edit inspections for their own site | See other sites' inspections |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 5. Scope and exclusions
+
+In scope:
+
+| # | Capability | Priority |
+|---|---|---|
+| 1 | [To confirm] | Must / Should / Could |
+
+Out of scope, with reasons:
+
+| Excluded capability | Reason |
+|---|---|
+| Fictional example: dashboards and analytics | Fictional example: covered by the existing reporting service |
+| [To confirm] | [To confirm] |
+
+## 6. Data and systems
+
+| Data set or system | Read / write / send | Identity used (user, managed identity, service account) | Sensitivity or label | Personal data? |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+
+External endpoints the software calls: [To confirm]
+
+## 7. Constraints and non-functional requirements
+
+| Area | Requirement |
+|---|---|
+| Hosting and environments | [To confirm: approved hosting, test and production environments] |
+| Approved languages, frameworks and libraries | [To confirm] |
+| Identity and secrets | [To confirm: managed identity, secrets store] |
+| Accessibility | [To confirm] |
+| Performance and availability | [To confirm] |
+| Logging and telemetry (what must and must not be logged) | [To confirm] |
+| Data retention | [To confirm] |
+| AI features at run time, if any | [To confirm: none, or which, and how users are told] |
+
+## 8. Acceptance criteria
+
+Testable statements the business owner agrees, including what must not be possible.
+
+| # | Criterion | Type (functional / negative / non-functional) |
+|---|---|---|
+| 1 | Fictional example: an inspection saved offline uploads when the device reconnects, with no duplicate record | Functional |
+| 2 | Fictional example: a site manager cannot open another site's inspection | Negative |
+| 3 | [To confirm] | [To confirm] |
+
+## 9. Repository and engineering
+
+| Item | Entry |
+|---|---|
+| Repository location (organisation-controlled) | [To confirm] |
+| Repository context and custom instructions in place | [To confirm: yes or no, with link] |
+| Protected areas needing code owner review | [To confirm] |
+| Pipeline checks (build, tests, linting, scanning) | [To confirm] |
+
+## 10. Prototype boundaries (prototype route only)
+
+| Boundary | Entry |
+|---|---|
+| Question the prototype answers | [To confirm] |
+| End date and decision maker | [To confirm] |
+| Sandbox | [To confirm] |
+| Data (synthetic or approved test data only) | [To confirm] |
+
+## 11. Ownership, support and review
+
+| Role | Name or team | Agreed? |
+|---|---|---|
+| Business owner | [To confirm] | Yes / No |
+| Engineering owner | [To confirm] | Yes / No |
+| Support route for users | [To confirm] | Yes / No |
+| First maintainability review date | [To confirm] | Not applicable |
+
+## 12. Success measures
+
+Measured at team or role level, never for individual staff.
+
+| Measure | Baseline and source | Target | Owner | Review date |
+|---|---|---|---|---|
+| Fictional example: weekly compliance report delivered on time | Fictional example: last quarter's delivery log | [To confirm] | [To confirm] | [To confirm] |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 13. Open questions and preconditions
+
+| Item | Owner | Due |
+|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] |
+
+## 14. Agreement
+
+| Role | Name | Date |
+|---|---|---|
+| Business owner | [To confirm] | [To confirm] |
+| Engineering owner | [To confirm] | [To confirm] |
+| Design authority (from risk tier 2) | [To confirm] | [To confirm] |
+| Security and privacy reviewer (from risk tier 2) | [To confirm] | [To confirm] |
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
 
@@ -1594,6 +3190,140 @@ measures. Self-reported time savings are perceptions and are reported alongside 
 
 ---
 
+<!-- template: coe-launch-plan -->
+# AI Centre of Excellence launch plan
+
+Template id: `coe-launch-plan`
+
+Responsible skill: `ai-centre-of-excellence:coe-launch-roadmap`. The readiness section is completed with
+`ai-centre-of-excellence:coe-readiness`. Phase dates are copied into the launch roadmap section of the `coe-charter`
+template.
+
+How to use this template: complete every section in your own words. Replace each `[To confirm: ...]` marker only with a
+fact your organisation has agreed. Use roles, never personal names. Plan the first ninety days in detail and later
+months in outline, and replan at every phase boundary. Durations shown are typical starting points; exit criteria, not
+dates, decide when a phase ends. For a Starter working group, use sections 1, 2, 4, 6 and 11 on one page with two
+phases (set up, then deliver).
+
+## 1. Document control
+
+| Field | Value |
+|---|---|
+| Organisation | [To confirm: organisation name or alias] |
+| CoE form | [To confirm: AI working group / business-owned CoE / hub / spoke of a named hub] |
+| Executive sponsor (role) | [To confirm] |
+| Plan owner (role) | [To confirm: CoE lead role] |
+| Linked charter version | [To confirm] |
+| Version and date | [To confirm] |
+| Next replan | [To confirm: at the next phase boundary] |
+
+## 2. Readiness and open conditions
+
+Completed with `ai-centre-of-excellence:coe-readiness`.
+
+| Field | Value |
+|---|---|
+| Readiness verdict | [To confirm: launch / launch with conditions / not yet] |
+| Date of assessment | [To confirm] |
+
+| Open condition | Gate (before launch / Foundation) | Owner (role) | Due | Status |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Nothing is announced while a "before launch" condition is open.
+
+## 3. Launch objectives
+
+| Objective | Measure | Baseline | Target and date | Owner (role) |
+|---|---|---|---|---|
+| [To confirm: for example first measured value from a quick win] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| [To confirm: for example ideas reaching a decision within the service level] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 4. Phases and exit criteria
+
+| Phase | Typical duration | Planned start and end | Exit criteria | Go or hold decided by |
+|---|---|---|---|---|
+| Establish | About a month | [To confirm] | Sponsor commitment agreed; lead and core team in place with agreed time; forums scheduled; collaboration space live; front door ready but not announced | [To confirm: steering] |
+| Foundation | About a month | [To confirm] | Backlog live with first ideas framed; knowledge register started; approved-use guidance and tiers in use; quick wins chosen with owners and baselines; launch communications ready | [To confirm] |
+| Deliver | Two to three months | [To confirm] | Quick wins live with owners; first value measured against baseline; first value review held | [To confirm] |
+| Scale | Ongoing | [To confirm] | Patterns reused by other teams; pipeline within service levels; first maturity assessment scheduled | [To confirm] |
+
+## 5. Workstreams and milestones
+
+Write milestones as outcomes, each with one owner role.
+
+| Workstream | Establish | Foundation | Deliver | Scale | Owner (role) |
+|---|---|---|---|---|---|
+| Sponsorship and governance | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Team and ways of working | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Opportunity pipeline | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Knowledge | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Delivery | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Adoption and Champions | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Value | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 6. First ninety days
+
+| Period | Actions and outcomes | Owner (role) | Done |
+|---|---|---|---|
+| Weeks 1-2 | [To confirm: for example sponsor commitment agreed; team time confirmed with managers] | [To confirm] | [To confirm] |
+| Weeks 3-4 | [To confirm: for example forums scheduled; collaboration space set up; inventory of existing agents and automations started] | [To confirm] | [To confirm] |
+| Weeks 5-6 | [To confirm] | [To confirm] | [To confirm] |
+| Weeks 7-8 | [To confirm] | [To confirm] | [To confirm] |
+| Weeks 9-10 | [To confirm] | [To confirm] | [To confirm] |
+| Weeks 11-13 | [To confirm] | [To confirm] | [To confirm] |
+
+## 7. Quick wins
+
+Choose two or three during Foundation. A quick win is tier 0 or 1 (or tier 2 with reviews available), has a keen
+business owner, ready knowledge, a measurable outcome and fits the Deliver phase.
+
+| Quick win | Business owner (role) | Risk tier | Knowledge ready | Baseline captured | Effort fits Deliver | Selected |
+|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 8. Dependencies
+
+| Dependency | Owner outside the CoE (role) | Needed by | Status | Impact if late |
+|---|---|---|---|---|
+| [To confirm: for example approved-use guidance] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| [To confirm: for example maker environments ready] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| [To confirm: for example security review capacity for tier 2] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 9. Launch risks
+
+| Risk | Likelihood | Impact | Mitigation | Owner (role) |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 10. Communications moments
+
+| Moment | Audience | Message | Voice (role) | Planned date |
+|---|---|---|---|---|
+| CoE launch announcement (end of Foundation) | [To confirm] | [To confirm: how to bring an idea and what happens next] | [To confirm: executive sponsor] | [To confirm] |
+| First quick win live | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| First value review result | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 11. Phase decision log
+
+| Phase boundary | Date | Decision (go / hold) | Conditions | Deciding role | New review date if hold |
+|---|---|---|---|---|---|
+| Establish to Foundation | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Foundation to Deliver | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Deliver to Scale | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 12. Sign-off
+
+| Role | Decision | Date |
+|---|---|---|
+| [To confirm: executive sponsor role] | Agreed / Agreed with conditions | [To confirm] |
+| [To confirm: CoE lead role] | Agreed | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
 <!-- template: coe-raci -->
 # AI CoE RACI
 
@@ -1700,6 +3430,1719 @@ These sample allocations are a starting point to challenge, not a recommendation
 - [ ] Tested against two or three real cases: [To confirm: cases used].
 
 Agreed by: [To confirm: forum and date]. Next review: [To confirm: date].
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: coe-terms-of-reference -->
+# AI Centre of Excellence team terms of reference
+
+Template id: `coe-terms-of-reference`
+
+Responsible skill: `ai-centre-of-excellence:coe-team-design`. The sponsor row is completed with
+`ai-centre-of-excellence:coe-sponsor-role` and the Champion rows with `ai-centre-of-excellence:coe-champion-integration`.
+Forum terms of reference (steering, working group, strategy review) stay in the `coe-charter` template, completed with
+`ai-centre-of-excellence:coe-cadence`.
+
+How to use this template: these terms of reference describe the CoE team itself - who is in it, what each role does,
+how much time it has and how the team works. Complete every section in your own words. Replace each `[To confirm: ...]`
+marker only with a fact your organisation has agreed. Use roles, never personal names, and record skills only as
+declared by the people who hold them. For a Starter working group, complete sections 1 to 5 and 8 on one page.
+
+## 1. Document control
+
+| Field | Value |
+|---|---|
+| Organisation | [To confirm: organisation name or alias] |
+| CoE form | [To confirm: AI working group / business-owned CoE / hub / spoke of a named hub] |
+| Owning business unit | [To confirm: business unit] |
+| Linked charter version | [To confirm: `coe-charter` version and date] |
+| Version and date | [To confirm: version, date] |
+| Agreed by | [To confirm: sponsor role and CoE lead role] |
+| Next review | [To confirm: review date, typically at the quarterly strategy review] |
+
+## 2. Mandate
+
+The team exists to run the CoE described in the charter. It does not change the charter's purpose or decision rights.
+
+| Item | Statement |
+|---|---|
+| What the team is for | [To confirm: one or two sentences drawn from the charter] |
+| Active pillars the team runs | [To confirm: for example opportunity management, knowledge management, agent development, automation, adoption and change, governance] |
+| Pillars deferred, and until when | [To confirm] |
+| Decisions the team may take without steering | [To confirm: for example triage, routing, tier 0-1 registration, delegated limits] |
+| Decisions the team escalates | [To confirm: for example priorities between business units, funding, tier 3-4 release] |
+
+## 3. Membership, time and backfill
+
+A role with no agreed time is a vacancy. Time must be agreed with the member's manager, and someone must cover the work
+the member stops doing.
+
+| Role | From (function) | Agreed time (days per month) | Agreed by (manager role) | Backfill or cover | Status |
+|---|---|---|---|---|---|
+| Executive sponsor | [To confirm: business executive role] | [To confirm] | Not applicable | Not applicable | [To confirm: in place / vacant] |
+| CoE lead | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Deputy CoE lead | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Opportunity and process lead | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Knowledge lead | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Delivery lead (agents and automation) | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Adoption and change lead | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Governance coordinator | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Additional core team member | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Capacity check: total agreed days per month [To confirm] against estimated demand of [To confirm] days per month. Where
+demand exceeds capacity, record the scope reduction agreed: [To confirm].
+
+## 4. Role profiles
+
+One profile per role. Keep each to a few lines.
+
+| Role | Purpose | Recurring tasks | May decide | Works most with |
+|---|---|---|---|---|
+| Executive sponsor | Decides priorities, removes blockers, secures resources, supports adoption visibly | [To confirm: from the sponsor commitment record] | [To confirm] | CoE lead, steering |
+| CoE lead | Runs the backlog, cadence, scorecard and team | [To confirm] | [To confirm] | Sponsor, pillar leads |
+| Opportunity and process lead | Runs intake, framing and the pipeline | [To confirm] | [To confirm] | Business owners, process champions |
+| Knowledge lead | Runs the knowledge pillar and register | [To confirm] | [To confirm] | Content owners, knowledge champions |
+| Delivery lead | Runs delivery routes and maker support | [To confirm] | [To confirm] | Makers, partners, IT, support owner |
+| Adoption and change lead | Runs adoption, Champion links and success stories | [To confirm] | [To confirm] | Champions, communications |
+| Governance coordinator | Keeps the register, tiers and gate evidence moving | [To confirm] | [To confirm] | Reviewers, risk and compliance |
+
+## 5. Champion roles connected to the team
+
+Champions support the CoE; they never approve releases, prioritise the backlog or own tier 2 and above solutions.
+
+| Champion role | CoE pillar | Contributes | CoE contact role | Teams covered |
+|---|---|---|---|---|
+| Knowledge champion | Knowledge management | [To confirm] | [To confirm] | [To confirm] |
+| Process champion | Opportunity management | [To confirm] | [To confirm] | [To confirm] |
+| Adoption champion | Adoption and change | [To confirm] | [To confirm] | [To confirm] |
+| AI champion | Agent development and automation | [To confirm] | [To confirm] | [To confirm] |
+
+## 6. Skills coverage
+
+Record skills only as declared by role holders. Never assess or compare individuals.
+
+| Skill area | Covered by role | Gap route if not covered (learn, borrow, partner) | By when |
+|---|---|---|---|
+| Facilitation and prioritisation | [To confirm] | [To confirm] | [To confirm] |
+| Process analysis and problem framing | [To confirm] | [To confirm] | [To confirm] |
+| Knowledge and information management | [To confirm] | [To confirm] | [To confirm] |
+| Agent and automation building | [To confirm] | [To confirm] | [To confirm] |
+| Testing and evaluation | [To confirm] | [To confirm] | [To confirm] |
+| Change, communications and learning | [To confirm] | [To confirm] | [To confirm] |
+| Risk and controls | [To confirm] | [To confirm] | [To confirm] |
+| Benefits measurement | [To confirm] | [To confirm] | [To confirm] |
+
+## 7. Supporting specialists
+
+Specialists are not CoE members. Each agrees how to be asked and how quickly they respond.
+
+| Specialism | Contact role and function | How to request | Agreed response time |
+|---|---|---|---|
+| Information security | [To confirm] | [To confirm] | [To confirm] |
+| Data protection | [To confirm: data protection officer or delegate] | [To confirm] | [To confirm] |
+| Architecture | [To confirm] | [To confirm] | [To confirm] |
+| Platform administration | [To confirm: IT role] | [To confirm] | [To confirm] |
+| Licensing questions | [To confirm: licensing owner or licensing partner] | [To confirm] | [To confirm] |
+| Responsible AI | [To confirm] | [To confirm] | [To confirm] |
+| Partners | [To confirm: partner and arrangement] | [To confirm] | [To confirm] |
+
+## 8. Ways of working
+
+| Topic | Agreement |
+|---|---|
+| Where the team works together | [To confirm: collaboration space and areas, on tools the organisation already runs] |
+| Team rhythm outside the formal forums | [To confirm: for example a short weekly stand-up] |
+| How work is allocated | [To confirm: from the backlog, within the work-in-progress limit] |
+| How the team decides within its mandate | [To confirm: for example lead decides after hearing the team; disagreements to steering] |
+| Escalation route | [To confirm] |
+| Platform access | Through IT's normal access process, not by virtue of CoE membership |
+| Conflicts of interest | [To confirm: how members declare and manage them, for example when assessing their own unit's ideas] |
+| Recognition | [To confirm: how contribution is recognised at team level] |
+
+## 9. Joining, leaving and handover
+
+| Event | What happens |
+|---|---|
+| New member joins | [To confirm: induction, access, introduction to pillars and records] |
+| Member leaves or changes role | [To confirm: notice, handover of open items and records, deputy cover] |
+| Lead absent | [To confirm: deputy lead acts, with stated limits] |
+
+## 10. Review
+
+[To confirm: when these terms are reviewed, which forum agrees changes, and the triggers for an earlier review, for
+example a new pillar, a new spoke or demand exceeding capacity for two cycles.]
+
+## 11. Agreement
+
+| Role | Decision | Date |
+|---|---|---|
+| [To confirm: executive sponsor role] | Agreed / Agreed with conditions | [To confirm] |
+| [To confirm: CoE lead role] | Agreed | [To confirm] |
+| [To confirm: managers of members, by role] | Time agreed | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: copilot-rollout-plan -->
+# Microsoft 365 Copilot rollout plan
+
+Template id: `copilot-rollout-plan`
+
+Responsible skill: `m365-copilot:m365-copilot-rollout`. Technical gates are evidenced with
+`m365-copilot:copilot-technical-readiness` and work context gates with `m365-copilot:work-context-readiness`. People-side
+launch activities for each wave sit in the `adoption-plan`, owned by `copilot-adoption:launch-plan`.
+
+Use this plan for one rollout of licensed Microsoft 365 Copilot, in waves. Every fact the organisation must supply is
+marked `[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it with a guess. Example rows
+are fictional and are there to be replaced or deleted. Licence quantities, entitlements and prerequisites come from the
+licence owner and the current source records, never from memory. Usage in this plan is reported at team, role or wave
+level only, never for named individuals.
+
+## 1. Summary
+
+| Field | Entry |
+|---|---|
+| Rollout name | [To confirm: name] |
+| Rollout owner | [To confirm: name and role] |
+| Executive sponsor | [To confirm: name and role] |
+| Licences available now and later | [To confirm: quantities and dates, confirmed by the licence owner] |
+| Scope (business units, regions) | [To confirm] |
+| Link to adoption plan | [To confirm: location of the `adoption-plan`] |
+| Plan status | Draft / Agreed / In progress / Closed |
+| Last reviewed | [To confirm: date] |
+
+## 2. Candidate groups and scoring
+
+Score each candidate group High, Medium or Low on each criterion. Start with groups strong on all four.
+
+| Group (role or team) | Approximate size | Scenario strength | Work context condition | Leadership and support | Risk profile | Proposed wave |
+|---|---|---|---|---|---|---|
+| Fictional example: Regional operations managers | Fictional example: 40 | High | Medium | High | Low sensitivity | 1 |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Reasons for any group placed early despite a Low score: [To confirm]
+
+## 3. Wave plan
+
+| Wave | Groups | Licence assignment group | Planned start | Planned review | Wave owner |
+|---|---|---|---|---|---|
+| 1 | [To confirm] | [To confirm: directory group name] | [To confirm] | [To confirm] | [To confirm] |
+| 2 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 4. Entry gates per wave
+
+A wave does not start until every gate is Ready, or Ready with conditions accepted in writing by the rollout owner.
+
+| Gate | Evidence | Wave 1 | Wave 2 | Owner |
+|---|---|---|---|---|
+| Technical readiness for the wave's segment | Readiness record and settings decision log | [To confirm: Ready / Conditions / Not ready] | [To confirm] | [To confirm] |
+| Work context readiness for each group | Readiness record per team | [To confirm] | [To confirm] | [To confirm] |
+| Sensitive content and oversharing findings closed or accepted | Reviewer outcome or written acceptance | [To confirm] | [To confirm] | [To confirm] |
+| Priority scenarios tested with the group | Scenario cards marked usable | [To confirm] | [To confirm] | [To confirm] |
+| Onboarding sessions booked and managers briefed | Adoption plan entries | [To confirm] | [To confirm] | [To confirm] |
+| Service desk briefed on scenarios and known limits | Briefing record | [To confirm] | [To confirm] | [To confirm] |
+
+Open conditions:
+
+| Condition | Wave | Fix | Owner | Due date | Accepted by |
+|---|---|---|---|---|---|
+| Fictional example: Two project sites shared with all staff | 1 | Site owners restrict access | Fictional example: Operations site owner | [To confirm] | [To confirm] |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 5. Licence allocation and reallocation rules
+
+| Rule | Entry |
+|---|---|
+| Allocation basis (role, scenario, readiness) | [To confirm] |
+| How people request or release a licence | [To confirm] |
+| How uptake is reviewed (team or role level) | [To confirm] |
+| Position on person-level activity data, agreed with the data protection lead and HR | [To confirm: agreed position and date, or "not used"] |
+| Approved by | [To confirm: names, roles and dates] |
+
+Person-level data is never used to judge performance. Licence entitlement and commercial questions go to the Microsoft
+licensing guide or a licensing partner.
+
+## 6. Exit criteria per wave
+
+Agree these before the wave starts.
+
+| Criterion | Measure and level | Target | Result at review |
+|---|---|---|---|
+| Priority scenarios in use across the group | [To confirm: measure, team level] | [To confirm] | [To confirm] |
+| Support questions stabilised | [To confirm: ticket trend for the wave] | [To confirm] | [To confirm] |
+| Feedback reviewed and guidance updated | [To confirm: evidence] | [To confirm] | [To confirm] |
+| No open blocking findings | Reviewer record | None open | [To confirm] |
+
+## 7. Wave review record
+
+| Wave | Review date | Exit criteria met? | What changed for the next wave | Decision | Decided by |
+|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | Yes / Partly / No | [To confirm] | Proceed / Proceed with conditions / Pause | [To confirm] |
+
+## 8. Risks and dependencies
+
+| Risk or dependency | Effect on rollout | Mitigation | Owner |
+|---|---|---|---|
+| Fictional example: Oversharing remediation backlog not cleared before wave 2 | Wave 2 delayed | Prioritise sites used by wave 2 groups | Fictional example: SharePoint service owner |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 9. Approval
+
+| Role | Name | Decision | Date |
+|---|---|---|---|
+| Rollout owner | [To confirm] | [To confirm] | [To confirm] |
+| Executive sponsor | [To confirm] | [To confirm] | [To confirm] |
+| IT lead | [To confirm] | [To confirm] | [To confirm] |
+| Security and privacy reviewer | [To confirm] | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: cowork-task-design -->
+# Cowork task design
+
+Template id: `cowork-task-design`
+
+Responsible skill: `copilot-cowork:task-context-design`. The delegation map is completed with
+`copilot-cowork:work-delegation-design`, the step outline with `copilot-cowork:multi-step-work-design`, the checkpoints
+with `copilot-cowork:human-checkpoint-design`, the source table with `copilot-cowork:grounding-readiness`, the validation
+record with `copilot-cowork:workflow-validation` and the review standard with `copilot-cowork:delegated-work-review`.
+
+Use this design before a Copilot Cowork task is run regularly or shared with others. Every fact the organisation or team
+must supply is marked `[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it with a guess.
+Example rows are fictional and are there to be replaced or deleted. Personal tasks may complete sections 1 to 5 only.
+
+## 1. Summary
+
+| Field | Entry |
+|---|---|
+| Task name | [To confirm: working name] |
+| Accountable owner (answers for the outcome) | [To confirm: name and role] |
+| Design owner (maintains this design) | [To confirm: name or team] |
+| Who may reuse it | [To confirm: personal, named team or wider audience] |
+| Risk tier (0-4) | [To confirm: tier, or "not classified" with reason] |
+| Fit verdict from use-case assessment | [To confirm: suits Cowork / suits Cowork with conditions, and conditions] |
+| Design status | Draft / Validated / Published / Retired |
+| Review date | [To confirm: date] |
+
+## 2. Goal and definition of done
+
+Goal, in one sentence naming the output and its audience.
+
+> Fictional example: "A two-page briefing for the operations director on supplier delivery performance last quarter,
+> naming the three suppliers most at risk with a recommended action for each."
+
+[To confirm: goal]
+
+| Definition of done | Specification |
+|---|---|
+| Format and structure | [To confirm] |
+| Length and level of detail | [To confirm] |
+| Quality standard (what makes it acceptable) | [To confirm] |
+| What must be cited | [To confirm] |
+| What must be flagged rather than resolved (uncertainty rule) | [To confirm: for example conflicting or missing sources] |
+
+## 3. Delegation map
+
+| # | Part of the work | Level (D0 Keep / D1 Prepare / D2 Draft / D3 Act with approval) | Human owner | Reason |
+|---|---|---|---|---|
+| 1 | Fictional example: collate delivery data for each supplier | D1 | Fictional example: operations analyst | Mechanical collation, checked at direction check |
+| 2 | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Take-back triggers (conditions under which the delegator stops the run and takes over): [To confirm]
+
+## 4. Context and constraints
+
+| Element | Entry |
+|---|---|
+| Inputs supplied at run time | [To confirm] |
+| Exclusions (sources, periods or topics to ignore) | [To confirm] |
+| Style, terminology and audience rules | [To confirm] |
+| Must-not rules | [To confirm: for example no named individuals' personal circumstances] |
+| Example of good output (fictional or cleaned) | [To confirm: location, or "none" with reason] |
+| Organisational skills, plugins or custom instructions applied | [To confirm: approved items from the governance library] |
+
+## 5. Sources and readiness
+
+A source with several live versions, no owner, or sharing wider than its sensitivity warrants is not ready.
+
+| Source and location | Owner | Single version? | Current enough? | Access matches output audience? | Classification or label | Verdict | Conditions, owner and date |
+|---|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | Yes / No | Yes / No | Yes / No | [To confirm] | Ready / Ready with conditions / Not ready | [To confirm] |
+
+## 6. Step outline
+
+| Step | Named output | Inputs | Completion test | Restart point | Checkpoint after? |
+|---|---|---|---|---|---|
+| 1 | Fictional example: confirmed source list | Fictional example: named sources in section 5 | Every source found or reported missing | Re-run from named sources | Direction check |
+| 2 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Where intermediate outputs are stored and who can open them: [To confirm]
+
+## 7. Checkpoints
+
+| Checkpoint | Type (direction / judgement / pre-effect / exception stop) | Approver role | Evidence shown | Permitted responses | On no response |
+|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | Approve / edit / send back / stop | Run waits |
+
+Actions that always need pre-effect approval under the organisation's governance position: [To confirm]
+
+## 8. Validation record
+
+| Case | Type (typical / awkward / planted error / reuser run) | Expected behaviour | Result (met / met with edits / flagged correctly / failed) | Notes |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Acceptance threshold agreed by the accountable owner: [To confirm]
+
+Verdict: Fit to rely / Fit with conditions / Not fit. Conditions and re-test date: [To confirm]
+
+## 9. Review standard before use
+
+| Consequence of the output | Review depth | Second reviewer required? |
+|---|---|---|
+| [To confirm: low / moderate / high / affects individuals] | [To confirm] | Yes / No |
+
+The five checks applied to every output: meets the definition of done; key claims trace to sources; nothing
+inappropriate for the audience; caveats and gaps stated; any actions taken are correct.
+
+## 10. Measures
+
+Measured at team or role level, never for individual staff.
+
+| Measure | Baseline and source | Target | Owner | Review date |
+|---|---|---|---|---|
+| Fictional example: outputs accepted with light edits | Fictional example: team estimate before delegation | [To confirm] | [To confirm] | [To confirm] |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 11. Open questions and approvals
+
+| Item | Owner | Due |
+|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] |
+
+| Role | Name | Date |
+|---|---|---|
+| Accountable owner | [To confirm] | [To confirm] |
+| Design owner | [To confirm] | [To confirm] |
+| Approver for publication (shared designs) | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: data-readiness-assessment -->
+# Data readiness assessment
+
+Template id: `data-readiness-assessment`
+
+Responsible skill: `data-governance:data-product-readiness`. Quality, classification, access and lineage results come
+from `data-governance:ai-data-quality`, `data-governance:data-classification-for-ai`,
+`data-governance:ai-data-access-model` and `data-governance:ai-data-lineage`.
+
+Every fact the organisation must supply is marked `[To confirm: ...]`. Example rows are fictional. Readiness is
+assessed for a stated AI use, not for all uses, and the verdict is ready, ready with conditions or not ready.
+
+## 1. Data product and use
+
+| Field | Entry |
+|---|---|
+| Data product name | [To confirm] |
+| Type (curated tables, semantic model, dataset, other) | [To confirm] |
+| Location and platform | [To confirm] |
+| Data owner (role) | [To confirm] |
+| Business owner (role) | [To confirm] |
+| AI use: questions or tasks, audience and route | [To confirm] |
+| Risk tier of the AI use | [To confirm] |
+| Assessors and date | [To confirm] |
+
+## 2. Criteria
+
+| Criterion | Met / Partly / Not met | Evidence | Condition or fix | Owner | Due |
+|---|---|---|---|---|---|
+| Ownership accepted for AI use | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Purpose fit for the AI questions | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Meaning: descriptions, units, synonyms, definitions | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Quality of critical fields against requirements | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Currency: refresh pattern and data age shown | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Classification with AI-use rules applied | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Access pattern approved; outputs within entitlement | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Lineage at the depth the tier needs | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Change commitment to dependent AI solutions | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Test questions run with accepted answers | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 3. Test questions
+
+| ID | Question as users would ask it | Accepted answer (from business owner) | AI answer | Correct? | Cause if wrong |
+|---|---|---|---|---|---|
+| Fictional example Q1 | How many open cases are older than 30 days in the north region? | Fictional example: 42 | Fictional example: 57 | No | Closed-pending status counted as open; description added |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | Yes / No | [To confirm] |
+
+Acceptance threshold agreed with the business owner: [To confirm]
+
+## 4. Verdict
+
+| Field | Entry |
+|---|---|
+| Verdict | Ready / Ready with conditions / Not ready |
+| Conditions and dated fixes | [To confirm] |
+| Re-assessment triggers (structural change, new AI use, quality breach) | [To confirm] |
+| Next review date | [To confirm] |
+| Data owner acceptance (role and date) | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: design-review-record -->
+# Design review record
+
+Template id: `design-review-record`
+
+Responsible skill: `design-authority:ai-design-review`. Sections 4 to 8 are completed with
+`design-authority:ai-necessity-challenge`, `design-authority:platform-fit-review`,
+`design-authority:architecture-conformance`, `design-authority:supportability-review` and, for changes to live
+solutions, `design-authority:ai-change-impact-review`.
+
+Every fact the organisation must supply is marked `[To confirm: ...]`. Example rows are fictional. Each finding is
+classified **blocking** or **advisory**, names the risk or standard behind it, and gives the fix and owner. From risk
+tier 2 a blocking finding stops the gate and is not traded against dates. Disagreement escalates to the accountable
+executive, whose written risk acceptance is recorded in section 10.
+
+## 1. Solution and scope
+
+| Field | Entry |
+|---|---|
+| Review reference | [To confirm] |
+| Solution name and brief reference | [To confirm] |
+| Review type | [To confirm: new design, material change, re-design, pilot to service] |
+| Risk tier (confirmed at review) | [To confirm: 0-4, with classification reference] |
+| Business owner (role) | [To confirm] |
+| Accountable executive (tier 3 and 4) | [To confirm] |
+| Reviewers and date | [To confirm] |
+
+## 2. Design pack completeness
+
+| Artefact | Present | Reference | Note |
+|---|---|---|---|
+| Solution or agent brief | Yes / No | [To confirm] | [To confirm] |
+| Suitability decision | Yes / No | [To confirm] | [To confirm] |
+| Risk classification | Yes / No | [To confirm] | [To confirm] |
+| Architecture decision records | Yes / No | [To confirm] | [To confirm] |
+| Non-functional requirements | Yes / No | [To confirm] | [To confirm] |
+| Identity map | Yes / No | [To confirm] | [To confirm] |
+| Interface catalogue | Yes / No / Not applicable | [To confirm] | [To confirm] |
+| Grounding design | Yes / No / Not applicable | [To confirm] | [To confirm] |
+| Placement in environment topology | Yes / No | [To confirm] | [To confirm] |
+| Evaluation approach and thresholds | Yes / No | [To confirm] | [To confirm] |
+| Support model and owners | Yes / No | [To confirm] | [To confirm] |
+
+If a core artefact is missing, the verdict is "returned - incomplete" and the list above is sent back.
+
+## 3. Lenses applied
+
+| Lens | Depth (in depth, summary, not applied) | Reason |
+|---|---|---|
+| Necessity | [To confirm] | [To confirm] |
+| Platform fit | [To confirm] | [To confirm] |
+| Conformance | [To confirm] | [To confirm] |
+| Non-functional requirements | [To confirm] | [To confirm] |
+| Supportability | [To confirm] | [To confirm] |
+| Change impact (live solutions) | [To confirm] | [To confirm] |
+
+## 4. Necessity findings
+
+| Component | Test | Finding | Blocking or advisory | Simpler alternative | Fix | Owner | Due |
+|---|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 5. Platform fit findings
+
+| Dimension | Evidence | Finding | Blocking or advisory | Fix | Owner | Due |
+|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 6. Conformance findings and deviations
+
+Reference architecture and version: [To confirm]
+
+| Control or fixed decision | Gap | Blocking or advisory | Fix or approved deviation | Compensating control | Owner | Expiry |
+|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 7. Supportability findings
+
+| Area | Evidence | Finding | Blocking or advisory | Fix | Owner | Due |
+|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 8. Change impact (live solutions only)
+
+| Field | Entry |
+|---|---|
+| Change requested and reason | [To confirm] |
+| Behavioural description of the change | [To confirm] |
+| Classification | [To confirm: minor, material, re-design] |
+| Gates re-engaged | [To confirm] |
+| Regression evaluation reference | [To confirm] |
+| Rollback route | [To confirm] |
+
+Fictional example, for illustration only: "Adding the procurement policy library means the agent will answer purchasing
+questions for all staff using content previously available only to procurement - classified material; security exposure
+review and regression evaluation re-engaged."
+
+## 9. Other reviewer status
+
+| Reviewer department | Status | Dependencies on design changes |
+|---|---|---|
+| Security and privacy | [To confirm] | [To confirm] |
+| Evaluation and quality | [To confirm] | [To confirm] |
+| Responsible AI (tier 3 and 4) | [To confirm] | [To confirm] |
+
+## 10. Verdict and sign-off
+
+| Field | Entry |
+|---|---|
+| Verdict | [To confirm: approved, approved with advisory findings, not approved - blocking findings, returned - incomplete] |
+| Conditions | [To confirm] |
+| Design authority chair (role) and date | [To confirm] |
+| Business owner acknowledgement and date | [To confirm] |
+| Written risk acceptance, if any (finding reference, accepted by, date, expiry) | [To confirm] |
+| Blocking findings closed on evidence (reference and date) | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: engineering-standards-checklist -->
+# Engineering standards checklist
+
+Template id: `engineering-standards-checklist`
+
+Responsible skill: `ai-engineering:ai-engineering-standards`. Sections draw on `ai-engineering:ai-solution-repository`,
+`ai-engineering:secrets-and-identity`, `ai-engineering:ai-api-and-tooling`, `ai-engineering:ai-solution-testing`,
+`ai-engineering:evaluation-harness`, `ai-engineering:ai-ci-cd`, `ai-engineering:ai-telemetry`,
+`ai-engineering:ai-performance-engineering` and `ai-engineering:ai-resilience`.
+
+Use this checklist during build of a custom AI solution and attach it to the design review. Every fact the organisation
+must supply is marked `[To confirm: ...]`. Example entries are fictional. Tick an item only when the evidence is
+attached or referenced. "N/A" needs a reason. An item that is mandatory at the solution's tier and is not met needs an
+approved exception in section 12, or the checklist result is "Not conformant".
+
+## 1. Solution
+
+| Field | Entry |
+|---|---|
+| Solution name | [To confirm] |
+| Risk tier | [To confirm: tier and date set] |
+| Solution owner | [To confirm: name and role] |
+| Engineering lead | [To confirm: name and role] |
+| Repository | [To confirm: location] |
+| Standards version used | [To confirm: version and date] |
+| Checklist result | Conformant / Conformant with exceptions / Not conformant |
+
+## 2. Repository and ownership
+
+| Standard | Mandatory from tier | Evidence | Status |
+|---|---|---|---|
+| Prompts stored as versioned files, one per prompt | 1 | [To confirm] | Met / Not met / N/A |
+| Model deployments and versions declared per environment | 1 | [To confirm] | Met / Not met / N/A |
+| Tool definitions and retrieval settings versioned | 1 | [To confirm] | Met / Not met / N/A |
+| Evaluation datasets versioned or referenced by immutable version | 2 | [To confirm] | Met / Not met / N/A |
+| Infrastructure as code for all resources | 2 | [To confirm] | Met / Not met / N/A |
+| Ownership file routes prompt and threshold changes to owners | 1 | [To confirm] | Met / Not met / N/A |
+| Main branch protected; review and passing checks required | 1 | [To confirm] | Met / Not met / N/A |
+| Readme, decision records and runbook present | 1 | [To confirm] | Met / Not met / N/A |
+
+## 3. Identity and secrets
+
+| Standard | Mandatory from tier | Evidence | Status |
+|---|---|---|---|
+| Managed or workload identities for service-to-service calls | 1 | [To confirm] | Met / Not met / N/A |
+| No secrets in source, configuration files or pipeline variables | 1 | [To confirm: scan result] | Met / Not met / N/A |
+| User context for user-scoped data and tools | 1 | [To confirm] | Met / Not met / N/A |
+| Separate identities per environment | 1 | [To confirm] | Met / Not met / N/A |
+| Least-privilege role assignments, reviewed | 2 | [To confirm] | Met / Not met / N/A |
+| Secret scanning and push protection enabled | 1 | [To confirm] | Met / Not met / N/A |
+| Secrets register with owners and rotation dates | 2 | [To confirm] | Met / Not met / N/A |
+
+## 4. Tools and APIs
+
+| Standard | Mandatory from tier | Evidence | Status |
+|---|---|---|---|
+| Narrow tools, one operation each, with clear descriptions | 1 | [To confirm] | Met / Not met / N/A |
+| Contracts defined in machine-readable specifications and versioned | 2 | [To confirm] | Met / Not met / N/A |
+| Server-side validation of every argument | 1 | [To confirm] | Met / Not met / N/A |
+| Write tools separate, idempotent and confirmed upstream | 1 | [To confirm] | Met / Not met / N/A |
+| Rate limits and timeouts declared and enforced | 2 | [To confirm] | Met / Not met / N/A |
+
+## 5. Testing
+
+| Standard | Mandatory from tier | Evidence | Status |
+|---|---|---|---|
+| Unit tests with stubbed model responses | 1 | [To confirm] | Met / Not met / N/A |
+| Contract tests for tools and output schemas | 1 | [To confirm] | Met / Not met / N/A |
+| Failure-path tests (timeout, throttling, filter block, malformed output, tool error) | 1 | [To confirm] | Met / Not met / N/A |
+| Permission tests with users of different access | 2 | [To confirm] | Met / Not met / N/A |
+| Adversarial tests including injection through inputs, documents and tool results | 2 | [To confirm] | Met / Not met / N/A |
+
+## 6. Evaluation
+
+| Standard | Mandatory from tier | Evidence | Status |
+|---|---|---|---|
+| Automated harness testing the deployed configuration | 2 | [To confirm] | Met / Not met / N/A |
+| Thresholds agreed by the business owner before results were seen | 2 | [To confirm: date agreed] | Met / Not met / N/A |
+| Model-graded evaluators calibrated against human labels | 2 | [To confirm] | Met / Not met / N/A |
+| Zero-tolerance failures defined and reported separately | 2 | [To confirm] | Met / Not met / N/A |
+| Results history stored with configuration per run | 2 | [To confirm] | Met / Not met / N/A |
+
+Fictional example result: "Full set 240 cases; correctness 91% against threshold 88%; groundedness 96% against 95%;
+zero-tolerance breaches none; grader agreement with human labels 0.85 on 50 cases."
+
+## 7. CI/CD
+
+| Standard | Mandatory from tier | Evidence | Status |
+|---|---|---|---|
+| Production deployment only through the pipeline | 2 | [To confirm] | Met / Not met / N/A |
+| Evaluation gate on prompt, model, tool and retrieval changes | 2 | [To confirm] | Met / Not met / N/A |
+| Production approval by named approvers per release policy | 2 | [To confirm] | Met / Not met / N/A |
+| Rollback covers code, prompts, model configuration and infrastructure | 2 | [To confirm] | Met / Not met / N/A |
+| Model version register with retirement dates | 2 | [To confirm: check source records for dates] | Met / Not met / N/A |
+| Progressive exposure with monitoring | 3 | [To confirm] | Met / Not met / N/A |
+
+## 8. Telemetry
+
+| Standard | Mandatory from tier | Evidence | Status |
+|---|---|---|---|
+| End-to-end tracing with correlation ids | 2 | [To confirm] | Met / Not met / N/A |
+| Model, prompt and tool versions recorded per request | 2 | [To confirm] | Met / Not met / N/A |
+| Tokens, latency, errors and filter outcomes recorded | 2 | [To confirm] | Met / Not met / N/A |
+| Content capture decision agreed with the DPO or data owner | 2 | [To confirm: decision and date] | Met / Not met / N/A |
+| User identifiers pseudonymised in operational telemetry | 2 | [To confirm] | Met / Not met / N/A |
+
+## 9. Performance
+
+| Standard | Mandatory from tier | Evidence | Status |
+|---|---|---|---|
+| Latency targets agreed at a stated percentile | 3 | [To confirm] | Met / Not met / N/A |
+| Per-step latency and token budgets | 3 | [To confirm] | Met / Not met / N/A |
+| Capacity plan against expected peak | 3 | [To confirm] | Met / Not met / N/A |
+| Load test results against targets | 3 | [To confirm] | Met / Not met / N/A |
+
+## 10. Resilience
+
+| Standard | Mandatory from tier | Evidence | Status |
+|---|---|---|---|
+| Timeouts on every external call | 2 | [To confirm] | Met / Not met / N/A |
+| Bounded retries with backoff and jitter on idempotent calls only | 2 | [To confirm] | Met / Not met / N/A |
+| Fallback deployments or models evaluated before use | 2 | [To confirm] | Met / Not met / N/A |
+| Degraded mode and user messages designed with the business owner | 2 | [To confirm] | Met / Not met / N/A |
+| Failure tests run in a test environment | 3 | [To confirm] | Met / Not met / N/A |
+
+## 11. Operations hand-over
+
+| Item | Entry |
+|---|---|
+| Support team and route | [To confirm] |
+| Monitoring signals and alert routes | [To confirm] |
+| Runbook location | [To confirm] |
+| Next review date | [To confirm] |
+
+## 12. Exceptions
+
+| Standard | Reason | Compensating control | Risk accepted | Approver | Review date |
+|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 13. Sign-off
+
+| Role | Name | Decision | Date |
+|---|---|---|---|
+| Engineering lead | [To confirm] | [To confirm] | [To confirm] |
+| Design authority reviewer | [To confirm] | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: environment-zoning-plan -->
+# Environment zoning plan
+
+Template id: `environment-zoning-plan`
+
+Responsible skill: `platform-governance:ai-environment-strategy`. Data policies per zone come from
+`platform-governance:connector-policy`; maker levels from `platform-governance:maker-governance`; technical placement
+from `ai-architecture:environment-topology`.
+
+Every fact the organisation must supply is marked `[To confirm: ...]`. Platform controls, their availability and their
+licensing change often: confirm each control against the current source records and route licensing questions to the
+Microsoft licensing guide or a licensing partner before relying on it. Example content is fictional.
+
+## 1. Scope and ownership
+
+| Field | Entry |
+|---|---|
+| Plan owner (role) | [To confirm] |
+| Platforms in scope | [To confirm: for example Copilot Studio, Power Platform, Agent Builder, Microsoft Foundry] |
+| Governance framework and risk tier reference | [To confirm] |
+| Date agreed and next review | [To confirm] |
+| Agreed with security and privacy (role and date) | [To confirm] |
+
+## 2. Zones
+
+| Zone | Purpose | Zone owner (role) | Who may build | Data allowed | Sharing limit | Risk tiers hosted |
+|---|---|---|---|---|---|---|
+| 1. Personal productivity | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | 0 |
+| 2. Team collaboration | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | 0, 1 |
+| 3. Managed production | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm: per release] | 2, 3, 4 |
+
+Add or split zones only with a recorded reason, for example a separate managed production zone for a regulated business
+unit: [To confirm: reason, or "none"]
+
+## 3. Controls per zone
+
+| Control | Zone 1 | Zone 2 | Zone 3 | Source record checked and date |
+|---|---|---|---|---|
+| Data policy reference | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Sharing limits | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Maker routing for new makers | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Managed environment features | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Owner and register entry required | No | Yes | Yes | Not applicable |
+| ALM and pipelines | No | [To confirm] | Yes | [To confirm] |
+| Reviewer gates | None | [To confirm] | By tier, per release policy | Not applicable |
+| Inactivity clean-up | [To confirm: period and action] | [To confirm] | [To confirm] | [To confirm] |
+
+## 4. Environments mapped to zones
+
+| Environment | Zone | Purpose | Owner (role) | Action needed |
+|---|---|---|---|---|
+| [To confirm: environment name] | [To confirm] | [To confirm] | [To confirm] | [To confirm: keep, move, merge, retire] |
+
+Fictional example, for illustration only: "Site reports pilot development - zone 2 - created for a finished pilot; owner left
+- action: confirm whether the two shared flows are still used, then retire."
+
+## 5. Promotion rules
+
+| Signal | Action | Who decides |
+|---|---|---|
+| Shared beyond the maker | Move to zone 2 with owner and register entry | [To confirm] |
+| Classified tier 2 or above, or audience beyond a team | Move to zone 3 through the release policy | [To confirm] |
+| Uses sensitive data or write actions in business systems | Zone 3 regardless of audience | [To confirm] |
+| Inactive past the agreed period | Owner contacted, then archived or removed | [To confirm] |
+
+## 6. Request process
+
+| Request | How to ask | Approver | Target turnaround |
+|---|---|---|---|
+| New zone 2 environment | [To confirm] | [To confirm] | [To confirm] |
+| New zone 3 environment set | [To confirm] | [To confirm] | [To confirm] |
+| Promotion of a solution | [To confirm] | [To confirm] | [To confirm] |
+
+## 7. Where do I build - maker summary
+
+[To confirm: three or four plain-language sentences telling makers where to build personal helpers, team solutions and
+organisational solutions, and how to ask for help]
+
+## 8. Approval
+
+| Role | Decision | Date |
+|---|---|---|
+| Platform governance lead | [To confirm] | [To confirm] |
+| Security and privacy reviewer | [To confirm] | [To confirm] |
+| CoE lead | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: evaluation-plan -->
+# Evaluation plan
+
+Template id: `evaluation-plan`
+
+Responsible skill: `evaluation-quality:ai-evaluation-strategy`. The dataset section is completed with
+`evaluation-quality:golden-dataset`, the rubric and thresholds with `evaluation-quality:ai-quality-rubric`, and the
+results summary is reviewed with `evaluation-quality:ai-release-evidence`.
+
+Complete this plan before formal testing starts, and update it after every material change. Every fact the organisation
+must supply is marked `[To confirm: ...]`. Example rows are fictional. Thresholds must be agreed and dated before any
+results are seen; a threshold changed after results is a blocking finding at the `evaluation-quality` gate from risk
+tier 2.
+
+## 1. Solution and consequence
+
+| Field | Entry |
+|---|---|
+| Solution name and reference | [To confirm] |
+| Route (for example Agent Builder, Copilot Studio, Microsoft Foundry, Cowork workflow) | [To confirm] |
+| Risk tier and date classified | [To confirm] |
+| Business owner (role) | [To confirm] |
+| Evaluation lead (role) | [To confirm] |
+| Configuration version under evaluation | [To confirm] |
+| Consequence statement - what happens when the solution is wrong, who notices and how quickly | [To confirm] |
+
+Fictional example consequence statement: "Staff act directly on leave entitlement answers without checking; a wrong
+answer can lead to an incorrect booking that HR must reverse."
+
+## 2. Quality dimensions and methods
+
+| Dimension | Plain definition | Method (human review, automated check, calibrated AI-assisted grading, red team) | Who judges |
+|---|---|---|---|
+| Correct | [To confirm] | [To confirm] | [To confirm: role] |
+| Grounded | [To confirm] | [To confirm] | [To confirm: role] |
+| Appropriate | [To confirm] | [To confirm] | [To confirm: role] |
+| Safe | [To confirm] | [To confirm] | [To confirm: role] |
+| Other required by tier (consistency, action correctness, fairness) | [To confirm, or not applicable with reason] | [To confirm] | [To confirm] |
+
+## 3. Dataset
+
+| Item | Entry |
+|---|---|
+| Golden dataset name, version and location (restricted) | [To confirm] |
+| Size and items per category (core, edge, refusal, knowledge silent, contradiction, adversarial, held out) | [To confirm] |
+| Share of items sourced from real users | [To confirm] |
+| Expected answers confirmed by (role) and date | [To confirm] |
+| Regression subset identified | [To confirm] |
+| Personal or confidential data handling | [To confirm: for example fictional details only; access limited to evaluators] |
+
+## 4. Rubric, thresholds and zero-tolerance failures
+
+| Dimension | Rubric version | Pass threshold | Rationale |
+|---|---|---|---|
+| Correct | [To confirm] | [To confirm] | [To confirm] |
+| Grounded | [To confirm] | [To confirm] | [To confirm] |
+| Appropriate | [To confirm] | [To confirm] | [To confirm] |
+| Safe | [To confirm] | [To confirm] | [To confirm] |
+
+| Item | Entry |
+|---|---|
+| Zero-tolerance failures | [To confirm: for example exposing restricted content, unsafe advice, acting without confirmation] |
+| Thresholds agreed by (business owner role) | [To confirm] |
+| Date thresholds agreed (must precede first scored run) | [To confirm] |
+| Grader calibration approach and record location | [To confirm] |
+
+## 5. Specialist testing
+
+| Test | Required at this tier? | Owner | Record location |
+|---|---|---|---|
+| Groundedness testing | [To confirm] | [To confirm] | [To confirm] |
+| Safety testing | [To confirm] | [To confirm] | [To confirm] |
+| Red-team exercise (tier 3 and 4) | [To confirm] | [To confirm] | [To confirm] |
+| Permission-trimming tests (evidence for security and privacy) | [To confirm] | [To confirm] | [To confirm] |
+| Fairness items agreed with responsible AI reviewers | [To confirm, or not applicable with reason] | [To confirm] | [To confirm] |
+
+## 6. Cadence and regression triggers
+
+| Item | Entry |
+|---|---|
+| Events that trigger re-evaluation | [To confirm: for example instruction change, knowledge change, new action, model or platform change] |
+| Scope of re-run per event | [To confirm] |
+| Normal variation between identical runs | [To confirm: measured at baseline] |
+| Scheduled re-evaluation | [To confirm: frequency] |
+| Live quality sampling after release (size, frequency, who scores) | [To confirm] |
+
+## 7. Known limits
+
+What this evaluation does not show, and how monitoring and feedback will cover it.
+
+[To confirm]
+
+## 8. Results summary
+
+| Run date | Configuration version | Dataset version | Correct | Grounded | Appropriate | Safe | Zero-tolerance breaches | Decision |
+|---|---|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Fictional example row: "Run 3; config v1.4; dataset v2; correct 91%, grounded 94%, appropriate 98%, safe 100%; no
+breaches; meets thresholds."
+
+## 9. Review and sign-off
+
+| Role | Decision | Date |
+|---|---|---|
+| Evaluation lead | Plan approved / Changes required | [To confirm] |
+| Business owner | Thresholds agreed | [To confirm] |
+| `evaluation-quality` reviewer (tier 2 and above) | Pass / Pass with advisory findings / Blocked | [To confirm] |
+
+| Finding | Blocking or advisory | Fix | Owner | Status |
+|---|---|---|---|---|
+| [To confirm] | Blocking / Advisory | [To confirm] | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: foundry-solution-design -->
+# Microsoft Foundry solution design
+
+Template id: `foundry-solution-design`
+
+Responsible skill: `ai-foundry:foundry-solution-assessment`. Sections are detailed with `ai-foundry:model-selection`,
+`ai-foundry:foundry-agent-architecture`, `ai-foundry:foundry-tool-design`, `ai-foundry:mcp-integration`,
+`ai-foundry:foundry-grounding-strategy`, `ai-foundry:retrieval-design`, `ai-foundry:foundry-prompt-engineering`,
+`ai-foundry:model-evaluation` and `ai-foundry:foundry-safety-evaluation`.
+
+Use this design from the moment a need reaches the Foundry rung until the solution is released, and keep it current
+after every material change. Every fact the organisation must supply is marked `[To confirm: ...]`; replace the marker
+when the fact is confirmed, and never fill it with a guess. Example rows are fictional and are there to be replaced or
+deleted. Where a design choice depends on a product feature, model, region, limit or price, record the source record
+checked and the date, because these change often. Licensing questions go to the Microsoft licensing guide or a
+licensing partner; data protection questions go to the DPO.
+
+## 1. Summary
+
+| Field | Entry |
+|---|---|
+| Solution name | [To confirm: working name] |
+| Problem statement and suitability record reference | [To confirm: reference and date] |
+| Business owner (role) | [To confirm] |
+| Product owner (role) | [To confirm] |
+| Engineering team and technical owner | [To confirm] |
+| Operations and support route | [To confirm] |
+| Risk tier (0-4) and date classified | [To confirm] |
+| Azure subscription, landing zone and Foundry project | [To confirm] |
+| Design status | Draft / Agreed / Reviewed / Superseded |
+| Version and date | [To confirm] |
+
+## 2. Assessment
+
+### 2.1 Capability drivers
+
+| Driver | Applies? | Evidence |
+|---|---|---|
+| Model choice beyond what configured agents expose | Yes / No | [To confirm] |
+| Retrieval engineering | Yes / No | [To confirm] |
+| Complex orchestration | Yes / No | [To confirm] |
+| AI embedded in a product, API or batch process | Yes / No | [To confirm] |
+| Production-grade evaluation and observability | Yes / No | [To confirm] |
+
+### 2.2 Lower rungs tested
+
+| Option tried (Microsoft 365 agent, Copilot Studio agent, automation, hybrid) | What was tried | Why it fell short | Source record checked and date |
+|---|---|---|---|
+| Fictional example: Copilot Studio agent with SharePoint knowledge | Two-week spike on the claims library | Needed metadata filters by effective date that configured knowledge could not apply | Fictional example only |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+### 2.3 Ownership conditions
+
+| Condition | Status (met / not met / partly) | Evidence or action |
+|---|---|---|
+| Product owner and engineering team named | [To confirm] | [To confirm] |
+| Azure foundation in place | [To confirm] | [To confirm] |
+| Running cost funded beyond the first year | [To confirm] | [To confirm] |
+| Operations route agreed | [To confirm] | [To confirm] |
+| Reviewer capacity available at this risk tier | [To confirm] | [To confirm] |
+
+### 2.4 Decision
+
+| Field | Entry |
+|---|---|
+| Decision (proceed / proceed with preconditions / use a lower rung / stop) | [To confirm] |
+| Preconditions and owners | [To confirm] |
+| What this assessment cannot determine | [To confirm] |
+| Decision owner and date | [To confirm] |
+
+## 3. Model
+
+| Field | Entry |
+|---|---|
+| Model selection record reference (`model-selection-record`) | [To confirm] |
+| Chosen model and version | [To confirm] |
+| Fallback model and version | [To confirm] |
+| Lifecycle review date and owner | [To confirm] |
+
+## 4. Agent architecture
+
+Complete if the solution includes one or more agents.
+
+| Field | Entry |
+|---|---|
+| Responsibility statement (one sentence) | [To confirm] |
+| What the agent must refuse or hand over, and to whom | [To confirm] |
+| Shape (single agent / coordinating agent with specialists) and reason | [To confirm] |
+| Conversation state and cross-session memory, with retention agreed | [To confirm] |
+| Launch surface | [To confirm] |
+| Architecture diagram reference | [To confirm] |
+
+| Action | Identity it runs under (user-delegated / managed identity) | Reason if not user-delegated | Human confirmation |
+|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | Yes / No |
+
+## 5. Tool register
+
+One row per function or tool the organisation hosts. MCP servers are recorded in section 6.
+
+| Tool | Purpose and model-facing description | Effect class (read low / read sensitive / reversible write / irreversible) | Identity | Controls (limits, idempotency, confirmation, audit) | Failure behaviour | System owner agreed | Test evidence |
+|---|---|---|---|---|---|---|---|
+| Fictional example: get_policy_section | Returns one section of a named policy by identifier | Read low | User-delegated | Result size limit | Structured "not found" | Yes, fictional | Fictional example only |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | Yes / No | [To confirm] |
+
+## 6. MCP server register
+
+| Server | Owner and hosting | Terms and data handling reviewed by | Allowed tools | Effect class | Identity and authentication | Approval rule | Version pin or tool-list fingerprint | Change check rhythm |
+|---|---|---|---|---|---|---|---|---|
+| [To confirm, or "none"] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 7. Grounding and retrieval
+
+| Field | Entry |
+|---|---|
+| Grounding approach and reason | [To confirm] |
+| Content left in place rather than indexed, and why | [To confirm] |
+
+| Source | Owner | Readiness verdict | Classification | Permission trimming (per user / open to all users, confirmed by owner) | Refresh and deletion route |
+|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+| Retrieval design item | Entry |
+|---|---|
+| Cleaning rules | [To confirm] |
+| Chunking approach | [To confirm] |
+| Metadata kept on every chunk | [To confirm] |
+| Search method and ranking | [To confirm] |
+| Embedding model and version | [To confirm] |
+| Passages passed to the model and citation format | [To confirm] |
+| Retrieval test set reference and baseline | [To confirm] |
+
+## 8. Prompts and output contract
+
+| Field | Entry |
+|---|---|
+| Prompt location in source control and current version | [To confirm] |
+| Prompt owner (role) | [To confirm] |
+| Output schema and version, and consuming systems | [To confirm, or "free text only"] |
+| How untrusted content is delimited | [To confirm] |
+| Evidence required per change type | [To confirm] |
+
+## 9. Evaluation and safety
+
+| Field | Entry |
+|---|---|
+| Evaluation plan reference (`evaluation-plan`) | [To confirm] |
+| Quality thresholds and date agreed | [To confirm] |
+| Harm profile summary | [To confirm] |
+
+| Safety control | Setting | Reason | Behaviour when it fires | Last changed, by whom, with what evidence |
+|---|---|---|---|---|
+| Input and output content filtering | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Prompt attack detection | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Groundedness or protected material checks | [To confirm, or not used with reason] | [To confirm] | [To confirm] | [To confirm] |
+| Blocklists | [To confirm, or "none"] | [To confirm] | [To confirm] | [To confirm] |
+
+Untested harms and residual risks: [To confirm]
+
+## 10. Deployment, observability and cost
+
+| Field | Entry |
+|---|---|
+| Environments and deployment topology | [To confirm] |
+| Tracing and monitoring owner | [To confirm] |
+| Running cost estimate, budget owner and source records used | [To confirm] |
+| Pipeline and release process reference | [To confirm] |
+
+## 11. Reviewer gates
+
+| Reviewer | Required from tier | Finding summary | Blocking / advisory | Resolved? |
+|---|---|---|---|---|
+| Design authority | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+| Security and privacy | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+| Responsible AI | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+| Evaluation and quality | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+
+## 12. Open questions and preconditions
+
+| Item | Owner | Due |
+|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] |
+
+## 13. Agreement
+
+| Role | Name | Date |
+|---|---|---|
+| Business owner | [To confirm] | [To confirm] |
+| Product owner | [To confirm] | [To confirm] |
+| Technical owner | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: human-oversight-plan -->
+# Human oversight plan
+
+Template id: `human-oversight-plan`
+
+Responsible skill: `responsible-ai:human-oversight`. The plan responds to impacts recorded in the
+`ai-impact-assessment-record`; checkpoints are built with `copilot-cowork:human-checkpoint-design` or
+`automation:human-in-the-loop`.
+
+Every fact the organisation must supply is marked `[To confirm: ...]`. Example rows are fictional. Oversight measures
+are reported at role level and are never used to assess or rank individual reviewers. Gaps are classified
+**blocking** or **advisory** with a fix and an owner.
+
+## 1. Solution
+
+| Field | Entry |
+|---|---|
+| Solution name | [To confirm] |
+| Business owner (role) | [To confirm] |
+| Risk tier | [To confirm] |
+| Impact assessment reference | [To confirm] |
+| Plan version and date | [To confirm] |
+
+## 2. Oversight by output or action
+
+| Output or action | Harm if wrong | Last point a person can prevent it | Oversight mode (review every output, approve before action, sampled review, monitoring) | Reviewing role |
+|---|---|---|---|---|
+| Fictional example: draft refusal letter to a customer | Customer wrongly refused | Before sending | Review every output | Fictional example: senior case handler |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 3. Capacity check
+
+| Reviewing role | Expected items per day | Careful review time per item | Time available per day | Fits? | If not, design change |
+|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | Yes / No | [To confirm] |
+
+## 4. What the reviewer sees
+
+| Element | Provided? | How |
+|---|---|---|
+| The output or proposed action | Yes / No | [To confirm] |
+| Sources the output relied on | Yes / No | [To confirm] |
+| Case or record context | Yes / No | [To confirm] |
+| Signals of uncertainty or unusual cases | Yes / No | [To confirm] |
+| Reject and edit as easy as approve; no pre-selected approval | Yes / No | [To confirm] |
+
+## 5. Authority and competence
+
+| Question | Entry |
+|---|---|
+| Where the authority to reject or overturn is written down | [To confirm: procedure or role description] |
+| Competence the reviewer needs | [To confirm] |
+| Training and calibration provided | [To confirm] |
+| How automation bias is countered (for example calibration sessions) | [To confirm] |
+
+## 6. Feedback loop
+
+| Question | Entry |
+|---|---|
+| How rejections and edits are recorded (aggregate) | [To confirm] |
+| Who reviews them and how often | [To confirm] |
+| How findings change the solution | [To confirm] |
+| Investigation threshold for a very low override rate | [To confirm] |
+
+## 7. Pre-release test
+
+| Test | Entry |
+|---|---|
+| Outputs with known errors presented to reviewers | [To confirm: number and type] |
+| Realistic conditions (volume, time) | [To confirm] |
+| Result at role level | [To confirm] |
+| Changes made | [To confirm] |
+
+## 8. Gaps
+
+| ID | Gap | Blocking or advisory | Fix | Owner | Due | Status |
+|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | Blocking / Advisory | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 9. Review triggers
+
+[To confirm: changes in volume, scope, autonomy, model or reviewer role that trigger a review of this plan, and the
+next scheduled review date]
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: investment-case -->
+# AI programme investment case
+
+Template id: `investment-case`
+Responsible skill: `ai-strategy:investment-case`
+
+The funding case for the AI programme as a whole, across adopting, building and scaling. Individual initiatives inside
+the programme use the `business-case` template, owned by `opportunity-management:business-case`. Every price, licence
+cost and consumption estimate comes from the organisation's agreements or a licensing partner and stays marked
+`[To confirm: ...]` until it does. Never record an estimate as a measured figure.
+
+## 1. Decision requested
+
+| Field | Value |
+|---|---|
+| Decision requested, in one paragraph | [To confirm: what is asked, of whom, by when] |
+| Recommended option | [To confirm: option] |
+| Total envelope requested and period | [To confirm: amount and period] |
+| First tranche requested now | [To confirm: amount and scope] |
+| What happens if the answer is no | [To confirm: consequence] |
+| Sponsor presenting the case (by role) | [To confirm: role] |
+
+## 2. Strategic link
+
+| Field | Value |
+|---|---|
+| Ambition level and vision reference | [To confirm: reference to the `ai-vision-and-principles` document] |
+| Strategic outcomes served | [To confirm: outcomes with measures] |
+| Maturity archetype and key constraints | [To confirm: archetype and constraints] |
+| Roadmap horizon(s) covered | [To confirm: horizons] |
+
+## 3. Options compared
+
+| Option | Scope | Outcomes it can move | Main risks |
+|---|---|---|---|
+| Do minimum | [To confirm: scope] | [To confirm: outcomes] | [To confirm: risks] |
+| Adopt-led | [To confirm: scope] | [To confirm: outcomes] | [To confirm: risks] |
+| Adopt and build | [To confirm: scope] | [To confirm: outcomes] | [To confirm: risks] |
+| Scale (if relevant) | [To confirm: scope] | [To confirm: outcomes] | [To confirm: risks] |
+
+## 4. Full cost of ownership by option
+
+Complete every category for every option, writing zero where it truly is zero, so omissions are visible.
+
+| Cost category | Do minimum | Adopt-led | Adopt and build | Scale |
+|---|---|---|---|---|
+| Licences and subscriptions (confirmed with a licensing partner) | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] |
+| Consumption (range, assumptions and owner) | [To confirm: range] | [To confirm: range] | [To confirm: range] | [To confirm: range] |
+| People (programme, CoE, Champions time, owners, makers, engineers) | [To confirm: cost or capacity] | [To confirm: cost or capacity] | [To confirm: cost or capacity] | [To confirm: cost or capacity] |
+| Partners | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] |
+| Knowledge and data readiness | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] |
+| Governance, assurance and evaluation | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] |
+| Learning and change | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] |
+| Run, support and retirement | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] | [To confirm: cost] |
+| Total for the period | [To confirm: total] | [To confirm: total] | [To confirm: total] | [To confirm: total] |
+
+## 5. Benefits by outcome
+
+Ranges, not single figures. State which are assumptions until evidence arrives.
+
+| Outcome | Measure and baseline | Expected range (low to high) | Cashable or non-cashable | Evidence or assumption | Benefit owner (role) |
+|---|---|---|---|---|---|
+| [To confirm: outcome] | [To confirm: measure and baseline] | [To confirm: range] | [To confirm: type] | [To confirm: basis] | [To confirm: role] |
+| [To confirm: outcome] | [To confirm: measure and baseline] | [To confirm: range] | [To confirm: type] | [To confirm: basis] | [To confirm: role] |
+
+| Field | Value |
+|---|---|
+| Position at the low end of the benefit range | [To confirm: summary] |
+| Finance treatment agreed with | [To confirm: finance role and date] |
+
+## 6. Risks
+
+| Risk | Effect on the case | Mitigation | Owner (role) |
+|---|---|---|---|
+| Adoption slower than planned | [To confirm: effect] | [To confirm: mitigation] | [To confirm: role] |
+| Knowledge or data not ready | [To confirm: effect] | [To confirm: mitigation] | [To confirm: role] |
+| Consumption above range | [To confirm: effect] | [To confirm: mitigation] | [To confirm: role] |
+| Reviewer or owner capacity short | [To confirm: effect] | [To confirm: mitigation] | [To confirm: role] |
+| [To confirm: other risk] | [To confirm: effect] | [To confirm: mitigation] | [To confirm: role] |
+
+## 7. Funding tranches
+
+| Tranche | Scope | Amount | Evidence that releases the next tranche | Decided by (role) | Target date |
+|---|---|---|---|---|---|
+| 1 | [To confirm: foundations and early evidence] | [To confirm: amount] | [To confirm: evidence] | [To confirm: role] | [To confirm: date] |
+| 2 | [To confirm: scope] | [To confirm: amount] | [To confirm: evidence] | [To confirm: role] | [To confirm: date] |
+| 3 | [To confirm: scope] | [To confirm: amount] | [To confirm: evidence] | [To confirm: role] | [To confirm: date] |
+
+## 8. Funding model
+
+| Field | Value |
+|---|---|
+| Centrally funded items | [To confirm: items] |
+| Business-unit funded items | [To confirm: items] |
+| Consumption owner and how it is charged | [To confirm: owner and model] |
+| How the approved budget is tracked | [To confirm: route, normally `programme-management:budget-and-capacity`] |
+
+## 9. Assumptions and approval
+
+| Assumption | Owner (role) | Date to confirm |
+|---|---|---|
+| [To confirm: assumption] | [To confirm: role] | [To confirm: date] |
+| [To confirm: assumption] | [To confirm: role] | [To confirm: date] |
+
+| Field | Value |
+|---|---|
+| Finance review (role and date) | [To confirm: role and date] |
+| Decision and conditions | [To confirm: decision and conditions] |
+| Decided by and date | [To confirm: body and date] |
+| Next review | [To confirm: date, at the next tranche gate] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: knowledge-asset-register -->
+# Knowledge asset register
+
+Template id: `knowledge-asset-register`
+Responsible skill: `knowledge-management:knowledge-inventory`
+
+Use this register to record the organisation's knowledge sources: where each one lives, who owns it, who should see it,
+what condition it is in and which Copilot scenarios or agents depend on it. Other knowledge skills update it, notably
+`knowledge-management:knowledge-classification`, `knowledge-management:knowledge-review-cycles` and
+`knowledge-management:knowledge-grounding-standards`. Every fact the organisation must supply is marked
+`[To confirm: ...]`; replace the marker when the fact is confirmed and never fill it with a guess. Example rows are
+fictional and are there to be replaced or deleted.
+
+## 1. Register details
+
+| Field | Value |
+|---|---|
+| Scope (domains, business units) | [To confirm: scope] |
+| Register owner (role) | [To confirm: usually the Knowledge Manager] |
+| Unit of inventory | [To confirm: library, site or curated collection, and why] |
+| Where the register is held | [To confirm: for example a SharePoint list] |
+| Who may edit entries | [To confirm: content owners for their own rows, knowledge team for all] |
+| Overdue entry chase routine | [To confirm: frequency and role] |
+| Last full verification sample | [To confirm: date and result] |
+
+## 2. Field definitions
+
+| Field | Definition | Mandatory |
+|---|---|---|
+| ID | Unique reference, never reused | Yes |
+| Name | The name people use for the source | Yes |
+| Location | Site, library, page set, connector or system | Yes |
+| Source type | Library, page set, curated collection, connector content, public website, uploaded files | Yes |
+| Domain | The knowledge domain the source belongs to | Yes |
+| Domain owner (role) | Accountable for what the organisation treats as true in the domain | Yes |
+| Content owner (role) and acceptance | Accountable for accuracy, currency and audience; record whether the role has been accepted | Yes |
+| Deputy (role) | Covers absence and succession | Yes for AI-dependent sources |
+| Administrative owner (role) | Controls platform permissions and configuration; not accountable for accuracy | Yes |
+| Intended audience | Who should be able to see the content, in plain words | Yes |
+| Actual access | Who can open it today, from administrative data | Yes |
+| Sensitivity | Value from the organisation's classification scheme | Yes |
+| Knowledge status | Authoritative, reference, working or archive | Yes |
+| Condition rating | 1 to 4 on the readiness dimensions, with date | Yes |
+| Quality rating | Good, fair or poor, with date of last check | Where checked |
+| Last review / next review | Dates from the review cycle | Yes |
+| Review triggers | Events that force an early review | Where set |
+| Grounding designation | Approved to tier N, with expiry, or not approved | Where designated |
+| Dependent AI uses | Agents, Copilot scenarios and curated collections that rely on the source | Yes |
+| Findings and referrals | Open findings and where they were routed | Where any |
+
+## 3. Register
+
+| ID | Name | Location | Type | Domain | Content owner (accepted?) | Intended audience | Actual access | Sensitivity | Status | Condition | Next review | Designation | Dependent AI uses |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| KA-001 (fictional example) | HR policies | HR site, Policies library | Library | HR policy | Head of reward (accepted) | All staff | All staff | Internal | Authoritative | 3 | [To confirm: date] | Approved to tier 2, expires with review | Absence policy agent; Copilot HR scenarios |
+| KA-002 (fictional example) | HR shared drafts | HR site, Shared folder | Library | HR policy | [To confirm: owner] (not accepted) | HR team | All staff | Confidential | Working | 1 | [To confirm: date] | Not approved | None; access mismatch referred |
+| [To confirm: ID] | [To confirm: name] | [To confirm: location] | [To confirm: type] | [To confirm: domain] | [To confirm: role and acceptance] | [To confirm: audience] | [To confirm: actual access] | [To confirm: sensitivity] | [To confirm: status] | [To confirm: 1-4] | [To confirm: date] | [To confirm: designation] | [To confirm: dependent uses] |
+
+## 4. Blind spots
+
+Locations deliberately not registered, and why.
+
+| Location or type | Reason not registered | Risk noted |
+|---|---|---|
+| Personal drives and chats | Not knowledge sources; recorded as a blind spot | [To confirm: risk] |
+| [To confirm: location] | [To confirm: reason] | [To confirm: risk] |
+
+## 5. Open findings
+
+| Ref | Source ID | Finding (missing owner, access mismatch, competing version, other) | Routed to | Owner (role) | Due |
+|---|---|---|---|---|---|
+| F1 | [To confirm: ID] | [To confirm: finding] | [To confirm: skill or team] | [To confirm: role] | [To confirm: date] |
+
+## 6. Change log
+
+| Date | Change | By (role) |
+|---|---|---|
+| [To confirm: date] | [To confirm: change] | [To confirm: role] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: knowledge-readiness-report -->
+# Knowledge readiness report
+
+Template id: `knowledge-readiness-report`
+Responsible skill: `knowledge-management:knowledge-readiness-assessment`
+
+Use this report to give a sponsor an evidence-based view of how ready the knowledge estate is for Copilot and agents,
+domain by domain, and what must change. Rate only what the evidence shows; a dimension without evidence is recorded as
+"not assessed", never as a pass. Every fact the organisation must supply is marked `[To confirm: ...]`. Example content
+is fictional and is there to be replaced or deleted.
+
+## 1. Assessment details
+
+| Field | Value |
+|---|---|
+| Scope (business units, domains) | [To confirm: scope] |
+| AI uses this assessment informs | [To confirm: Copilot rollout wave, named agents, or both] |
+| Decision the report supports | [To confirm: go or no-go, funding, wave sequencing] |
+| Sponsor (role) | [To confirm: role] |
+| Assessors (roles) | [To confirm: roles] |
+| Fieldwork dates | [To confirm: dates] |
+| Previous assessment | [To confirm: none, or reference and date] |
+| Repeat date agreed | [To confirm: date] |
+
+## 2. Summary for the sponsor
+
+| Domain | AI uses depending on it | Verdict (ready, ready with conditions, not ready) | Main reason |
+|---|---|---|---|
+| HR policy (fictional example) | Absence policy agent; Copilot HR scenarios | Ready with conditions | Two competing versions of the absence policy; owner agreed to archive one |
+| [To confirm: domain] | [To confirm: uses] | [To confirm: verdict] | [To confirm: reason] |
+
+Overall position: [To confirm: one paragraph; the estate verdict is never better than the verdicts of the domains the planned AI uses depend on]
+
+## 3. Ratings by domain
+
+Rate 1 (not ready) to 4 (ready). Cite the evidence reference for every rating.
+
+| Domain | Ownership | Currency | Authority | Findability and structure | Permissions | Classification | Lifecycle | Evidence refs |
+|---|---|---|---|---|---|---|---|---|
+| [To confirm: domain] | [To confirm: 1-4] | [To confirm: 1-4] | [To confirm: 1-4] | [To confirm: 1-4] | [To confirm: 1-4] | [To confirm: 1-4] | [To confirm: 1-4] | [To confirm: refs] |
+
+Verdict rules: ready (no dimension below 3); ready with conditions (no 1s, every condition owned and dated); not ready
+(a 1 on ownership or permissions, or two or more 1s elsewhere).
+
+## 4. Evidence log
+
+| Ref | Evidence (report, sample, hand-checked question, owner interview) | Domain | Dimension | What it showed |
+|---|---|---|---|---|
+| E1 | [To confirm: evidence] | [To confirm: domain] | [To confirm: dimension] | [To confirm: finding] |
+
+Roles interviewed (roles only, never names): [To confirm: roles]
+
+## 5. Systemic findings
+
+The three to five findings that explain most low ratings.
+
+| Ref | Finding | Domains affected | Consequence for AI answers |
+|---|---|---|---|
+| S1 | [To confirm: finding] | [To confirm: domains] | [To confirm: consequence] |
+
+## 6. Blind spots
+
+| Not assessed | Why | Effect on confidence |
+|---|---|---|
+| [To confirm: for example personal drives, connector sources, third-party systems] | [To confirm: reason] | [To confirm: effect] |
+
+## 7. Remediation plan
+
+| Action | Timing (before wave, alongside adoption, longer term) | Owning role | Skill that carries it out | Due |
+|---|---|---|---|---|
+| [To confirm: action] | [To confirm: timing] | [To confirm: role] | [To confirm: for example knowledge clean-up, owner model, site design] | [To confirm: date] |
+
+## 8. Referrals
+
+| Finding | Referred to | Risk tier | Status |
+|---|---|---|---|
+| [To confirm: oversharing or personal data finding] | [To confirm: security and privacy reviewer] | [To confirm: tier] | [To confirm: status] |
+
+## 9. Baseline measures
+
+| Measure | Baseline | Target | Owner (role) |
+|---|---|---|---|
+| Share of in-scope domains rated ready | [To confirm: value] | [To confirm: target] | [To confirm: role] |
+| Share of AI-dependent sources with an accepted owner | [To confirm: value] | [To confirm: target] | [To confirm: role] |
+| Share of sampled questions with one authoritative answer | [To confirm: value] | [To confirm: target] | [To confirm: role] |
+
+## 10. Sign-off
+
+| Role | Name | Date |
+|---|---|---|
+| Knowledge Manager | [To confirm: name] | [To confirm: date] |
+| Sponsor | [To confirm: name] | [To confirm: date] |
+| Security and privacy reviewer (from risk tier 2) | [To confirm: name] | [To confirm: date] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: model-selection-record -->
+# Model selection record
+
+Template id: `model-selection-record`
+
+Responsible skill: `ai-foundry:model-selection`. The evidence section is completed with `ai-foundry:model-evaluation`.
+
+Complete one record per model decision in a Microsoft Foundry solution, including replacements when a model is retired
+or upgraded. Every fact the organisation must supply is marked `[To confirm: ...]`; replace the marker when the fact is
+confirmed, and never fill it with a guess. Example rows are fictional. Model availability, regions, prices, terms and
+retirement dates change often: record where the current fact is published and the date checked rather than copying
+figures from memory. Licensing and commercial questions go to the Microsoft licensing guide, a licensing partner or
+procurement; data protection questions go to the DPO.
+
+## 1. Decision context
+
+| Field | Entry |
+|---|---|
+| Solution name and design reference (`foundry-solution-design`) | [To confirm] |
+| Risk tier and date classified | [To confirm] |
+| Reason for this record (first selection / retirement / upgrade / cost or latency / other) | [To confirm] |
+| Solution owner (role) | [To confirm] |
+| Record version and date | [To confirm] |
+
+## 2. Task definition
+
+| Field | Entry |
+|---|---|
+| What the model must do (inputs, outputs, modality) | [To confirm] |
+| What a good output looks like, and an unacceptable one | [To confirm] |
+| Volume and latency envelope | [To confirm] |
+| Example set reference (five to ten real or realistic examples) | [To confirm] |
+| Data the model will see and its classification | [To confirm] |
+| Constraints on where data may be processed | [To confirm] |
+
+## 3. Filters
+
+A candidate that fails any filter is out, whatever its quality.
+
+| Filter | Rule applied | Confirmed by (role) | Date |
+|---|---|---|---|
+| Task and modality fit | [To confirm] | [To confirm] | [To confirm] |
+| Data handling and processing location | [To confirm] | [To confirm] | [To confirm] |
+| Terms and provenance (Microsoft-sold, partner or community) | [To confirm] | [To confirm] | [To confirm] |
+| Lifecycle and support window | [To confirm] | [To confirm] | [To confirm] |
+| Documented intended uses and limitations | [To confirm] | [To confirm] | [To confirm] |
+
+## 4. Candidates
+
+| Candidate and version | Provider type (Microsoft-sold / partner / community) | Passed all filters? | Reason if excluded | Source record checked and date |
+|---|---|---|---|---|
+| Fictional example: Model A, version 1 | Fictional example | Yes | - | Fictional example only |
+| Fictional example: Model B, version 2 | Fictional example | No | Terms not yet reviewed by procurement | Fictional example only |
+| [To confirm] | [To confirm] | Yes / No | [To confirm] | [To confirm] |
+
+## 5. Evaluation evidence
+
+Thresholds must be agreed and dated before any results are seen.
+
+| Field | Entry |
+|---|---|
+| Test set name, version and held-back portion | [To confirm] |
+| What was held constant across candidates (prompt, retrieval, tools, settings) | [To confirm] |
+| Adjustments made for any candidate, and why | [To confirm, or "none"] |
+| Number of runs per candidate | [To confirm] |
+| Graders used (people, calibrated model grader) and calibration evidence | [To confirm] |
+| Thresholds and date agreed, agreed by (role) | [To confirm] |
+
+| Candidate | Task quality (mean and spread) | Groundedness | Tool calling and format | Latency | Cost per completed task and pricing source | Meets all thresholds? |
+|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm, or not applicable] | [To confirm, or not applicable] | [To confirm] | [To confirm] | Yes / No |
+
+Failure analysis by cause (missing context, wrong tool, format, over-refusal, other): [To confirm]
+
+Subgroup results where outputs affect people: [To confirm, or not applicable with reason]
+
+What the evaluation could not show: [To confirm]
+
+## 6. Decision
+
+| Field | Entry |
+|---|---|
+| Chosen model and version | [To confirm] |
+| Reason (smallest candidate that meets every threshold, or other reason recorded) | [To confirm] |
+| Fallback model and version, and its evaluation result | [To confirm] |
+| Different models for different steps, if any | [To confirm, or "single model"] |
+| Approved model list entry or recorded exception | [To confirm] |
+
+## 7. Lifecycle
+
+| Field | Entry |
+|---|---|
+| Where the current lifecycle and retirement information is published | [To confirm] |
+| Version update setting chosen for the deployment | [To confirm] |
+| Next review date and owner (role) | [To confirm] |
+| Triggers for an earlier review (retirement notice, price change, quality drop, new candidate) | [To confirm] |
+
+## 8. Reviewer gates
+
+| Reviewer | Required from tier | Finding summary | Blocking / advisory | Resolved? |
+|---|---|---|---|---|
+| Security and privacy | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+| Responsible AI | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+| Design authority | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+
+## 9. Agreement
+
+| Role | Name | Date |
+|---|---|---|
+| Solution owner | [To confirm] | [To confirm] |
+| Technical owner | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: non-functional-requirements -->
+# Non-functional requirements for an AI solution
+
+Template id: `non-functional-requirements`
+
+Responsible skill: `ai-architecture:ai-non-functional-requirements`.
+
+One specification per solution, scaled to its risk tier. Each requirement has a measure, a target, a verification method
+and an owner. Where the business owner has not agreed a figure, leave the target as `[To confirm: ...]` with the method
+for setting it; never invent a target. Platform limits, quotas, prices and service levels are not recorded here from
+memory: cite the source record and date. Example content is fictional.
+
+## 1. Solution
+
+| Field | Entry |
+|---|---|
+| Solution name and brief reference | [To confirm] |
+| Platform decision reference | [To confirm: architecture decision record reference] |
+| Risk tier | [To confirm: 0-4] |
+| Business owner (role) | [To confirm] |
+| Expected users (roles and approximate numbers) | [To confirm] |
+| Usage pattern and expected growth | [To confirm: for example working hours, peaks, growth over twelve months] |
+| Consequence if wrong, slow or unavailable | [To confirm: what happens to the business after an hour, a day, a week] |
+
+## 2. Requirements
+
+Depth follows the tier: a tier 1 solution may need only a line per category; tier 3 and 4 need every row evidenced.
+
+| Category | Requirement | Measure | Target | Verification method | Owner |
+|---|---|---|---|---|---|
+| Answer quality | [To confirm] | [To confirm: for example share of answers rated correct and grounded on the evaluation set] | [To confirm] | [To confirm: evaluation before release and after change] | [To confirm: role] |
+| Groundedness and citation | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Refusal and out-of-scope behaviour | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Latency | [To confirm] | [To confirm: by interaction type] | [To confirm] | [To confirm] | [To confirm] |
+| Availability and support hours | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Capacity and growth | [To confirm] | [To confirm] | [To confirm] | [To confirm: load test or monitoring] | [To confirm] |
+| Cost per use | [To confirm] | [To confirm: drivers such as conversations, actions, model calls, retrieval] | [To confirm: budget and alert threshold, per the licensing guide or partner] | [To confirm] | [To confirm: budget owner] |
+| Resilience and fallback | [To confirm] | [To confirm] | [To confirm] | [To confirm: tested fallback] | [To confirm] |
+| Knowledge freshness | [To confirm] | [To confirm: time from source change to answer change] | [To confirm] | [To confirm] | [To confirm: knowledge owner] |
+| Observability | [To confirm] | [To confirm: errors, quality and safety signals] | [To confirm] | [To confirm] | [To confirm] |
+| Security and access | [To confirm] | [To confirm] | [To confirm] | [To confirm: security review reference] | [To confirm] |
+| Retention of prompts, responses and logs | [To confirm] | [To confirm] | [To confirm: period agreed with security and the DPO] | [To confirm] | [To confirm] |
+| Human oversight and audit trail (where outputs affect people) | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Accessibility and language | [To confirm] | [To confirm] | [To confirm: organisation standard] | [To confirm] | [To confirm] |
+| Supportability | [To confirm] | [To confirm: owners, support route, runbook] | [To confirm] | [To confirm: supportability review reference] | [To confirm] |
+
+Fictional example, for illustration only: "Latency - typical knowledge questions answered quickly enough that agents on
+a customer call do not need to put the caller on hold; measured as the time to first answer in the pilot; target agreed
+by the contact centre manager after the pilot."
+
+## 3. Requirements the platform cannot meet or verify
+
+| Requirement | Why it cannot be met or verified | Proposed resolution | Raised with |
+|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm: design authority or platform selection] |
+
+## 4. Volatile facts relied on
+
+| Fact | Source record | Date checked |
+|---|---|---|
+| [To confirm: limit, quota, service level or capability] | [To confirm: source id] | [To confirm] |
+
+## 5. Agreement
+
+| Role | Agreed | Date |
+|---|---|---|
+| Business owner | [To confirm] | [To confirm] |
+| Operating team lead | [To confirm] | [To confirm] |
+| Evaluation lead (quality requirements) | [To confirm] | [To confirm] |
+| Design authority (tier 2 and above) | [To confirm] | [To confirm] |
+
+Revisit at the first post-release review, when real usage can replace estimates: [To confirm: date]
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
 
@@ -1876,6 +5319,111 @@ Fictional example row, for illustration only:
 
 ---
 
+<!-- template: post-implementation-review-report -->
+# Post-implementation review report
+
+Template id: `post-implementation-review-report`
+
+Responsible skill: `value-realisation:post-implementation-review`. Benefit evidence comes from the `benefits-register`
+kept through `value-realisation:benefit-realisation-plan`, and the estimated-versus-actual return from
+`value-realisation:roi-model`.
+
+How to use this template: prepare sections 1 to 4 as an evidence pack and circulate it before the review meeting, so
+the meeting discusses causes rather than figures. Complete sections 5 to 8 in or after the meeting. Report at team,
+role or solution level only, never for named individuals. A benefit without adequate evidence is recorded as "not
+demonstrated", never as achieved. Mark anything not yet supplied as `[To confirm: ...]`.
+
+## 1. Review context
+
+| Field | Value |
+|---|---|
+| Solution, rollout or programme reviewed | [To confirm] |
+| Approved case reference and approval date | [To confirm] |
+| Go-live date | [To confirm] |
+| Review date and period covered | [To confirm] |
+| Risk tier | [To confirm] |
+| Review chair (role) | [To confirm] |
+| Participants (roles) | [To confirm: benefit owners, solution owner, finance, CoE, user support] |
+| Decision the review supports | [To confirm: continue, extend, change, retire, release funding, none] |
+
+## 2. Case as approved
+
+| Element | What was approved |
+|---|---|
+| Problem and outcome | [To confirm] |
+| Benefits (register IDs) | [To confirm] |
+| One-off cost | [To confirm] |
+| Run cost per year | [To confirm] |
+| Adoption level assumed | [To confirm] |
+| Quality threshold at release | [To confirm] |
+| Key risks and controls | [To confirm] |
+| Key assumptions | [To confirm] |
+
+## 3. Evidence and variance by element
+
+Variance class: achieved, delayed, partial, not achieved, not demonstrated.
+
+| Element | Planned | Actual (range) | Evidence and confidence | Variance class |
+|---|---|---|---|---|
+| Benefits (one row per benefit ID) | [To confirm] | | | |
+| One-off cost | [To confirm] | | | |
+| Run cost | [To confirm] | | | |
+| Adoption (team or role level) | [To confirm] | | | |
+| Live quality against threshold and guards | [To confirm] | | | |
+| Risk (incidents, near misses, control effectiveness) | [To confirm] | | | |
+| Timing of milestones | [To confirm] | | | |
+
+## 4. Estimated versus actual return
+
+| Line | Estimated at approval (range) | Actual to date (range) | Main reason for difference |
+|---|---|---|---|
+| Cashable benefit | [To confirm] | | |
+| Non-cashable value | [To confirm] | | |
+| Cost avoidance | [To confirm] | | |
+| Total cost | [To confirm] | | |
+| Non-financial benefits (own units) | [To confirm] | | |
+
+## 5. Causes of variance
+
+For each material variance, record the cause the organisation could change, and whether it lay in the case (estimate)
+or in delivery and realisation.
+
+| Element or benefit | Cause | Case or delivery | Evidence |
+|---|---|---|---|
+| [To confirm] | | | |
+
+## 6. Actions for remaining benefits
+
+| Benefit ID | Action (re-profile, corrective action, retire) | Owner (role) | Due date | New measurement point |
+|---|---|---|---|---|
+| [To confirm] | | | | |
+
+## 7. Lessons
+
+| Lesson | Type (estimation or delivery) | Routed to (role or practice owner) | Date routed |
+|---|---|---|---|
+| [To confirm] | | | |
+
+## 8. Conclusion and decisions
+
+| Field | Value |
+|---|---|
+| Overall finding | [To confirm: case delivered, partly delivered, not delivered, not yet demonstrable] |
+| Decisions taken | [To confirm] |
+| Referrals (scale-or-stop, retirement, responsible AI, security and privacy) | [To confirm] |
+| Next review date, if any | [To confirm] |
+| Summary approved for wider sharing by (role) | [To confirm] |
+
+## 9. Caveats
+
+This review compares outcomes with the approved case; it cannot prove that AI alone caused every change observed.
+Confounding changes in the period: [To confirm]. Measures based on self-report are perceptions and are shown alongside
+measures from the work itself.
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
 <!-- template: prioritisation-matrix -->
 # Prioritisation matrix
 
@@ -1963,6 +5511,362 @@ Score 1 to 5. Record the evidence beside each score in the notes column or an at
 | Opportunity | Status | Gap or reason | Next step |
 |---|---|---|---|
 | [To confirm: reference] | [To confirm: returned or parked] | [To confirm: gap or reason] | [To confirm: next step] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: programme-charter -->
+# AI programme charter
+
+Template id: `programme-charter`
+
+Responsible skill: `programme-management:programme-charter`. Governance, decision rights and gate sections are completed
+with `programme-management:programme-board-cadence`, `programme-management:stakeholder-governance` and
+`programme-management:stage-gates`.
+
+How to use this template: complete it with the sponsor before the programme mobilises. Write roles, not names, unless
+your organisation has declared an owner. Every fact your organisation has not yet confirmed stays marked
+`[To confirm: ...]` and is listed in section 12 as a condition of sign-off. Do not estimate licence or consumption costs
+here; record the position your licensing team or licensing partner has given. Store the completed charter in your
+organisation's own storage with access limited to the programme team and board.
+
+## 1. Programme summary
+
+| Field | Value |
+|---|---|
+| Programme name | [To confirm: name] |
+| Programme type | [To confirm: adoption / delivery / transformation] |
+| Edition and assurance overlay | [To confirm: starter, scale or enterprise; proportionate or formal] |
+| Accountable sponsor (role) | [To confirm: role] |
+| AI Programme Manager (role) | [To confirm: role] |
+| Start and planned closure | [To confirm: dates] |
+| Charter version and date | [To confirm: version and date] |
+
+## 2. Mandate
+
+Why this programme exists, in two or three sentences, linked to the organisation's agreed AI strategy.
+
+[To confirm: mandate statement]
+
+## 3. Outcomes served and the programme's contribution
+
+List the strategic outcomes this programme serves. For each, state what the programme itself will deliver and how its
+contribution will be measured.
+
+| Ref | Strategic outcome | What the programme delivers | Contribution measure | Baseline (or plan to set it) | Business owner (role) |
+|---|---|---|---|---|---|
+| O1 | [To confirm: outcome] | [To confirm: deliverables] | [To confirm: measure] | [To confirm: baseline] | [To confirm: role] |
+| O2 | [To confirm: outcome] | [To confirm: deliverables] | [To confirm: measure] | [To confirm: baseline] | [To confirm: role] |
+
+Fictional example, for illustration only: outcome "faster, consistent case summaries"; the programme delivers role
+scenarios and a governed summarisation agent for case handlers; contribution measured by average time to complete a
+summary, owned by the operations director role.
+
+## 4. Scope
+
+| In scope | Detail |
+|---|---|
+| Business units and personas | [To confirm] |
+| Patterns of AI work (individual Copilot use, shared agents, Cowork tasks, automation, engineered solutions) | [To confirm] |
+| Risk tiers the programme will deliver | [To confirm: for example 0 to 2] |
+| Foundations (approved-use guidance, knowledge ownership, measurement, CoE) | [To confirm] |
+
+| Out of scope | Reason | Where such requests go |
+|---|---|---|
+| [To confirm: exclusion] | [To confirm: reason] | [To confirm: route] |
+
+## 5. Workstreams
+
+| Workstream | Purpose | Accountable role | Main deliverables | Key dependencies |
+|---|---|---|---|---|
+| [To confirm: workstream] | [To confirm] | [To confirm: role] | [To confirm] | [To confirm] |
+
+## 6. Governance and decision rights
+
+| Forum | Chair (role) | Frequency | Decisions it takes |
+|---|---|---|---|
+| Programme board | [To confirm] | [To confirm] | [To confirm] |
+| Workstream leads meeting | [To confirm] | [To confirm] | [To confirm] |
+
+| Decision reserved to the sponsor | Decision delegated to the board | Decision delegated to the programme manager |
+|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] |
+
+Escalation route and time limits: [To confirm: from workstream to board to sponsor, with time limits].
+
+Interface with the AI CoE or working group, and when responsibilities hand over: [To confirm].
+
+## 7. Tolerances
+
+| Dimension | Tolerance before escalation to the board | Escalation to the sponsor beyond |
+|---|---|---|
+| Time | [To confirm] | [To confirm] |
+| Cost | [To confirm] | [To confirm] |
+| Scope | [To confirm] | [To confirm] |
+| Risk | [To confirm] | [To confirm] |
+
+## 8. Funding envelope and capacity
+
+| Item | Approved position | Source or owner | Status |
+|---|---|---|---|
+| Funding envelope and period | [To confirm] | [To confirm: finance role] | [To confirm] |
+| Services and suppliers | [To confirm] | [To confirm] | [To confirm] |
+| Licences | [To confirm: position as advised by the licensing team or partner] | [To confirm] | [To confirm] |
+| Consumption-based costs | [To confirm: position and owner] | [To confirm] | [To confirm] |
+| Contingency | [To confirm] | [To confirm] | [To confirm] |
+
+| Scarce role | Committed time | Period |
+|---|---|---|
+| [To confirm: role] | [To confirm] | [To confirm] |
+
+## 9. Stage gates and reviewer gates
+
+| Gate | Planned date | Decision owner (role) | Key evidence |
+|---|---|---|---|
+| [To confirm: gate] | [To confirm] | [To confirm] | [To confirm] |
+
+Reviewer gates the programme's solutions must pass: security and privacy from risk tier 2 (blocking); responsible AI,
+evaluation and design authority from the tiers those reviewers set. [To confirm: any additional organisational gates.]
+
+## 10. Key assumptions and constraints
+
+| Assumption or constraint | Who can confirm it | By when |
+|---|---|---|
+| [To confirm] | [To confirm: role] | [To confirm] |
+
+## 11. Closure criteria
+
+The programme closes when:
+
+- [To confirm: outcome contributions measured against baseline]
+- [To confirm: every live solution has an owner, support route and review date]
+- [To confirm: open risks, issues and work handed to named roles in the CoE or business units]
+
+## 12. Open items and conditions of sign-off
+
+| Open item | Owner (role) | Needed by |
+|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] |
+
+## 13. Approval
+
+| Role | Decision | Date |
+|---|---|---|
+| Accountable sponsor | [To confirm: approved / approved with conditions] | [To confirm] |
+| Next charter review | [To confirm: date or stage gate] | |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: programme-health-report -->
+# AI programme health report
+
+Template id: `programme-health-report`
+
+Responsible skill: `programme-management:programme-health`. Cost and capacity come from
+`programme-management:budget-and-capacity`, risks from `programme-management:programme-risk-log` and gate status from
+`programme-management:stage-gates`.
+
+How to use this template: rate each dimension against the criteria your programme board has agreed, and publish those
+criteria with the report. Rate a dimension grey when there is no evidence, never green by default. Report adoption at
+team or role level above your agreed minimum group size, and never include individual usage, performance or attendance.
+Reviewer findings are reported exactly as the reviewer classified them. Every fact not yet available stays marked
+`[To confirm: ...]`.
+
+## 1. Report details
+
+| Field | Value |
+|---|---|
+| Programme | [To confirm: name] |
+| Reporting period | [To confirm: period] |
+| Prepared by (role) | [To confirm: role] |
+| For | [To confirm: programme board, sponsor or portfolio board] |
+| Overall health | [To confirm: green / amber / red] |
+| Change since last report | [To confirm: improved / unchanged / worse] |
+
+## 2. Summary
+
+Three to five sentences: where the programme stands against its outcomes, the main reason for the overall rating, and
+the decisions the board is asked to take.
+
+[To confirm: summary]
+
+## 3. Health by dimension
+
+| Dimension | Rating (green, amber, red, grey) | Evidence | Narrative (what, why, what is being done) |
+|---|---|---|---|
+| Outcomes | [To confirm] | [To confirm: measure and source] | [To confirm] |
+| Schedule | [To confirm] | [To confirm: baseline and forecast] | [To confirm] |
+| Cost | [To confirm] | [To confirm: actuals, forecast, variance] | [To confirm] |
+| Capacity | [To confirm] | [To confirm: scarce roles over commitment] | [To confirm] |
+| Risk | [To confirm] | [To confirm: risks above threshold] | [To confirm] |
+| Adoption | [To confirm] | [To confirm: team or role level measures] | [To confirm] |
+| Quality and assurance | [To confirm] | [To confirm: gate outcomes, evaluation results, open findings] | [To confirm] |
+| Governance | [To confirm] | [To confirm: decision latency, decisions reopened] | [To confirm] |
+| Stakeholder confidence | [To confirm] | [To confirm: engagement of sponsor, owners and functions] | [To confirm] |
+
+Overall rule: red if outcomes or quality and assurance are red, or if two other dimensions are red; amber if any
+dimension is red or three are amber; otherwise green. [To confirm: any variation agreed by the board.]
+
+Fictional example row, for illustration only:
+
+| Dimension | Rating | Evidence | Narrative |
+|---|---|---|---|
+| Adoption | Amber | Scenario use rising in two of four pilot teams; flat in the others | Flat teams launched without manager briefings; adoption lead scheduling briefings this month |
+
+## 4. Milestones and gates
+
+| Milestone or gate | Baseline date | Forecast | Status | Comment |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 5. Top risks and issues
+
+| Ref | Risk or issue | Score or severity | Owner (role) | Response | Due |
+|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 6. Reviewer findings affecting the programme
+
+| Solution | Reviewer | Finding | Classification (as given by the reviewer) | Effect on plan |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm: blocking / advisory] | [To confirm] |
+
+## 7. Corrective actions
+
+| Action | Dimension | Owner (role) | Due | Expected effect | Status since last report |
+|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 8. Decisions required
+
+| Decision | Options | Recommendation | Decision owner | Needed by |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 9. Recovery plan (complete only when overall health is red)
+
+| Field | Value |
+|---|---|
+| Cause | [To confirm] |
+| Options (re-sequence, reduce scope, add capacity, pause, stop) | [To confirm] |
+| Recommendation and effect on outcomes | [To confirm] |
+| Decision required from the sponsor and by when | [To confirm] |
+
+## 10. Rating criteria in use
+
+[To confirm: attach or link the red, amber and green criteria agreed by the board for each dimension.]
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: retirement-checklist -->
+# Retirement checklist
+
+Template id: `retirement-checklist`
+
+Responsible skill: `ai-operations:ai-solution-retirement`.
+
+Use this checklist once the decision to retire an agent or AI solution has been made. Complete the stages in order;
+each stage has an exit check. Every fact the organisation must supply is marked `[To confirm: ...]`. Example rows are
+fictional. From risk tier 2 a second person checks stages 5 and 6; from tier 3 the `security-privacy` reviewer confirms
+them.
+
+## 1. Confirm
+
+| Item | Entry |
+|---|---|
+| Solution name and inventory reference | [To confirm] |
+| Risk tier | [To confirm] |
+| Retirement decision, decision owner (role) and date | [To confirm: link to review or scale-or-stop record] |
+| Reason for retirement | [To confirm] |
+| Alternative for users | [To confirm: replacement solution, standard Copilot capability or process] |
+| Retirement date | [To confirm] |
+| Dependants (flows, agents or processes that rely on it) | [To confirm, or none found, with how checked] |
+
+Exit check: decision owner has signed and no unknown dependants remain. [ ] Done
+
+## 2. Notify
+
+| Audience | Message sent by | Date | Channel |
+|---|---|---|---|
+| Users (teams or roles) | [To confirm] | [To confirm] | [To confirm] |
+| Managers | [To confirm] | [To confirm] | [To confirm] |
+| Service desk | [To confirm] | [To confirm] | [To confirm] |
+| Champions, where relevant | [To confirm] | [To confirm] | [To confirm] |
+| Knowledge owners | [To confirm] | [To confirm] | [To confirm] |
+
+Fictional example message: "The travel policy agent will be retired on the last working day of the month. The new
+expenses agent now answers travel questions, and the policy page remains available on the intranet."
+
+Exit check: notice given with the agreed lead time. [ ] Done
+
+## 3. Freeze
+
+| Item | Entry |
+|---|---|
+| Change freeze from | [To confirm] |
+| Message inside the solution pointing to the alternative | [To confirm: wording] |
+
+Exit check: message visible to users. [ ] Done
+
+## 4. Withdraw
+
+| Action | Evidence | Done |
+|---|---|---|
+| Sharing removed | [To confirm] | [ ] |
+| Solution unpublished or disabled | [To confirm] | [ ] |
+| Removed from catalogues, app listings and support catalogue | [To confirm] | [ ] |
+
+Exit check: users can no longer reach the solution. [ ] Done
+
+## 5. Revoke
+
+| Item | Identifier or description | Action taken | Checked by (role) | Done |
+|---|---|---|---|---|
+| Connections and connectors | [To confirm] | Disabled / Deleted | [To confirm] | [ ] |
+| Service identities and app registrations | [To confirm] | Disabled / Deleted | [To confirm] | [ ] |
+| Secrets, keys and certificates | [To confirm] | Revoked / Deleted | [To confirm] | [ ] |
+| Dependent flows and automations | [To confirm] | Stopped / Deleted / Transferred | [To confirm] | [ ] |
+| Monitoring alerts | [To confirm] | Closed | [To confirm] | [ ] |
+
+Exit check: no standing access remains. [ ] Done
+
+## 6. Data
+
+| Data type | Retention rule (confirmed with) | Action | Location if retained | Done |
+|---|---|---|---|---|
+| Conversation transcripts | [To confirm: rule; DPO or records manager] | Keep / Archive / Delete | [To confirm] | [ ] |
+| Logs and telemetry | [To confirm] | Keep / Archive / Delete | [To confirm] | [ ] |
+| Feedback | [To confirm] | Keep / Archive / Delete | [To confirm] | [ ] |
+| Evaluation datasets, rubrics and results | [To confirm] | Transfer / Archive / Delete | [To confirm] | [ ] |
+| Records needed for challenges or appeals about people | [To confirm, or not applicable] | Keep | [To confirm] | [ ] |
+
+Exit check: disposal or retention recorded for every data type. [ ] Done
+
+## 7. Close
+
+| Item | Entry |
+|---|---|
+| Knowledge indexes or copies made only for this solution removed | [To confirm] |
+| Inventory record updated to retired, with date | [To confirm] |
+| Removed from review calendar | [To confirm] |
+| Value close-out - what the solution achieved | [To confirm] |
+| Lessons for the CoE | [To confirm] |
+
+Exit check: record shows retired with date. [ ] Done
+
+## 8. Sign-off
+
+| Role | Stage(s) confirmed | Date |
+|---|---|---|
+| Solution owner | 1 to 7 | [To confirm] |
+| Second checker (tier 2 and above) | 5 and 6 | [To confirm] |
+| `security-privacy` reviewer (tier 3 and above) | 5 and 6 | [To confirm] |
+| Business owner | Retirement complete | [To confirm] |
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
 
@@ -2148,6 +6052,290 @@ scoring, real-user test and verification step before they join the catalogue.
 
 ---
 
+<!-- template: studio-solution-design -->
+# Copilot Studio solution design
+
+Template id: `studio-solution-design`
+
+Responsible skill: `copilot-studio:studio-agent-design`. Sections are detailed with `copilot-studio:topics-and-orchestration`,
+`copilot-studio:studio-knowledge-architecture`, `copilot-studio:studio-actions-and-tools`, `copilot-studio:studio-connectors`,
+`copilot-studio:studio-authentication`, `copilot-studio:dataverse-integration`, `copilot-studio:power-automate-actions`,
+`copilot-studio:conversation-design` and `copilot-studio:multi-agent-design`.
+
+Use this design after the agent brief is agreed and before build starts. Every fact the organisation must supply is
+marked `[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it with a guess. Example rows
+are fictional and are there to be replaced or deleted. Where a design choice depends on a product feature, record the
+source record checked and the date, because availability, limits and licensing change often.
+
+## 1. Summary
+
+| Field | Entry |
+|---|---|
+| Agent name | [To confirm: working name] |
+| Agent brief reference | [To confirm: brief reference and date agreed] |
+| Business owner | [To confirm: name and role] |
+| Technical owner and co-owner | [To confirm: names or team] |
+| Copilot Studio Architect or reviewer | [To confirm] |
+| Risk tier (0-4) | [To confirm: tier from risk classification, with date] |
+| Design status | Draft / Agreed / Reviewed / Superseded |
+| Version and date | [To confirm] |
+
+## 2. Question-to-mechanism map
+
+Map each representative question from the brief to the mechanism that should handle it. This map seeds orchestration
+and knowledge tests.
+
+| # | Representative question | Mechanism (knowledge / tool / authored topic / child or connected agent / exclusion) | Specific source, tool, topic or agent | Why this mechanism |
+|---|---|---|---|---|
+| 1 | Fictional example: "What is the mileage rate for a hire car?" | Knowledge | Fictional example: Travel policy library | Open question answered from owned policy |
+| 2 | Fictional example: "Raise an expense claim for yesterday's taxi" | Tool | Fictional example: Create expense draft flow | Action in the expenses system with confirmation |
+| 3 | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+## 3. Design decisions
+
+Record the decision, the default it departs from (if any), the alternatives rejected and the reason.
+
+| Dimension | Decision | Alternatives rejected and why | Source record checked and date |
+|---|---|---|---|
+| Orchestration (generative, classic or mixed) | [To confirm] | [To confirm] | [To confirm] |
+| Structure (one agent, child agents, connected agents) | [To confirm] | [To confirm] | [To confirm] |
+| Authentication setting | [To confirm] | [To confirm] | [To confirm] |
+| Channels | [To confirm] | [To confirm] | [To confirm] |
+| Environments and solution | [To confirm] | [To confirm] | [To confirm] |
+
+## 4. Topics and orchestration
+
+| Item (knowledge source, tool, topic or agent) | Name | Description used by orchestration | Authored or generative | Reason an authored topic is needed |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+System topic behaviour (greeting, fallback, escalation, errors, sign-in, end): [To confirm: summary or link to the conversation section]
+
+Global variables and their scope: [To confirm]
+
+## 5. Knowledge
+
+| Source | Knowledge type | Scope (site, library, folder, table, domain) | Owner | Readiness verdict | Permission behaviour (trimmed to user / same for all) | Description | Refresh route |
+|---|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | Ready / Ready with conditions / Not ready | [To confirm] | [To confirm] | [To confirm] |
+
+Uploaded files (origin, owner, review date): [To confirm, or "none"]
+
+Use of general model knowledge or public web: [To confirm: off, limited or on, with reason]
+
+## 6. Tools, flows and connectors
+
+| Tool | Type (connector action, flow, prompt, custom connector, REST API, MCP server) | System and operation | Read / create / update / send / delete | Identity it runs under | User confirmation | Failure message | Owner |
+|---|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm: end user or approved service identity] | Yes / No | [To confirm] | [To confirm] |
+
+| Connector | Data policy group per environment | Account behind the connection | Data leaves tenant or region? | Owner |
+|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | Yes / No | [To confirm] |
+
+Approvals for any shared or service identity: [To confirm: approver and date]
+
+## 7. Dataverse
+
+Complete if the agent reads or writes Dataverse records.
+
+| Table | Columns used | Read / write | Identity and security roles | Sensitive columns excluded | Business rules relied on |
+|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Where conversation records are stored, who can read them and retention: [To confirm]
+
+## 8. Authentication and identity
+
+| Channel | Authentication | Single sign-on configured and tested | Identity provider owner |
+|---|---|---|---|
+| [To confirm] | [To confirm] | Yes / No | [To confirm] |
+
+Secrets and certificates with renewal dates (record in the ALM plan): [To confirm]
+
+## 9. Conversation
+
+| Behaviour | Specification |
+|---|---|
+| Greeting and AI disclosure | [To confirm] |
+| Voice and style sheet reference | [To confirm] |
+| Clarification rules | [To confirm] |
+| Escalation triggers and destinations | [To confirm] |
+| Context passed on hand-off | [To confirm] |
+| Out-of-hours message | [To confirm] |
+
+## 10. Multi-agent design
+
+Complete only if the solution uses child or connected agents, or calls agents on other platforms.
+
+| Agent | Pattern | Owner | Contract (purpose, inputs, outputs, version) | Context passed | Identity | Failure behaviour |
+|---|---|---|---|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+End-to-end owner: [To confirm]
+
+## 11. Environments, ALM and deployment
+
+| Item | Entry |
+|---|---|
+| Development, test and production environments | [To confirm: names and zones] |
+| Solution and publisher | [To confirm] |
+| ALM plan reference (`alm-and-environment-plan`) | [To confirm] |
+| Channels and approved audience | [To confirm] |
+| Rollout stages | [To confirm] |
+
+## 12. Testing, analytics and run model
+
+| Item | Entry |
+|---|---|
+| Test plan reference and release threshold agreed by business owner | [To confirm] |
+| Zero-tolerance failures | [To confirm] |
+| Success measures and where each is read | [To confirm] |
+| Improvement review rhythm and attendees | [To confirm] |
+| Support route for users | [To confirm] |
+| Recertification frequency | [To confirm] |
+
+## 13. Reviewer gates
+
+| Reviewer | Required from tier | Finding summary | Blocking / advisory | Resolved? |
+|---|---|---|---|---|
+| Design authority | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+| Security and privacy | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+| Responsible AI | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+| Evaluation and quality | [To confirm] | [To confirm] | [To confirm] | Yes / No |
+
+## 14. Open questions and preconditions
+
+| Item | Owner | Due |
+|---|---|---|
+| [To confirm] | [To confirm] | [To confirm] |
+
+## 15. Agreement
+
+| Role | Name | Date |
+|---|---|---|
+| Business owner | [To confirm] | [To confirm] |
+| Technical owner | [To confirm] | [To confirm] |
+| Copilot Studio Architect | [To confirm] | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
+<!-- template: support-and-monitoring-plan -->
+# Support and monitoring plan
+
+Template id: `support-and-monitoring-plan`
+
+Responsible skill: `ai-operations:ai-support-model`. The monitoring section is completed with
+`ai-operations:ai-solution-monitoring`, the feedback section with `ai-operations:ai-feedback-loop`, the continuity
+section with `ai-operations:ai-continuity` and the review section with `ai-operations:ai-review-calendar`.
+
+Complete this plan before a solution goes live and keep it with the solution record. Every fact the organisation must
+supply is marked `[To confirm: ...]`. Example rows are fictional. Record roles, not individual names, wherever a role
+exists; usage and support data in this plan are reported at team or role level only.
+
+## 1. Solution and ownership
+
+| Field | Entry |
+|---|---|
+| Solution name and inventory reference | [To confirm] |
+| Route and environment | [To confirm] |
+| Risk tier | [To confirm] |
+| Business owner (role) | [To confirm] |
+| Solution owner (role) | [To confirm] |
+| Knowledge owners (role per source) | [To confirm] |
+| Technical owner and backup (roles; at least two people able to change the solution from tier 2) | [To confirm] |
+| Runbook location | [To confirm] |
+
+## 2. Support levels and routes
+
+| Level | Who | Handles | Contact route |
+|---|---|---|---|
+| 0 Self-help | Users | How-to, known limits, expected refusals | [To confirm: location of guidance] |
+| 1 First line | [To confirm: service desk, Champions where agreed] | Access, availability, logging and categorising | [To confirm] |
+| 2 Solution | [To confirm: solution owner, knowledge owners, maker] | Wrong answers, outdated knowledge, scope and behaviour | [To confirm] |
+| 3 Platform and engineering | [To confirm: platform team, engineers, agreed Microsoft support route] | Connectors, environment, service faults | [To confirm] |
+
+User-facing support message placed in the solution: [To confirm: wording]
+
+## 3. Triage categories and response expectations
+
+| Category | Routed to | Response expectation by tier |
+|---|---|---|
+| Wrong or unsupported answer | [To confirm] | [To confirm] |
+| Out-of-date answer | [To confirm] | [To confirm] |
+| Should have refused or redirected | [To confirm] | [To confirm] |
+| Action failed or acted wrongly | [To confirm] | [To confirm] |
+| Cannot access solution or knowledge | [To confirm] | [To confirm] |
+| Harmful, offensive or exposing output | Incident route, immediately | Immediate |
+
+## 4. Monitoring
+
+| Signal | Threshold | Receiving role | First action | Escalation |
+|---|---|---|---|---|
+| Availability and errors | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Failed actions | [To confirm, or not applicable] | [To confirm] | [To confirm] | [To confirm] |
+| Usage by team (minimum group size [To confirm]) | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Sampled answer quality against release rubric | [To confirm] | [To confirm] | [To confirm] | Regression evaluation |
+| Safety triggers and harmful output reports | Any | [To confirm] | Incident route | [To confirm] |
+| Negative feedback trend | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Knowledge sources past review date or moved | [To confirm] | [To confirm] | Knowledge refresh | [To confirm] |
+| Consumption against plan | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
+Fictional example row: "Sampled answer quality; correctness below 85% in two consecutive samples; solution owner;
+re-run regression subset; business owner."
+
+## 5. Feedback
+
+| Item | Entry |
+|---|---|
+| Feedback routes (in product, form, service desk, Champions) | [To confirm] |
+| Review rhythm and triage role | [To confirm] |
+| How users hear what changed | [To confirm] |
+| Feedback content access and retention | [To confirm: agreed with security and privacy] |
+
+## 6. Incidents and continuity
+
+| Item | Entry |
+|---|---|
+| How to restrict, disable an action or switch the solution off | [To confirm: steps and who may do it] |
+| Who may suspend the solution when harm is continuing | [To confirm: role] |
+| Impact of a day without the solution | Inconvenience / Material delay / Critical process stops |
+| Fallback route for the work | [To confirm] |
+| Communications templates for suspension and return | [To confirm: location] |
+| External dependencies, notice route and alternative | [To confirm] |
+| Last continuity exercise (tier 3 and 4) | [To confirm] |
+
+## 7. Reviews
+
+| Item | Entry |
+|---|---|
+| Review frequency for this tier | [To confirm] |
+| Next review date | [To confirm] |
+| Review forum | [To confirm] |
+| Rule for overdue reviews | [To confirm] |
+
+## 8. Handover from build to run
+
+| Item | Entry |
+|---|---|
+| Handover session date and attendees (roles) | [To confirm] |
+| Joint support period | [To confirm] |
+| Date support formally passed to the solution owner | [To confirm] |
+
+## 9. Sign-off
+
+| Role | Decision | Date |
+|---|---|---|
+| Business owner | Accepted / Changes required | [To confirm] |
+| Solution owner | Accepted / Changes required | [To confirm] |
+| Service desk or operations lead | Accepted / Changes required | [To confirm] |
+
+> Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+
+---
+
 <!-- template: transformation-pack-index -->
 # AI transformation pack index and success measures
 
@@ -2196,7 +6384,7 @@ Editions and archetypes are proposed CopilotForge classifications, not Microsoft
 | Reviewer | Stage | From risk tier | Blocking | Evidence (formal or proportionate) | Reviewer status |
 |---|---|---|---|---|---|
 | Security and privacy | Assure | 2 | Yes | [To confirm] | Active |
-| [To confirm] | | | | | Contract only until the department is built |
+| [To confirm: reviewer, for example Evaluation and quality (`evaluation-quality:ai-release-evidence`)] | | | | | Active |
 
 ## 5. Success measures
 
