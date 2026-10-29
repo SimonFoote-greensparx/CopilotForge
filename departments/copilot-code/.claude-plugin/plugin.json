@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-copilot-code",
+  "version": "0.2.0",
+  "description": "CopilotForge Copilot Code. Translate desired outcomes into governed software prototypes and production-ready engineering work.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "delivery",
+    "copilot-code"
+  ]
+}
