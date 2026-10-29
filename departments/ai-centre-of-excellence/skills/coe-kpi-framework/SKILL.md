@@ -38,7 +38,7 @@ own, or when usage data drifts into monitoring individuals.
 - Measuring Copilot adoption for a specific launch or audience in detail - use `copilot-adoption:adoption-measurement`.
 - Deciding whether a specific solution should scale or stop - use `opportunity-management:scale-or-stop`.
 - Measuring Champion capability through evidence - use `champions:evidence-assessment`.
-- Benefit realisation planning, financial benefits and ROI models in depth - the `value-realisation` department (planned).
+- Benefit realisation planning, financial benefits and ROI models in depth - use `value-realisation:benefit-realisation-plan` and `value-realisation:roi-model`.
 - Setting the strategic outcomes that measures serve - use `ai-strategy:strategic-outcomes`.
 
 ## Questions to ask first
@@ -151,7 +151,8 @@ Champions and team leads so they can act on it.
 ## Knowledge considerations
 
 Include at least one governance or quality measure on knowledge: the share of knowledge sources used by live agents that
-have an owner and a review date within cycle. Until `knowledge-management` exists, the CoE lead tracks this from the register.
+have an owner and a review date within cycle. The CoE lead tracks this from the register against the cycles set in
+`knowledge-management:knowledge-review-cycles`.
 
 ## Security and privacy considerations
 
@@ -188,7 +189,7 @@ adoption reporting.
 ### Enterprise
 
 A hub framework with spoke scorecards and dashboards that roll up quadrant by quadrant, portfolio-level value tracking, and links to benefits realisation
-through the `value-realisation` department (planned).
+through `value-realisation:benefit-realisation-plan`.
 
 ## Hand-offs
 

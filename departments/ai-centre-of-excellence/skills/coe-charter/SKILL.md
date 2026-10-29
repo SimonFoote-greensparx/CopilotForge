@@ -148,8 +148,8 @@ the Champion community from `champions:champion-programme-design`.
 ## Knowledge considerations
 
 Name knowledge management as a pillar even if it is deferred, and state that knowledge used by agents has an owner in
-the business. Until the `knowledge-management` department is built, the CoE records knowledge owners against each
-solution in the register.
+the business. The CoE records knowledge owners against each solution in the register, using the ownership roles from
+`knowledge-management:knowledge-owner-model`.
 
 ## Security and privacy considerations
 
@@ -159,7 +159,8 @@ functions; it routes solutions from risk tier 2 to the `security-privacy` review
 ## Responsible AI considerations
 
 Include a commitment that some uses will not be built, that human accountability stays explicit, and that tier 3 and 4
-solutions go to the `responsible-ai` department (planned) or, until it exists, to an agreed accountable executive.
+solutions go to `responsible-ai:ai-impact-assessment`, with residual risk accepted by an accountable executive through
+`responsible-ai:ai-risk-acceptance`.
 
 ## Evaluation requirements
 

@@ -40,7 +40,7 @@ underground.
 - Reviewing data exposure for a specific solution - use `security-privacy:data-exposure-review`.
 - Reviewing connectors and actions for a specific agent - use `security-privacy:connector-review`.
 - Privacy assessment for a specific solution - use `security-privacy:privacy-assessment`.
-- Environment, connector and maker policy configuration in depth - the `platform-governance` department (planned).
+- Environment, connector and maker policy configuration in depth - use `platform-governance:ai-environment-strategy`, `platform-governance:connector-policy` and `platform-governance:maker-governance`.
 - Readiness of a single agent for release - use `m365-agents:agent-release-readiness`.
 
 ## Questions to ask first
@@ -118,10 +118,9 @@ Define ownership and lifecycle controls: an owner leaving triggers reassignment 
 every solution has a review date proportionate to its tier; solutions with no use or no owner for an agreed period are
 retired after notice.
 
-Place reviewer gates. From tier 2, `security-privacy` review is blocking and not skippable. `evaluation-quality` and
-`design-authority` gates apply from tier 2 and `responsible-ai` from tier 3; until those departments are built, the CoE
-lead holds the gate, records the evidence and names the planned department as the future owner. A blocking finding is
-not traded off against a date; disagreement goes to the accountable executive and is recorded.
+Place reviewer gates. From tier 2, `security-privacy` review is blocking and not skippable. `evaluation-quality:ai-release-evidence`
+and `design-authority:ai-design-review` gates apply from tier 2 and `responsible-ai:ai-impact-assessment` from tier 3;
+each reviewer department holds its own gate and records the evidence. A blocking finding is not traded off against a date; disagreement goes to the accountable executive and is recorded.
 
 Where the assurance overlay is formal, add auditable evidence at every gate. Map the framework to recognised standards
 such as the NIST AI RMF or ISO/IEC 42001 only as a cross-reference, and only where the organisation needs it.
@@ -151,7 +150,7 @@ tier 1 frictionless, so the register is seen as a service, not a barrier.
 ## Knowledge considerations
 
 From tier 1, every solution names its knowledge sources and their owners. Weak or unowned knowledge raises the tier or
-blocks release until fixed. The `knowledge-management` department (planned) will own the standards.
+blocks release until fixed. `knowledge-management:knowledge-grounding-standards` owns the standards.
 
 ## Security and privacy considerations
 
@@ -197,13 +196,13 @@ executive risk acceptance for tier 4.
 - To `opportunity-management:risk-classification` for classifying individual solutions.
 - To `security-privacy:data-exposure-review` and `security-privacy:privacy-assessment` at tier 2 and above.
 - To `m365-agents:agent-release-readiness` for release of individual agents.
-- To the `platform-governance` department (planned) for environment and connector configuration.
+- To `platform-governance:ai-environment-strategy` and `platform-governance:connector-policy` for environment and connector configuration.
 
 ## Reviewer gates
 
 The framework itself should be reviewed by `security-privacy` before approval. It defines gates for solutions:
-`security-privacy` blocking from tier 2, `evaluation-quality` and `design-authority` from tier 2, and `responsible-ai`
-from tier 3. Planned reviewer departments are held by the CoE lead until built.
+`security-privacy` blocking from tier 2, `evaluation-quality:ai-release-evidence` and `design-authority:ai-design-review`
+from tier 2, and `responsible-ai:ai-impact-assessment` from tier 3.
 
 ## Failure modes
 

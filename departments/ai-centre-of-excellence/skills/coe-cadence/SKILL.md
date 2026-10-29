@@ -38,7 +38,7 @@ people attend everything, or when forums meet so rarely that teams build around 
 - Assigning who is accountable for each decision - use `ai-centre-of-excellence:coe-raci`.
 - Defining the measures that the value review looks at - use `ai-centre-of-excellence:coe-kpi-framework`.
 - Running the Champion community's own events and challenges - use `champions:champion-challenges`.
-- Programme governance for a wider transformation (stage gates, RAID, supplier management) - the `programme-management` department (planned).
+- Programme governance for a wider transformation (stage gates, RAID, supplier management) - use `programme-management:programme-board-cadence`.
 
 ## Questions to ask first
 
