@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-copilot-studio",
+  "version": "0.2.0",
+  "description": "CopilotForge Copilot Studio. Design and deliver low-code and enterprise agents with appropriate actions, data, ALM and lifecycle controls.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "delivery",
+    "copilot-studio"
+  ]
+}
