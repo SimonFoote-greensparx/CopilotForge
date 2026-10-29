@@ -138,7 +138,7 @@ teams, never as evidence against individuals.
 ## Knowledge considerations
 
 Copilot surfaces whatever content people can reach, including outdated and duplicated material. Note where the first
-audience's key knowledge is stale or has no owner, and pass it to the `knowledge-management` department (planned) as a
+audience's key knowledge is stale or has no owner, and pass it to `knowledge-management:knowledge-readiness-assessment` as a
 precondition for a good first experience.
 
 ## Security and privacy considerations

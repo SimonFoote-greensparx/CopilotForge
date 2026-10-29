@@ -149,8 +149,8 @@ summary of who to go to for what, because staff use the RACI only if they can fi
 ## Knowledge considerations
 
 Every knowledge source used by a shared solution needs a business knowledge owner as A for its accuracy and review
-cycle, separate from the solution owner where the source serves several solutions. The `knowledge-management`
-department (planned) will refine this.
+cycle, separate from the solution owner where the source serves several solutions.
+`knowledge-management:knowledge-owner-model` refines this.
 
 ## Security and privacy considerations
 

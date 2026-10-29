@@ -38,7 +38,7 @@ setting so many outcomes that none gets resourced, or by treating principles as 
 - Sequencing initiatives and capability work over time - use `ai-strategy:ai-roadmap`.
 - Deciding whether a single idea should use AI - use `opportunity-management:ai-suitability`.
 - Writing the acceptable-use policy and governance model - use `ai-centre-of-excellence:coe-governance-model`.
-- Building the detailed benefits model and measurement plan for one initiative - the `value-realisation` department (planned).
+- Building the detailed benefits model and measurement plan for one initiative - use `value-realisation:benefit-realisation-plan`.
 
 ## Questions to ask first
 
@@ -181,9 +181,9 @@ executive board.
 
 ## Reviewer gates
 
-Not applicable. Outcomes and principles are executive decisions, not releases. The `responsible-ai` department
-(planned) may be asked for advice on the principles; until it exists, the data protection officer and the CoE lead
-review them.
+Not applicable. Outcomes and principles are executive decisions, not releases.
+`responsible-ai:prohibited-use-review` may be asked for advice on the principles, particularly where AI is not
+appropriate.
 
 ## Failure modes
 

@@ -153,8 +153,8 @@ target support.
 ## Knowledge considerations
 
 The tracker is the source of truth for progress, and the framework for requirements; self-service guidance must use
-both and nothing else. Patterns of weak evidence that trace back to poor team knowledge are passed to the
-`knowledge-management` department (planned).
+both and nothing else. Patterns of weak evidence that trace back to poor team knowledge are passed to
+`knowledge-management:content-quality`.
 
 ## Security and privacy considerations
 

@@ -37,7 +37,7 @@ the ownership, knowledge and governance that make it safe and valuable.
 - Capturing the organisation profile and applying the tailoring rules to choose an edition - use `organisation-tailoring:ai-profile-intake` and `organisation-tailoring:edition-and-archetype`.
 - Judging whether a specific audience is ready for a Copilot launch - use `copilot-adoption:adoption-readiness`.
 - Measuring how the CoE itself is performing - use `ai-centre-of-excellence:coe-kpi-framework`.
-- Assessing whether a particular body of knowledge is fit for grounding - use `m365-agents:knowledge-source-readiness`, or the `knowledge-management` department (planned) for estate-wide work.
+- Assessing whether a particular body of knowledge is fit for grounding - use `m365-agents:knowledge-source-readiness`, or `knowledge-management:knowledge-readiness-assessment` for estate-wide work.
 
 ## Questions to ask first
 
@@ -130,7 +130,7 @@ reported at team or role level only.
 
 Knowledge readiness is often the binding constraint for builder and scaler organisations. Record which knowledge
 domains have owners, review cycles and classification, and which are in active use for grounding without them. Detailed
-remediation belongs with the `knowledge-management` department (planned).
+remediation belongs with `knowledge-management:knowledge-readiness-assessment`.
 
 ## Security and privacy considerations
 

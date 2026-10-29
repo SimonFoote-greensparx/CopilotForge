@@ -39,7 +39,7 @@ undefined.
 - Detailing how the CoE runs internally, its services and intake - use `ai-centre-of-excellence:coe-operating-model`.
 - Assigning responsibility for individual CoE activities - use `ai-centre-of-excellence:coe-raci`.
 - Recording named owners for specific assets and knowledge domains - use `organisation-tailoring:ownership-map`.
-- Designing platform environments, data policies and zones - the `platform-governance` department (planned).
+- Designing platform environments, data policies and zones - use `platform-governance:ai-environment-strategy`.
 
 ## Questions to ask first
 
@@ -115,7 +115,7 @@ the model is reviewed when they occur rather than when it has already broken.
 The operating model shapes platform governance: who can create agents or environments, which zones exist for personal,
 team and organisational solutions, and who administers them. Microsoft publishes guidance on zoned governance and a
 CoE starter kit for Power Platform; use the source records to check what controls exist today rather than assuming
-them, and leave the configuration to the `platform-governance` department (planned).
+them, and leave the configuration to `platform-governance:ai-environment-strategy`.
 
 ## Adoption considerations
 
@@ -176,9 +176,9 @@ common engineering, assurance and operations. Decision rights by tier are formal
 
 ## Reviewer gates
 
-Advisory only. `design-authority` (planned) may challenge the model where decision rights or support routes would leave
-tier 2 and above solutions without architecture or assurance oversight. Until it exists, the CoE lead records the
-challenge and the sponsor decides.
+Advisory only. `design-authority:supportability-review` may challenge the model where decision rights or support routes
+would leave tier 2 and above solutions without architecture or assurance oversight. The CoE lead records the challenge
+and the sponsor decides.
 
 ## Failure modes
 

@@ -183,7 +183,7 @@ to surface what is and is not working in teams.
 The programme guide is the knowledge source for self-service guidance and any advisor agent, so give it an owner,
 a version and a review date, and update the guidance whenever the framework or challenge options change. Champions
 often spot stale knowledge elsewhere first; give them a route to report it to content owners and pass systemic issues
-to the `knowledge-management` department (planned).
+to `knowledge-management:knowledge-review-cycles`.
 
 ## Security and privacy considerations
 

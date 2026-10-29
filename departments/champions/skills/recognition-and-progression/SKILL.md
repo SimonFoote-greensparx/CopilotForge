@@ -79,7 +79,7 @@ What recognition opens should be real and owned:
 |---|---|---|
 | Advanced materials | Deeper guidance, early sight of new scenarios, advanced sessions | Programme owner |
 | Pilots | A place in governed pilots of new Copilot capabilities or agents | CoE or adoption lead |
-| Specialist pathways | Routes into advanced learning or governed delivery communities, such as maker or CoE contributor roles | CoE and `learning-and-skills` (planned) |
+| Specialist pathways | Routes into advanced learning or governed delivery communities, such as maker or CoE contributor roles | CoE and `learning-and-skills:advanced-pathways` |
 
 Renewal rules:
 
@@ -193,7 +193,7 @@ advanced learning, links with HR development frameworks where agreed, and a heal
 - To `champions:capability-framework` when renewal or stalled conversion shows the framework needs updating.
 - To `champions:champion-programme-design` when the health check shows boundary drift or charter changes are needed.
 - To `copilot-adoption:adoption-measurement` for team-level adoption indicators and to share Champion coverage.
-- To the `learning-and-skills` department (planned) for advanced pathways.
+- To `learning-and-skills:advanced-pathways` for advanced pathways.
 
 ## Reviewer gates
 

@@ -37,8 +37,8 @@ data protection obligations.
 - Assessing readiness, including licences assigned versus used as a readiness signal - use `copilot-adoption:adoption-readiness`.
 - Finding the scenarios whose outcomes will be measured - use `copilot-adoption:scenario-discovery`.
 - Measuring the health and contribution of a Champions programme - use `champions:recognition-and-progression`.
-- Financial benefits cases, return on investment and benefit owner models - the `value-realisation` department (planned).
-- Measuring the quality of a specific agent or solution - the `evaluation-quality` department (planned).
+- Financial benefits cases, return on investment and benefit owner models - use `value-realisation:financial-benefits`.
+- Measuring the quality of a specific agent or solution - use `evaluation-quality:ai-quality-rubric`.
 
 ## Questions to ask first
 
@@ -130,7 +130,7 @@ ways that help them, not rank them.
 ## Knowledge considerations
 
 Not applicable as a primary concern, because measurement does not depend on grounding content. Where feedback shows
-answers failing because of poor knowledge, record it and pass it to the `knowledge-management` department (planned).
+answers failing because of poor knowledge, record it and pass it to `knowledge-management:knowledge-gap-analysis`.
 
 ## Security and privacy considerations
 
@@ -176,7 +176,7 @@ from data protection, HR and works councils where applicable, and consistent sup
 - To `copilot-adoption:launch-plan` with findings that should change the next wave.
 - To `copilot-adoption:scenario-discovery` when scenarios need refreshing.
 - To `champions:recognition-and-progression` with team-level adoption indicators for the Champions health check.
-- To the `value-realisation` department (planned) for financial benefit and return on investment work.
+- To `value-realisation:financial-benefits` for financial benefit and return on investment work.
 
 ## Reviewer gates
 

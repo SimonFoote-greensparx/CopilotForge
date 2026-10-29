@@ -150,7 +150,7 @@ workshop outputs, prompt libraries and playbooks into the scenario catalogue and
 ## Knowledge considerations
 
 Many Challenges depend on team knowledge, and playbooks and prompt libraries become knowledge themselves. Give every
-asset an owner and review date, and pass stale or unowned content to the `knowledge-management` department (planned)
+asset an owner and review date, and pass stale or unowned content to `knowledge-management:knowledge-lifecycle`
 rather than building on it.
 
 ## Security and privacy considerations

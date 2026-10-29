@@ -161,7 +161,7 @@ Make knowledge ownership part of intake for anything at tier 1 or above: which s
 owns them. Keep a knowledge asset register in layers (policies and standards, procedures, templates and guidance, FAQs
 and lessons learned, then the agents and automations built on them), each item with an owner, a review date, version
 control and a classification. Weak knowledge is a routing outcome in its own right, sending the idea to fix content
-first; the `knowledge-management` department (planned) will own the standard.
+first; `knowledge-management:knowledge-grounding-standards` owns the standard.
 
 ## Security and privacy considerations
 
@@ -176,7 +176,7 @@ technical simplicity, and record who holds human accountability for its outputs.
 ## Evaluation requirements
 
 The model should name where evaluation happens (before release from tier 2, using `m365-agents:agent-testing`) and who
-signs the evidence. The `evaluation-quality` department (planned) will own the standard; until then the CoE lead does.
+signs the evidence. `evaluation-quality:ai-evaluation-strategy` owns the standard.
 
 ## Value measures
 
@@ -212,9 +212,9 @@ central AI enablement function serves every spoke.
 
 ## Reviewer gates
 
-For organisations with tier 2 and above solutions, `design-authority` (planned) should challenge the routing table for
-routes that send complex work to unsupported platforms. Until the department exists, the CoE lead records that
-challenge in the steering decision log.
+For organisations with tier 2 and above solutions, `design-authority:platform-fit-review` should challenge the routing
+table for routes that send complex work to unsupported platforms, and the challenge and response are recorded in the
+steering decision log.
 
 ## Failure modes
 

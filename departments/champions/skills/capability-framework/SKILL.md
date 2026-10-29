@@ -40,7 +40,7 @@ it to product features that change every few months.
 - Assessing submitted evidence, keeping the tracker, assessor training and appeals - use `champions:evidence-assessment`.
 - Designing the Champion Challenge that follows the three capabilities - use `champions:champion-challenges`.
 - Recognition and progression once capabilities are verified - use `champions:recognition-and-progression`.
-- Building role-based curricula for the whole workforce - the `learning-and-skills` department (planned).
+- Building role-based curricula for the whole workforce - use `learning-and-skills:ai-role-curriculum`.
 
 ## Questions to ask first
 
@@ -151,8 +151,8 @@ what good looks like, and let the same learning sessions serve both the wider wo
 ## Knowledge considerations
 
 The framework is the primary knowledge source for self-service guidance and any advisor agent. Version it and tell the
-guidance owner whenever it changes. Where submissions reveal stale or unowned team content, pass it to the
-`knowledge-management` department (planned).
+guidance owner whenever it changes. Where submissions reveal stale or unowned team content, pass it to
+`knowledge-management:knowledge-lifecycle`.
 
 ## Security and privacy considerations
 
@@ -191,14 +191,14 @@ assessor group. Publish worked fictional examples.
 ### Enterprise
 
 A governed framework with version control, localised examples, calibrated assessors across regions, and alignment with
-the organisation's wider skills framework and the `learning-and-skills` department (planned).
+the organisation's wider skills framework and `learning-and-skills:ai-learning-pathway`.
 
 ## Hand-offs
 
 - To `champions:evidence-assessment` to assess submissions and keep the tracker.
 - To `champions:champion-challenges` once all three capabilities are verified.
 - To `champions:recognition-and-progression` to connect verified capabilities to recognition.
-- To the `learning-and-skills` department (planned) for session content and curricula at scale.
+- To `learning-and-skills:ai-role-curriculum` for session content and curricula at scale.
 
 ## Reviewer gates
 

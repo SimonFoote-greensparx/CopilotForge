@@ -37,7 +37,7 @@ becoming a fixed plan that is never revisited as evidence arrives.
 - Agreeing the outcomes and principles the roadmap serves - use `ai-strategy:strategic-outcomes`.
 - Scoring and ranking individual opportunities in the backlog - use `opportunity-management:opportunity-prioritisation`.
 - Planning a specific Copilot launch wave in detail - use `copilot-adoption:launch-plan`.
-- Running the programme plan, RAID log and stage gates day to day - the `programme-management` department (planned).
+- Running the programme plan, RAID log and stage gates day to day - use `programme-management:integrated-roadmap`.
 
 ## Questions to ask first
 
@@ -177,8 +177,8 @@ follow the same structure. The hub reconciles dependencies and capacity across u
 
 ## Reviewer gates
 
-Advisory only. `design-authority` (planned) may review the roadmap for platform sprawl or sequencing that schedules
-tier 2 and above solutions ahead of the foundations they need. Until it exists, the CoE lead records the advice and the
+Advisory only. `design-authority:platform-fit-review` may review the roadmap for platform sprawl or sequencing that
+schedules tier 2 and above solutions ahead of the foundations they need. The CoE lead records the advice and the
 sponsor decides.
 
 ## Failure modes
