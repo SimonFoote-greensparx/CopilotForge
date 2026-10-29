@@ -1,0 +1,117 @@
+# Copilot Studio and Power Platform governance.
+# Source records (design brief section 14). Validated by scripts/check-sources.py against schemas/source.schema.json.
+
+[[source]]
+id = "ms-copilot-studio-security-governance"
+name = "Copilot Studio security and governance"
+url = "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "Security and governance controls for Copilot Studio agents, including data policies, environment routing and maker controls."
+
+[source.scope]
+products = ["copilot-studio"]
+departments = ["security-privacy", "m365-agents", "ai-centre-of-excellence"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "30d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-copilot-studio-zoned-governance"
+name = "Implement a zoned governance strategy (Copilot Studio guidance)"
+url = "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "Segmenting agent-building into governance zones by purpose and risk, and the controls available at each level."
+
+[source.scope]
+products = ["copilot-studio", "power-platform"]
+departments = ["ai-centre-of-excellence", "opportunity-management", "security-privacy"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "medium"
+review_interval = "90d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-copilot-studio-guidance"
+name = "Microsoft Copilot Studio guidance documentation"
+url = "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "Planning, adoption maturity, governance, testing, ALM and measurement guidance for agents."
+
+[source.scope]
+products = ["copilot-studio"]
+departments = ["m365-agents", "ai-centre-of-excellence", "ai-strategy"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "medium"
+review_interval = "90d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-managed-environments"
+name = "Managed Environments overview"
+url = "https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "Governance features available to Power Platform Managed Environments."
+
+[source.scope]
+products = ["power-platform", "copilot-studio"]
+departments = ["ai-centre-of-excellence", "security-privacy"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "45d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-coe-starter-kit"
+name = "Power Platform CoE Starter Kit"
+url = "https://learn.microsoft.com/en-us/power-platform/guidance/coe/starter-kit"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "Microsoft's starter kit for inventory, governance and nurture components of a Power Platform Centre of Excellence."
+
+[source.scope]
+products = ["power-platform"]
+departments = ["ai-centre-of-excellence"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "medium"
+review_interval = "120d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"

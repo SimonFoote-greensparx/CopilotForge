@@ -1,0 +1,9 @@
+# Cross-department acceptance scenario (design brief section 10.2). Checked by scripts/check-refs.py.
+id: which-pattern
+prompt: "Should this be an agent, Cowork task, automation, app or Foundry solution?"
+route: [opportunity-management, ai-architecture, design-authority]
+skeleton_skills:
+  - opportunity-management:problem-framing
+  - opportunity-management:ai-suitability
+  - opportunity-management:risk-classification
+note: The route lists every department the mature design engages. skeleton_skills lists the walking-skeleton skills that already cover part of it; departments in the route that are still planned are covered when they are built.

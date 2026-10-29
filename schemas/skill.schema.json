@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SimonFoote-greensparx/CopilotForge/schemas/skill.schema.json",
+  "title": "CopilotForge skill frontmatter",
+  "description": "Frontmatter of every SKILL.md. Top-level keys follow the open Agent Skills format (name, description, license, metadata); the design brief's skill fields are carried inside metadata as plain comma-separated strings so that Copilot Cowork and other runtimes accept the file (decision D7).",
+  "type": "object",
+  "required": ["name", "description", "license", "metadata"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 64},
+    "description": {"type": "string", "minLength": 120, "maxLength": 450, "pattern": "^[^:]*$"},
+    "license": {"type": "string", "enum": ["CC-BY-4.0"]},
+    "metadata": {
+      "type": "object",
+      "required": ["department", "lifecycle", "maturity", "risk-tiers", "platforms", "edition-support", "reviewers", "sources", "status", "authors"],
+      "additionalProperties": false,
+      "properties": {
+        "department": {"type": "string"},
+        "lifecycle": {"type": "string", "description": "Comma-separated subset of Discover, Envision, Mobilise, Enable, Deliver, Assure, Launch, Measure, Scale, Improve"},
+        "maturity": {"type": "string", "description": "Comma-separated maturity archetypes the skill mainly serves: explorer, adopter, builder, scaler, ai-enterprise"},
+        "risk-tiers": {"type": "string", "description": "Comma-separated progressive risk tiers (0-4) the skill's advice applies to"},
+        "platforms": {"type": "string", "description": "Comma-separated platform vocabulary ids, or platform-neutral"},
+        "edition-support": {"type": "string", "description": "Comma-separated subset of starter, scale, enterprise"},
+        "reviewers": {"type": "string", "description": "Comma-separated reviewer-class department ids whose gate applies, or none"},
+        "sources": {"type": "string", "description": "Comma-separated source record ids from sources/*.toml, or none"},
+        "status": {"type": "string", "enum": ["draft", "reviewed", "stable"]},
+        "authors": {"type": "string", "enum": ["Simon Foote"]}
+      }
+    }
+  }
+}

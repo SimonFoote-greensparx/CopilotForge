@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CopilotForge source record",
+  "description": "One [[source]] entry in sources/*.toml (design brief section 14).",
+  "type": "object",
+  "required": ["id", "name", "url", "authority", "scope", "freshness", "usage"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 3},
+    "url": {"type": "string", "pattern": "^https://"},
+    "_file": {"type": "string"},
+    "authority": {
+      "type": "object", "required": ["publisher", "type", "authoritative_for"], "additionalProperties": false,
+      "properties": {
+        "publisher": {"type": "string"},
+        "type": {"type": "string", "enum": ["product-documentation", "adoption-guidance", "trust-and-compliance", "research", "standard", "regulator-guidance", "government-guidance", "engineering-documentation", "secondary"]},
+        "authoritative_for": {"type": "string", "minLength": 10},
+        "secondary_reason": {"type": "string"}
+      }
+    },
+    "scope": {
+      "type": "object", "required": ["products", "departments"], "additionalProperties": false,
+      "properties": {
+        "products": {"type": "array", "items": {"type": "string"}},
+        "departments": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "jurisdiction": {"type": "string"}
+      }
+    },
+    "freshness": {
+      "type": "object", "required": ["volatility", "review_interval", "last_reviewed"], "additionalProperties": false,
+      "properties": {
+        "volatility": {"type": "string", "enum": ["high", "medium", "low"]},
+        "review_interval": {"type": "string", "pattern": "^[0-9]+d$"},
+        "last_reviewed": {"type": "string", "pattern": "^20[0-9]{2}-[01][0-9]-[0-3][0-9]$"}
+      }
+    },
+    "usage": {
+      "type": "object", "required": ["classification"], "additionalProperties": false,
+      "properties": {
+        "classification": {"type": "string", "enum": ["cite-only", "quote-with-attribution", "open-licence"]},
+        "notes": {"type": "string"}
+      }
+    }
+  }
+}

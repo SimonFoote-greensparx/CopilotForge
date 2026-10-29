@@ -1,0 +1,11 @@
+# Cross-department acceptance scenario (design brief section 10.2). Checked by scripts/check-refs.py.
+id: bought-copilot-now-what
+prompt: "We bought Microsoft 365 Copilot. Now what?"
+route: [ai-strategy, copilot-adoption, learning-and-skills, champions, value-realisation]
+skeleton_skills:
+  - ai-strategy:ai-maturity-assessment
+  - copilot-adoption:adoption-readiness
+  - copilot-adoption:scenario-discovery
+  - champions:champion-programme-design
+  - copilot-adoption:adoption-measurement
+note: The route lists every department the mature design engages. skeleton_skills lists the walking-skeleton skills that already cover part of it; departments in the route that are still planned are covered when they are built.

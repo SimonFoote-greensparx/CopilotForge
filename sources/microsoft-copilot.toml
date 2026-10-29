@@ -1,0 +1,140 @@
+# Microsoft Copilot, Copilot Chat, Copilot Cowork and Microsoft adoption guidance.
+# Source records (design brief section 14). Validated by scripts/check-sources.py against schemas/source.schema.json.
+
+[[source]]
+id = "ms-copilot-overview"
+name = "Microsoft 365 Copilot overview"
+url = "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-overview"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "What Microsoft Copilot and Copilot Chat are, how they use work context, and current product naming."
+
+[source.scope]
+products = ["copilot-chat", "m365-copilot"]
+departments = ["ai-strategy", "copilot-adoption", "m365-copilot", "organisation-tailoring"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "30d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-copilot-privacy"
+name = "Data, privacy and security for Microsoft Copilot"
+url = "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy"
+
+[source.authority]
+publisher = "Microsoft"
+type = "trust-and-compliance"
+authoritative_for = "How Copilot uses organisational data, permission-trimmed grounding, stored interaction data, data residency and extensibility controls."
+
+[source.scope]
+products = ["m365-copilot", "copilot-chat", "m365-agents"]
+departments = ["security-privacy", "copilot-adoption", "m365-agents", "ai-centre-of-excellence"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "30d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-copilot-cowork-customise"
+name = "Customize Copilot Cowork"
+url = "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "How Copilot Cowork is customised with plugins, skills and custom instructions."
+
+[source.scope]
+products = ["copilot-cowork"]
+departments = ["organisation-tailoring", "copilot-cowork"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "30d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-copilot-adoption-hub"
+name = "Microsoft Copilot adoption resources"
+url = "https://adoption.microsoft.com/en-us/copilot/"
+
+[source.authority]
+publisher = "Microsoft"
+type = "adoption-guidance"
+authoritative_for = "Microsoft's published adoption approach for Copilot, including strategy, launch, community and measurement resources."
+
+[source.scope]
+products = ["m365-copilot", "copilot-chat"]
+departments = ["copilot-adoption", "champions", "ai-strategy"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "medium"
+review_interval = "90d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-champion-programme"
+name = "Become a Champion (Microsoft Adoption)"
+url = "https://adoption.microsoft.com/en-us/become-a-champion/"
+
+[source.authority]
+publisher = "Microsoft"
+type = "adoption-guidance"
+authoritative_for = "Microsoft's guidance on building a Champion community."
+
+[source.scope]
+products = ["m365-copilot"]
+departments = ["champions"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "medium"
+review_interval = "120d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-champion-best-practice"
+name = "Champion programme best practices (Service Adoption Specialist)"
+url = "https://learn.microsoft.com/en-us/office365/customlearning/champ_education"
+
+[source.authority]
+publisher = "Microsoft"
+type = "adoption-guidance"
+authoritative_for = "Champion programme practice and the service adoption learning path."
+
+[source.scope]
+products = ["m365-copilot"]
+departments = ["champions", "copilot-adoption"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "low"
+review_interval = "365d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"

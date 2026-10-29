@@ -1,0 +1,94 @@
+# Agents for Microsoft 365 Copilot and the wider extensibility model.
+# Source records (design brief section 14). Validated by scripts/check-sources.py against schemas/source.schema.json.
+
+[[source]]
+id = "ms-agents-extensibility"
+name = "Ways to extend Microsoft 365 Copilot"
+url = "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/overview"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "The extensibility options for Copilot, including agents, connectors, skills and tools, and how to choose between them."
+
+[source.scope]
+products = ["m365-agents", "copilot-studio"]
+departments = ["m365-agents", "ai-strategy", "opportunity-management"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "30d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-declarative-agents"
+name = "Declarative agents for Microsoft 365 Copilot"
+url = "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/overview-declarative-agent"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "When a declarative agent is warranted, build-or-reuse decisions and the dependencies to record for an agent."
+
+[source.scope]
+products = ["m365-agents"]
+departments = ["m365-agents"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "30d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-agent-builder"
+name = "Agent Builder overview"
+url = "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "Building declarative agents in Agent Builder, knowledge sources, sharing and known limitations."
+
+[source.scope]
+products = ["m365-agents"]
+departments = ["m365-agents", "security-privacy"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "30d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-agents-compare"
+name = "Compare declarative and custom engine agents"
+url = "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "The difference between declarative and custom engine agents and when to use each."
+
+[source.scope]
+products = ["m365-agents", "copilot-studio", "ai-foundry"]
+departments = ["m365-agents", "opportunity-management"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "30d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"

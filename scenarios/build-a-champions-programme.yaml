@@ -1,0 +1,11 @@
+# Cross-department acceptance scenario (design brief section 10.2). Checked by scripts/check-refs.py.
+id: build-a-champions-programme
+prompt: "Build a Champions programme."
+route: [champions, learning-and-skills, change-and-communications, value-realisation]
+skeleton_skills:
+  - champions:champion-programme-design
+  - champions:capability-framework
+  - champions:evidence-assessment
+  - champions:champion-challenges
+  - champions:recognition-and-progression
+note: The route lists every department the mature design engages. skeleton_skills lists the walking-skeleton skills that already cover part of it; departments in the route that are still planned are covered when they are built.

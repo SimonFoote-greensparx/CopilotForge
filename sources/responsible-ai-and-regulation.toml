@@ -1,0 +1,94 @@
+# Responsible AI, risk management standards and UK data protection guidance.
+# Source records (design brief section 14). Validated by scripts/check-sources.py against schemas/source.schema.json.
+
+[[source]]
+id = "nist-ai-rmf"
+name = "NIST AI Risk Management Framework"
+url = "https://www.nist.gov/itl/ai-risk-management-framework"
+
+[source.authority]
+publisher = "National Institute of Standards and Technology"
+type = "standard"
+authoritative_for = "A voluntary framework for identifying, measuring and managing AI risk across the lifecycle."
+
+[source.scope]
+products = ["platform-neutral"]
+departments = ["opportunity-management", "security-privacy", "ai-centre-of-excellence", "ai-strategy"]
+jurisdiction = "United States (used internationally)"
+
+[source.freshness]
+volatility = "low"
+review_interval = "365d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ico-ai-data-protection"
+name = "ICO guidance on AI and data protection"
+url = "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/"
+
+[source.authority]
+publisher = "Information Commissioner's Office"
+type = "regulator-guidance"
+authoritative_for = "How UK data protection law applies to AI systems, including lawfulness, fairness, transparency and data protection impact assessment."
+
+[source.scope]
+products = ["platform-neutral"]
+departments = ["security-privacy", "opportunity-management"]
+jurisdiction = "United Kingdom"
+
+[source.freshness]
+volatility = "medium"
+review_interval = "120d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "iso-iec-42001"
+name = "ISO/IEC 42001 AI management system"
+url = "https://www.iso.org/standard/81230.html"
+
+[source.authority]
+publisher = "International Organization for Standardization"
+type = "standard"
+authoritative_for = "Requirements for establishing and improving an AI management system. Cite by reference only; the text is licensed."
+
+[source.scope]
+products = ["platform-neutral"]
+departments = ["ai-centre-of-excellence", "security-privacy"]
+jurisdiction = "International"
+
+[source.freshness]
+volatility = "low"
+review_interval = "365d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"
+
+[[source]]
+id = "ms-responsible-ai"
+name = "Microsoft Responsible AI"
+url = "https://www.microsoft.com/en-us/ai/responsible-ai"
+
+[source.authority]
+publisher = "Microsoft"
+type = "research"
+authoritative_for = "Microsoft's responsible AI principles, standard and transparency resources."
+
+[source.scope]
+products = ["platform-neutral"]
+departments = ["ai-strategy", "opportunity-management", "ai-centre-of-excellence"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "low"
+review_interval = "365d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"

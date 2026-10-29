@@ -1,0 +1,11 @@
+# Cross-department acceptance scenario (design brief section 10.2). Checked by scripts/check-refs.py.
+id: everybody-is-building-agents
+prompt: "Everybody is building agents."
+route: [m365-agents, knowledge-management, platform-governance, security-privacy, ai-operations]
+skeleton_skills:
+  - opportunity-management:risk-classification
+  - m365-agents:agent-use-case-design
+  - m365-agents:knowledge-source-readiness
+  - security-privacy:data-exposure-review
+  - m365-agents:agent-release-readiness
+note: The route lists every department the mature design engages. skeleton_skills lists the walking-skeleton skills that already cover part of it; departments in the route that are still planned are covered when they are built.
