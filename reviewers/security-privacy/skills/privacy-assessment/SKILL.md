@@ -38,8 +38,8 @@ handles privacy" is taken as the answer, when the organisation remains the contr
 
 - Reviewing who can reach content through the solution - use `security-privacy:data-exposure-review`.
 - Reviewing connectors, authentication and data flows to external services - use `security-privacy:connector-review`.
-- Fairness, human oversight and prohibited uses as a responsible AI question - the `responsible-ai` department (planned).
-- Records retention schedules and classification across the estate - the `data-governance` department (planned).
+- Fairness, human oversight and prohibited uses as a responsible AI question - use `responsible-ai:fairness-review`, `responsible-ai:human-oversight` and `responsible-ai:prohibited-use-review`.
+- Records retention schedules and classification across the estate - use `data-governance:ai-data-retention-rules`.
 - Setting the risk tier - use `opportunity-management:risk-classification`.
 
 ## Questions to ask first
@@ -144,7 +144,7 @@ leaving the tenant through connectors goes to `security-privacy:connector-review
 ## Responsible AI considerations
 
 People-related uses (recruitment, performance, conduct, eligibility) raise fairness and oversight questions beyond data
-protection. Refer them to the `responsible-ai` department (planned) through risk classification, and treat
+protection. Refer them to `responsible-ai:ai-impact-assessment` through risk classification, and treat
 meaningful human review as a precondition from tier 3.
 
 ## Evaluation requirements
@@ -177,7 +177,7 @@ and 4. Link assessments to the record of processing and the solution register.
 ## Hand-offs
 
 - To the organisation's DPO for lawful basis, DPIA and any legal interpretation.
-- To the `responsible-ai` department (planned) for people-related uses.
+- To `responsible-ai:ai-impact-assessment` for people-related uses.
 - To `m365-agents:agent-release-readiness` with the verdict.
 - Back to `m365-agents:agent-use-case-design` with scope and minimisation changes.
 

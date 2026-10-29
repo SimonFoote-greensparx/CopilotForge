@@ -38,9 +38,10 @@ def page(name, title, body, active_nav):
 
 # ------------------------------------------------------------------ home
 n_draft = sum(1 for s in sk if s["front"].get("metadata", {}).get("status") == "draft")
-notice = (f'<div class="notice"><strong>Walking skeleton, version {VERSION}.</strong> {len(active)} of {len(depts)} departments are '
-          f'built; all {len(sk)} skills are first drafts ({n_draft} marked draft) while they are reviewed. '
-          f'<a href="guides/roadmap.html">See the roadmap</a>.</div>')
+notice = (f'<div class="notice draft"><strong>Draft, version {VERSION}.</strong> First versions of all {len(active)} departments, '
+          f'{len(sk)} skills, {len(progs)} programmes and {len(tpls)} templates are now available. Every skill is a first draft '
+          f'({n_draft} marked draft) and is being reviewed department by department, so treat the advice as a practitioner\'s '
+          f'first draft and check it before relying on it. <a href="guides/roadmap.html">See the roadmap</a>.</div>')
 journey_html = []
 for jid, jlabel in JOURNEY:
     items = []
@@ -58,11 +59,11 @@ edition_cards = "".join(
     for k in ("starter", "scale", "enterprise"))
 home = f"""<section class="hero">
 <div><p class="kicker">{DISPLAY_NAME}</p><h1>{e(HEADLINE)}</h1><p>{e(TAGLINE)}</p>
-<div class="buttons"><a class="btn" href="programme-builder.html">Design my AI programme</a><a class="btn ghost" href="catalogue.html">Browse capabilities</a><a class="btn ghost" href="downloads.html">Install CopilotForge</a></div></div>
+<div class="buttons"><a class="btn" href="programme-builder.html">Design my AI programme</a><a class="btn ghost" href="catalogue.html">Browse capabilities</a><a class="btn ghost" href="downloads.html">Install CopilotForge</a><a class="btn ghost" href="{REPO_URL}">View on GitHub</a></div></div>
 </section>
 {notice}
 <div class="cards">
-<div class="card"><div class="stat">{len(depts)}</div><h3>Departments</h3><p>The organisation a Microsoft AI transformation needs, from strategy and adoption to delivery, assurance and operations. {len(active)} are built today.</p></div>
+<div class="card"><div class="stat">{len(depts)}</div><h3>Departments</h3><p>The organisation a Microsoft AI transformation needs, from strategy and adoption to delivery, assurance and operations. All {len(active)} have first-draft skills.</p></div>
 <div class="card"><div class="stat">{len(sk)}</div><h3>Skills</h3><p>Practitioner judgement with explicit triggers, inputs, outputs, reviewer gates, failure modes and Starter, Scale and Enterprise notes.</p></div>
 <div class="card"><div class="stat">{len(progs)}</div><h3>Programmes</h3><p>Flagship programmes, from Copilot adoption and Champions to an AI Centre of Excellence and the full AI transformation.</p></div>
 <div class="card"><div class="stat">{len(tpls)}</div><h3>Templates</h3><p>Human-usable documents that turn advice into deliverables, with unknowns marked rather than invented.</p></div>
@@ -111,6 +112,7 @@ home = f"""<section class="hero">
 <h2>Use it freely, credit the author</h2>
 <p>{DISPLAY_NAME} is free to use, including commercially and on client work. Content is licensed under <a href="{CC_BY_URL}">CC BY 4.0</a> and code under MIT. When you share or adapt it, credit the author:</p>
 <blockquote>{linkify(CREDIT_LINE)}</blockquote>
+<p>The source of every skill, programme, template and script is on GitHub: <a href="{REPO_URL}">{REPO_URL}</a>.</p>
 <p>Documents you complete for your own organisation from the templates need no credit. The <a href="credit.html">credit page</a> has the full wording. Created by <a href="author.html">{AUTHOR_LINE}</a>, with thanks to our <a href="contributors.html">contributors</a>.</p>
 
 <h2>Independence</h2>
@@ -124,7 +126,9 @@ cards = []
 for d in depts:
     mine = [s for s in sk if s["department"] == d["id"]]
     badge = '<span class="badge reviewer">Reviewer-class</span>' if d.get("reviewer") else ""
-    status = f'<span class="status {e(d["status"])}">{e(d["status"])}</span>'
+    sts = {s["front"].get("metadata", {}).get("status") for s in sk if s["department"] == d["id"]}
+    label = ("first version, draft" if sts == {"draft"} else "first version, " + ", ".join(sorted(sts))) if sts else d["status"]
+    status = f'<span class="status {"draft" if "draft" in sts else e(d["status"])}">{e(label)}</span>'
     if mine:
         items = "".join(
             f'<li data-search="{e((s["folder"] + " " + s["front"].get("description", "") + " " + s["front"]["metadata"].get("platforms", "") + " " + s["front"]["metadata"].get("lifecycle", "")).lower())}" '
@@ -146,7 +150,7 @@ for d in depts:
 jf = "".join(f'<button data-journey="{k}">{v}</button>' for k, v in JOURNEY)
 pf = "".join(f'<option value="{e(p)}">{e(p)}</option>' for p in platforms)
 catalogue = f"""<h1>Capabilities</h1>
-<p class="lead">{len(depts)} departments, {len(active)} built, with {len(sk)} skills. Browse by outcome along the journey, by Microsoft technology, or search.</p>
+<p class="lead">{len(depts)} departments and {len(sk)} skills, all first drafts. Browse by outcome along the journey, by Microsoft technology, or search.</p>
 <div class="controls"><input id="q" type="search" placeholder="Search, for example champions, agent testing, oversharing, CoE" aria-label="Search capabilities">
 <div class="filters"><button data-journey="all" class="on">All</button>{jf}
 <label class="label" for="plat" style="display:inline;margin-left:10px">Technology</label> <select id="plat" style="width:auto"><option value="">Any</option>{pf}</select>

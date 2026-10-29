@@ -1,6 +1,6 @@
 {
   "name": "copilotforge-security-privacy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CopilotForge Security and Privacy. Reviewer-class department that assesses identity, access, data exposure, connectors, privacy and retention for AI solutions and blocks release while material risks are unresolved.",
   "author": {
     "name": "Simon Foote"

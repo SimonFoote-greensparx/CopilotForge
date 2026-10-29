@@ -38,8 +38,8 @@ write, and where the data ends up.
 - Reviewing what knowledge content the solution can reach and reveal - use `security-privacy:data-exposure-review`.
 - Lawful basis, transparency and retention for personal data moving through the actions - use `security-privacy:privacy-assessment`.
 - Designing the actions and their confirmation rules in the first place - use `m365-agents:agent-use-case-design`.
-- Setting organisation-wide connector policy and environment strategy - the `platform-governance` department (planned).
-- Detailed authentication and connector engineering for Copilot Studio builds - the `copilot-studio` department (planned).
+- Setting organisation-wide connector policy and environment strategy - use `platform-governance:connector-policy`.
+- Detailed authentication and connector engineering for Copilot Studio builds - use `copilot-studio:studio-authentication` and `copilot-studio:studio-connectors`.
 
 ## Questions to ask first
 
@@ -141,7 +141,7 @@ This skill is the security review of connectors and actions. Personal data flows
 ## Responsible AI considerations
 
 Actions that affect people (sending messages, updating records about individuals, approving requests) need human
-confirmation and an audit trail. From tier 3, the `responsible-ai` department (planned) reviews the oversight design.
+confirmation and an audit trail. From tier 3, `responsible-ai:human-oversight` reviews the oversight design.
 
 ## Evaluation requirements
 
@@ -176,7 +176,7 @@ servers, service identities and tier 3 and 4 solutions. Track exceptions across 
 - Back to `m365-agents:agent-use-case-design` with changes to actions, identities and confirmation rules.
 - To `security-privacy:privacy-assessment` for personal data leaving the tenant.
 - To `m365-agents:agent-release-readiness` with the verdict.
-- To the `platform-governance` department (planned) for policy and environment changes.
+- To `platform-governance:connector-policy` for policy and environment changes.
 
 ## Reviewer gates
 

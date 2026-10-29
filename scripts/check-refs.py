@@ -19,6 +19,14 @@ for f in files:
             problems.append(f"{rel(f)}: `{dep}:{sk}` points into planned department '{dep}'; refer to the department by id until it is built")
         elif f"{dep}:{sk}" not in ids:
             problems.append(f"{rel(f)}: `{dep}:{sk}` does not resolve to a skill")
+# Stale wording: a department described as planned, or as not yet built, once it is active.
+STALE = re.compile(r"`([a-z0-9-]+)`(?: department)? \(planned\)|until (?:that|the `[a-z0-9-]+`) department is built|contract only")
+for f in files:
+    if "/references/" in f:
+        continue
+    for m in STALE.finditer(open(f, encoding="utf-8").read()):
+        if m.group(1) is None or (m.group(1) in depts and depts[m.group(1)]["status"] == "active"):
+            problems.append(f"{rel(f)}: stale wording '{m.group(0)}'; the department is built, so name the skill as `department:skill`")
 tpl = templates()
 for pid, p in programmes().items():
     for a in p.get("artefacts", []):
@@ -37,4 +45,10 @@ for f in glob.glob(path("scenarios", "*.yaml")):
         count += 1
         if sk not in ids:
             problems.append(f"{rel(f)}: skeleton skill {sk} does not resolve")
+cmap = load_yaml(path("data", "candidate-skill-map.yaml")) or {}
+for dep, m in cmap.items():
+    for cand, skill in (m or {}).items():
+        count += 1
+        if f"{dep}:{skill}" not in ids:
+            problems.append(f"data/candidate-skill-map.yaml: {dep} candidate '{cand}' maps to {dep}:{skill}, which does not exist")
 finish("References", problems, count)

@@ -87,6 +87,13 @@ artefacts:
   skill: ai-centre-of-excellence:coe-charter
   template: coe-charter
 - programme: ai-coe
+  artefact: coe-launch-plan
+  title: CoE launch plan
+  depth: standard
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-launch-roadmap
+  template: coe-launch-plan
+- programme: ai-coe
   artefact: coe-operating-model
   title: CoE operating model
   depth: standard
@@ -100,6 +107,13 @@ artefacts:
   stage: Mobilise
   skill: ai-centre-of-excellence:coe-raci
   template: coe-raci
+- programme: ai-coe
+  artefact: coe-terms-of-reference
+  title: CoE terms of reference
+  depth: standard
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-team-design
+  template: coe-terms-of-reference
 - programme: ai-transformation
   artefact: operating-model
   title: Target operating model
@@ -121,6 +135,13 @@ artefacts:
   stage: Mobilise
   skill: organisation-tailoring:transformation-pack
   template: transformation-pack-index
+- programme: ai-transformation
+  artefact: programme-charter
+  title: Programme charter
+  depth: standard
+  stage: Mobilise
+  skill: programme-management:programme-charter
+  template: programme-charter
 - programme: champions
   artefact: champion-charter
   title: Champions programme charter
@@ -128,6 +149,13 @@ artefacts:
   stage: Mobilise
   skill: champions:champion-programme-design
   template: champion-programme-charter
+- programme: champions
+  artefact: champion-guide
+  title: Champion guide
+  depth: standard
+  stage: Mobilise
+  skill: champions:champion-recruitment
+  template: champion-guide
 - programme: discovery
   artefact: roadmap
   title: Prioritised AI roadmap
@@ -136,12 +164,33 @@ artefacts:
   skill: ai-strategy:ai-roadmap
   template: ai-roadmap
 - programme: governance
+  artefact: environment-zoning
+  title: Environment zoning plan
+  depth: standard
+  stage: Mobilise
+  skill: platform-governance:ai-environment-strategy
+  template: environment-zoning-plan
+- programme: governance
   artefact: governance-framework
   title: AI governance framework and acceptable-use starter
   depth: standard
   stage: Mobilise
   skill: ai-centre-of-excellence:coe-governance-model
   template: ai-governance-starter
+- programme: adoption
+  artefact: communications-plan
+  title: Communications plan
+  depth: standard
+  stage: Enable
+  skill: change-and-communications:ai-communication-strategy
+  template: ai-communications-plan
+- programme: adoption
+  artefact: learning-plan
+  title: Role-based learning plan
+  depth: standard
+  stage: Enable
+  skill: learning-and-skills:ai-role-curriculum
+  template: ai-learning-plan
 - programme: adoption
   artefact: scenario-catalogue
   title: Persona and scenario catalogue
@@ -178,12 +227,26 @@ artefacts:
   skill: m365-agents:knowledge-source-readiness
   template: agent-brief
 - programme: agent-factory
+  artefact: knowledge-readiness-report
+  title: Knowledge readiness report
+  depth: standard
+  stage: Deliver
+  skill: knowledge-management:knowledge-readiness-assessment
+  template: knowledge-readiness-report
+- programme: agent-factory
   artefact: agent-test-plan
   title: Agent test plan and evaluation set
   depth: standard
   stage: Assure
   skill: m365-agents:agent-testing
   template: agent-release-checklist
+- programme: agent-factory
+  artefact: evaluation-plan
+  title: Agent evaluation plan
+  depth: standard
+  stage: Assure
+  skill: evaluation-quality:ai-evaluation-strategy
+  template: evaluation-plan
 - programme: governance
   artefact: data-exposure-review
   title: Data exposure review
@@ -191,6 +254,13 @@ artefacts:
   stage: Assure
   skill: security-privacy:data-exposure-review
   template: ai-risk-assessment
+- programme: governance
+  artefact: impact-assessment
+  title: AI impact assessment
+  depth: standard
+  stage: Assure
+  skill: responsible-ai:ai-impact-assessment
+  template: ai-impact-assessment-record
 - programme: governance
   artefact: privacy-assessment
   title: Privacy assessment
@@ -212,6 +282,20 @@ artefacts:
   stage: Launch
   skill: copilot-adoption:launch-plan
   template: adoption-plan
+- programme: adoption
+  artefact: support-model
+  title: User support model
+  depth: standard
+  stage: Launch
+  skill: copilot-adoption:adoption-support-model
+  template: adoption-support-model
+- programme: agent-factory
+  artefact: agent-card
+  title: Agent card and ownership
+  depth: standard
+  stage: Launch
+  skill: m365-agents:agent-ownership
+  template: agent-card
 - programme: agent-factory
   artefact: agent-release
   title: Agent release readiness and ownership
@@ -219,6 +303,20 @@ artefacts:
   stage: Launch
   skill: m365-agents:agent-release-readiness
   template: agent-release-checklist
+- programme: agent-factory
+  artefact: support-and-monitoring
+  title: Support and monitoring plan
+  depth: standard
+  stage: Launch
+  skill: ai-operations:ai-support-model
+  template: support-and-monitoring-plan
+- programme: governance
+  artefact: solution-inventory
+  title: AI solution inventory
+  depth: standard
+  stage: Launch
+  skill: platform-governance:ai-solution-inventory
+  template: ai-governance-starter
 - programme: adoption
   artefact: adoption-measures
   title: Adoption measures and baseline
@@ -233,6 +331,13 @@ artefacts:
   stage: Measure
   skill: ai-centre-of-excellence:coe-kpi-framework
   template: coe-kpi-scorecard
+- programme: ai-transformation
+  artefact: benefits-plan
+  title: Benefits register and realisation plan
+  depth: standard
+  stage: Measure
+  skill: value-realisation:benefit-realisation-plan
+  template: benefits-register
 - programme: ai-coe
   artefact: coe-cadence
   title: Governance cadence and terms of reference
@@ -260,19 +365,19 @@ reviewer_gates:
   from_risk_tier: 2
   blocking: true
   evidence: proportionate
-  reviewer_status: contract-only (department planned)
+  reviewer_status: active
 - reviewer: evaluation-quality
   stage: Assure
   from_risk_tier: 2
   blocking: true
   evidence: proportionate
-  reviewer_status: contract-only (department planned)
+  reviewer_status: active
 - reviewer: responsible-ai
   stage: Assure
   from_risk_tier: 3
   blocking: true
   evidence: proportionate
-  reviewer_status: contract-only (department planned)
+  reviewer_status: active
 - reviewer: security-privacy
   stage: Assure
   from_risk_tier: 2
@@ -283,11 +388,17 @@ ownership_map:
 - department: ai-centre-of-excellence
   accountable_role: AI CoE Lead
   named_owner: to confirm from declared roles
+- department: ai-operations
+  accountable_role: AI Operations Lead
+  named_owner: to confirm from declared roles
 - department: ai-strategy
   accountable_role: AI Strategy Lead
   named_owner: to confirm from declared roles
 - department: champions
   accountable_role: Champions Programme Owner
+  named_owner: to confirm from declared roles
+- department: change-and-communications
+  accountable_role: Change Lead
   named_owner: to confirm from declared roles
 - department: copilot-adoption
   accountable_role: Adoption Lead
@@ -298,6 +409,12 @@ ownership_map:
 - department: evaluation-quality
   accountable_role: AI Evaluation Lead
   named_owner: to confirm from declared roles
+- department: knowledge-management
+  accountable_role: Knowledge Manager
+  named_owner: to confirm from declared roles
+- department: learning-and-skills
+  accountable_role: Learning Lead
+  named_owner: to confirm from declared roles
 - department: m365-agents
   accountable_role: Agent Product Owner
   named_owner: to confirm from declared roles
@@ -307,10 +424,19 @@ ownership_map:
 - department: organisation-tailoring
   accountable_role: Transformation Architect
   named_owner: to confirm from declared roles
+- department: platform-governance
+  accountable_role: Platform Governance Lead
+  named_owner: to confirm from declared roles
+- department: programme-management
+  accountable_role: AI Programme Manager
+  named_owner: to confirm from declared roles
 - department: responsible-ai
   accountable_role: Responsible AI Reviewer
   named_owner: to confirm from declared roles
 - department: security-privacy
   accountable_role: Security and Privacy Reviewer
+  named_owner: to confirm from declared roles
+- department: value-realisation
+  accountable_role: Benefits Realisation Lead
   named_owner: to confirm from declared roles
 to_confirm: []

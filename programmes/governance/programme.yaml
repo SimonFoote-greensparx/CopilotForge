@@ -8,6 +8,10 @@ artefacts:
   - {id: risk-classification, title: Risk tier classification, skill: "opportunity-management:risk-classification", template: ai-risk-assessment, stage: Assure, depth: {starter: light, scale: standard, enterprise: full}}
   - {id: data-exposure-review, title: Data exposure review, skill: "security-privacy:data-exposure-review", template: ai-risk-assessment, stage: Assure, depth: {starter: light, scale: standard, enterprise: full}}
   - {id: privacy-assessment, title: Privacy assessment, skill: "security-privacy:privacy-assessment", template: ai-risk-assessment, stage: Assure, depth: {starter: light, scale: standard, enterprise: full}}
-planned_departments: [platform-governance, responsible-ai, data-governance, design-authority]
+  - {id: solution-inventory, title: AI solution inventory, skill: "platform-governance:ai-solution-inventory", template: ai-governance-starter, stage: Launch, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: environment-zoning, title: Environment zoning plan, skill: "platform-governance:ai-environment-strategy", template: environment-zoning-plan, stage: Mobilise, depth: {starter: omit, scale: standard, enterprise: full}}
+  - {id: impact-assessment, title: AI impact assessment, skill: "responsible-ai:ai-impact-assessment", template: ai-impact-assessment-record, stage: Assure, depth: {starter: omit, scale: standard, enterprise: full}}
+supporting_departments: [platform-governance, responsible-ai, data-governance, design-authority]
 gates:
   - {reviewer: security-privacy, stage: Assure, from_risk_tier: 2, blocking: true, skippable: false}
+  - {reviewer: responsible-ai, stage: Assure, from_risk_tier: 3, blocking: true, skippable: false}

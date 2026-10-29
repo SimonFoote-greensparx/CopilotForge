@@ -11,7 +11,11 @@ artefacts:
   - {id: agent-test-plan, title: Agent test plan and evaluation set, skill: "m365-agents:agent-testing", template: agent-release-checklist, stage: Assure, depth: {starter: light, scale: standard, enterprise: full}}
   - {id: agent-release, title: Agent release readiness and ownership, skill: "m365-agents:agent-release-readiness", template: agent-release-checklist, stage: Launch, depth: {starter: light, scale: standard, enterprise: full}}
   - {id: scale-or-stop, title: Scale-or-stop review, skill: "opportunity-management:scale-or-stop", template: scale-or-stop-review, stage: Improve, depth: {starter: omit, scale: standard, enterprise: full}}
-planned_departments: [knowledge-management, platform-governance, ai-operations, evaluation-quality, copilot-studio]
+  - {id: knowledge-readiness-report, title: Knowledge readiness report, skill: "knowledge-management:knowledge-readiness-assessment", template: knowledge-readiness-report, stage: Deliver, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: evaluation-plan, title: Agent evaluation plan, skill: "evaluation-quality:ai-evaluation-strategy", template: evaluation-plan, stage: Assure, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: agent-card, title: Agent card and ownership, skill: "m365-agents:agent-ownership", template: agent-card, stage: Launch, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: support-and-monitoring, title: Support and monitoring plan, skill: "ai-operations:ai-support-model", template: support-and-monitoring-plan, stage: Launch, depth: {starter: light, scale: standard, enterprise: full}}
+supporting_departments: [knowledge-management, platform-governance, ai-operations, evaluation-quality, copilot-studio]
 gates:
   - {reviewer: security-privacy, stage: Assure, from_risk_tier: 2, blocking: true, skippable: false}
   - {reviewer: responsible-ai, stage: Assure, from_risk_tier: 3, blocking: true, skippable: false}

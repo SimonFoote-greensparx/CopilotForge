@@ -39,7 +39,7 @@ outputs go, and classifies each finding as blocking or advisory with a specific 
 - Lawful basis, transparency, retention and DPIA screening for personal data - use `security-privacy:privacy-assessment`.
 - The agent team's own pre-review check of each knowledge source - use `m365-agents:knowledge-source-readiness`.
 - Classifying the solution's risk tier - use `opportunity-management:risk-classification`.
-- Estate-wide classification, ownership and access models - the `data-governance` department (planned).
+- Estate-wide classification, ownership and access models - use `data-governance:data-classification-for-ai` and `data-governance:ai-data-access-model`.
 
 ## Questions to ask first
 
@@ -114,7 +114,7 @@ gate. Close the review only when blocking fixes are evidenced, and re-review if 
 
 - The data exposure section of the `ai-risk-assessment`: sources reviewed, audience comparison, findings classified as blocking or advisory with risk, fix, owner and date, and the verdict (pass, pass with advisory findings, or blocked).
 - Any written risk acceptance from the accountable executive.
-- Referrals for estate-wide oversharing to the platform and `data-governance` (planned) teams.
+- Referrals for estate-wide oversharing to the platform team and `data-governance:ai-data-access-model`.
 
 ## Microsoft platform considerations
 
@@ -132,7 +132,7 @@ back earlier next time.
 ## Knowledge considerations
 
 Most exposure fixes are knowledge fixes: permissions corrected, archives removed, sources narrowed. Pass recurring
-patterns to the `knowledge-management` department (planned) so they are fixed across the estate, not one agent at a time.
+patterns to `knowledge-management:knowledge-cleanup` so they are fixed across the estate, not one agent at a time.
 
 ## Security and privacy considerations
 
@@ -142,7 +142,7 @@ This skill is the security and privacy review of data exposure. Personal data fi
 ## Responsible AI considerations
 
 Exposure of personal data about colleagues can cause real harm even inside the organisation. Where answers could reveal
-information about individuals, flag the case to the `responsible-ai` department (planned) through risk classification.
+information about individuals, flag the case to `responsible-ai:ai-impact-assessment` through risk classification.
 
 ## Evaluation requirements
 
@@ -176,7 +176,7 @@ reviewing tier 3 and 4. Track findings across the portfolio and feed patterns in
 - Back to `m365-agents:knowledge-source-readiness` and `m365-agents:agent-use-case-design` with fixes to sources and scope.
 - To `security-privacy:privacy-assessment` for personal data and `security-privacy:connector-review` for actions.
 - To `m365-agents:agent-release-readiness` with the verdict.
-- To the `data-governance` department (planned) for estate-wide classification and access issues.
+- To `data-governance:data-classification-for-ai` and `data-governance:ai-data-access-model` for estate-wide classification and access issues.
 
 ## Reviewer gates
 

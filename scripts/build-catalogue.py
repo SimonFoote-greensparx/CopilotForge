@@ -38,7 +38,9 @@ def dept_table(rows_for):
         for d in ds:
             name = f"[`{d['id']}`]({d['path']}/README.md)" if d["path"] else f"`{d['id']}`"
             flag = " (reviewer)" if d["reviewer"] else ""
-            out.append(f"| {name}{flag} | {d['status']} (phase {d['phase']}) | {len(d['skills'])} | {d['description']} |")
+            sts = sorted({s["status"] for s in d["skills"]})
+            label = f"first version, {', '.join(sts)}" if sts else d["status"]
+            out.append(f"| {name}{flag} | {label} (phase {d['phase']}) | {len(d['skills'])} | {d['description']} |")
         out.append("")
     return out
 
@@ -57,11 +59,12 @@ for d in cat["departments"]:
 lines += ["## Programmes", "", "| Programme | Status | Purpose | Artefacts |", "|---|---|---|---|"]
 for p in cat["programmes"]:
     lines.append(f"| `{p['id']}` {p['title']} | {p['status']} | {p['purpose']} | {', '.join(p['artefacts'])} |")
-lines += ["", "## Planned skills (backlog from the design brief)", ""]
+cmap = load_yaml(path("data", "candidate-skill-map.yaml")) or {}
+lines += ["", "## Design brief candidates and the skills that implement them", "",
+          "| Department | Candidate in the brief | Skill |", "|---|---|---|"]
 for d in cat["departments"]:
-    built = {s["name"] for s in d["skills"]}
-    rest = [c for c in d["candidate_skills"] if c not in built]
-    lines.append(f"- **{d['id']}**: {', '.join(rest)}")
+    for cand, skill in (cmap.get(d["id"]) or {}).items():
+        lines.append(f"| `{d['id']}` | {cand} | `{d['id']}:{skill}` |")
 write_or_check("docs/CATALOGUE.md", "\n".join(lines), check, problems)
 
 def splice(file, tag, body):
@@ -73,8 +76,9 @@ def splice(file, tag, body):
     write_or_check(file, pat.sub(lambda m: block, text), check, problems)
 
 splice("README.md", "catalogue", "\n".join(dept_table(None)).rstrip())
-status = ["| Department | Layer | Phase | Status |", "|---|---|---|---|"]
+status = ["| Department | Layer | Phase | Status | Skills | Skill status |", "|---|---|---|---|---|---|"]
 for d in sorted(cat["departments"], key=lambda d: (d["phase"], d["id"])):
-    status.append(f"| `{d['id']}` | {d['layer']} | {d['phase']} | {d['status']} |")
+    st = sorted({s["status"] for s in d["skills"]}) or ["-"]
+    status.append(f"| `{d['id']}` | {d['layer']} | {d['phase']} | {'first version' if d['skills'] else d['status']} | {len(d['skills'])} | {', '.join(st)} |")
 splice("ROADMAP.md", "department-status", "\n".join(status))
 finish("Catalogue", problems, len(cat["departments"]))

@@ -25,8 +25,10 @@ for s in skills():
         exp = n.get("expected", "")
         if exp == f"{s['department']}:{s['folder']}":
             problems.append(f"{where}: '{s['folder']}' negative expects itself")
-        elif exp not in ids and not (exp.endswith(":*") and exp[:-2]):
-            problems.append(f"{where}: '{s['folder']}' negative expects '{exp}', which is not a skill (use department:* for a planned department)")
+        elif exp.endswith(":*") and any(d["id"] == exp[:-2] for d in active_departments()):
+            problems.append(f"{where}: '{s['folder']}' negative expects '{exp}'; the department is built, so name the specific skill")
+        elif exp not in ids and not exp.endswith(":*"):
+            problems.append(f"{where}: '{s['folder']}' negative expects '{exp}', which is not a skill")
     if len(set(pos)) != len(pos):
         problems.append(f"{where}: '{s['folder']}' has duplicate prompts")
 for dep, blocks in suites.items():

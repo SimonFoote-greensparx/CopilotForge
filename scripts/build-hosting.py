@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build the website as a self-contained static site for professional web hosting (decision D14).
 
-    python3 scripts/build-hosting.py [--site-url https://copilotforge.ai/] [--github-links]
+    python3 scripts/build-hosting.py [--site-url https://copilotforge.ai/] [--no-github-links]
 
 Writes dist/website/ and dist/copilotforge-website.zip (dist/ is git-ignored). Unzip the archive into the web root,
 for example public_html. See docs/HOSTING.md. The core pages come from site/ (scripts/build-site.py); this script adds
@@ -19,8 +19,8 @@ import _markdown as md
 
 ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
 ap.add_argument("--site-url", default=SITE_URL)
-ap.add_argument("--github-links", dest="github_links", action="store_true", default=GITHUB_LINKS,
-                help="Link repository-only references to GitHub (only once the repository is public)")
+ap.add_argument("--no-github-links", dest="github_links", action="store_false", default=GITHUB_LINKS,
+                help="Show repository-only references as plain text instead of linking to GitHub")
 ap.add_argument("--out", default=path("dist", "website"))
 ap.add_argument("--zip", default=path("dist", "copilotforge-website.zip"))
 opts = ap.parse_args()
@@ -264,7 +264,7 @@ for pid, p in progs.items():
     gates = "".join(f'<li><code>{e(g["reviewer"])}</code> at {e(g["stage"])} from risk tier {g["from_risk_tier"]}; blocking, cannot be skipped'
                     + ("" if dept_by_id[g["reviewer"]]["status"] == "active" else " (contract only until the department is built)") + "</li>"
                     for g in p.get("gates", []))
-    planned = ", ".join(f"<code>{e(x)}</code>" for x in p.get("planned_departments", []))
+    planned = ", ".join(f"<code>{e(x)}</code>" for x in p.get("supporting_departments", []))
     subs = "".join(f"<li>{e(v)}</li>" for v in (p.get("starter_substitutions") or {}).values())
     body = (f'<p class="crumbs"><a href="{site_rel("programmes.html", site)}">Programmes</a> &rsaquo; {e(p["title"])}</p>'
             f'<h1>{e(p["title"])}</h1><p class="lead">{e(p["purpose"])}</p>'
@@ -273,7 +273,7 @@ for pid, p in progs.items():
             + (f'<h2>Artefacts</h2><div class="table-wrap"><table class="grid"><thead><tr><th>Artefact</th><th>Stage</th><th>Responsible skill</th><th>Template</th><th>Starter</th><th>Scale</th><th>Enterprise</th></tr></thead><tbody>{rows}</tbody></table></div>' if rows else "")
             + (f"<h2>Starter edition</h2><ul>{subs}</ul>" if subs else "")
             + (f"<h2>Reviewer gates</h2><ul>{gates}</ul>" if gates else "")
-            + (f"<h2>Departments still to be built</h2><p>{planned}</p>" if planned else ""))
+            + (f"<h2>Supporting departments</h2><p>{planned}</p>" if planned else ""))
     add_page(site, p["title"], crosslink(body, site), "Programmes")
 
 # ------------------------------------------------------------------ downloads
@@ -295,7 +295,7 @@ downloads = f"""<h1>Install {DISPLAY_NAME}</h1>
 <p>In Copilot Cowork, select <em>Customize</em> &gt; <em>Plugins</em> &gt; <em>Upload plugin</em> and choose an archive. Cowork converts it into a plugin with its skills. The <a href="guides/copilot-cowork.html">Copilot Cowork guide</a> covers single skills, sharing and updates, and the <a href="guides/custom-instructions.html">suggested custom instructions</a> help Cowork use the skills well. Every plugin name starts with <code>{PLUGIN_PREFIX}</code>, so the plugins sit alongside other skill libraries without clashing.</p>
 <div class="table-wrap"><table class="grid"><thead><tr><th>Department</th><th>Plugin name</th><th>Skills</th><th>Size</th><th>Download</th></tr></thead>
 <tbody>{"".join(rows)}</tbody></table></div>
-<p>To design a whole Microsoft AI programme, install all of them. Each skill page also offers its <code>SKILL.md</code> on its own.</p>
+<p>Install only what you need: the <a href="guides/copilot-cowork.html">Copilot Cowork guide</a> suggests sets for common goals. Each skill page also offers its <code>SKILL.md</code> on its own. All content is a first draft.</p>
 <h2 id="profiles">Organisation profiles</h2>
 <p>The organisation-tailoring department turns an organisation profile into a recommended edition, archetype, programme and transformation pack. Build one with the <a href="programme-builder.html">programme builder</a>, or start from a fictional sample:</p>
 <ul>{"".join(f'<li><a href="downloads/profiles/{e(f)}" download>{e(f)}</a></li>' for f in samples)}

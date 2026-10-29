@@ -42,9 +42,9 @@ for pid, p in progs.items():
     for inc in p.get("includes", []):
         if inc["programme"] not in progs:
             problems.append(f"{where}: includes unknown programme '{inc['programme']}'")
-    for d in p.get("planned_departments", []):
+    for d in p.get("supporting_departments", []):
         if d not in depts:
-            problems.append(f"{where}: planned department '{d}' is not in the catalogue")
+            problems.append(f"{where}: supporting department '{d}' is not in the catalogue")
 # Any programme that produces delivery artefacts for agents must carry the security-privacy gate.
 for pid, p in progs.items():
     if any(a["skill"].startswith("m365-agents:") for a in p.get("artefacts", [])):

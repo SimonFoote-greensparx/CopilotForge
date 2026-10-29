@@ -15,6 +15,8 @@ artefacts:
   - {id: operating-model, title: Target operating model, skill: "ai-strategy:ai-operating-model", template: ai-operating-model, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
   - {id: ownership-map, title: Ownership map, skill: "organisation-tailoring:ownership-map", template: ownership-map, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
   - {id: pack-index, title: Transformation pack index and success measures, skill: "organisation-tailoring:transformation-pack", template: transformation-pack-index, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: programme-charter, title: Programme charter, skill: "programme-management:programme-charter", template: programme-charter, stage: Mobilise, depth: {starter: omit, scale: standard, enterprise: full}}
+  - {id: benefits-plan, title: Benefits register and realisation plan, skill: "value-realisation:benefit-realisation-plan", template: benefits-register, stage: Measure, depth: {starter: light, scale: standard, enterprise: full}}
 starter_substitutions:
   ai-coe: "Starter organisations get an AI working group instead of a CoE. The coe-charter and coe-raci artefacts are produced in light form."
 gates:

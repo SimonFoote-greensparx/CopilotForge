@@ -8,5 +8,8 @@ artefacts:
   - {id: scenario-catalogue, title: Persona and scenario catalogue, skill: "copilot-adoption:scenario-discovery", template: scenario-catalogue, stage: Enable, depth: {starter: light, scale: standard, enterprise: full}}
   - {id: adoption-programme, title: Adoption programme and launch plan, skill: "copilot-adoption:launch-plan", template: adoption-plan, stage: Launch, depth: {starter: light, scale: standard, enterprise: full}}
   - {id: adoption-measures, title: Adoption measures and baseline, skill: "copilot-adoption:adoption-measurement", template: coe-kpi-scorecard, stage: Measure, depth: {starter: light, scale: standard, enterprise: full}}
-planned_departments: [learning-and-skills, change-and-communications, value-realisation]
+  - {id: communications-plan, title: Communications plan, skill: "change-and-communications:ai-communication-strategy", template: ai-communications-plan, stage: Enable, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: learning-plan, title: Role-based learning plan, skill: "learning-and-skills:ai-role-curriculum", template: ai-learning-plan, stage: Enable, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: support-model, title: User support model, skill: "copilot-adoption:adoption-support-model", template: adoption-support-model, stage: Launch, depth: {starter: light, scale: standard, enterprise: full}}
+supporting_departments: [learning-and-skills, change-and-communications, value-realisation]
 gates: []
