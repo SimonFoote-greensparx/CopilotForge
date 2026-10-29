@@ -5,63 +5,196 @@
   },
   "metadata": {
     "description": "CopilotForge: your Microsoft AI transformation team as installable AI skills.",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "copilotforge-ai-strategy",
       "source": "./departments/ai-strategy",
       "description": "CopilotForge AI Strategy. Define the organisation's AI ambition, target outcomes, principles, operating model and roadmap, starting from business outcomes rather than products.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "license": "CC-BY-4.0"
     },
     {
       "name": "copilotforge-opportunity-management",
       "source": "./departments/opportunity-management",
       "description": "CopilotForge Opportunity Management. Create a disciplined path from business problem to prioritised and governed initiative, including the decision about whether AI is the right answer at all.",
-      "version": "0.1.0",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-value-realisation",
+      "source": "./departments/value-realisation",
+      "description": "CopilotForge Value Realisation. Define baselines, measures and ownership so adoption and deployed solutions create demonstrable value.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-programme-management",
+      "source": "./departments/programme-management",
+      "description": "CopilotForge Programme Management. Mobilise and govern a coherent adoption, delivery or transformation programme.",
+      "version": "0.2.0",
       "license": "CC-BY-4.0"
     },
     {
       "name": "copilotforge-copilot-adoption",
       "source": "./departments/copilot-adoption",
       "description": "CopilotForge Copilot Adoption. Design and run organisation-wide or business-unit Microsoft AI adoption programmes, from readiness and scenarios through launch, reinforcement and measurement.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "license": "CC-BY-4.0"
     },
     {
       "name": "copilotforge-champions",
       "source": "./departments/champions",
       "description": "CopilotForge Champions. Create evidence-led Champion programmes that turn curiosity into capability and capability into contribution, with clear boundaries on what Champions do and do not do.",
-      "version": "0.1.0",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-learning-and-skills",
+      "source": "./departments/learning-and-skills",
+      "description": "CopilotForge Learning and Skills. Create role-based learning, practice, assessment and progression pathways.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-change-and-communications",
+      "source": "./departments/change-and-communications",
+      "description": "CopilotForge Change and Communications. Build sponsorship, communications, manager engagement, behavioural reinforcement and change readiness.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-knowledge-management",
+      "source": "./departments/knowledge-management",
+      "description": "CopilotForge Knowledge Management. Make organisational knowledge discoverable, owned, current, classified and suitable for AI grounding.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-m365-copilot",
+      "source": "./departments/m365-copilot",
+      "description": "CopilotForge Microsoft 365 Copilot. Help organisations introduce Microsoft Copilot as an everyday working capability.",
+      "version": "0.2.0",
       "license": "CC-BY-4.0"
     },
     {
       "name": "copilotforge-m365-agents",
       "source": "./departments/m365-agents",
       "description": "CopilotForge Microsoft 365 Agents. Turn organisational knowledge and repeatable information needs into appropriately scoped, owned and tested agents with a managed lifecycle.",
-      "version": "0.1.0",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-copilot-cowork",
+      "source": "./departments/copilot-cowork",
+      "description": "CopilotForge Copilot Cowork. Design safe, effective delegation of complex work with explicit context, checkpoints and review.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-copilot-code",
+      "source": "./departments/copilot-code",
+      "description": "CopilotForge Copilot Code. Translate desired outcomes into governed software prototypes and production-ready engineering work.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-copilot-studio",
+      "source": "./departments/copilot-studio",
+      "description": "CopilotForge Copilot Studio. Design and deliver low-code and enterprise agents with appropriate actions, data, ALM and lifecycle controls.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-ai-foundry",
+      "source": "./departments/ai-foundry",
+      "description": "CopilotForge Microsoft Foundry. Engineer specialist and custom AI solutions where configured agents are insufficient.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-automation",
+      "source": "./departments/automation",
+      "description": "CopilotForge Automation. Combine AI with deterministic workflow automation where repeatability and integration matter.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-ai-engineering",
+      "source": "./departments/ai-engineering",
+      "description": "CopilotForge AI Engineering. Provide pro-code engineering patterns shared across custom AI solutions.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-ai-architecture",
+      "source": "./departments/ai-architecture",
+      "description": "CopilotForge AI Architecture. Select appropriate patterns and define target architecture across Microsoft 365, Power Platform, Azure and data services.",
+      "version": "0.2.0",
       "license": "CC-BY-4.0"
     },
     {
       "name": "copilotforge-security-privacy",
       "source": "./reviewers/security-privacy",
       "description": "CopilotForge Security and Privacy. Reviewer-class department that assesses identity, access, data exposure, connectors, privacy and retention for AI solutions and blocks release while material risks are unresolved.",
-      "version": "0.1.0",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-responsible-ai",
+      "source": "./reviewers/responsible-ai",
+      "description": "CopilotForge Responsible AI. Reviewer-class department that identifies impact, accountability, human oversight, unacceptable uses and mitigating controls.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-data-governance",
+      "source": "./departments/data-governance",
+      "description": "CopilotForge Data Governance. Ensure the data used by AI is appropriately owned, classified, accessible, lawful and of sufficient quality.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-evaluation-quality",
+      "source": "./reviewers/evaluation-quality",
+      "description": "CopilotForge Evaluation and Quality. Reviewer-class department that defines evaluation sets, acceptance criteria, failure analysis and release evidence for probabilistic systems.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-platform-governance",
+      "source": "./departments/platform-governance",
+      "description": "CopilotForge Platform Governance. Govern environments, makers, connectors, agents, deployment, licensing and portfolio visibility.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-ai-operations",
+      "source": "./departments/ai-operations",
+      "description": "CopilotForge AI Operations. Operate deployed agents and AI solutions throughout support, monitoring, review, improvement and retirement.",
+      "version": "0.2.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-design-authority",
+      "source": "./reviewers/design-authority",
+      "description": "CopilotForge Design Authority. Reviewer-class department that challenges inappropriate platform choice, unnecessary AI, fragile architecture and unsupportable designs.",
+      "version": "0.2.0",
       "license": "CC-BY-4.0"
     },
     {
       "name": "copilotforge-ai-centre-of-excellence",
       "source": "./departments/ai-centre-of-excellence",
       "description": "CopilotForge AI Centre of Excellence. Orchestrate a business-owned AI Centre of Excellence covering charter, operating model, team, governance, opportunity flow, knowledge, cadence, RACI and value measurement.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "license": "CC-BY-4.0"
     },
     {
       "name": "copilotforge-organisation-tailoring",
       "source": "./departments/organisation-tailoring",
       "description": "CopilotForge Organisation Tailoring. Turn an organisation profile into a recommended edition and maturity archetype, a scaled programme, an ownership map and a transformation pack.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "license": "CC-BY-4.0"
     }
   ]

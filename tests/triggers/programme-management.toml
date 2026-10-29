@@ -1,0 +1,121 @@
+# Trigger tests for the programme-management department (design brief 13 and 17).
+
+[[skill]]
+name = "programme-charter"
+should_trigger = [
+  "Our AI transformation pack has been agreed. Draft the programme charter our COO can sign, with scope, workstreams and tolerances.",
+  "We have a Copilot rollout, an agent pilot and a CoE launch all running separately. Put them under one programme mandate.",
+  "The sponsor wants to know exactly what this AI programme is committing to, by when, and with what money and people.",
+]
+should_not_trigger = [
+  { prompt = "Draft the charter for our AI Centre of Excellence, including its pillars and what it is not.", expected = "ai-centre-of-excellence:coe-charter" },
+  { prompt = "Help us agree three to five measurable business outcomes for our AI strategy.", expected = "ai-strategy:strategic-outcomes" },
+]
+
+[[skill]]
+name = "integrated-roadmap"
+should_trigger = [
+  "Each workstream in our AI programme has its own plan. Pull them into one plan with milestones and show what depends on what.",
+  "We want to launch the HR agent and the next Copilot wave in March. What has to be true across workstreams by then, and what is the critical path?",
+  "Turn our twelve-month AI roadmap into a dated delivery plan for the next two quarters that the programme board can baseline.",
+]
+should_not_trigger = [
+  { prompt = "Sequence our AI initiatives into now, next and later horizons against our strategic outcomes.", expected = "ai-strategy:ai-roadmap" },
+  { prompt = "Plan the phased Copilot launch by persona with onboarding and office hours.", expected = "copilot-adoption:launch-plan" },
+]
+
+[[skill]]
+name = "programme-board-cadence"
+should_trigger = [
+  "Set up the programme board and workstream meetings for our AI transformation, with terms of reference and a decision log.",
+  "Our AI programme board just listens to status updates for an hour and never decides anything. Fix the governance rhythm.",
+  "We already have a CoE steering group. How should the AI programme's board fit alongside it without duplicating meetings?",
+]
+should_not_trigger = [
+  { prompt = "Set up the weekly working group, monthly steering and quarterly strategy review for our new AI CoE.", expected = "ai-centre-of-excellence:coe-cadence" },
+  { prompt = "Who has the right to approve or block decisions in our AI programme, and how do escalations work?", expected = "programme-management:stakeholder-governance" },
+]
+
+[[skill]]
+name = "programme-risk-log"
+should_trigger = [
+  "Set up a RAID log for our Copilot and agents programme with the risks we should be thinking about.",
+  "Our plan assumes licences, reviewer capacity and clean SharePoint content. Nobody is checking those assumptions. Help us track them.",
+  "The board wants to see the top risks to our AI programme with owners and responses each month.",
+]
+should_not_trigger = [
+  { prompt = "What risk tier is our customer-facing complaints agent, and which reviews does it need?", expected = "opportunity-management:risk-classification" },
+  { prompt = "Track the date IT has promised to finish the permissions clean-up our agent depends on.", expected = "programme-management:dependency-management" },
+]
+
+[[skill]]
+name = "dependency-management"
+should_trigger = [
+  "Our agent release depends on IT finishing sensitivity labels and a partner delivering a connector. How do we track and manage that?",
+  "Microsoft has announced a change that might affect a feature our roadmap relies on. How do we watch for this and assess the impact on our plan?",
+  "Workstreams keep discovering they were waiting on each other. Set up dependency tracking with givers, receivers and fallbacks.",
+]
+should_not_trigger = [
+  { prompt = "Integrate all our workstream plans into one roadmap with a critical path.", expected = "programme-management:integrated-roadmap" },
+  { prompt = "Record the risk that staff concerns about job impact reduce Copilot use.", expected = "programme-management:programme-risk-log" },
+]
+
+[[skill]]
+name = "stakeholder-governance"
+should_trigger = [
+  "Decisions in our AI programme keep stalling between IT, the DPO and the business units. Who should decide what, and how do we escalate?",
+  "Our works council found out late about the Copilot rollout and now wants to pause it. How should we govern stakeholder involvement in decisions from now on?",
+  "Build a decision rights matrix for our AI programme covering scope, suppliers, releases and policy changes.",
+]
+should_not_trigger = [
+  { prompt = "Build a RACI for agent intake, release approval and knowledge ownership in our CoE.", expected = "ai-centre-of-excellence:coe-raci" },
+  { prompt = "Our AI programme board has no terms of reference or decision log. Set up its meeting rhythm.", expected = "programme-management:programme-board-cadence" },
+]
+
+[[skill]]
+name = "supplier-management"
+should_trigger = [
+  "We need a Microsoft partner to help build agents in Copilot Studio. How should we choose one and structure the contract?",
+  "Our partner has been building agents for six months but our team still cannot maintain them. How do we fix the relationship and plan an exit?",
+  "Write evaluation criteria for shortlisting partners to support our Copilot adoption and agent delivery.",
+]
+should_not_trigger = [
+  { prompt = "Review the connectors and APIs the partner's agent uses for data leaving the tenant.", expected = "security-privacy:connector-review" },
+  { prompt = "Which roles and skills is our AI programme missing, and should we develop, recruit or partner?", expected = "organisation-tailoring:capability-gap-analysis" },
+]
+
+[[skill]]
+name = "budget-and-capacity"
+should_trigger = [
+  "Set up the budget and capacity plan for our AI programme, including services, licences as advised and consumption costs.",
+  "Our Copilot Studio agent consumption is growing faster than we planned. How do we forecast it and keep the programme within budget?",
+  "The same knowledge owners and security reviewer are committed to three workstreams in the same month. Help us plan capacity.",
+]
+should_not_trigger = [
+  { prompt = "Write the funding case to get our AI programme approved by the executive committee.", expected = "ai-strategy:investment-case" },
+  { prompt = "Do we need more Microsoft 365 Copilot licences, and which licence covers agents?", expected = "platform-governance:ai-licensing-and-capacity" },
+]
+
+[[skill]]
+name = "stage-gates"
+should_trigger = [
+  "Define the stage gates for our AI transformation programme, with the evidence and sign-off needed at each.",
+  "What must be true before our AI programme moves from pilot into scale-out across the business units?",
+  "Our programme gates always say go. Make them real decisions with evidence, conditions and the option to hold or stop.",
+]
+should_not_trigger = [
+  { prompt = "Our agent passed testing. Check it is ready to share with the whole finance team.", expected = "m365-agents:agent-release-readiness" },
+  { prompt = "The pilot of our contract summary agent has reached its review date. Should we scale it or stop?", expected = "opportunity-management:scale-or-stop" },
+]
+
+[[skill]]
+name = "programme-health"
+should_trigger = [
+  "Prepare this month's health report for our AI programme board with RAG ratings and corrective actions.",
+  "Every workstream reports green but our AI programme feels stuck. Run a proper health check.",
+  "Our AI programme is red on schedule and cost. Put together a recovery plan with options for the sponsor.",
+]
+should_not_trigger = [
+  { prompt = "Is our Champions network still healthy, or does it need renewing?", expected = "champions:champions-health-check" },
+  { prompt = "Build a KPI scorecard for our AI CoE across adoption, capability, quality and value.", expected = "ai-centre-of-excellence:coe-kpi-framework" },
+]

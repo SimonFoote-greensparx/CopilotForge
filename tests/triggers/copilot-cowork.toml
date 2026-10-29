@@ -1,0 +1,125 @@
+# Trigger tests for the copilot-cowork department (design brief 13 and 17).
+
+[[skill]]
+name = "work-delegation-design"
+should_trigger = [
+  "Cowork is going to help with our monthly supplier review. Which bits should it do and which should my team keep?",
+  "Cowork sent a reply to a customer that my manager wanted to write herself. How do we agree what it is allowed to do?",
+  "If Cowork drafts the board pack, who is actually accountable for what goes in it?",
+  "We want Cowork to take on more of the recruitment admin. Help us decide where to draw the line.",
+]
+should_not_trigger = [
+  { prompt = "Is preparing the weekly site report something Cowork is even suited to, or should we automate it?", expected = "copilot-cowork:cowork-use-case-assessment" },
+  { prompt = "Where exactly should Cowork stop and ask me before it sends the supplier letters?", expected = "copilot-cowork:human-checkpoint-design" },
+]
+
+[[skill]]
+name = "cowork-use-case-assessment"
+should_trigger = [
+  "Our bid team wants to hand tender preparation to Cowork. Is that a sensible task for it?",
+  "We tried Cowork on the expenses reconciliation and the results were poor. Was it ever the right tool for that?",
+  "Should this be a Cowork task or should we build an agent for the whole finance team?",
+  "Can you sense-check these five tasks my team wants to try with Cowork?",
+]
+should_not_trigger = [
+  { prompt = "Is AI the right answer at all for our late invoice problem, or should we fix the process?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Should we build a custom app with Copilot Code for site inspections?", expected = "copilot-code:code-use-case-assessment" },
+]
+
+[[skill]]
+name = "task-context-design"
+should_trigger = [
+  "Every time I ask Cowork to do the quarterly review it comes back different. What should I be giving it?",
+  "Help me write down the inputs, sources and standard for our client briefing task so the whole team can reuse it.",
+  "Cowork keeps pulling in old drafts from the project site. How do I tell it which files count?",
+  "Should our house style rules go into each task or into an organisational skill for Cowork?",
+]
+should_not_trigger = [
+  { prompt = "Write the instructions for our HR policy agent so it cites sources and refuses out-of-scope questions.", expected = "m365-agents:agent-instructions" },
+  { prompt = "Is the project library itself up to date and shared with the right people before Cowork uses it?", expected = "copilot-cowork:grounding-readiness" },
+]
+
+[[skill]]
+name = "human-checkpoint-design"
+should_trigger = [
+  "Cowork will be sending supplier letters. Where should it stop for approval and what should I see at that point?",
+  "People just click approve on every Cowork prompt. How do we make the checkpoints mean something?",
+  "What happens if nobody responds when Cowork pauses for a decision half-way through?",
+]
+should_not_trigger = [
+  { prompt = "Add an approval step to our Power Automate invoice flow before payments are released.", expected = "automation:human-in-the-loop" },
+  { prompt = "Check the finished briefing Cowork produced before I send it to the director.", expected = "copilot-cowork:delegated-work-review" },
+]
+
+[[skill]]
+name = "multi-step-work-design"
+should_trigger = [
+  "Cowork goes off track about twenty minutes into the market analysis. How should I break the work up?",
+  "Help me structure the monthly reporting pack as Cowork steps, each with something I can check.",
+  "If a long Cowork run stops part-way, how do we pick it up without starting again?",
+]
+should_not_trigger = [
+  { prompt = "Design a Foundry agent workflow that runs autonomously across our order systems.", expected = "ai-foundry:agentic-workflow-design" },
+  { prompt = "Which parts of this task should Cowork do at all, and which should stay with us?", expected = "copilot-cowork:work-delegation-design" },
+]
+
+[[skill]]
+name = "grounding-readiness"
+should_trigger = [
+  "Before my team reuses this Cowork task, check the folders and mail it relies on are current and not overshared.",
+  "Cowork quoted last year's prices in the proposal. Can you look at the files it is drawing on?",
+  "There are three versions of the pricing sheet in our team site. Is that going to be a problem for Cowork?",
+]
+should_not_trigger = [
+  { prompt = "Assess the SharePoint library our policy agent will use as its knowledge source.", expected = "m365-agents:knowledge-source-readiness" },
+  { prompt = "Do a formal security review of what confidential content could surface across the tenant when we enable Copilot.", expected = "security-privacy:data-exposure-review" },
+]
+
+[[skill]]
+name = "cowork-governance"
+should_trigger = [
+  "We are enabling Cowork next quarter. What rules do we need about plugins, skills and sharing?",
+  "Someone published a Cowork skill that half the business now uses. Who should have approved that?",
+  "A team wants to install a Cowork plugin that writes to our CRM. What is our approval route?",
+  "How do we keep track of which Cowork skills and custom instructions are in use and who maintains them?",
+]
+should_not_trigger = [
+  { prompt = "Review the connector this Copilot Studio agent uses to post to our ticketing system.", expected = "security-privacy:connector-review" },
+  { prompt = "Plan how we get Cowork used well in the finance team over the next two months.", expected = "copilot-cowork:cowork-adoption" },
+]
+
+[[skill]]
+name = "workflow-validation"
+should_trigger = [
+  "Our Cowork task for client onboarding packs is about to go in the shared library. How do we test it first?",
+  "We want Cowork to move from drafting the supplier letters to sending them after approval. What evidence do we need?",
+  "The custom instruction behind our reporting task changed. Do we need to re-test the workflow?",
+]
+should_not_trigger = [
+  { prompt = "Write test questions and expected answers for the HR policy agent before release.", expected = "m365-agents:agent-testing" },
+  { prompt = "Check this one briefing Cowork just produced before I send it.", expected = "copilot-cowork:delegated-work-review" },
+]
+
+[[skill]]
+name = "delegated-work-review"
+should_trigger = [
+  "Cowork has drafted twelve customer letters. What should I check before they go out?",
+  "An error in a Cowork summary went to the board last month. What should our review routine be?",
+  "What does checked actually mean for work Cowork prepares for our team?",
+]
+should_not_trigger = [
+  { prompt = "Review this pull request the coding agent opened before we merge it.", expected = "copilot-code:generated-code-review" },
+  { prompt = "Design where Cowork should pause for my approval during the run.", expected = "copilot-cowork:human-checkpoint-design" },
+]
+
+[[skill]]
+name = "cowork-adoption"
+should_trigger = [
+  "Cowork is coming to the operations team. How do we get them using it well rather than just trying it once?",
+  "Use of Cowork in sales dropped after the first month. What should we do?",
+  "Our sponsor wants to know how teams will learn to delegate to Cowork safely.",
+]
+should_not_trigger = [
+  { prompt = "Plan the organisation-wide launch of Microsoft 365 Copilot across all business units.", expected = "copilot-adoption:launch-plan" },
+  { prompt = "Set the rules for which Cowork plugins and skills are approved.", expected = "copilot-cowork:cowork-governance" },
+]

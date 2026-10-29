@@ -1,0 +1,121 @@
+# Trigger tests for the m365-copilot department (design brief 13 and 17).
+
+[[skill]]
+name = "copilot-technical-readiness"
+should_trigger = [
+  "Before the pilot group gets Copilot, can IT confirm the apps, licence groups and admin settings are actually ready?",
+  "Half the pilot users cannot see Copilot in Outlook and others get nothing from their files. What should we check technically?",
+  "Nobody ever decided our Copilot settings for web content and agents. How do we review them properly?",
+]
+should_not_trigger = [
+  { prompt = "Are we ready as an organisation to launch Copilot, including sponsorship, guidance, support and communications?", expected = "copilot-adoption:adoption-readiness" },
+  { prompt = "The finance team's SharePoint sites look shared with everyone. Get their own files and permissions ready before their wave.", expected = "m365-copilot:work-context-readiness" },
+]
+
+[[skill]]
+name = "copilot-chat-rollout"
+should_trigger = [
+  "We want to give Copilot Chat to all 12,000 staff next quarter. What do we need to decide and put in place first?",
+  "People are pasting work documents into consumer chatbots. How do we roll out Copilot Chat as the safe alternative?",
+  "Copilot Chat just appeared for everyone with no announcement. How do we get control of the settings and guidance now?",
+]
+should_not_trigger = [
+  { prompt = "We have 500 Microsoft 365 Copilot licences. Which teams should get them first and in what waves?", expected = "m365-copilot:m365-copilot-rollout" },
+  { prompt = "Plan the onboarding sessions, manager briefings and reinforcement for our whole Copilot launch.", expected = "copilot-adoption:launch-plan" },
+]
+
+[[skill]]
+name = "m365-copilot-rollout"
+should_trigger = [
+  "We have bought 800 Copilot licences. Help me decide which roles go in wave one and what each wave must pass before it starts.",
+  "A third of our Copilot licences look unused. How should we set fair allocation and reallocation rules?",
+  "Our Copilot pilot has finished. How do we plan the next waves with entry gates and exit criteria?",
+]
+should_not_trigger = [
+  { prompt = "Roll Copilot Chat out to every employee safely, including guidance on unapproved AI tools.", expected = "m365-copilot:copilot-chat-rollout" },
+  { prompt = "How many Copilot licences are we entitled to under our agreement, and what will more cost?", expected = "platform-governance:ai-licensing-and-capacity" },
+]
+
+[[skill]]
+name = "copilot-role-scenarios"
+should_trigger = [
+  "Our account managers need concrete examples of using Copilot in Outlook, Teams and PowerPoint for their weekly work. Can you write them?",
+  "The scenarios we gave project managers do not work on their real meetings and spreadsheets. Help me fix them.",
+  "Turn the top three tasks we found for procurement officers into tested, app-specific Copilot scenarios with a check step.",
+]
+should_not_trigger = [
+  { prompt = "Which tasks across our personas should we prioritise for Copilot, and how do we build the catalogue?", expected = "copilot-adoption:scenario-discovery" },
+  { prompt = "Redesign our whole month-end reporting process across finance roles around Copilot.", expected = "m365-copilot:department-scenario-design" },
+]
+
+[[skill]]
+name = "prompting-practice"
+should_trigger = [
+  "People say Copilot gives bland, generic answers. How do we teach them to ask better and to check what comes back?",
+  "We are building a shared prompt library. What standard should each prompt meet before we publish it?",
+  "Staff forward Copilot summaries without checking them. Give me a simple verification habit we can teach.",
+]
+should_not_trigger = [
+  { prompt = "Write the instructions for our travel policy agent so it refuses off-topic questions and cites sources.", expected = "m365-agents:agent-instructions" },
+  { prompt = "Design a role-based AI curriculum for our finance and HR teams.", expected = "learning-and-skills:ai-role-curriculum" },
+]
+
+[[skill]]
+name = "work-context-readiness"
+should_trigger = [
+  "The legal team gets Copilot next month. Are their files, team sites and meeting habits in a state where it will help and not expose anything?",
+  "Copilot keeps missing obvious documents for the sales team. Their proposals are all email attachments. What should change?",
+  "Before wave two, check the HR team's sites and libraries for oversharing and agree how they record meetings.",
+]
+should_not_trigger = [
+  { prompt = "Is the tenant ready for Copilot: identity, app versions, sensitivity labels and admin settings?", expected = "m365-copilot:copilot-technical-readiness" },
+  { prompt = "Is the policy library fit for our HR agent to ground on?", expected = "m365-agents:knowledge-source-readiness" },
+]
+
+[[skill]]
+name = "department-scenario-design"
+should_trigger = [
+  "Our finance director wants the whole month-end reporting process to work differently with Copilot, not just tips for individuals.",
+  "Work with the HR department head to redesign how recruitment campaigns run across recruiters, coordinators and managers using Copilot.",
+  "Each person in bids saves a bit of time with Copilot but the bid process is still late. How do we redesign it as a team?",
+]
+should_not_trigger = [
+  { prompt = "Write app-specific Copilot scenario cards for our payroll officers.", expected = "m365-copilot:copilot-role-scenarios" },
+  { prompt = "Frame the invoice backlog problem with an owner and measure so we can decide whether to build something.", expected = "opportunity-management:problem-framing" },
+]
+
+[[skill]]
+name = "copilot-usage-reporting"
+should_trigger = [
+  "We are about to switch on the Copilot usage dashboard. Who should see it and what privacy settings should we apply?",
+  "The board wants Copilot usage figures next week. How do we present them fairly at team level with the right caveats?",
+  "A director asked for a list of people who have not used Copilot this month. How should we respond?",
+]
+should_not_trigger = [
+  { prompt = "Design our full Copilot adoption measurement framework across usage, capability, behaviour and outcomes.", expected = "copilot-adoption:adoption-measurement" },
+  { prompt = "Is our HR agent delivering the reduction in tickets we expected?", expected = "m365-agents:agent-value-measurement" },
+]
+
+[[skill]]
+name = "copilot-for-leaders"
+should_trigger = [
+  "What Copilot scenarios will our executive team actually use for meeting prep, inbox triage and board papers?",
+  "Write the Copilot scenario set for our people managers: preparing one-to-ones, team updates and catching up after leave.",
+  "A manager asked Copilot to summarise an employee's contribution for a performance review. What guidance should leaders get?",
+]
+should_not_trigger = [
+  { prompt = "Plan sessions that get our executives using Copilot visibly and championing adoption.", expected = "copilot-adoption:executive-enablement" },
+  { prompt = "Write Copilot scenario cards for our customer service advisers.", expected = "m365-copilot:copilot-role-scenarios" },
+]
+
+[[skill]]
+name = "copilot-for-frontline"
+should_trigger = [
+  "Which Copilot scenarios would actually work for our store staff on shared handheld devices during shifts?",
+  "Warehouse supervisors want quick answers about procedures, but some are safety-critical. What can Copilot safely do for them?",
+  "Is it safe for ward staff on shared tablets to ask Copilot about clinical procedures, and where should the line be drawn?",
+]
+should_not_trigger = [
+  { prompt = "Scope the frontline policy agent: audience, exclusions, knowledge and owner.", expected = "m365-agents:agent-use-case-design" },
+  { prompt = "Segment our workforce into adoption audiences and personas.", expected = "copilot-adoption:audience-segmentation" },
+]

@@ -1,0 +1,85 @@
+# Trigger tests for the platform-governance department (design brief 13 and 17).
+
+[[skill]]
+name = "ai-environment-strategy"
+should_trigger = [
+  "Agents and flows are being built wherever people like. What organisation-wide environment strategy should we have for AI building?",
+  "Set up governance zones for personal, team and production agents, with rules for moving between them.",
+  "A team's agent has become important. Where should it live, and how does it move into a governed environment?",
+]
+should_not_trigger = [
+  { prompt = "Lay out Azure subscriptions, regions and Power Platform environments for our first pro-code AI solution.", expected = "ai-architecture:environment-topology" },
+  { prompt = "Write the connector policy for each of our environment zones.", expected = "platform-governance:connector-policy" },
+]
+
+[[skill]]
+name = "maker-governance"
+should_trigger = [
+  "We're opening agent building to everyone next month. Who should be allowed to share agents and how widely?",
+  "A maker left and twenty of their flows broke. How do we stop orphaned agents and flows in future?",
+  "Someone shared their personal agent with the whole company. What maker rules should we have?",
+]
+should_not_trigger = [
+  { prompt = "Assign the business, knowledge and technical owners for the HR policy agent.", expected = "m365-agents:agent-ownership" },
+  { prompt = "Govern which plugins and skills people can use and share in Copilot Cowork.", expected = "copilot-cowork:cowork-governance" },
+]
+
+[[skill]]
+name = "connector-policy"
+should_trigger = [
+  "Our data policies were written for flows years ago. Update them for agents, MCP servers and web grounding.",
+  "Makers keep asking to unblock connectors. We need a proper policy per zone and an exceptions process.",
+  "Should agents be allowed to use public web knowledge, and in which environments?",
+]
+should_not_trigger = [
+  { prompt = "Review the connectors this flow uses: it reads SharePoint, posts to Teams and calls an external API.", expected = "security-privacy:connector-review" },
+  { prompt = "Which connectors should this particular Copilot Studio agent use?", expected = "copilot-studio:studio-connectors" },
+]
+
+[[skill]]
+name = "ai-solution-inventory"
+should_trigger = [
+  "Nobody can tell me how many agents and AI flows we have or who owns them. Build us an inventory.",
+  "Audit wants a list of every AI solution in the tenant with owners and risk tiers.",
+  "Find the agents that are shared widely but were never registered, and the ones whose owners have left.",
+]
+should_not_trigger = [
+  { prompt = "Prioritise and manage the CoE's portfolio of live and planned AI solutions.", expected = "ai-centre-of-excellence:coe-portfolio-management" },
+  { prompt = "Inventory the datasets and data products our AI solutions use.", expected = "data-governance:ai-data-inventory" },
+]
+
+[[skill]]
+name = "ai-release-policy"
+should_trigger = [
+  "We have no consistent rule for publishing agents. What should release require at each risk tier?",
+  "Releasing a team agent takes as long as a customer-facing one. Make our release process proportionate.",
+  "What happens when someone wants to widen an agent's audience or add a public website channel?",
+]
+should_not_trigger = [
+  { prompt = "Run the release gate for the IT help agent before we share it with all staff.", expected = "m365-agents:agent-release-readiness" },
+  { prompt = "Assemble the release evidence pack for the claims triage agent.", expected = "evaluation-quality:ai-release-evidence" },
+]
+
+[[skill]]
+name = "ai-licensing-and-capacity"
+should_trigger = [
+  "Do our frontline staff need extra licences to use the new Copilot Studio agent in Teams?",
+  "Agent consumption costs surprised finance last month. Help us work out the drivers and who owns the budget.",
+  "Our renewal is coming up. What evidence should we gather about AI licence use and capacity before talking to our partner?",
+]
+should_not_trigger = [
+  { prompt = "Plan and track the AI programme budget and people capacity for next year.", expected = "programme-management:budget-and-capacity" },
+  { prompt = "Reduce model and token costs for our Foundry solution.", expected = "ai-foundry:foundry-cost-management" },
+]
+
+[[skill]]
+name = "ai-admin-monitoring"
+should_trigger = [
+  "We only find governance problems by accident. What should admins monitor across the agent estate?",
+  "Set up alerts for new agents shared organisation-wide, orphaned flows and expired policy exceptions.",
+  "Steering wants a quarterly view of what's happening across our AI platforms, without naming individuals.",
+]
+should_not_trigger = [
+  { prompt = "Set up monitoring and alerting for errors and quality on the claims agent in production.", expected = "ai-operations:ai-solution-monitoring" },
+  { prompt = "Report Copilot usage by department for the adoption programme.", expected = "m365-copilot:copilot-usage-reporting" },
+]

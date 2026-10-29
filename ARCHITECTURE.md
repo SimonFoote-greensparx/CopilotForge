@@ -18,8 +18,9 @@ enduring capabilities rather than Microsoft's current product list; products are
                       knowledge-management                                  (* reviewer-class: may block)
 ```
 
-`catalogue/departments.toml` holds all 27 departments with layer, status (`active` or `planned`), build phase, lead role
-and the brief's candidate skills.
+`catalogue/departments.toml` holds all 27 departments with layer, journey stage, status, build phase, lead role and the
+brief's candidate skills; `data/candidate-skill-map.yaml` maps each candidate to the skill that implements it. Since
+v0.2 every department is active with first-draft skills.
 
 ## Units
 
@@ -56,9 +57,7 @@ in `evaluations/golden/` and `evaluations/acceptance.yaml` asserts the v1 accept
 
 A gate in a programme names a reviewer-class department, the lifecycle stage, the risk tier from which it applies and
 `blocking: true, skippable: false`. `scripts/check-programmes.py` refuses any gate that could be skipped, and any
-programme producing agent artefacts without a `security-privacy` gate. Gates for reviewer departments that are still
-planned are carried as a **contract only**: the plan reports them as such and the CoE lead records the review until the
-department is built. Reviewer tests in `tests/reviewers/` hold cases that must block and cases that must not.
+programme producing agent artefacts without a `security-privacy` gate. All four reviewer-class departments (`security-privacy`, `responsible-ai`, `evaluation-quality`, `design-authority`) are built, and a gate names the reviewer skills that apply. Reviewer tests in `tests/reviewers/` hold cases that must block and cases that must not.
 
 ## Generators
 

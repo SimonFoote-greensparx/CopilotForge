@@ -1,0 +1,122 @@
+# Trigger tests for the copilot-code department (design brief 13 and 17).
+
+[[skill]]
+name = "code-use-case-assessment"
+should_trigger = [
+  "Facilities want AI to build them an app for booking meeting rooms. Should we?",
+  "Why can't we just have Copilot Code write the tools each department asks for?",
+  "Is this a job for a Power Platform app, a Cowork task or a proper build with Copilot Code?",
+  "A manager wants a script to merge three spreadsheets every week. Do we build it?",
+]
+should_not_trigger = [
+  { prompt = "Is AI the right answer at all for our late-reporting problem, or should we fix the process?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "We agreed to build the inspection app. Help me write the brief the coding agent will work from.", expected = "copilot-code:code-solution-brief" },
+]
+
+[[skill]]
+name = "code-solution-brief"
+should_trigger = [
+  "The inspection app build is approved. What do we need to write down before the coding agent starts?",
+  "Our AI-assisted build keeps growing features. Help me define scope and exclusions properly.",
+  "Write the brief for promoting our booking prototype into a real application.",
+]
+should_not_trigger = [
+  { prompt = "Break the agreed brief into small issues the coding agent can pick up.", expected = "copilot-code:requirements-to-build" },
+  { prompt = "Scope a Copilot agent for line managers' absence questions.", expected = "m365-agents:agent-use-case-design" },
+]
+
+[[skill]]
+name = "requirements-to-build"
+should_trigger = [
+  "Turn this solution brief into work items for the coding agent with acceptance tests.",
+  "The agent's pull requests are thousands of lines long. How should we size the work we give it?",
+  "Which of these features should the coding agent build and which need an engineer to design first?",
+]
+should_not_trigger = [
+  { prompt = "Set up repository instructions so the coding agent follows our conventions.", expected = "copilot-code:repository-context" },
+  { prompt = "Validate the finished app against the brief before the business owner signs off.", expected = "copilot-code:application-validation" },
+]
+
+[[skill]]
+name = "repository-context"
+should_trigger = [
+  "We are opening our repository to the coding agent. What instructions and guardrails should we put in place?",
+  "The agent keeps adding libraries we have not approved. How do we stop that?",
+  "How do we make sure the coding agent never touches secrets or the authentication code?",
+]
+should_not_trigger = [
+  { prompt = "Structure the repository for our Foundry retrieval solution with prompts, evaluations and infrastructure.", expected = "ai-engineering:ai-solution-repository" },
+  { prompt = "Write the context and sources for a Cowork task that prepares client briefings.", expected = "copilot-cowork:task-context-design" },
+]
+
+[[skill]]
+name = "ai-assisted-prototyping"
+should_trigger = [
+  "We want to knock up a quick prototype with Copilot Code at the innovation day. What rules should apply?",
+  "A prototype someone built last month is now used daily by the warehouse team. What do we do?",
+  "How do we encourage teams to experiment in code with AI without ending up with dozens of unowned apps?",
+]
+should_not_trigger = [
+  { prompt = "Choose a pilot to test whether the contracts agent saves legal time with real users.", expected = "opportunity-management:pilot-selection" },
+  { prompt = "Is this outcome something we should build in code at all?", expected = "copilot-code:code-use-case-assessment" },
+]
+
+[[skill]]
+name = "application-validation"
+should_trigger = [
+  "The coding agent says all tests pass. How do we know the app actually does what the brief asked?",
+  "The business owner has to accept the AI-built booking app. What evidence should we give them?",
+  "Build a traceability check from our acceptance criteria to tests for the inspection app.",
+]
+should_not_trigger = [
+  { prompt = "Review the generated code for injection flaws and leaked secrets before release.", expected = "copilot-code:generated-code-security-review" },
+  { prompt = "Test our Cowork task design on awkward cases before the team relies on it.", expected = "copilot-cowork:workflow-validation" },
+]
+
+[[skill]]
+name = "generated-code-security-review"
+should_trigger = [
+  "Before release, review the AI-generated code in our booking app for security problems.",
+  "The coding agent added five new packages. What should security check about them?",
+  "The agent wrote our data access layer. Is the authorisation actually enforced on the server?",
+]
+should_not_trigger = [
+  { prompt = "Test our customer chatbot for prompt injection and jailbreaks.", expected = "security-privacy:ai-security-testing" },
+  { prompt = "Set code review standards for pull requests the coding agent opens.", expected = "copilot-code:generated-code-review" },
+]
+
+[[skill]]
+name = "generated-code-review"
+should_trigger = [
+  "Our reviews of the coding agent's pull requests have become rubber stamps. What standards should we set?",
+  "How should engineers review changes that an AI agent wrote rather than a colleague?",
+  "Code has been merged that nobody on the team can explain. How do we tighten review?",
+]
+should_not_trigger = [
+  { prompt = "Is our AI-built app still maintainable now the original developer has left?", expected = "copilot-code:maintainability-review" },
+  { prompt = "Check the finished Cowork report before I send it to the client.", expected = "copilot-cowork:delegated-work-review" },
+]
+
+[[skill]]
+name = "code-deployment-readiness"
+should_trigger = [
+  "The AI-built inspection app passed validation. What has to be in place before it goes live?",
+  "We found an app the coding agent built running in someone's personal subscription. What do we need to fix?",
+  "Run the go-live checklist for our AI-built booking tool: hosting, pipeline, monitoring, rollback and owners.",
+]
+should_not_trigger = [
+  { prompt = "Design CI/CD for our Foundry solution including prompt and model versioning.", expected = "ai-engineering:ai-ci-cd" },
+  { prompt = "Set our organisation's release policy for AI solutions by risk tier.", expected = "platform-governance:ai-release-policy" },
+]
+
+[[skill]]
+name = "maintainability-review"
+should_trigger = [
+  "We now have forty small tools built with Copilot Code. Which should we keep, fix or retire?",
+  "The only engineer who knows our AI-built reporting app is leaving. What do we check?",
+  "It is the annual review of the inspection app. Can the team still understand and change it?",
+]
+should_not_trigger = [
+  { prompt = "Plan the safe retirement of the travel policy agent, including communications and data.", expected = "ai-operations:ai-solution-retirement" },
+  { prompt = "Review this specific pull request from the coding agent before merge.", expected = "copilot-code:generated-code-review" },
+]

@@ -1,0 +1,148 @@
+# Trigger tests for the value-realisation department (design brief 13 and 17).
+
+[[skill]]
+name = "baseline-design"
+should_trigger = [
+  "Our claims team gets the new summarisation agent in six weeks. What do we need to measure now so we can prove anything afterwards?",
+  "The business case says invoice queries take three days to answer, but that figure came from a workshop. How do we get a real starting point before launch?",
+  "Our contact centre work is very seasonal. How do we set a before-and-after for Copilot that will not be fooled by the winter peak?",
+  "We roll out in three waves anyway. Can we use the later waves as a comparison group, and how should we set that up fairly?",
+]
+should_not_trigger = [
+  { prompt = "We have a new idea for an HR policy agent. Write down the value we expect and how we would measure it so it can be prioritised.", expected = "opportunity-management:value-hypothesis" },
+  { prompt = "What adoption measures and minimum group size should we agree before the Copilot launch?", expected = "copilot-adoption:adoption-measurement" },
+]
+
+[[skill]]
+name = "benefit-hypothesis"
+should_trigger = [
+  "The board approved the contract review agent. The case just says efficiency and better insight. Turn that into benefits we can actually track.",
+  "Copilot, our proposal agent and a new automation all claim to save the bid team the same hours. How do we write the benefits so we are not counting them three times?",
+  "Write proper benefit statements for the planning query agent, with measures, owners, timing and the downsides like extra checking time.",
+]
+should_not_trigger = [
+  { prompt = "Write the business case for funding our customer service agent, including options and costs.", expected = "opportunity-management:business-case" },
+  { prompt = "Who should own the benefit from the onboarding agent now that the HR director has left?", expected = "value-realisation:benefit-owner" },
+]
+
+[[skill]]
+name = "adoption-to-value-metrics"
+should_trigger = [
+  "Our Copilot report shows 80 per cent weekly active users but the finance director says nothing has changed. How do we connect usage to actual results?",
+  "The benefits from our case-handling agent will take two quarters to show. What early indicators would tell us we are on track?",
+  "Usage of the HR policy agent is high but HR tickets have not dropped. Help us work out where the chain from usage to benefit is breaking.",
+  "Our CEO keeps quoting active users as the return on Copilot. What should we show instead that links adoption to value?",
+]
+should_not_trigger = [
+  { prompt = "Set up the adoption measures for our Copilot launch with team-level reporting rules.", expected = "copilot-adoption:adoption-measurement" },
+  { prompt = "Measure the usage and value of our IT helpdesk agent against what it was supposed to achieve.", expected = "m365-agents:agent-value-measurement" },
+]
+
+[[skill]]
+name = "productivity-measurement"
+should_trigger = [
+  "Our survey says Copilot saves everyone four hours a week and finance does not believe it. How should we measure productivity properly?",
+  "The sponsor wants to know what people are doing with the time the drafting agent saves. How do we track that?",
+  "We need to show whether Copilot Code actually speeds up delivery for our developers without just relying on what they tell us.",
+  "Design a credible way to measure throughput and cycle time for the claims pilot, including the extra time people spend checking the AI output.",
+]
+should_not_trigger = [
+  { prompt = "Turn the hours released by the proposal agent into a savings figure that finance will accept for the budget.", expected = "value-realisation:financial-benefits" },
+  { prompt = "How much value are our Power Automate flows delivering, and how do we measure it?", expected = "automation:automation-value" },
+]
+
+[[skill]]
+name = "quality-measurement"
+should_trigger = [
+  "Letters drafted with Copilot go out faster, but are they any better? How do we measure accuracy and rework compared with before?",
+  "Since the complaints agent went live, reopened cases have gone up. Set up a way to measure quality of the work it supports.",
+  "We need a quality guard so the productivity gains from AI drafting are not bought with more errors reaching customers.",
+]
+should_not_trigger = [
+  { prompt = "Plan how we will evaluate the benefits advice agent before release, across test sets, rubrics and red-teaming.", expected = "evaluation-quality:ai-evaluation-strategy" },
+  { prompt = "The source data feeding our forecasting solution has gaps and duplicates. What quality rules should it meet?", expected = "data-governance:ai-data-quality" },
+]
+
+[[skill]]
+name = "financial-benefits"
+should_trigger = [
+  "Someone multiplied hours saved by average salary and called it a two million saving. The CFO is not happy. How should we value the benefits properly?",
+  "Which of our AI benefits are actually cashable, and which are just time freed up? We need to agree this with finance before the budget round.",
+  "The intake agent means we will not need to recruit for growth next year. How do we count that as cost avoidance in a way finance accepts?",
+]
+should_not_trigger = [
+  { prompt = "Build the return on investment model for the agent programme with costs, ranges and sensitivity.", expected = "value-realisation:roi-model" },
+  { prompt = "Track the AI programme's own budget, people capacity and consumption spend each month.", expected = "programme-management:budget-and-capacity" },
+]
+
+[[skill]]
+name = "non-financial-benefits"
+should_trigger = [
+  "Most of the value of our service agent is customer experience and fewer compliance breaches. How do we evidence that without making up money figures?",
+  "Finance keeps dismissing our soft benefits. How can we measure employee experience and risk reduction from Copilot credibly?",
+  "We want to show the board the organisation is getting more capable at using AI, not just that agents exist. What should we measure?",
+]
+should_not_trigger = [
+  { prompt = "Measure how much our AI learning programme has improved skills across teams.", expected = "learning-and-skills:skills-measurement" },
+  { prompt = "Find and write up a couple of good stories about Copilot for the intranet.", expected = "change-and-communications:success-stories" },
+]
+
+[[skill]]
+name = "roi-model"
+should_trigger = [
+  "Our Copilot renewal is due and the board wants the ROI. Nobody can explain how last year's figure was worked out. Build us a model we can defend.",
+  "Model the return on the claims agent with full costs, including review effort and consumption, and show which assumptions matter most.",
+  "We need low, central and high return cases for the agent portfolio and a break-even point on adoption.",
+]
+should_not_trigger = [
+  { prompt = "Which licences do we need for the agents and how much consumption capacity should we buy?", expected = "platform-governance:ai-licensing-and-capacity" },
+  { prompt = "Write the funding case for the whole AI programme across adoption, build and scale for the executive.", expected = "ai-strategy:investment-case" },
+]
+
+[[skill]]
+name = "benefit-owner"
+should_trigger = [
+  "IT keeps being asked to report the benefits of the agents. Who in the business should own them, and what does owning a benefit actually mean?",
+  "The finance director who owned the invoice agent benefits has moved on. How do we hand them over so they do not disappear?",
+  "Our benefit owners say yes in the meeting and then never report. How should we set up ownership and support them properly?",
+]
+should_not_trigger = [
+  { prompt = "Draw up a RACI for intake, risk classification, release and knowledge ownership across our AI work.", expected = "ai-centre-of-excellence:coe-raci" },
+  { prompt = "Map the accountable role for each department and artefact in our transformation pack.", expected = "organisation-tailoring:ownership-map" },
+]
+
+[[skill]]
+name = "post-implementation-review"
+should_trigger = [
+  "The HR agent has been live for nine months. Run a review of whether it delivered what the business case promised.",
+  "Audit has asked whether our Copilot investment delivered the approved benefits. Help us compare what actually happened with the case.",
+  "We want to learn from our last three agent cases so our value estimates get better. How should we run the post-go-live reviews?",
+]
+should_not_trigger = [
+  { prompt = "The six-week pilot of the scheduling agent has ended. Should we roll it out to the other regions or stop?", expected = "opportunity-management:scale-or-stop" },
+  { prompt = "Set up a calendar of scheduled operational reviews for every live agent.", expected = "ai-operations:ai-review-calendar" },
+]
+
+[[skill]]
+name = "value-dashboard"
+should_trigger = [
+  "Our sponsor wants one dashboard showing whether AI is paying off. At the moment all we have is a usage report. Specify what it should show.",
+  "We have agreed the scorecard measures. Now write the spec for a Power BI dashboard covering value, adoption, capability and governance.",
+  "Design the executive view of realised AI benefits across business units, with drill-downs that never expose small teams.",
+]
+should_not_trigger = [
+  { prompt = "Which KPIs should our AI CoE track across adoption, quality, governance and value?", expected = "ai-centre-of-excellence:coe-kpi-framework" },
+  { prompt = "Set up admin monitoring of agents, flows and usage across our tenant.", expected = "platform-governance:ai-admin-monitoring" },
+]
+
+[[skill]]
+name = "benefit-realisation-plan"
+should_trigger = [
+  "The investment case for our agent programme has been approved. Set up the benefits register and a plan for when each benefit should land.",
+  "Our benefits have no dates, no measurement points and nobody reviews them. Build a realisation plan with milestones and reviews.",
+  "We have twelve AI initiatives across four divisions. We need one benefits register and a review rhythm for all of them.",
+]
+should_not_trigger = [
+  { prompt = "Pull all the workstream plans into one programme roadmap with milestones and dependencies.", expected = "programme-management:integrated-roadmap" },
+  { prompt = "Write measurable benefit statements for the contract agent, with owners and dis-benefits.", expected = "value-realisation:benefit-hypothesis" },
+]

@@ -1,0 +1,145 @@
+# Trigger tests for the knowledge-management department (design brief 13 and 17).
+
+[[skill]]
+name = "knowledge-readiness-assessment"
+should_trigger = [
+  "Before we turn Copilot on for everyone, is our SharePoint content actually in a fit state for AI?",
+  "The board wants to know if our knowledge is ready for agents. Can you assess HR, IT and finance content and tell us what to fix first?",
+  "Lots of our agents give stale or conflicting answers. Can we get an evidence-based view of the whole knowledge estate?",
+]
+should_not_trigger = [
+  { prompt = "Check whether the three libraries our procurement agent uses are owned, current and correctly shared.", expected = "m365-agents:knowledge-source-readiness" },
+  { prompt = "Are we ready to launch Copilot next month - sponsorship, support, comms and licences?", expected = "copilot-adoption:adoption-readiness" },
+]
+
+[[skill]]
+name = "knowledge-inventory"
+should_trigger = [
+  "Nobody knows where the authoritative version of our operating procedures lives. Help us build a list of knowledge sources with owners.",
+  "Set up a register of our knowledge libraries showing owner, audience, sensitivity and which agents use each one.",
+  "Our knowledge register is two years old. How do we bring it up to date and keep it current?",
+]
+should_not_trigger = [
+  { prompt = "List every agent and flow running in our tenant and who built them.", expected = "platform-governance:ai-solution-inventory" },
+  { prompt = "Rate how ready our knowledge estate is for AI and give the sponsor a remediation plan.", expected = "knowledge-management:knowledge-readiness-assessment" },
+]
+
+[[skill]]
+name = "knowledge-owner-model"
+should_trigger = [
+  "Half our policy libraries were owned by people who have left. Who should own knowledge and what should they actually do?",
+  "IT keeps getting asked whether the intranet content is right. Define proper ownership roles for business content.",
+  "We need content owners, stewards and reviewers for our knowledge domains, with time expectations and a succession rule.",
+]
+should_not_trigger = [
+  { prompt = "Who are the business owner, knowledge owner and technical owner for our new IT helpdesk agent?", expected = "m365-agents:agent-ownership" },
+  { prompt = "Build a RACI for approving, releasing and measuring AI solutions across the CoE.", expected = "ai-centre-of-excellence:coe-raci" },
+]
+
+[[skill]]
+name = "content-quality"
+should_trigger = [
+  "What does good enough content look like before Copilot answers from it? Give our owners a standard they can use.",
+  "Check the quality of our customer service knowledge base - accuracy, dates, duplicates - and tell owners what to fix.",
+  "The agent is fine but the answers are wrong because the source documents are. How do we measure and improve content quality?",
+]
+should_not_trigger = [
+  { prompt = "Write guidance for our policy authors on how to structure documents so agents can use them.", expected = "knowledge-management:ai-ready-content" },
+  { prompt = "What minimum criteria must any library meet before makers are allowed to ground an agent on it?", expected = "knowledge-management:knowledge-grounding-standards" },
+]
+
+[[skill]]
+name = "knowledge-classification"
+should_trigger = [
+  "Our knowledge libraries have no sensitivity labels and we don't know who they are meant for. Help us classify them before rollout.",
+  "Which of our HR collections are authoritative, which are working drafts, and who should be able to see each one?",
+  "The site owner says this library is for managers only, but everyone can open it. How do we classify and fix this before agents use it?",
+]
+should_not_trigger = [
+  { prompt = "Do a formal security review of what confidential content our finance agent could expose to staff.", expected = "security-privacy:data-exposure-review" },
+  { prompt = "Design the site and library structure for our new HR knowledge hub.", expected = "knowledge-management:sharepoint-knowledge-design" },
+]
+
+[[skill]]
+name = "knowledge-review-cycles"
+should_trigger = [
+  "Every document in our knowledge base has the same annual review date and half are overdue. How should review cycles work?",
+  "The travel policy changed in March but the agent still quotes the old limits. How do we make sure content gets reviewed when things change?",
+  "Set review frequencies for policies, procedures and product information, with reminders and escalation for overdue reviews.",
+]
+should_not_trigger = [
+  { prompt = "Design the full route our content takes from draft through approval and publication to archive and disposal.", expected = "knowledge-management:knowledge-lifecycle" },
+  { prompt = "There are thousands of stale files on the old intranet. Plan how to get rid of them before Copilot launches.", expected = "knowledge-management:knowledge-cleanup" },
+]
+
+[[skill]]
+name = "knowledge-cleanup"
+should_trigger = [
+  "Copilot keeps finding 'v2 final OLD' documents. Plan a clean-up of duplicates and outdated files on the operations site.",
+  "Before the next Copilot wave reaches finance, how do we clear out redundant, outdated and trivial content without breaking retention rules?",
+  "Our sales enablement site is a mess of copies and old decks. How do we rationalise it so the sales agent can use it?",
+]
+should_not_trigger = [
+  { prompt = "Set up review frequencies and reminders so our policy content stays current.", expected = "knowledge-management:knowledge-review-cycles" },
+  { prompt = "Correct the overshared permissions on our payroll folder that Copilot exposed.", expected = "security-privacy:data-exposure-review" },
+]
+
+[[skill]]
+name = "knowledge-grounding-standards"
+should_trigger = [
+  "Makers are pointing agents at any site they like. Write a standard that sources must meet before an agent can use them.",
+  "We want an approved list of knowledge sources makers can ground on, with stricter rules for higher-risk agents.",
+  "Each agent team has its own test for whether content is good enough. Give us one grounding policy for the organisation.",
+]
+should_not_trigger = [
+  { prompt = "Is the policy library ready for the absence agent we are building next week?", expected = "m365-agents:knowledge-source-readiness" },
+  { prompt = "How should our custom Foundry solution chunk and index the engineering manuals?", expected = "ai-foundry:retrieval-design" },
+]
+
+[[skill]]
+name = "sharepoint-knowledge-design"
+should_trigger = [
+  "Our HR site mixes approved policies, drafts and project files. Redesign it so Copilot and agents find the right version.",
+  "We're building a new knowledge hub for IT support. How should we structure sites, libraries, metadata and permissions for AI?",
+  "What content types and metadata columns should our policy libraries have so agents can ground on them cleanly?",
+]
+should_not_trigger = [
+  { prompt = "Which knowledge sources should our Copilot Studio agent use and how do we configure them?", expected = "copilot-studio:studio-knowledge-architecture" },
+  { prompt = "Teach our authors how to write procedures that AI can answer from reliably.", expected = "knowledge-management:ai-ready-content" },
+]
+
+[[skill]]
+name = "knowledge-gap-analysis"
+should_trigger = [
+  "Our IT agent says 'I can't help with that' on a lot of questions that should be in scope. What knowledge is missing?",
+  "Staff keep emailing HR the same questions even though the agent exists. Find out where our knowledge falls short.",
+  "Use the agent feedback and unanswered questions from last quarter to find gaps in our knowledge and who should fix them.",
+]
+should_not_trigger = [
+  { prompt = "Write a set of test questions and expected answers to check the agent before release.", expected = "m365-agents:agent-testing" },
+  { prompt = "What skills and capacity gaps does our organisation have for running the AI programme?", expected = "organisation-tailoring:capability-gap-analysis" },
+]
+
+[[skill]]
+name = "knowledge-lifecycle"
+should_trigger = [
+  "We have no consistent route from draft to published to archived, and superseded policies sit beside new ones. Design a lifecycle.",
+  "How should knowledge move from creation through approval, publication, review, archive and disposal now that AI reads all of it?",
+  "When a new procedure is published, the old one stays where it was. What process stops that happening?",
+]
+should_not_trigger = [
+  { prompt = "Manage our HR agent from release through reviews to retirement.", expected = "m365-agents:agent-lifecycle" },
+  { prompt = "How often should policies versus product information be reviewed, and what triggers an early review?", expected = "knowledge-management:knowledge-review-cycles" },
+]
+
+[[skill]]
+name = "ai-ready-content"
+should_trigger = [
+  "How should our policy writers structure documents so Copilot picks up the exceptions and not just the main rule?",
+  "The agent misses the rates because they're in a pasted image. Give our authors guidance on writing content AI can use.",
+  "Refresh our procedure and FAQ templates so the content works well for agents and for people.",
+]
+should_not_trigger = [
+  { prompt = "Help me write the instructions for our onboarding agent so it stays on topic.", expected = "m365-agents:agent-instructions" },
+  { prompt = "Run a quality check on the claims knowledge base and give each owner a list of fixes.", expected = "knowledge-management:content-quality" },
+]

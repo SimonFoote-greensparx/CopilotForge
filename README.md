@@ -14,8 +14,8 @@ It is organised around three connected journeys:
 | **Build with AI** | Design and deliver agents, Cowork work designs, Copilot Code builds, Copilot Studio and Microsoft Foundry solutions. |
 | **Scale AI** | Establish governance, an AI Centre of Excellence, an opportunity portfolio, review gates and measurable value. |
 
-> **Status: walking skeleton (v0.1, phase 1).** Eight of the 27 departments in the target design are active, with
-> first-draft skills. Every skill is `status: draft` until reviewed. See [ROADMAP.md](ROADMAP.md).
+> **Status: draft (v0.2).** First versions of all 27 departments in the target design now exist, with first-draft
+> skills, programmes and templates. Every skill is `status: draft` until reviewed. See [ROADMAP.md](ROADMAP.md).
 
 ## Scope
 
@@ -46,53 +46,53 @@ Each active department installs on its own as a plugin named `copilotforge-<depa
 
 | Department | Status | Skills built | Purpose |
 |---|---|---|---|
-| [`ai-strategy`](departments/ai-strategy/README.md) | active (phase 1) | 4 | Define the organisation's AI ambition, target outcomes, principles, operating model and roadmap, starting from business outcomes rather than products. |
-| [`opportunity-management`](departments/opportunity-management/README.md) | active (phase 1) | 5 | Create a disciplined path from business problem to prioritised and governed initiative, including the decision about whether AI is the right answer at all. |
-| `value-realisation` | planned (phase 3) | 0 | Define baselines, measures and ownership so adoption and deployed solutions create demonstrable value. |
-| `programme-management` | planned (phase 3) | 0 | Mobilise and govern a coherent adoption, delivery or transformation programme. |
+| [`ai-strategy`](departments/ai-strategy/README.md) | first version, draft (phase 1) | 9 | Define the organisation's AI ambition, target outcomes, principles, operating model and roadmap, starting from business outcomes rather than products. |
+| [`opportunity-management`](departments/opportunity-management/README.md) | first version, draft (phase 1) | 12 | Create a disciplined path from business problem to prioritised and governed initiative, including the decision about whether AI is the right answer at all. |
+| [`value-realisation`](departments/value-realisation/README.md) | first version, draft (phase 3) | 12 | Define baselines, measures and ownership so adoption and deployed solutions create demonstrable value. |
+| [`programme-management`](departments/programme-management/README.md) | first version, draft (phase 3) | 10 | Mobilise and govern a coherent adoption, delivery or transformation programme. |
 
 ### B. Adoption
 
 | Department | Status | Skills built | Purpose |
 |---|---|---|---|
-| [`copilot-adoption`](departments/copilot-adoption/README.md) | active (phase 1) | 4 | Design and run organisation-wide or business-unit Microsoft AI adoption programmes, from readiness and scenarios through launch, reinforcement and measurement. |
-| [`champions`](departments/champions/README.md) | active (phase 1) | 5 | Create evidence-led Champion programmes that turn curiosity into capability and capability into contribution, with clear boundaries on what Champions do and do not do. |
-| `learning-and-skills` | planned (phase 2) | 0 | Create role-based learning, practice, assessment and progression pathways. |
-| `change-and-communications` | planned (phase 2) | 0 | Build sponsorship, communications, manager engagement, behavioural reinforcement and change readiness. |
-| `knowledge-management` | planned (phase 4) | 0 | Make organisational knowledge discoverable, owned, current, classified and suitable for AI grounding. |
+| [`copilot-adoption`](departments/copilot-adoption/README.md) | first version, draft (phase 1) | 11 | Design and run organisation-wide or business-unit Microsoft AI adoption programmes, from readiness and scenarios through launch, reinforcement and measurement. |
+| [`champions`](departments/champions/README.md) | first version, draft (phase 1) | 11 | Create evidence-led Champion programmes that turn curiosity into capability and capability into contribution, with clear boundaries on what Champions do and do not do. |
+| [`learning-and-skills`](departments/learning-and-skills/README.md) | first version, draft (phase 2) | 9 | Create role-based learning, practice, assessment and progression pathways. |
+| [`change-and-communications`](departments/change-and-communications/README.md) | first version, draft (phase 2) | 9 | Build sponsorship, communications, manager engagement, behavioural reinforcement and change readiness. |
+| [`knowledge-management`](departments/knowledge-management/README.md) | first version, draft (phase 4) | 12 | Make organisational knowledge discoverable, owned, current, classified and suitable for AI grounding. |
 
 ### C. Microsoft AI delivery
 
 | Department | Status | Skills built | Purpose |
 |---|---|---|---|
-| `m365-copilot` | planned (phase 5) | 0 | Help organisations introduce Microsoft Copilot as an everyday working capability. |
-| [`m365-agents`](departments/m365-agents/README.md) | active (phase 1) | 4 | Turn organisational knowledge and repeatable information needs into appropriately scoped, owned and tested agents with a managed lifecycle. |
-| `copilot-cowork` | planned (phase 5) | 0 | Design safe, effective delegation of complex work with explicit context, checkpoints and review. |
-| `copilot-code` | planned (phase 5) | 0 | Translate desired outcomes into governed software prototypes and production-ready engineering work. |
-| `copilot-studio` | planned (phase 5) | 0 | Design and deliver low-code and enterprise agents with appropriate actions, data, ALM and lifecycle controls. |
-| `ai-foundry` | planned (phase 5) | 0 | Engineer specialist and custom AI solutions where configured agents are insufficient. |
-| `automation` | planned (phase 5) | 0 | Combine AI with deterministic workflow automation where repeatability and integration matter. |
-| `ai-engineering` | planned (phase 5) | 0 | Provide pro-code engineering patterns shared across custom AI solutions. |
+| [`m365-copilot`](departments/m365-copilot/README.md) | first version, draft (phase 5) | 10 | Help organisations introduce Microsoft Copilot as an everyday working capability. |
+| [`m365-agents`](departments/m365-agents/README.md) | first version, draft (phase 1) | 10 | Turn organisational knowledge and repeatable information needs into appropriately scoped, owned and tested agents with a managed lifecycle. |
+| [`copilot-cowork`](departments/copilot-cowork/README.md) | first version, draft (phase 5) | 10 | Design safe, effective delegation of complex work with explicit context, checkpoints and review. |
+| [`copilot-code`](departments/copilot-code/README.md) | first version, draft (phase 5) | 10 | Translate desired outcomes into governed software prototypes and production-ready engineering work. |
+| [`copilot-studio`](departments/copilot-studio/README.md) | first version, draft (phase 5) | 16 | Design and deliver low-code and enterprise agents with appropriate actions, data, ALM and lifecycle controls. |
+| [`ai-foundry`](departments/ai-foundry/README.md) | first version, draft (phase 5) | 15 | Engineer specialist and custom AI solutions where configured agents are insufficient. |
+| [`automation`](departments/automation/README.md) | first version, draft (phase 5) | 9 | Combine AI with deterministic workflow automation where repeatability and integration matter. |
+| [`ai-engineering`](departments/ai-engineering/README.md) | first version, draft (phase 5) | 10 | Provide pro-code engineering patterns shared across custom AI solutions. |
 
 ### D. Assurance and operations
 
 | Department | Status | Skills built | Purpose |
 |---|---|---|---|
-| `ai-architecture` | planned (phase 4) | 0 | Select appropriate patterns and define target architecture across Microsoft 365, Power Platform, Azure and data services. |
-| [`security-privacy`](reviewers/security-privacy/README.md) (reviewer) | active (phase 1) | 3 | Reviewer-class department that assesses identity, access, data exposure, connectors, privacy and retention for AI solutions and blocks release while material risks are unresolved. |
-| `responsible-ai` (reviewer) | planned (phase 4) | 0 | Reviewer-class department that identifies impact, accountability, human oversight, unacceptable uses and mitigating controls. |
-| `data-governance` | planned (phase 4) | 0 | Ensure the data used by AI is appropriately owned, classified, accessible, lawful and of sufficient quality. |
-| `evaluation-quality` (reviewer) | planned (phase 4) | 0 | Reviewer-class department that defines evaluation sets, acceptance criteria, failure analysis and release evidence for probabilistic systems. |
-| `platform-governance` | planned (phase 4) | 0 | Govern environments, makers, connectors, agents, deployment, licensing and portfolio visibility. |
-| `ai-operations` | planned (phase 4) | 0 | Operate deployed agents and AI solutions throughout support, monitoring, review, improvement and retirement. |
-| `design-authority` (reviewer) | planned (phase 4) | 0 | Reviewer-class department that challenges inappropriate platform choice, unnecessary AI, fragile architecture and unsupportable designs. |
+| [`ai-architecture`](departments/ai-architecture/README.md) | first version, draft (phase 4) | 7 | Select appropriate patterns and define target architecture across Microsoft 365, Power Platform, Azure and data services. |
+| [`security-privacy`](reviewers/security-privacy/README.md) (reviewer) | first version, draft (phase 1) | 7 | Reviewer-class department that assesses identity, access, data exposure, connectors, privacy and retention for AI solutions and blocks release while material risks are unresolved. |
+| [`responsible-ai`](reviewers/responsible-ai/README.md) (reviewer) | first version, draft (phase 4) | 7 | Reviewer-class department that identifies impact, accountability, human oversight, unacceptable uses and mitigating controls. |
+| [`data-governance`](departments/data-governance/README.md) | first version, draft (phase 4) | 7 | Ensure the data used by AI is appropriately owned, classified, accessible, lawful and of sufficient quality. |
+| [`evaluation-quality`](reviewers/evaluation-quality/README.md) (reviewer) | first version, draft (phase 4) | 8 | Reviewer-class department that defines evaluation sets, acceptance criteria, failure analysis and release evidence for probabilistic systems. |
+| [`platform-governance`](departments/platform-governance/README.md) | first version, draft (phase 4) | 7 | Govern environments, makers, connectors, agents, deployment, licensing and portfolio visibility. |
+| [`ai-operations`](departments/ai-operations/README.md) | first version, draft (phase 4) | 8 | Operate deployed agents and AI solutions throughout support, monitoring, review, improvement and retirement. |
+| [`design-authority`](reviewers/design-authority/README.md) (reviewer) | first version, draft (phase 4) | 6 | Reviewer-class department that challenges inappropriate platform choice, unnecessary AI, fragile architecture and unsupportable designs. |
 
 ### Spanning capabilities
 
 | Department | Status | Skills built | Purpose |
 |---|---|---|---|
-| [`ai-centre-of-excellence`](departments/ai-centre-of-excellence/README.md) | active (phase 1) | 6 | Orchestrate a business-owned AI Centre of Excellence covering charter, operating model, team, governance, opportunity flow, knowledge, cadence, RACI and value measurement. |
-| [`organisation-tailoring`](departments/organisation-tailoring/README.md) | active (phase 1) | 4 | Turn an organisation profile into a recommended edition and maturity archetype, a scaled programme, an ownership map and a transformation pack. |
+| [`ai-centre-of-excellence`](departments/ai-centre-of-excellence/README.md) | first version, draft (phase 1) | 17 | Orchestrate a business-owned AI Centre of Excellence covering charter, operating model, team, governance, opportunity flow, knowledge, cadence, RACI and value measurement. |
+| [`organisation-tailoring`](departments/organisation-tailoring/README.md) | first version, draft (phase 1) | 8 | Turn an organisation profile into a recommended edition and maturity archetype, a scaled programme, an ownership map and a transformation pack. |
 <!-- END GENERATED: catalogue -->
 
 The full list of skills, programmes and the planned backlog is in [docs/CATALOGUE.md](docs/CATALOGUE.md).

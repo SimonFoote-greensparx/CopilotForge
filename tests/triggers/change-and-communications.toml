@@ -1,0 +1,109 @@
+# Trigger tests for the change-and-communications department.
+
+[[skill]]
+name = "ai-stakeholder-mapping"
+should_trigger = [
+  "Before we roll Copilot out to operations, who do we need to talk to and what are they likely to worry about?",
+  "The union found out about our AI pilot from a newsletter and they're furious. Help me work out who else we've missed.",
+  "Draw up a stakeholder map for our agent rollout in customer services, with influence, concerns and how we engage each group.",
+]
+should_not_trigger = [
+  { prompt = "Who has the authority to approve changes to the AI programme scope, and where do disputes escalate?", expected = "programme-management:stakeholder-governance" },
+  { prompt = "Split our workforce into adoption audiences so we can plan Copilot onboarding waves.", expected = "copilot-adoption:audience-segmentation" },
+]
+
+[[skill]]
+name = "people-change-impact"
+should_trigger = [
+  "How will Copilot and the new claims agent change the day-to-day work of our claims handlers and their team leaders?",
+  "Do a change impact assessment by role group for our Microsoft 365 Copilot rollout in finance.",
+  "Staff keep asking what AI means for their jobs. Which groups are most affected and what support do they need?",
+]
+should_not_trigger = [
+  { prompt = "Which AI skills do our bid writers and analysts need to learn this year?", expected = "learning-and-skills:ai-skills-needs-analysis" },
+  { prompt = "Review how our CV screening agent could affect the candidates it assesses.", expected = "responsible-ai:ai-impact-assessment" },
+]
+
+[[skill]]
+name = "ai-communication-strategy"
+should_trigger = [
+  "We need a comms plan for our AI programme: key messages, who says what, and which channels for which staff.",
+  "People keep asking whether Copilot means job cuts and whether their prompts are monitored. How should we communicate about this?",
+  "Every director is saying something different about AI. Help me set one narrative and a communications calendar.",
+]
+should_not_trigger = [
+  { prompt = "Help the leadership team write our AI vision statement and guiding principles.", expected = "ai-strategy:ai-vision" },
+  { prompt = "Plan a four-week push to get sales teams using Copilot for meeting preparation.", expected = "change-and-communications:adoption-campaign-plan" },
+]
+
+[[skill]]
+name = "manager-enablement"
+should_trigger = [
+  "Our line managers don't know what they're supposed to do about Copilot in their teams. What should we give them?",
+  "Build a toolkit so team leaders can run a conversation about AI with their staff before the rollout reaches them.",
+  "Some managers want usage figures for each person in their team. How do we equip managers to lead adoption without that?",
+]
+should_not_trigger = [
+  { prompt = "Set up private Copilot sessions for the executive team so they can use it on their own work.", expected = "copilot-adoption:executive-enablement" },
+  { prompt = "Design the adoption journey for our underwriters, from first scenarios to team routines.", expected = "copilot-adoption:role-based-adoption" },
+]
+
+[[skill]]
+name = "adoption-campaign-plan"
+should_trigger = [
+  "Hardly anyone uses Copilot to summarise meetings. Plan a month-long campaign to change that in the project teams.",
+  "We want a themed 'AI for month-end' push for finance in March. What should the weeks look like and how do we measure it?",
+  "Leadership wants an adoption campaign for our new HR policy agent. Help me define what it should actually change.",
+]
+should_not_trigger = [
+  { prompt = "Set up the ongoing monthly nudges and refreshers now that our Copilot launch is finished.", expected = "copilot-adoption:adoption-reinforcement" },
+  { prompt = "Design the practical challenge Champions complete before they are recognised.", expected = "champions:champion-challenges" },
+]
+
+[[skill]]
+name = "resistance-management"
+should_trigger = [
+  "Our senior engineers are openly sceptical of Copilot and it's putting their teams off. How should we respond?",
+  "There's a rumour going round that AI is being brought in to cut jobs. How do we deal with the fear?",
+  "The legal team just won't engage with the AI rollout. Help me understand why and what to do about it.",
+]
+should_not_trigger = [
+  { prompt = "Is it acceptable to use an agent to decide which employees get flexible working?", expected = "responsible-ai:prohibited-use-review" },
+  { prompt = "Half our licensed users never opened Copilot. Check whether access, onboarding and support were in place.", expected = "copilot-adoption:adoption-readiness" },
+]
+
+[[skill]]
+name = "success-stories"
+should_trigger = [
+  "We need some real stories of people using Copilot well to share at the next town hall. How do we find and check them?",
+  "A team claims the agent saves them ten hours a week. Before we publish that story, what should we verify?",
+  "Set up a way to collect and share credible AI success stories from across the business, including what didn't work.",
+]
+should_not_trigger = [
+  { prompt = "How do we measure the experience and risk-reduction benefits of our AI programme for the board?", expected = "value-realisation:non-financial-benefits" },
+  { prompt = "Design the show-and-tell sessions and community calls for our Champions.", expected = "champions:champion-community-design" },
+]
+
+[[skill]]
+name = "change-network"
+should_trigger = [
+  "We need change agents in every site to carry the AI rollout locally and feed concerns back. How do we set that up alongside our Champions?",
+  "Feedback from the regions never reaches the AI programme until it's a crisis. Design a change network to fix that.",
+  "Our Champions are being asked to run local comms and readiness checks. Should we have a separate change network?",
+]
+should_not_trigger = [
+  { prompt = "Recruit a representative group of Copilot Champions with their managers' agreement.", expected = "champions:champion-recruitment" },
+  { prompt = "Write the charter and six-stage journey for our new Champions programme.", expected = "champions:champion-programme-design" },
+]
+
+[[skill]]
+name = "behaviour-reinforcement-plan"
+should_trigger = [
+  "Use of Copilot for drafting reports spiked after the campaign and is sliding back. How do we make the new way stick for good?",
+  "The programme hands over to business as usual next quarter. Plan how the AI-enabled ways of working stay embedded.",
+  "Our old report templates and approvals still assume everything is written by hand. How do we build the new practice into how we work?",
+]
+should_not_trigger = [
+  { prompt = "Plan the monthly nudges and scenario refreshers for Copilot users now launch is over.", expected = "copilot-adoption:adoption-reinforcement" },
+  { prompt = "Design recognition and progression for Champions who have completed their challenge.", expected = "champions:recognition-and-progression" },
+]

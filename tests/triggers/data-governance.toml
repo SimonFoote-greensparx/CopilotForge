@@ -1,0 +1,85 @@
+# Trigger tests for the data-governance department (design brief 13 and 17).
+
+[[skill]]
+name = "ai-data-inventory"
+should_trigger = [
+  "Nobody knows which Dataverse tables and databases our agents and flows read. Can we build an inventory?",
+  "The finance team is retiring a database next quarter. Which AI solutions depend on it?",
+  "We need a list of the data our AI solutions use and create, with owners, for the audit.",
+]
+should_not_trigger = [
+  { prompt = "List all the SharePoint sites and document libraries we hold, with owners and condition.", expected = "knowledge-management:knowledge-inventory" },
+  { prompt = "Give me an inventory of every agent and flow in the tenant.", expected = "platform-governance:ai-solution-inventory" },
+]
+
+[[skill]]
+name = "data-classification-for-ai"
+should_trigger = [
+  "We have sensitivity labels but no rule for which labels can be used with Copilot or agents. Can you define that?",
+  "Can confidential data be sent to a third-party model through Foundry? We need a classification rule.",
+  "What label should an AI summary of a highly confidential document get?",
+]
+should_not_trigger = [
+  { prompt = "Check whether the projects agent exposes overshared confidential files to its users.", expected = "security-privacy:data-exposure-review" },
+  { prompt = "Define when agents may use a service identity instead of the user's own access.", expected = "data-governance:ai-data-access-model" },
+]
+
+[[skill]]
+name = "ai-data-quality"
+should_trigger = [
+  "The service agent quoted a customer the wrong balance because of duplicate records. What data quality do we need?",
+  "What quality thresholds should our stock data meet before Copilot analyses it for buyers?",
+  "Set data quality requirements for the case table the triage agent reads.",
+]
+should_not_trigger = [
+  { prompt = "Our policy documents are out of date and inconsistent. What content standards should they meet?", expected = "knowledge-management:content-quality" },
+  { prompt = "Is our sales semantic model ready for people to ask Copilot questions about it?", expected = "data-governance:data-product-readiness" },
+]
+
+[[skill]]
+name = "ai-data-lineage"
+should_trigger = [
+  "If a customer asks us to erase their data, will it also leave the search index and embeddings our agent uses?",
+  "Our tier 3 lending assistant must show where each recommendation's figures came from. How do we trace that?",
+  "The source system is correcting thousands of records. Which AI copies need to follow and how fast?",
+]
+should_not_trigger = [
+  { prompt = "Test whether the agent's answers cite the right sources and stay grounded.", expected = "evaluation-quality:groundedness-testing" },
+  { prompt = "Design chunking and indexing for the contracts retrieval solution.", expected = "ai-foundry:retrieval-design" },
+]
+
+[[skill]]
+name = "ai-data-access-model"
+should_trigger = [
+  "Our agents need to read data some users cannot open. What access patterns should we allow across the organisation?",
+  "Makers keep sharing agents that run on their own connections. We need rules for how AI reaches data.",
+  "Data owners want to know what AI may reach in their systems and who approves it.",
+]
+should_not_trigger = [
+  { prompt = "Review who can edit and administer the finance agent before release.", expected = "security-privacy:ai-identity-and-access-review" },
+  { prompt = "Which connectors should be blocked in our default environment?", expected = "platform-governance:connector-policy" },
+]
+
+[[skill]]
+name = "ai-data-retention-rules"
+should_trigger = [
+  "How long should we keep Copilot prompts and agent transcripts? Nobody has set a rule.",
+  "Our records schedule does not mention AI. Which retention rules do we need for generated content, indexes and agent memory?",
+  "Before we turn on agent memory for everyone, what retention and deletion rules should apply?",
+]
+should_not_trigger = [
+  { prompt = "Check whether the claims agent's transcripts actually follow our retention rule before release.", expected = "security-privacy:ai-interaction-retention" },
+  { prompt = "Plan how our knowledge articles move from draft to archive.", expected = "knowledge-management:knowledge-lifecycle" },
+]
+
+[[skill]]
+name = "data-product-readiness"
+should_trigger = [
+  "Is our sales semantic model ready for people to ask Copilot questions about it in plain English?",
+  "The data team has been asked to make the cases dataset AI-ready. What does ready mean and how do we check?",
+  "A Foundry solution will read our curated customer tables. Assess whether they are ready for it.",
+]
+should_not_trigger = [
+  { prompt = "Is the HR policy library ready for the agent to ground on?", expected = "m365-agents:knowledge-source-readiness" },
+  { prompt = "Check the files and mail my Cowork task will rely on are fit to use.", expected = "copilot-cowork:grounding-readiness" },
+]

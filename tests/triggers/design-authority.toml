@@ -1,0 +1,73 @@
+# Trigger tests for the design-authority reviewer department (design brief 13 and 17).
+
+[[skill]]
+name = "ai-design-review"
+should_trigger = [
+  "The claims triage agent has finished design. Run the design authority review before we start building.",
+  "Our partner has delivered the design for the customer service agent. Review it independently before we accept it.",
+  "The pilot is about to become a supported service but was never formally reviewed. Do the design gate now.",
+]
+should_not_trigger = [
+  { prompt = "Run the release gate for the HR agent: owner, support, sharing scope and reviewer evidence.", expected = "m365-agents:agent-release-readiness" },
+  { prompt = "Check the data exposure of the finance agent before we share it organisation-wide.", expected = "security-privacy:data-exposure-review" },
+]
+
+[[skill]]
+name = "ai-necessity-challenge"
+should_trigger = [
+  "This design uses a custom model to route invoices by value. Challenge whether it needs AI at all.",
+  "The suitability record looks like it was written after they chose the tool. Does this solution really need an agent?",
+  "Is all this AI justified here, or would a flow with one AI step do the job for less?",
+]
+should_not_trigger = [
+  { prompt = "A new idea arrived at intake. Should it be solved with AI, and which pattern?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Is this a use of AI we should refuse to build on ethical grounds?", expected = "responsible-ai:prohibited-use-review" },
+]
+
+[[skill]]
+name = "platform-fit-review"
+should_trigger = [
+  "The team picked Copilot Studio for this agent. Review whether that platform actually fits before the gate.",
+  "A supplier is proposing Foundry for our knowledge assistant. Give us an independent view on platform fit.",
+  "This declarative agent is full of workarounds to do write actions. Review whether it is on the wrong platform.",
+]
+should_not_trigger = [
+  { prompt = "Choose the platform for our new site report agent and write the decision record.", expected = "ai-architecture:platform-selection" },
+  { prompt = "Is this solution's design conformant with our reference architecture?", expected = "design-authority:architecture-conformance" },
+]
+
+[[skill]]
+name = "architecture-conformance"
+should_trigger = [
+  "The design says it follows our business-data agent reference. Check it really does and log any deviations.",
+  "This team wants to use a shared service identity where our reference requires user identity. Can we approve a deviation?",
+  "Several solutions keep deviating from the same part of our reference design. Review conformance across them.",
+]
+should_not_trigger = [
+  { prompt = "Update our reference architecture for knowledge agents.", expected = "ai-architecture:ai-reference-architecture" },
+  { prompt = "Review the AI-generated code in this pull request against our coding standards.", expected = "copilot-code:generated-code-review" },
+]
+
+[[skill]]
+name = "supportability-review"
+should_trigger = [
+  "Before release, check this agent can actually be supported: owners, operating team, runbook, review dates.",
+  "The partner who built our agent leaves next month. Review whether we can support it ourselves.",
+  "This solution depends on one person and their connections. Review its supportability.",
+]
+should_not_trigger = [
+  { prompt = "Design the support model for all our deployed agents.", expected = "ai-operations:ai-support-model" },
+  { prompt = "Review the maintainability of the AI-built expenses app's code.", expected = "copilot-code:maintainability-review" },
+]
+
+[[skill]]
+name = "ai-change-impact-review"
+should_trigger = [
+  "We want to add the procurement library to the live policy agent. What's the impact and what needs re-testing?",
+  "The model version our agent uses is being retired. Review the impact of moving to the new one.",
+  "The owner wants to change the agent's instructions and share it with the whole company. Review the change.",
+]
+should_not_trigger = [
+  { prompt = "Run regression evaluation on the agent after last week's instruction change.", expected = "evaluation-quality:regression-evaluation" },
+  { prompt = "Set the organisation's rules for releasing and changing agents by risk tier.", expected = "platform-governance:ai-release-policy" },
+]

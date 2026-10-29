@@ -1,0 +1,85 @@
+# Trigger tests for the responsible-ai reviewer department (design brief 13 and 17).
+
+[[skill]]
+name = "ai-impact-assessment"
+should_trigger = [
+  "We are building an agent that triages tenant repair requests. Who could it harm, and what does the responsible AI gate need from us?",
+  "Do an impact assessment for the case summary tool managers will use before disciplinary meetings.",
+  "Our sponsor wants to know what could go wrong, and for whom, if we put AI into benefit eligibility checks.",
+]
+should_not_trigger = [
+  { prompt = "What risk tier is this agent and which reviews does it need?", expected = "opportunity-management:risk-classification" },
+  { prompt = "Do we need a DPIA for the agent that processes customer complaint letters?", expected = "security-privacy:privacy-assessment" },
+]
+
+[[skill]]
+name = "human-oversight"
+should_trigger = [
+  "Our caseworkers approve every AI draft decision but get 300 a day. Is that real human oversight?",
+  "What level of human review does the refund agent need before it pays customers, and who should do it?",
+  "The design says a human stays in the loop for shortlisting. Review whether that oversight would actually work.",
+]
+should_not_trigger = [
+  { prompt = "Add an approval step to this Power Automate flow before it updates the CRM.", expected = "automation:human-in-the-loop" },
+  { prompt = "Design the checkpoints in my Cowork task where I review the draft before it is sent.", expected = "copilot-cowork:human-checkpoint-design" },
+]
+
+[[skill]]
+name = "ai-transparency"
+should_trigger = [
+  "Do customers need to be told they are chatting with an AI on our website, and what should it say about its limits?",
+  "We send AI-drafted letters to tenants. Should they say AI was involved?",
+  "Write the transparency note for our HR policy agent: what it does, its limits and how to reach a person.",
+]
+should_not_trigger = [
+  { prompt = "Update our staff privacy notice to cover the new agent's processing of personal data.", expected = "security-privacy:privacy-assessment" },
+  { prompt = "Plan the communications campaign announcing Copilot to all staff.", expected = "change-and-communications:ai-communication-strategy" },
+]
+
+[[skill]]
+name = "fairness-review"
+should_trigger = [
+  "Does our customer agent work as well for people who write in a second language? How should we test that?",
+  "We want AI to prioritise grant applications. Review the bias risks before we go further.",
+  "Staff say the job advert generator keeps producing gendered wording. Can you run a fairness review?",
+]
+should_not_trigger = [
+  { prompt = "Set the quality rubric and acceptance threshold for the agent's answers.", expected = "evaluation-quality:ai-quality-rubric" },
+  { prompt = "Our CRM data has lots of duplicates and missing fields. What quality do we need before the agent uses it?", expected = "data-governance:ai-data-quality" },
+]
+
+[[skill]]
+name = "escalation-and-appeal"
+should_trigger = [
+  "If the claims triage agent wrongly delays someone's claim, how can they challenge it and get a person to look again?",
+  "Check whether our HR agent gives staff a proper route to a human when its answer affects their pay.",
+  "Complaints about an AI-drafted refusal have nowhere to go. What appeal route should we have?",
+]
+should_not_trigger = [
+  { prompt = "Set up thumbs up and down feedback so we can improve the agent's answers.", expected = "ai-operations:ai-feedback-loop" },
+  { prompt = "Design the human review step before the agent's recommendation takes effect.", expected = "responsible-ai:human-oversight" },
+]
+
+[[skill]]
+name = "prohibited-use-review"
+should_trigger = [
+  "A manager wants AI to score each team member's engagement from meeting transcripts. Are we allowed to do that?",
+  "Can we use Copilot to detect how stressed call centre staff are from their calls?",
+  "We have no list of AI uses we will not allow. Help us screen this idea and draft one.",
+]
+should_not_trigger = [
+  { prompt = "Is AI even the right answer for our late site reports, or should we fix the process?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Assess the impacts of our permitted customer triage agent on different groups.", expected = "responsible-ai:ai-impact-assessment" },
+]
+
+[[skill]]
+name = "ai-risk-acceptance"
+should_trigger = [
+  "Security blocked our agent and the business director wants to launch anyway. How do we handle that properly?",
+  "Our tier 4 customer agent needs executive sign-off on residual risk. What should the paper say and who signs?",
+  "Three risk acceptances from last year have no review date. What should we do with them?",
+]
+should_not_trigger = [
+  { prompt = "Add the supplier delay to the programme risks and issues log.", expected = "programme-management:programme-risk-log" },
+  { prompt = "Is this staff mood-detection idea a use we prohibit?", expected = "responsible-ai:prohibited-use-review" },
+]

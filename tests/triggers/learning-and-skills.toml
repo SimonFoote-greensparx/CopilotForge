@@ -1,0 +1,118 @@
+# Trigger tests for the learning-and-skills department.
+
+[[skill]]
+name = "ai-skills-needs-analysis"
+should_trigger = [
+  "We're about to spend our learning budget on AI training. How do we work out what each role actually needs first?",
+  "Leaders keep asking if our people are 'ready for AI'. Can we get an honest answer by role without testing anyone?",
+  "Our finance and HR teams join the next Copilot wave. What skills gaps do those roles have compared with what they'll be doing?",
+  "Draft a short survey to find out what skills people declare with approved AI tools, reported only by role.",
+]
+should_not_trigger = [
+  { prompt = "Turn the needs we found for claims handlers into modules, sequence and formats.", expected = "learning-and-skills:ai-role-curriculum" },
+  { prompt = "Split our workforce into adoption audiences for the Copilot rollout.", expected = "copilot-adoption:audience-segmentation" },
+]
+
+[[skill]]
+name = "ai-role-curriculum"
+should_trigger = [
+  "We've agreed what our account managers need. Now design their Copilot curriculum - modules, order, time and how we'll know it worked.",
+  "Our generic Copilot course isn't changing how the procurement team works. Build something specific to their role.",
+  "Plan a role-based AI learning programme for our service desk analysts that fits two hours a month.",
+  "The policy team joins the next wave. What should they learn, in what order, and what practice should each module include?",
+]
+should_not_trigger = [
+  { prompt = "Define foundation, applied and advanced levels that all our AI learning fits into.", expected = "learning-and-skills:ai-learning-pathway" },
+  { prompt = "Design the adoption journey for our sales managers, including team routines and manager expectations.", expected = "copilot-adoption:role-based-adoption" },
+]
+
+[[skill]]
+name = "ai-learning-pathway"
+should_trigger = [
+  "Every department is building its own AI course. Can we have one progression from beginner to advanced that they all fit into?",
+  "Our experienced Copilot users hate being sent to basics. How can they skip ahead by showing what they can do?",
+  "People finished the foundation sessions and ask what's next. Map out the levels beyond it.",
+  "Should foundation AI learning be mandatory before anyone gets Copilot switched on?",
+]
+should_not_trigger = [
+  { prompt = "Define what a Champion must show for Chat, productivity and agent capability.", expected = "champions:capability-framework" },
+  { prompt = "Design learning tracks for people building agents in Copilot Studio and solutions in Foundry.", expected = "learning-and-skills:advanced-pathways" },
+]
+
+[[skill]]
+name = "practice-labs"
+should_trigger = [
+  "Our Copilot training is all demos. How do we give people somewhere safe to practise hands-on?",
+  "Trainees are practising on real customer files because we have nothing else. Build us a fictional scenario pack instead.",
+  "Where should new agent makers practise building without touching production?",
+  "We put training documents in a SharePoint site and now they show up in Copilot answers for everyone. How should practice content be set up?",
+]
+should_not_trigger = [
+  { prompt = "Set our environment zones for personal, team and production AI building across the tenant.", expected = "platform-governance:ai-environment-strategy" },
+  { prompt = "Write a guide to prompting Copilot well and checking its answers.", expected = "m365-copilot:prompting-practice" },
+]
+
+[[skill]]
+name = "learning-evidence-rubric"
+should_trigger = [
+  "We report AI learning as attendance. What evidence should people show instead to prove they can use Copilot safely?",
+  "Write exit criteria for each level of our AI learning pathway, with what Not yet, Meets and Strong look like.",
+  "Our peer reviewers disagree about whether a learner's Copilot example is good enough. Make the standard clearer.",
+  "What records of learning evidence should we keep, and how do we stop them being used in performance reviews?",
+]
+should_not_trigger = [
+  { prompt = "Train assessors and set up appeals for Champion evidence submissions.", expected = "champions:evidence-assessment" },
+  { prompt = "Build a rubric for judging the quality of our HR agent's answers before release.", expected = "evaluation-quality:ai-quality-rubric" },
+]
+
+[[skill]]
+name = "facilitator-guide"
+should_trigger = [
+  "Champions will run our Copilot in Outlook session next month. Write them a facilitator guide they can follow.",
+  "Our live demos keep going wrong because Copilot answers differently each time. How should facilitators handle that?",
+  "Sessions always overrun and we never get to hands-on practice. Restructure the running order for our trainers.",
+  "Prepare a timed session plan, likely questions with answers and a pre-flight checklist for our agents training.",
+]
+should_not_trigger = [
+  { prompt = "Set up weekly drop-in clinics where people can bring their Copilot questions.", expected = "learning-and-skills:office-hours" },
+  { prompt = "Plan the whole learning offer behind the Champion journey.", expected = "champions:champion-learning" },
+]
+
+[[skill]]
+name = "office-hours"
+should_trigger = [
+  "People get stuck the week after training and have nobody to ask. Should we run Copilot office hours, and how?",
+  "Our Copilot drop-in clinic has gone quiet. How do we make it worth attending again?",
+  "The service desk is flooded with 'how do I' Copilot questions. Set up clinics that teach people instead.",
+  "How should hosts handle screen-sharing safely in AI drop-in sessions, and capture recurring themes for the learning team?",
+]
+should_not_trigger = [
+  { prompt = "Design the full Copilot support model, from self-help to the service desk and escalation to Microsoft.", expected = "copilot-adoption:adoption-support-model" },
+  { prompt = "Plan community calls and show-and-tell for our Champion network.", expected = "champions:champion-community-design" },
+]
+
+[[skill]]
+name = "advanced-pathways"
+should_trigger = [
+  "We're opening Copilot Studio to more makers. What learning path should they follow before they build anything shared?",
+  "Our power users have outgrown the basics. Design an advanced track for delegating complex work to Cowork.",
+  "Developers are starting to use Copilot Code and engineers are trying Foundry. What should their learning routes look like?",
+  "Makers keep learning by trial and error in production and their agents fail review. Build a proper maker learning track with mentoring.",
+]
+should_not_trigger = [
+  { prompt = "Decide who is allowed to build and share agents and what commitments makers sign up to.", expected = "platform-governance:maker-governance" },
+  { prompt = "What advanced learning should recognised Champions get within the Champion journey?", expected = "champions:champion-learning" },
+]
+
+[[skill]]
+name = "skills-measurement"
+should_trigger = [
+  "The sponsor wants to know if our AI learning programme actually worked. What should we measure beyond attendance?",
+  "Completion is high but Copilot use is flat in those teams. How do we make sense of learning and adoption data together?",
+  "Before we build a learning dashboard, agree which skills measures it shows and at what level.",
+  "HR asked for a list of who has and hasn't reached each AI learning level. What should we offer instead?",
+]
+should_not_trigger = [
+  { prompt = "Set up measures for Copilot adoption across usage, behaviour change and outcomes.", expected = "copilot-adoption:adoption-measurement" },
+  { prompt = "Report what our Champions programme is delivering without a leader board.", expected = "champions:champion-metrics" },
+]

@@ -1,0 +1,98 @@
+# Trigger tests for the evaluation-quality reviewer department (design brief 13 and 17).
+
+[[skill]]
+name = "ai-evaluation-strategy"
+should_trigger = [
+  "We're building a benefits agent for the whole workforce. How should we evaluate it before release, and how often after?",
+  "Review the team's evaluation approach for the claims triage solution. Is a quick demo to the sponsor enough at tier 2?",
+  "Our Foundry solution is going to be graded by another model. What should our overall evaluation plan look like?",
+  "Every team tests its agents differently. Can we set one proportionate evaluation standard by risk tier?",
+]
+should_not_trigger = [
+  { prompt = "Run the test questions for our HR agent and check permission trimming with two different users.", expected = "m365-agents:agent-testing" },
+  { prompt = "Build us an automated pipeline that runs our evaluation set on every commit.", expected = "ai-engineering:evaluation-harness" },
+]
+
+[[skill]]
+name = "golden-dataset"
+should_trigger = [
+  "We need a trusted set of real questions and correct answers to test the IT policy agent against. Where do we start?",
+  "Our test questions were all written by the maker and everything passes. Can you review the test set?",
+  "The travel policy changed last month. Which expected answers in our evaluation set need updating and who confirms them?",
+]
+should_not_trigger = [
+  { prompt = "What pass rate should the business owner accept for correctness and groundedness?", expected = "evaluation-quality:ai-quality-rubric" },
+  { prompt = "Inventory the SharePoint libraries our agents ground on and who owns each.", expected = "knowledge-management:knowledge-inventory" },
+]
+
+[[skill]]
+name = "ai-quality-rubric"
+should_trigger = [
+  "Two reviewers scored the same agent answers completely differently. How do we make scoring consistent?",
+  "Help me set the pass thresholds for our policy agent with the business owner before we run the tests.",
+  "We want an AI grader to score answers. How do we check it agrees with our human reviewers?",
+]
+should_not_trigger = [
+  { prompt = "How do we measure whether Copilot has reduced rework and errors in the finance team?", expected = "value-realisation:quality-measurement" },
+  { prompt = "Check whether each claim in the agent's answers is actually supported by the document it cites.", expected = "evaluation-quality:groundedness-testing" },
+]
+
+[[skill]]
+name = "groundedness-testing"
+should_trigger = [
+  "Users say the policy agent gives answers that aren't in the document it cites. How do we test that properly?",
+  "What does our agent do when the knowledge has no answer? Does it make something up?",
+  "We have two versions of the expenses policy in the library. Test which one the agent uses.",
+]
+should_not_trigger = [
+  { prompt = "Is this SharePoint site owned, current and correctly permissioned before we build an agent on it?", expected = "m365-agents:knowledge-source-readiness" },
+  { prompt = "Design the retrieval and chunking approach for our Foundry knowledge solution.", expected = "ai-foundry:retrieval-design" },
+]
+
+[[skill]]
+name = "ai-safety-testing"
+should_trigger = [
+  "Our customer-facing agent goes live next month. How do we test it won't produce offensive or dangerous content?",
+  "Someone reported the maintenance agent suggested skipping a safety check. What safety tests should we run?",
+  "How should the wellbeing agent respond if an employee says they are in distress, and how do we test it?",
+]
+should_not_trigger = [
+  { prompt = "Test whether a malicious document can inject instructions into our agent and exfiltrate data.", expected = "security-privacy:ai-security-testing" },
+  { prompt = "Configure content filters and safety evaluators for our Foundry deployment.", expected = "ai-foundry:foundry-safety-evaluation" },
+]
+
+[[skill]]
+name = "red-team-plan"
+should_trigger = [
+  "Plan a red-team exercise for our tier 3 claims agent before it goes live.",
+  "Who should be on the red team for the customer complaints agent, and what rules of engagement do we need?",
+  "After last month's incident we want people to actively try to break the payments agent. How do we organise it safely?",
+]
+should_not_trigger = [
+  { prompt = "Write a scripted set of harmful-content test prompts for our HR agent.", expected = "evaluation-quality:ai-safety-testing" },
+  { prompt = "The agent is producing harmful answers right now. What do we do?", expected = "ai-operations:ai-incident-management" },
+]
+
+[[skill]]
+name = "regression-evaluation"
+should_trigger = [
+  "We tidied up the agent's instructions. What do we need to re-test before we publish?",
+  "Microsoft has announced a model update for our Foundry solution. How do we check nothing got worse?",
+  "Pass rate dropped two points after the knowledge update. Is that a real regression or just noise?",
+]
+should_not_trigger = [
+  { prompt = "Assess the design and ownership impact of adding a write action to our live agent.", expected = "design-authority:ai-change-impact-review" },
+  { prompt = "The HR policy changed today. How do we get the agent to reflect the new version?", expected = "ai-operations:knowledge-refresh" },
+]
+
+[[skill]]
+name = "ai-release-evidence"
+should_trigger = [
+  "Pull together the evaluation evidence for the release board on our tier 2 policy agent.",
+  "The team says testing passed. What evidence should evaluation and quality see before signing off?",
+  "Audit want to know what evaluation evidence supported last quarter's release of the claims agent.",
+]
+should_not_trigger = [
+  { prompt = "Run the full release gate for the agent: owner, support route, sharing scope and register entry.", expected = "m365-agents:agent-release-readiness" },
+  { prompt = "Set the organisation's release rules for each risk tier.", expected = "platform-governance:ai-release-policy" },
+]

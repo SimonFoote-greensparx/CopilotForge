@@ -1,18 +1,32 @@
 # Roadmap
 
-Phases, milestones and release objectives (design brief section 20). The mature design has 27 departments; they are
-built in phases so that each release proves a complete journey rather than a pile of disconnected skills.
+Phases, milestones and release objectives (design brief section 20). **Status: draft, version 0.2.0.** First versions
+of all 27 departments now exist: 267 skills (every candidate in the design brief, see `data/candidate-skill-map.yaml`),
+7 programmes, 55 templates, 27 Copilot Cowork plugins and four reviewer-class departments with reviewer tests. Every
+skill is `status: draft`. The work ahead is review, evidence and hardening rather than new breadth.
 
-| Phase | Objective | Exit artefacts | State |
+## Where we are
+
+| Phase | Objective | First version created | Still to do before the phase closes |
 |---|---|---|---|
-| 0. Foundations | Name, licence, language, repository conventions, source policy, schemas and decision log | Repository skeleton, COWORK.md, architecture, checks, sample profiles | Done (v0.1) |
-| 1. Walking skeleton | Prove profile intake, orchestration, skill routing, reviewers, generation and the Cowork packages | One end-to-end fictional organisation and a minimal programme pack | **In progress** - 8 departments drafted; next: worked example pack, 5,000-person and regulated samples, reviewer exercise |
-| 2. Adoption and Champions | Build adoption and evidence-led Champions capabilities in full | Adoption programme, Champions pack, community and measurement templates; `learning-and-skills`, `change-and-communications` | Planned |
-| 3. CoE and opportunity portfolio | Build the business operating model and demand pipeline in full | CoE pack, opportunity lifecycle, RACI, cadence, KPI framework; `value-realisation`, `programme-management` | Planned |
-| 4. Agents and assurance | M365 agent design, knowledge readiness, evaluation and security review in full | Agent Factory path and blocking reviewer tests; `knowledge-management`, `responsible-ai`, `evaluation-quality`, `design-authority`, `ai-architecture`, `data-governance`, `platform-governance`, `ai-operations` | Planned |
-| 5. Product expansion | Cowork, Code, Copilot Studio, Foundry, automation and engineering capabilities | Product departments integrated into outcome-led programmes | Planned |
-| 6. Website and beta | Public programme builder, catalogue and worked examples, generated from this tree | Public site and structured practitioner feedback | Planned |
-| 7. v1 release | Stabilise sources, tests, documentation, packs and the contribution process | Tagged release and verified acceptance scenario | Planned |
+| 0. Foundations | Name, licence, language, conventions, source policy, schemas, decision log | **Done** (v0.1): repository skeleton, COWORK.md, architecture, checks, sample profiles | - |
+| 1. Walking skeleton | Profile intake, orchestration, routing, reviewers, generation, Cowork packages | **Done** (v0.1): 8 departments, golden plans for two fictional organisations | Worked example pack; 5,000-person and regulated samples; behavioural trigger runs |
+| 2. Adoption and Champions | Adoption, Champions, learning, change and communications in full | **First drafts** (v0.2): `copilot-adoption`, `champions`, `learning-and-skills`, `change-and-communications` | Review each skill; pilot the Champions method end to end |
+| 3. CoE and opportunity portfolio | The business operating model and demand pipeline | **First drafts** (v0.2): `ai-centre-of-excellence`, `opportunity-management`, `value-realisation`, `programme-management` | Review; worked CoE pack; benefits examples |
+| 4. Agents and assurance | Agent design, knowledge, evaluation, security and the reviewer departments | **First drafts** (v0.2): `m365-agents`, `knowledge-management`, `security-privacy`, `responsible-ai`, `evaluation-quality`, `design-authority`, `ai-architecture`, `data-governance`, `platform-governance`, `ai-operations` | Review; exercise every reviewer test against real submissions |
+| 5. Product expansion | Cowork, Code, Copilot Studio, Foundry, automation and engineering | **First drafts** (v0.2): `m365-copilot`, `copilot-cowork`, `copilot-code`, `copilot-studio`, `ai-foundry`, `automation`, `ai-engineering` | Review; refresh source records for high-volatility product facts |
+| 6. Website and beta | Programme builder, catalogue, worked examples, generated from this tree | **Draft site built** (v0.2) for https://copilotforge.ai/: 376 pages, all 27 plugins downloadable, marked Draft on every page | Worked examples; beta feedback from practitioners |
+| 7. v1 release | Stable sources, tests, documentation, packs and contribution process | Not started | All acceptance criteria below |
+
+## Next steps
+
+1. Review every skill department by department and move reviewed skills from `draft` to `reviewed`.
+2. Run the trigger tests behaviourally in Copilot Cowork and fix routing misses.
+3. Produce the worked transformation pack for the fictional 600-person organisation and add the 5,000-person and
+   regulated samples.
+4. Exercise the reviewer tests for all four reviewer-class departments against real submissions.
+5. Add source records for Copilot Code and refresh high-volatility product sources.
+6. Publish the website at https://copilotforge.ai/ and gather beta feedback.
 
 ## Definition of v1.0 (brief section 20.3)
 
@@ -27,36 +41,36 @@ built in phases so that each release proves a complete journey rather than a pil
 - A contributor can add a skill using documented conventions and receive actionable validation feedback.
 - Copilot Cowork can perform a bounded maintenance task by following COWORK.md and the repository checks.
 
-## Department build status
+## Department status
 
 <!-- BEGIN GENERATED: department-status (Generated by scripts/build-catalogue.py. Do not edit by hand.) -->
-| Department | Layer | Phase | Status |
-|---|---|---|---|
-| `ai-centre-of-excellence` | spanning | 1 | active |
-| `ai-strategy` | transformation | 1 | active |
-| `champions` | adoption | 1 | active |
-| `copilot-adoption` | adoption | 1 | active |
-| `m365-agents` | delivery | 1 | active |
-| `opportunity-management` | transformation | 1 | active |
-| `organisation-tailoring` | spanning | 1 | active |
-| `security-privacy` | assurance | 1 | active |
-| `change-and-communications` | adoption | 2 | planned |
-| `learning-and-skills` | adoption | 2 | planned |
-| `programme-management` | transformation | 3 | planned |
-| `value-realisation` | transformation | 3 | planned |
-| `ai-architecture` | assurance | 4 | planned |
-| `ai-operations` | assurance | 4 | planned |
-| `data-governance` | assurance | 4 | planned |
-| `design-authority` | assurance | 4 | planned |
-| `evaluation-quality` | assurance | 4 | planned |
-| `knowledge-management` | adoption | 4 | planned |
-| `platform-governance` | assurance | 4 | planned |
-| `responsible-ai` | assurance | 4 | planned |
-| `ai-engineering` | delivery | 5 | planned |
-| `ai-foundry` | delivery | 5 | planned |
-| `automation` | delivery | 5 | planned |
-| `copilot-code` | delivery | 5 | planned |
-| `copilot-cowork` | delivery | 5 | planned |
-| `copilot-studio` | delivery | 5 | planned |
-| `m365-copilot` | delivery | 5 | planned |
+| Department | Layer | Phase | Status | Skills | Skill status |
+|---|---|---|---|---|---|
+| `ai-centre-of-excellence` | spanning | 1 | first version | 17 | draft |
+| `ai-strategy` | transformation | 1 | first version | 9 | draft |
+| `champions` | adoption | 1 | first version | 11 | draft |
+| `copilot-adoption` | adoption | 1 | first version | 11 | draft |
+| `m365-agents` | delivery | 1 | first version | 10 | draft |
+| `opportunity-management` | transformation | 1 | first version | 12 | draft |
+| `organisation-tailoring` | spanning | 1 | first version | 8 | draft |
+| `security-privacy` | assurance | 1 | first version | 7 | draft |
+| `change-and-communications` | adoption | 2 | first version | 9 | draft |
+| `learning-and-skills` | adoption | 2 | first version | 9 | draft |
+| `programme-management` | transformation | 3 | first version | 10 | draft |
+| `value-realisation` | transformation | 3 | first version | 12 | draft |
+| `ai-architecture` | assurance | 4 | first version | 7 | draft |
+| `ai-operations` | assurance | 4 | first version | 8 | draft |
+| `data-governance` | assurance | 4 | first version | 7 | draft |
+| `design-authority` | assurance | 4 | first version | 6 | draft |
+| `evaluation-quality` | assurance | 4 | first version | 8 | draft |
+| `knowledge-management` | adoption | 4 | first version | 12 | draft |
+| `platform-governance` | assurance | 4 | first version | 7 | draft |
+| `responsible-ai` | assurance | 4 | first version | 7 | draft |
+| `ai-engineering` | delivery | 5 | first version | 10 | draft |
+| `ai-foundry` | delivery | 5 | first version | 15 | draft |
+| `automation` | delivery | 5 | first version | 9 | draft |
+| `copilot-code` | delivery | 5 | first version | 10 | draft |
+| `copilot-cowork` | delivery | 5 | first version | 10 | draft |
+| `copilot-studio` | delivery | 5 | first version | 16 | draft |
+| `m365-copilot` | delivery | 5 | first version | 10 | draft |
 <!-- END GENERATED: department-status -->

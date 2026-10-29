@@ -1,0 +1,194 @@
+# Trigger tests for the copilot-studio department (design brief 13 and 17).
+
+[[skill]]
+name = "studio-agent-design"
+should_trigger = [
+  "The brief for our facilities request agent is signed off and we're building it in Copilot Studio. What should the design cover before the maker opens the canvas?",
+  "Our Copilot Studio HR agent has grown to forty topics, six flows and four knowledge sources. Can you help us reset its architecture?",
+  "Draft a solution design for a Studio agent that answers IT questions and raises tickets in the service desk system.",
+  "Which design decisions do we need to record for a Copilot Studio agent before the design authority will look at it?",
+]
+should_not_trigger = [
+  { prompt = "Should the expenses idea be an agent at all, or is it just a broken approval process?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Help me scope the audience, exclusions and success measures for a new onboarding agent.", expected = "m365-agents:agent-use-case-design" },
+]
+
+[[skill]]
+name = "topics-and-orchestration"
+should_trigger = [
+  "Our Studio agent keeps triggering the leave topic when people ask about sick pay. How should we sort out topics versus generative orchestration?",
+  "Which parts of the claims agent should be authored topics and which can we leave to generative orchestration?",
+  "We're moving a classic trigger-phrase bot to generative orchestration. How do we rewrite the topic and tool descriptions?",
+]
+should_not_trigger = [
+  { prompt = "Rewrite the fallback and escalation messages so they sound like us and offer a person sooner.", expected = "copilot-studio:conversation-design" },
+  { prompt = "Split the finance agent into separate agents for payables, receivables and travel.", expected = "copilot-studio:multi-agent-design" },
+]
+
+[[skill]]
+name = "studio-knowledge-architecture"
+should_trigger = [
+  "The maker wants to upload thirty PDFs into the Copilot Studio agent instead of connecting SharePoint. Is that okay?",
+  "Our Studio agent answers from the public website when it should use the internal policy library. How do we set up its knowledge properly?",
+  "How should we scope and describe the four SharePoint libraries we're connecting to the procurement agent in Copilot Studio?",
+]
+should_not_trigger = [
+  { prompt = "Is the HR policy library current and owned well enough for an agent to ground on?", expected = "m365-agents:knowledge-source-readiness" },
+  { prompt = "Design chunking and a search index for our custom retrieval solution in Azure.", expected = "ai-foundry:retrieval-design" },
+]
+
+[[skill]]
+name = "studio-actions-and-tools"
+should_trigger = [
+  "We want the Copilot Studio agent to update a customer's address in the CRM. How should the tool be designed so it doesn't write the wrong thing?",
+  "The orchestrator keeps calling 'create ticket' when users only want to check a ticket's status. How do we fix the tool descriptions?",
+  "Should we expose our internal pricing API to the Studio agent as a REST tool, a custom connector or an MCP server?",
+]
+should_not_trigger = [
+  { prompt = "Do a formal security review of the connectors and shared connections our agent uses.", expected = "security-privacy:connector-review" },
+  { prompt = "Build the flow that checks the leave balance and creates the request for the agent.", expected = "copilot-studio:power-automate-actions" },
+]
+
+[[skill]]
+name = "studio-connectors"
+should_trigger = [
+  "The data policy in production blocks the connector our Studio agent uses. What are our options?",
+  "A maker wants to build a custom connector to the asset register API for their agent. What needs to be in place first?",
+  "Our Copilot Studio agent's connections were all created under the maker's account. How should we set them up properly?",
+]
+should_not_trigger = [
+  { prompt = "Review whether the new SAP connector in our agent sends data outside the tenant and classify the findings.", expected = "security-privacy:connector-review" },
+  { prompt = "Write the tenant-wide data policy that groups connectors for all our environments.", expected = "platform-governance:connector-policy" },
+]
+
+[[skill]]
+name = "studio-authentication"
+should_trigger = [
+  "Should our Copilot Studio agent use Microsoft Entra sign-in, manual authentication or none? It will sit on the intranet and in Teams.",
+  "Users keep getting a sign-in card in Teams when they use the Studio agent. How do we fix single sign-on?",
+  "The case-creation action in our Studio agent runs as the maker. Whose identity should it use instead?",
+]
+should_not_trigger = [
+  { prompt = "Review identity and access for the whole claims AI solution before release and classify the findings.", expected = "security-privacy:ai-identity-and-access-review" },
+  { prompt = "Publish the agent to Teams and Microsoft 365 Copilot for the finance department.", expected = "copilot-studio:studio-deployment" },
+]
+
+[[skill]]
+name = "dataverse-integration"
+should_trigger = [
+  "Can our Copilot Studio agent answer questions from the cases table in Dataverse without showing the confidential notes column?",
+  "We want the Studio agent to create service requests in Dataverse. How do we make sure business rules and security roles still apply?",
+  "Where does our Copilot Studio agent store its conversation transcripts in Dataverse, and who can read them?",
+]
+should_not_trigger = [
+  { prompt = "How much Dataverse capacity do we need to licence for our agents next year?", expected = "platform-governance:ai-licensing-and-capacity" },
+  { prompt = "Connect the procurement SharePoint libraries as knowledge for the Studio agent.", expected = "copilot-studio:studio-knowledge-architecture" },
+]
+
+[[skill]]
+name = "power-automate-actions"
+should_trigger = [
+  "The flow our Studio agent calls takes too long and the conversation times out. How should we redesign it?",
+  "Can we reuse the existing purchase-order approval flow from our Copilot Studio agent?",
+  "What should the inputs and outputs look like for a Power Automate flow that the agent calls to book a meeting room?",
+]
+should_not_trigger = [
+  { prompt = "Design robust patterns for our invoice-processing flows that run on a schedule with no agent involved.", expected = "automation:flow-design-patterns" },
+  { prompt = "Decide whether the agent's action should ask the user to confirm before it sends an email.", expected = "copilot-studio:studio-actions-and-tools" },
+]
+
+[[skill]]
+name = "conversation-design"
+should_trigger = [
+  "Users keep going round in circles with our Studio agent's 'I didn't understand' message. How should fallback work?",
+  "How should the IT agent hand over to a person on the service desk without the user repeating everything?",
+  "Write the greeting, tone and AI disclosure for our customer-facing Copilot Studio agent.",
+]
+should_not_trigger = [
+  { prompt = "Write the instructions text for our declarative policy agent in Agent Builder.", expected = "m365-agents:agent-instructions" },
+  { prompt = "Decide which requests should be authored topics and which should use generative orchestration.", expected = "copilot-studio:topics-and-orchestration" },
+]
+
+[[skill]]
+name = "studio-testing-and-evaluation"
+should_trigger = [
+  "How do we test our Copilot Studio agent's topics, flows and knowledge before we import it to production?",
+  "We changed three tool descriptions in the Studio agent. What regression testing do we need before release?",
+  "The agent passes in the test pane but users say actions fail in Teams. How should we test across channels and users?",
+]
+should_not_trigger = [
+  { prompt = "Plan a red-team exercise for our public-facing AI service.", expected = "evaluation-quality:red-team-plan" },
+  { prompt = "Is the tested agent ready to share with the whole business unit, and who supports it?", expected = "m365-agents:agent-release-readiness" },
+]
+
+[[skill]]
+name = "studio-environments"
+should_trigger = [
+  "Hundreds of Copilot Studio agents are sitting in the default environment. How should we set up environments for makers?",
+  "The finance team wants its own place to build agents. What development, test and production environments should they get?",
+  "How do we route new Copilot Studio makers to personal environments instead of the default?",
+]
+should_not_trigger = [
+  { prompt = "Define our organisation-wide environment strategy and governance zones for all AI building.", expected = "platform-governance:ai-environment-strategy" },
+  { prompt = "Set up pipelines to move the HR agent's solution from development to production.", expected = "copilot-studio:studio-alm" },
+]
+
+[[skill]]
+name = "studio-alm"
+should_trigger = [
+  "Our Studio agent was built outside a solution. How do we get it into proper ALM before it goes to production?",
+  "Someone fixed the agent directly in production and the next import overwrote it. How should we manage changes?",
+  "What environment variables and connection references does our Copilot Studio agent need to move cleanly between environments?",
+]
+should_not_trigger = [
+  { prompt = "Build a CI/CD pipeline for our Foundry prompts and model deployments.", expected = "ai-engineering:ai-ci-cd" },
+  { prompt = "Which environments should the sales team's makers build in, and how are new makers routed?", expected = "copilot-studio:studio-environments" },
+]
+
+[[skill]]
+name = "studio-deployment"
+should_trigger = [
+  "The agent passed its release gate. How do we publish it to Teams and Microsoft 365 Copilot for the operations team only?",
+  "We want to put our Copilot Studio agent on the customer website. What do we need to configure for that channel?",
+  "Staff can't find the new agent in Teams even though it's published. What did we miss?",
+]
+should_not_trigger = [
+  { prompt = "Plan the launch communications and onboarding for the new HR agent.", expected = "copilot-adoption:launch-plan" },
+  { prompt = "Decide whether the IT agent is ready to release and who will support it.", expected = "m365-agents:agent-release-readiness" },
+]
+
+[[skill]]
+name = "studio-analytics"
+should_trigger = [
+  "Our Studio agent has been live for two months. What should we look at in its analytics to decide what to fix?",
+  "Resolution on the benefits agent dropped last month. How do we use Copilot Studio analytics to find out why?",
+  "Set up a monthly improvement review for our Copilot Studio agent using its analytics and transcripts.",
+]
+should_not_trigger = [
+  { prompt = "Has the absence agent delivered the savings in its value hypothesis?", expected = "m365-agents:agent-value-measurement" },
+  { prompt = "Report Microsoft 365 Copilot usage by department for the steering group.", expected = "m365-copilot:copilot-usage-reporting" },
+]
+
+[[skill]]
+name = "studio-agent-lifecycle"
+should_trigger = [
+  "A maker who owns six Copilot Studio agents is leaving next month. What do we need to do?",
+  "We have dozens of Studio agents nobody has used for months. How do we clean up the estate safely?",
+  "How do we properly retire a Copilot Studio agent, including its flows and connections?",
+]
+should_not_trigger = [
+  { prompt = "Set review dates and decide whether our policy agent should continue based on its value.", expected = "m365-agents:agent-lifecycle" },
+  { prompt = "Build an inventory of all agents, flows and AI solutions across the organisation.", expected = "platform-governance:ai-solution-inventory" },
+]
+
+[[skill]]
+name = "multi-agent-design"
+should_trigger = [
+  "Our Copilot Studio agent covers HR, IT and facilities and keeps getting confused. Should we split it into child agents?",
+  "The service desk team built an agent we want to call from our employee help agent. How should we connect them?",
+  "Design how our Studio front-door agent hands work to a specialist agent built in Foundry.",
+]
+should_not_trigger = [
+  { prompt = "Design an agentic workflow with bounded autonomy on Foundry Agent Service.", expected = "ai-foundry:agentic-workflow-design" },
+  { prompt = "Design how the agent hands the conversation to a person in the contact centre.", expected = "copilot-studio:conversation-design" },
+]
