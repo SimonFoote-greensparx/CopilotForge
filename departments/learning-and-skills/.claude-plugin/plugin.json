@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-learning-and-skills",
+  "version": "0.2.0",
+  "description": "CopilotForge Learning and Skills. Create role-based learning, practice, assessment and progression pathways.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "adoption",
+    "learning-and-skills"
+  ]
+}
