@@ -11,7 +11,8 @@ cases:
       programmes_include: [discovery, adoption, champions, ai-coe, agent-factory, governance]
       artefacts_include: [maturity-assessment, operating-model, adoption-programme, champion-charter, coe-charter,
                           opportunity-process, agent-brief, agent-release, governance-framework, roadmap, ownership-map,
-                          pack-index, adoption-measures, kpi-framework]
+                          pack-index, adoption-measures, kpi-framework, benefits-plan, communications-plan, learning-plan,
+                          evaluation-plan, programme-charter]
       gates_include: [security-privacy, responsible-ai, evaluation-quality, design-authority]
   - id: contrast-40
     sample: ashby-studio-starter
@@ -20,6 +21,6 @@ cases:
       archetype: adopter
       programmes_include: [discovery, adoption, champions, ai-coe, governance]
       programmes_exclude: [agent-factory]
-      artefacts_exclude: [kpi-framework, challenge-catalogue, agent-brief]
+      artefacts_exclude: [kpi-framework, challenge-catalogue, agent-brief, programme-charter, coe-terms-of-reference, impact-assessment]
 proportionality:
   - {larger: larkfield-services-scale, smaller: ashby-studio-starter}

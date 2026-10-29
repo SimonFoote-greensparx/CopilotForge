@@ -18,10 +18,12 @@ python3 scripts/build-hosting.py
 The build checks that every link and image on every page resolves and fails if one does not. Pass `--site-url` to
 build for another address.
 
-While the repository is private (open decision O5), references to files that exist only in the repository are shown
-as plain text, so visitors never meet GitHub's "page not found". Once the repository is public, set
-`GITHUB_LINKS = True` in `scripts/_site.py` (or pass `--github-links`) and rebuild; a GitHub item then appears in the
-navigation and repository references become links.
+Like the D365Forge website, every reference to the GitHub repository is a link: the GitHub item in the navigation, the
+"View on GitHub" button, links to files that are only in the repository, and every repository address written out in
+the text (decision D24). While the repository is private (open decision O5), only people who have been given access
+can open those links; everyone else sees GitHub's "page not found". To show repository-only references as plain text
+instead, set `GITHUB_LINKS = False` in `scripts/_site.py`, or pass `--no-github-links`, and rebuild. The build fails if
+a repository address is shown on any page without being a link.
 
 ## Upload to your web host
 

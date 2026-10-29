@@ -10,7 +10,7 @@ documents land in your own OneDrive. Cowork changes regularly; if a menu has mov
 - You need Copilot Cowork in your tenant, and your organisation must allow you to upload your own plugins and skills.
   If **Upload plugin** is missing, ask your Microsoft 365 administrator.
 - Skills run as instructions to the AI. Read what you upload; every skill here is plain text.
-- Every skill is currently `status: draft` (walking skeleton). Treat the advice as a practitioner's first draft.
+- Every skill is currently `status: draft` (first versions of all 27 departments). Treat the advice as a practitioner's first draft.
 
 ## Add departments as plugins
 
@@ -21,12 +21,15 @@ documents land in your own OneDrive. Cowork changes regularly; if a menu has mov
 4. Share it with **Only you** to try it, or with specific colleagues.
 5. Start a new conversation.
 
-| If you want to... | Upload |
+| If you want to... | Upload (each name starts with `copilotforge-`) |
 |---|---|
-| Design your whole Microsoft AI programme | `copilotforge-organisation-tailoring`, `copilotforge-ai-strategy`, `copilotforge-copilot-adoption`, `copilotforge-champions`, `copilotforge-ai-centre-of-excellence`, `copilotforge-opportunity-management`, `copilotforge-m365-agents`, `copilotforge-security-privacy` |
-| Fix inconsistent Copilot use | `copilotforge-copilot-adoption`, `copilotforge-champions` |
-| Set up an AI Centre of Excellence | `copilotforge-ai-centre-of-excellence`, `copilotforge-opportunity-management`, `copilotforge-security-privacy` |
-| Bring departmental agents under control | `copilotforge-m365-agents`, `copilotforge-opportunity-management`, `copilotforge-security-privacy` |
+| Design your whole Microsoft AI programme | `organisation-tailoring`, `ai-strategy`, `copilot-adoption`, `champions`, `ai-centre-of-excellence`, `opportunity-management`, `m365-agents`, `security-privacy` |
+| Fix inconsistent Copilot use | `copilot-adoption`, `m365-copilot`, `champions`, `learning-and-skills`, `change-and-communications` |
+| Set up an AI Centre of Excellence | `ai-centre-of-excellence`, `opportunity-management`, `value-realisation`, `platform-governance`, `security-privacy` |
+| Bring departmental agents under control | `m365-agents`, `knowledge-management`, `platform-governance`, `security-privacy`, `ai-operations` |
+| Build Copilot Studio or Foundry solutions | `copilot-studio` or `ai-foundry`, `ai-architecture`, `evaluation-quality`, `responsible-ai`, `design-authority` |
+| Delegate work with Copilot Cowork or build with Copilot Code | `copilot-cowork` or `copilot-code`, `ai-engineering`, `security-privacy` |
+| Run the programme and prove value | `programme-management`, `value-realisation`, `ai-strategy` |
 
 Install only what you need: Cowork reads every installed skill's description when choosing one, so a focused set gives
 sharper results. Plugin names start with `copilotforge-`, so they sit alongside other skill libraries without clashing.

@@ -67,6 +67,13 @@ artefacts:
   skill: ai-centre-of-excellence:coe-charter
   template: coe-charter
 - programme: ai-coe
+  artefact: coe-launch-plan
+  title: CoE launch plan
+  depth: light
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-launch-roadmap
+  template: coe-launch-plan
+- programme: ai-coe
   artefact: coe-operating-model
   title: CoE operating model
   depth: light
@@ -108,6 +115,13 @@ artefacts:
   stage: Mobilise
   skill: champions:champion-programme-design
   template: champion-programme-charter
+- programme: champions
+  artefact: champion-guide
+  title: Champion guide
+  depth: light
+  stage: Mobilise
+  skill: champions:champion-recruitment
+  template: champion-guide
 - programme: discovery
   artefact: roadmap
   title: Prioritised AI roadmap
@@ -122,6 +136,20 @@ artefacts:
   stage: Mobilise
   skill: ai-centre-of-excellence:coe-governance-model
   template: ai-governance-starter
+- programme: adoption
+  artefact: communications-plan
+  title: Communications plan
+  depth: light
+  stage: Enable
+  skill: change-and-communications:ai-communication-strategy
+  template: ai-communications-plan
+- programme: adoption
+  artefact: learning-plan
+  title: Role-based learning plan
+  depth: light
+  stage: Enable
+  skill: learning-and-skills:ai-role-curriculum
+  template: ai-learning-plan
 - programme: adoption
   artefact: scenario-catalogue
   title: Persona and scenario catalogue
@@ -165,12 +193,33 @@ artefacts:
   skill: copilot-adoption:launch-plan
   template: adoption-plan
 - programme: adoption
+  artefact: support-model
+  title: User support model
+  depth: light
+  stage: Launch
+  skill: copilot-adoption:adoption-support-model
+  template: adoption-support-model
+- programme: governance
+  artefact: solution-inventory
+  title: AI solution inventory
+  depth: light
+  stage: Launch
+  skill: platform-governance:ai-solution-inventory
+  template: ai-governance-starter
+- programme: adoption
   artefact: adoption-measures
   title: Adoption measures and baseline
   depth: light
   stage: Measure
   skill: copilot-adoption:adoption-measurement
   template: coe-kpi-scorecard
+- programme: ai-transformation
+  artefact: benefits-plan
+  title: Benefits register and realisation plan
+  depth: light
+  stage: Measure
+  skill: value-realisation:benefit-realisation-plan
+  template: benefits-register
 - programme: ai-coe
   artefact: coe-cadence
   title: Governance cadence and terms of reference
@@ -186,6 +235,12 @@ artefacts:
   skill: champions:recognition-and-progression
   template: champion-programme-charter
 reviewer_gates:
+- reviewer: responsible-ai
+  stage: Assure
+  from_risk_tier: 3
+  blocking: true
+  evidence: proportionate
+  reviewer_status: active
 - reviewer: security-privacy
   stage: Assure
   from_risk_tier: 2
@@ -202,8 +257,14 @@ ownership_map:
 - department: champions
   accountable_role: Champions Programme Owner
   named_owner: to confirm from declared roles
+- department: change-and-communications
+  accountable_role: Change Lead
+  named_owner: to confirm from declared roles
 - department: copilot-adoption
   accountable_role: Adoption Lead
+  named_owner: to confirm from declared roles
+- department: learning-and-skills
+  accountable_role: Learning Lead
   named_owner: to confirm from declared roles
 - department: opportunity-management
   accountable_role: AI Portfolio Manager
@@ -211,8 +272,17 @@ ownership_map:
 - department: organisation-tailoring
   accountable_role: Transformation Architect
   named_owner: to confirm from declared roles
+- department: platform-governance
+  accountable_role: Platform Governance Lead
+  named_owner: to confirm from declared roles
+- department: responsible-ai
+  accountable_role: Responsible AI Reviewer
+  named_owner: to confirm from declared roles
 - department: security-privacy
   accountable_role: Security and Privacy Reviewer
+  named_owner: to confirm from declared roles
+- department: value-realisation
+  accountable_role: Benefits Realisation Lead
   named_owner: to confirm from declared roles
 to_confirm:
 - organisation.maturity_target
