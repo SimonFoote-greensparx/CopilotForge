@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-m365-agents",
+  "version": "0.1.0",
+  "description": "CopilotForge Microsoft 365 Agents. Turn organisational knowledge and repeatable information needs into appropriately scoped, owned and tested agents with a managed lifecycle.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "delivery",
+    "m365-agents"
+  ]
+}

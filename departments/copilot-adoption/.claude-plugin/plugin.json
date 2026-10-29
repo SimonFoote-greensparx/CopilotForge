@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-copilot-adoption",
+  "version": "0.1.0",
+  "description": "CopilotForge Copilot Adoption. Design and run organisation-wide or business-unit Microsoft AI adoption programmes, from readiness and scenarios through launch, reinforcement and measurement.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "adoption",
+    "copilot-adoption"
+  ]
+}
