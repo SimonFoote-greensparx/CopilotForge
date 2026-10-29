@@ -4,5 +4,7 @@
 
 ## Contributors
 
-Contributors beyond the author are credited here for substantial contributions, and in the git history for all
-contributions.
+Contributors beyond the author are credited here for substantial contributions, on the website's Contributors page,
+and in the git history for all contributions.
+
+- **Matt Fitchett** - https://www.linkedin.com/in/mattfitchett/

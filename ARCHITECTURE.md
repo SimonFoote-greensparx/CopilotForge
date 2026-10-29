@@ -69,6 +69,8 @@ department is built. Reviewer tests in `tests/reviewers/` hold cases that must b
 | `build-sources.py` | Each skill's `references/sources.md`; the generated table in `SOURCES.md` |
 | `build-catalogue.py` | `catalogue/catalogue.json`, `docs/CATALOGUE.md`, generated tables in `README.md` and `ROADMAP.md` |
 | `build-cowork.py` | `cowork/plugins/copilotforge-<id>.zip` and `cowork/README.md` |
+| `build-site.py` | The website's core pages in `site/` |
+| `build-hosting.py` | The complete website in `dist/website/` and `dist/copilotforge-website.zip` for https://copilotforge.ai/ |
 | `tailor.py` | A tailoring plan for a profile |
 
 Every generator has `--check`, which `scripts/check-all.sh` runs, so generated files cannot drift from their sources.
