@@ -11,7 +11,7 @@ should_trigger = [
 ]
 should_not_trigger = [
   { prompt = "Define what a Champion must be able to show at Chat, productivity and agent level.", expected = "champions:capability-framework" },
-  { prompt = "Design the operating model for our AI Centre of Excellence.", expected = "ai-centre-of-excellence:*" },
+  { prompt = "Design the operating model for our AI Centre of Excellence.", expected = "ai-centre-of-excellence:coe-operating-model" },
   { prompt = "Build an agent that tells each Champion what their requirements are and what their next milestone is.", expected = "m365-agents:agent-use-case-design" },
 ]
 
@@ -25,7 +25,7 @@ should_trigger = [
 ]
 should_not_trigger = [
   { prompt = "Two assessors gave different results on the same Champion submission. How do we make assessment consistent?", expected = "champions:evidence-assessment" },
-  { prompt = "Design a role-based Copilot curriculum for all 3,000 staff.", expected = "learning-and-skills:*" },
+  { prompt = "Design a role-based Copilot curriculum for all 3,000 staff.", expected = "learning-and-skills:ai-role-curriculum" },
 ]
 
 [[skill]]
@@ -65,4 +65,82 @@ should_trigger = [
 should_not_trigger = [
   { prompt = "Is Copilot adoption across the business actually improving outcomes?", expected = "copilot-adoption:adoption-measurement" },
   { prompt = "Set up the Champions programme charter and boundaries from scratch.", expected = "champions:champion-programme-design" },
+]
+
+[[skill]]
+name = "champion-recruitment"
+should_trigger = [
+  "We're opening our Copilot Champions programme next month. How do we recruit a cohort that covers every site?",
+  "All our Champions come from IT and marketing. How do we recruit from operations and frontline teams?",
+  "Half our Champions never got their manager's agreement and have no time. How should recruitment work next time?",
+  "Write the call for Champions and a guide explaining the role, the time commitment and how to apply.",
+]
+should_not_trigger = [
+  { prompt = "Write the charter and boundaries for our new Champions programme.", expected = "champions:champion-programme-design" },
+  { prompt = "Build a network of change agents in each department alongside our Champions.", expected = "change-and-communications:change-network" },
+]
+
+[[skill]]
+name = "champion-community-design"
+should_trigger = [
+  "Our Champions channel has gone silent. How do we design a community that actually works?",
+  "What rituals should our Champion community run - monthly calls, show-and-tell, prompt clinics?",
+  "We now have Champions in four regions. How do we set up local spokes without splitting the community?",
+  "Good prompts get shared in the Champion channel but never reach anyone else. How do we fix that?",
+]
+should_not_trigger = [
+  { prompt = "Design the training sessions that support each Champion capability.", expected = "champions:champion-learning" },
+  { prompt = "Run weekly Copilot drop-in sessions for all staff.", expected = "learning-and-skills:office-hours" },
+]
+
+[[skill]]
+name = "champion-learning"
+should_trigger = [
+  "Our capability framework promises a training route for each Champion capability, but we haven't built it. What should the learning look like?",
+  "Experienced Champions say our sessions are too basic. How do we redesign Champion learning?",
+  "Copilot has changed a lot since we wrote the Champion materials. How do we keep them current?",
+  "What learning should recognised Champions get once they have finished the journey?",
+]
+should_not_trigger = [
+  { prompt = "Define what a Champion must show to be verified at Chat, productivity and agent level.", expected = "champions:capability-framework" },
+  { prompt = "Design a learning pathway from foundation to advanced for every employee.", expected = "learning-and-skills:ai-learning-pathway" },
+]
+
+[[skill]]
+name = "champion-metrics"
+should_trigger = [
+  "The sponsor wants to know what our Champions programme delivers. What should we measure?",
+  "Someone wants a leader board of the most active Champions. What should we measure instead?",
+  "Specify the dashboard for our Champions programme - measures, definitions, sources and who can see what.",
+  "How should we define milestone conversion and boundary drift for the Champion network?",
+]
+should_not_trigger = [
+  { prompt = "Is Copilot adoption across the business improving outcomes?", expected = "copilot-adoption:adoption-measurement" },
+  { prompt = "Build the KPI scorecard for our AI Centre of Excellence.", expected = "ai-centre-of-excellence:coe-kpi-framework" },
+]
+
+[[skill]]
+name = "champion-advisor"
+should_trigger = [
+  "Our programme owner answers the same Champion questions all day. What should a Champions advisor answer, refuse and escalate?",
+  "We want an advisor that explains Champion requirements from our guide. Should it also show people their own progress?",
+  "Our Champions advisor keeps telling people whether their evidence will pass. How should we rescope it?",
+  "Write the question set and test questions for a self-service Champions advisor.",
+]
+should_not_trigger = [
+  { prompt = "Write the agent brief and choose the build tool for our HR onboarding agent.", expected = "m365-agents:agent-use-case-design" },
+  { prompt = "Write the guide that explains the Champion role and how to apply.", expected = "champions:champion-recruitment" },
+]
+
+[[skill]]
+name = "champions-health-check"
+should_trigger = [
+  "Our Champions charter is a year old and due for review. Should we renew the programme, and on what terms?",
+  "We have a new sponsor and a new CoE. Run the annual review of our Champions programme and decide whether to reshape it.",
+  "The Champions programme has drifted into answering support tickets and its framework predates agents. Do we renew, reshape or close it?",
+  "Copilot use is now just normal here. How do we close our Champions programme well?",
+]
+should_not_trigger = [
+  { prompt = "Set up the quarterly health rating and the renewal rules for individual Champion status.", expected = "champions:recognition-and-progression" },
+  { prompt = "Define the measures and access rules for our Champion programme dashboard.", expected = "champions:champion-metrics" },
 ]

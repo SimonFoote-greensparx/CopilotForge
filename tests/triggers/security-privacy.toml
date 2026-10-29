@@ -21,7 +21,7 @@ should_trigger = [
   "Review the connectors in this flow: it reads SharePoint, posts to Teams and sends data to an external API.",
 ]
 should_not_trigger = [
-  { prompt = "Set our organisation-wide connector policy and environment strategy for all makers.", expected = "platform-governance:*" },
+  { prompt = "Set our organisation-wide connector policy and environment strategy for all makers.", expected = "platform-governance:connector-policy" },
   { prompt = "Check whether the agent's grounding content is overshared to people who should not see it.", expected = "security-privacy:data-exposure-review" },
 ]
 
@@ -33,6 +33,54 @@ should_trigger = [
   "We want to ground an agent on old customer complaint files. Is that a compatible purpose, and do we need a DPIA?",
 ]
 should_not_trigger = [
-  { prompt = "Assess whether our performance-review assistant treats different groups of staff fairly and has proper human oversight.", expected = "responsible-ai:*" },
+  { prompt = "Assess whether our performance-review assistant treats different groups of staff fairly and has proper human oversight.", expected = "responsible-ai:fairness-review" },
   { prompt = "Review whether the agent's API call to the CRM runs under user or maker credentials.", expected = "security-privacy:connector-review" },
+]
+
+[[skill]]
+name = "ai-identity-and-access-review"
+should_trigger = [
+  "Our finance agent runs flows under a service principal and five people can edit it. Can you do the identity and access review before go-live?",
+  "The maker who built the HR agent is leaving next month. What access and ownership issues should security check before then?",
+  "We want to open the support agent to partner guest accounts. What identity and sign-in controls should the security gate look at?",
+]
+should_not_trigger = [
+  { prompt = "Review whether the flow's connector to the ticketing system uses the maker's credentials or the user's.", expected = "security-privacy:connector-review" },
+  { prompt = "Define the organisation-wide patterns for when agents may use a service identity to read data.", expected = "data-governance:ai-data-access-model" },
+]
+
+[[skill]]
+name = "ai-interaction-retention"
+should_trigger = [
+  "Where do the transcripts from our Copilot Studio service agent end up, who can read them, and how long are they kept?",
+  "Legal asked whether agent conversations can be found and held for a dispute. Can you review that for the claims agent before release?",
+  "We switched on tracing in our Foundry solution and it logs full prompts. Is that a problem for the security gate?",
+]
+should_not_trigger = [
+  { prompt = "Set the organisation's retention periods for AI transcripts, generated content and embeddings.", expected = "data-governance:ai-data-retention-rules" },
+  { prompt = "Do we have a lawful basis to keep candidates' chat transcripts, and do we need a DPIA?", expected = "security-privacy:privacy-assessment" },
+]
+
+[[skill]]
+name = "ai-security-testing"
+should_trigger = [
+  "Our agent summarises inbound customer emails and can create refunds. How should we test it for prompt injection before release?",
+  "Someone got the policy agent to print its system prompt. What security testing should we require for agents?",
+  "Review the security test evidence for this Foundry agent that browses supplier websites and calls our order API.",
+]
+should_not_trigger = [
+  { prompt = "Test whether the agent produces offensive or harmful content across sensitive topics.", expected = "evaluation-quality:ai-safety-testing" },
+  { prompt = "Review the security of the code our coding agent generated for the new intranet app.", expected = "copilot-code:generated-code-security-review" },
+]
+
+[[skill]]
+name = "ai-incident-readiness"
+should_trigger = [
+  "Before we launch the customer agent, are we ready if it leaks data? Who switches it off and what evidence would we have?",
+  "If an agent gets prompt-injected into emailing data externally, does our incident process cope? Check readiness for the claims agent.",
+  "The service desk closed a report of an agent showing salary data as a how-to ticket. What should our AI incident readiness look like?",
+]
+should_not_trigger = [
+  { prompt = "The live HR agent gave staff wrong leave entitlements all morning. Run the incident.", expected = "ai-operations:ai-incident-management" },
+  { prompt = "How can customers challenge a decision the triage agent influenced?", expected = "responsible-ai:escalation-and-appeal" },
 ]

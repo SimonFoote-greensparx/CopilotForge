@@ -9,7 +9,7 @@ should_trigger = [
 ]
 should_not_trigger = [
   { prompt = "Plan the rollout waves and the manager briefings for our Copilot launch in January.", expected = "copilot-adoption:launch-plan" },
-  { prompt = "How many Copilot licences should we buy for the sales team, and which plan do they need?", expected = "platform-governance:*" },
+  { prompt = "How many Copilot licences should we buy for the sales team, and which plan do they need?", expected = "platform-governance:ai-licensing-and-capacity" },
 ]
 
 [[skill]]
@@ -47,5 +47,95 @@ should_trigger = [
 ]
 should_not_trigger = [
   { prompt = "Is our Champions programme healthy, and how many Champions have verified each level?", expected = "champions:recognition-and-progression" },
-  { prompt = "Build the ROI model and benefits case for our Copilot investment.", expected = "value-realisation:*" },
+  { prompt = "Build the ROI model and benefits case for our Copilot investment.", expected = "value-realisation:roi-model" },
+]
+
+[[skill]]
+name = "audience-segmentation"
+should_trigger = [
+  "We're about to plan Copilot waves for people across offices, depots and contact centres. How should we group them?",
+  "Our Copilot messages go to everyone in the same form and the warehouse teams never read them. Help us split the workforce into audiences.",
+  "Which groups need different onboarding, given shared devices, shift patterns and some teams handling very sensitive HR content?",
+  "We acquired a business last month. How do their people fit into our existing Copilot audience model?",
+]
+should_not_trigger = [
+  { prompt = "Which Copilot scenarios should our claims handlers start with, and what prompts should we give them?", expected = "copilot-adoption:scenario-discovery" },
+  { prompt = "Who are the influential people who could block our AI programme, and what are their concerns?", expected = "change-and-communications:ai-stakeholder-mapping" },
+]
+
+[[skill]]
+name = "role-based-adoption"
+should_trigger = [
+  "Our sponsor wants Copilot to change how account managers work, not just get them started. Design a journey for that role.",
+  "Finance analysts were onboarded with everyone else and still only use Copilot to rewrite emails. How do we take them further this quarter?",
+  "We have tested scenarios for HR advisers but nobody has planned how they become part of the team's routine. What should the next three months look like?",
+]
+should_not_trigger = [
+  { prompt = "Build a role-based AI curriculum with modules and assessments for our procurement staff.", expected = "learning-and-skills:ai-role-curriculum" },
+  { prompt = "Find real Copilot use cases for our legal team.", expected = "copilot-adoption:scenario-discovery" },
+]
+
+[[skill]]
+name = "copilot-onboarding"
+should_trigger = [
+  "New starters get a Copilot licence on day one and no idea what to do with it. Design an onboarding flow.",
+  "What should someone receive the day their Copilot access is switched on - welcome message, first session, first-week tasks?",
+  "Our launch onboarding went well, but people who joined since then get nothing. How do we make onboarding repeatable?",
+  "People keep telling the service desk Copilot doesn't work, and it turns out their access wasn't ready. How should onboarding prevent that?",
+]
+should_not_trigger = [
+  { prompt = "Plan the sequence of rollout waves and exit criteria for our January Copilot launch.", expected = "copilot-adoption:launch-plan" },
+  { prompt = "Switch on Microsoft 365 Copilot licences in technical waves through the admin tools.", expected = "m365-copilot:m365-copilot-rollout" },
+]
+
+[[skill]]
+name = "adoption-reinforcement"
+should_trigger = [
+  "Launch was six months ago and Copilot use has plateaued. What should our ongoing reinforcement rhythm look like?",
+  "Two departments drifted back to old habits after a good start. How do we re-engage them without chasing individuals?",
+  "Microsoft has changed how Copilot works in Outlook. How do we reach people who were onboarded months ago?",
+  "Set up a monthly cycle of nudges, scenario refreshes and manager prompts for our Copilot users.",
+]
+should_not_trigger = [
+  { prompt = "Plan a four-week campaign around meeting recaps for the sales division.", expected = "change-and-communications:adoption-campaign-plan" },
+  { prompt = "Embed the new AI ways of working into team processes and leadership routines as part of our change plan.", expected = "change-and-communications:behaviour-reinforcement-plan" },
+]
+
+[[skill]]
+name = "adoption-support-model"
+should_trigger = [
+  "Where should Copilot questions go? Our service desk closes 'how do I' tickets as out of scope.",
+  "Our Champions spend all their time on Copilot support. Design a proper support model for users.",
+  "Before launch we need self-help, peer help, the service desk and a route for people who see a file they shouldn't. Lay it out.",
+  "Write the support model for our Copilot rollout, including triage categories and extra capacity for launch weeks.",
+]
+should_not_trigger = [
+  { prompt = "Who supports our HR policy agent once it is live, and how are its incidents handled?", expected = "ai-operations:ai-support-model" },
+  { prompt = "Set up weekly AI drop-in clinics for all staff.", expected = "learning-and-skills:office-hours" },
+]
+
+[[skill]]
+name = "executive-enablement"
+should_trigger = [
+  "Our executive team have had Copilot for three months and barely use it. How do we get them using it in their own work?",
+  "Plan private Copilot sessions for the leadership team and their executive assistants before we launch.",
+  "Our chief executive wants to lead Copilot adoption visibly. What should she actually do and say?",
+  "How should we handle confidential board papers when we enable senior leaders on Copilot?",
+]
+should_not_trigger = [
+  { prompt = "We need an executive sponsor for the whole AI programme. What should we ask of them?", expected = "ai-strategy:executive-sponsorship" },
+  { prompt = "Write a detailed set of Copilot scenarios and prompt habits for leaders across Outlook, Teams and Word.", expected = "m365-copilot:copilot-for-leaders" },
+]
+
+[[skill]]
+name = "frontline-enablement"
+should_trigger = [
+  "We're bringing store colleagues into our Copilot rollout. They share handheld devices and work shifts. How do we enable them?",
+  "Our first rollout left out the depot drivers entirely. How do we include them properly this time?",
+  "Desk-based Copilot training didn't work for our ward staff. What should frontline enablement look like?",
+  "Employee representatives have asked about AI for factory floor staff. How do we plan frontline enablement with proper consultation?",
+]
+should_not_trigger = [
+  { prompt = "Which Microsoft licences do our frontline workers need for Copilot?", expected = "platform-governance:ai-licensing-and-capacity" },
+  { prompt = "Define the frontline Copilot scenarios and product constraints for shift supervisors.", expected = "m365-copilot:copilot-for-frontline" },
 ]

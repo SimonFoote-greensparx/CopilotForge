@@ -66,3 +66,94 @@ should_not_trigger = [
   { prompt = "How is Copilot usage trending across departments since launch?", expected = "copilot-adoption:adoption-measurement" },
   { prompt = "Check our HR agent is ready to release to staff next week.", expected = "m365-agents:agent-release-readiness" },
 ]
+
+[[skill]]
+name = "idea-capture"
+should_trigger = [
+  "Staff keep emailing AI ideas to random people and they get lost. Set up one place for ideas to go.",
+  "We want a simple way for frontline staff to suggest where AI could help, from their phones.",
+  "Our AI ideas form went quiet after launch. Why might that be and how do we revive it?",
+  "Design an idea campaign around reducing customer response times, with feedback to everyone who submits.",
+]
+should_not_trigger = [
+  { prompt = "This idea from the claims team says 'use Copilot for reports'. Turn it into a proper problem statement with an owner.", expected = "opportunity-management:problem-framing" },
+  { prompt = "Set up a monthly challenge so our Champions practise new Copilot skills.", expected = "champions:champion-challenges" },
+]
+
+[[skill]]
+name = "value-hypothesis"
+should_trigger = [
+  "The service team says the agent will save loads of time. How do we turn that into something we can actually test?",
+  "Before we pilot, help us state the expected benefit, how we'll measure it and what result would make us stop.",
+  "What leading indicators should we watch in the first weeks to know if the contract summary agent is working?",
+  "Write the value hypothesis for this opportunity, with baseline and expected range.",
+]
+should_not_trigger = [
+  { prompt = "The initiative is approved. Set up the benefit register with owners and milestones.", expected = "value-realisation:benefit-hypothesis" },
+  { prompt = "How should we measure the current handling time properly before anything changes?", expected = "value-realisation:baseline-design" },
+]
+
+[[skill]]
+name = "effort-assessment"
+should_trigger = [
+  "The team says the procurement agent is a week's work. Can you give a realistic estimate including testing and running it?",
+  "What skills, owners and dependencies will this Copilot Studio agent need, and what will it cost to run once live?",
+  "Estimate build and run effort for these three opportunities so we can score feasibility.",
+  "Nobody has asked who will maintain this agent's knowledge after launch. Size the ongoing effort.",
+]
+should_not_trigger = [
+  { prompt = "Is this a job for an agent, a Cowork task or plain automation?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Our Foundry solution's model costs doubled last month. How do we get consumption under control?", expected = "ai-foundry:foundry-cost-management" },
+]
+
+[[skill]]
+name = "portfolio-balancing"
+should_trigger = [
+  "Everything in our AI portfolio is a quick win and nothing touches the big outcomes. How do we rebalance?",
+  "Our two responsible AI reviewers have six high-risk initiatives coming at them next month. What should we pause?",
+  "Run the quarterly portfolio review: are we spread sensibly across units, outcomes and risk?",
+  "One division has most of our AI capacity and others are waiting. How do we rebalance fairly?",
+]
+should_not_trigger = [
+  { prompt = "Score these twelve new ideas on value, feasibility and risk.", expected = "opportunity-management:opportunity-prioritisation" },
+  { prompt = "Our pilot of the HR agent ended last week. Do we scale it or stop?", expected = "opportunity-management:scale-or-stop" },
+]
+
+[[skill]]
+name = "business-case"
+should_trigger = [
+  "We need sign-off to build a customer-facing triage agent. What should the business case contain?",
+  "Write a light business case for the contract summary agent, including the non-AI option.",
+  "The pilot worked and scaling needs new money. Help me write the case for the director.",
+  "Does this small knowledge agent even need a business case, or is the canvas enough?",
+]
+should_not_trigger = [
+  { prompt = "Make the case for funding our whole AI programme over the next three years.", expected = "ai-strategy:investment-case" },
+  { prompt = "Estimate how much effort and run cost this agent will need.", expected = "opportunity-management:effort-assessment" },
+]
+
+[[skill]]
+name = "backlog-management"
+should_trigger = [
+  "Every unit has its own spreadsheet of AI ideas. Help us set up one backlog board everyone uses.",
+  "Our backlog is full of stale entries nobody closes. Set up a hygiene routine.",
+  "What fields should each stage of the AI opportunity board require, and should we use a SharePoint list or Planner?",
+  "Too many things are 'in delivery' at once. How do we set work-in-progress limits on the board?",
+]
+should_not_trigger = [
+  { prompt = "Design the form and channels staff use to submit AI ideas.", expected = "opportunity-management:idea-capture" },
+  { prompt = "Keep a register of all the live agents and flows in our tenant.", expected = "platform-governance:ai-solution-inventory" },
+]
+
+[[skill]]
+name = "pilot-selection"
+should_trigger = [
+  "We have four candidate agents and capacity for one pilot. Which should we pilot and how?",
+  "Design a pilot for the summary agent that can actually tell us whether it works, with a comparison group.",
+  "Our last pilot ran for nine months and nobody could say if it worked. How should we set up the next one?",
+  "Who should be in the pilot cohort? Only volunteers have put their hands up so far.",
+]
+should_not_trigger = [
+  { prompt = "The pilot has ended. Decide whether to scale it, iterate or stop.", expected = "opportunity-management:scale-or-stop" },
+  { prompt = "Test the agent's answers against our golden questions before anyone uses it.", expected = "m365-agents:agent-testing" },
+]

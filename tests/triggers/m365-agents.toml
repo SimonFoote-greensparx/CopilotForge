@@ -21,7 +21,7 @@ should_trigger = [
   "Our procurement agent keeps quoting last year's thresholds. Can you assess the knowledge it is using?",
 ]
 should_not_trigger = [
-  { prompt = "Clean up and redesign the information architecture of our whole intranet so it is ready for AI.", expected = "knowledge-management:*" },
+  { prompt = "Clean up and redesign the information architecture of our whole intranet so it is ready for AI.", expected = "knowledge-management:sharepoint-knowledge-design" },
   { prompt = "Do a formal security review of what confidential content our finance agent could expose to staff.", expected = "security-privacy:data-exposure-review" },
 ]
 
@@ -35,7 +35,7 @@ should_trigger = [
 ]
 should_not_trigger = [
   { prompt = "The agent passed testing. Is it ready to share with the whole business unit and who supports it?", expected = "m365-agents:agent-release-readiness" },
-  { prompt = "Design a red-team programme and golden dataset strategy for our customer-facing AI service.", expected = "evaluation-quality:*" },
+  { prompt = "Design a red-team programme and golden dataset strategy for our customer-facing AI service.", expected = "evaluation-quality:red-team-plan" },
 ]
 
 [[skill]]
@@ -48,4 +48,76 @@ should_trigger = [
 should_not_trigger = [
   { prompt = "The agent has been live six months. Should we scale it to other regions or stop it based on the value evidence?", expected = "opportunity-management:scale-or-stop" },
   { prompt = "Review the connectors and Power Automate actions our agent uses for security before release.", expected = "security-privacy:connector-review" },
+]
+
+[[skill]]
+name = "agent-opportunity-assessment"
+should_trigger = [
+  "Three teams each want their own onboarding agent. Should we build one, three, or none?",
+  "The service desk asked for an agent for password questions. Does that warrant an agent, and what kind?",
+  "Lots of people in procurement reuse the same Copilot prompt about supplier rules. Should that become an agent?",
+]
+should_not_trigger = [
+  { prompt = "Should we fix the expenses process, automate it, or use AI at all?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "The agent is approved. Write the brief with audience, scope, exclusions, knowledge and owner.", expected = "m365-agents:agent-use-case-design" },
+]
+
+[[skill]]
+name = "agent-instructions"
+should_trigger = [
+  "Help me write the instructions for our IT policy agent so it cites sources and redirects off-topic questions.",
+  "Our benefits agent makes up answers when the policy is silent. How should its instructions handle that?",
+  "Someone keeps editing the live agent's instructions. How do we version and control changes?",
+]
+should_not_trigger = [
+  { prompt = "How do I teach staff to write better Copilot prompts?", expected = "m365-copilot:prompting-practice" },
+  { prompt = "Define the agent's purpose, audience and out-of-scope list before we build.", expected = "m365-agents:agent-use-case-design" },
+]
+
+[[skill]]
+name = "agent-grounding"
+should_trigger = [
+  "The maker added the whole HR site as knowledge. How should we scope what the agent grounds on?",
+  "Should our policy agent use web content or only our SharePoint sources?",
+  "The agent cites old versions from an archive folder. How do we fix and control its knowledge list?",
+]
+should_not_trigger = [
+  { prompt = "Is this policy library owned, current and correctly permissioned enough to be used by an agent?", expected = "m365-agents:knowledge-source-readiness" },
+  { prompt = "Formally review what confidential content our finance agent could expose.", expected = "security-privacy:data-exposure-review" },
+]
+
+[[skill]]
+name = "agent-ownership"
+should_trigger = [
+  "Who should own our onboarding agent: the maker, HR or IT? Help me assign business, knowledge and technical owners.",
+  "The maker of the facilities agent is leaving next month. How do we hand over ownership?",
+  "Our inventory shows forty agents nobody claims. What do we do about ownership?",
+]
+should_not_trigger = [
+  { prompt = "Build a RACI for the whole AI centre of excellence.", expected = "ai-centre-of-excellence:coe-raci" },
+  { prompt = "Run the release checklist before we share the contracts agent with the business unit.", expected = "m365-agents:agent-release-readiness" },
+]
+
+[[skill]]
+name = "agent-lifecycle"
+should_trigger = [
+  "Our policy agent's six-month review is due. What should the owner decide and record?",
+  "We want to add a new source and a wider audience to a live agent. How do we control that change?",
+  "Nobody uses the old travel agent any more. How do we retire it properly?",
+]
+should_not_trigger = [
+  { prompt = "The agent passed testing. Is it ready to share for the first time?", expected = "m365-agents:agent-release-readiness" },
+  { prompt = "Should we scale this agent to other regions or stop it, based on portfolio value?", expected = "opportunity-management:scale-or-stop" },
+]
+
+[[skill]]
+name = "agent-value-measurement"
+should_trigger = [
+  "Is our HR policy agent actually reducing tickets the way the brief said it would?",
+  "The owner says the agent is a success because it has thousands of conversations. How do we judge its real value?",
+  "Prepare the value evidence for the facilities agent's review next month.",
+]
+should_not_trigger = [
+  { prompt = "Is Copilot adoption working across the organisation?", expected = "copilot-adoption:adoption-measurement" },
+  { prompt = "Build a return-on-investment model for the whole AI programme.", expected = "value-realisation:roi-model" },
 ]

@@ -45,7 +45,7 @@ Editions and archetypes are proposed CopilotForge classifications, not Microsoft
 | Reviewer | Stage | From risk tier | Blocking | Evidence (formal or proportionate) | Reviewer status |
 |---|---|---|---|---|---|
 | Security and privacy | Assure | 2 | Yes | [To confirm] | Active |
-| [To confirm] | | | | | Contract only until the department is built |
+| [To confirm: reviewer, for example Evaluation and quality (`evaluation-quality:ai-release-evidence`)] | | | | | Active |
 
 ## 5. Success measures
 

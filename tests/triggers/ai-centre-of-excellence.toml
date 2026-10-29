@@ -49,7 +49,7 @@ should_trigger = [
 ]
 should_not_trigger = [
   { prompt = "Plan a quarterly programme of Champion challenges to keep the community active.", expected = "champions:champion-challenges" },
-  { prompt = "Set up RAID logs, stage gates and supplier governance for the whole transformation programme.", expected = "programme-management:*" },
+  { prompt = "Set up RAID logs, stage gates and supplier governance for the whole transformation programme.", expected = "programme-management:programme-risk-log" },
 ]
 
 [[skill]]
@@ -62,7 +62,7 @@ should_trigger = [
 ]
 should_not_trigger = [
   { prompt = "Should the bid-writing agent pilot be scaled to all divisions or stopped?", expected = "opportunity-management:scale-or-stop" },
-  { prompt = "Build a full ROI model and benefits realisation plan for our Copilot rollout.", expected = "value-realisation:*" },
+  { prompt = "Build a full ROI model and benefits realisation plan for our Copilot rollout.", expected = "value-realisation:roi-model" },
 ]
 
 [[skill]]
@@ -76,5 +76,148 @@ should_trigger = [
 should_not_trigger = [
   { prompt = "Which risk tier is our HR policy agent, given it will be shared with all staff?", expected = "opportunity-management:risk-classification" },
   { prompt = "Review whether our sales agent exposes confidential contract documents to people who should not see them.", expected = "security-privacy:data-exposure-review" },
-  { prompt = "Configure our Power Platform environments, connector policies and maker controls.", expected = "platform-governance:*" },
+  { prompt = "Configure our Power Platform environments, connector policies and maker controls.", expected = "platform-governance:ai-environment-strategy" },
+]
+
+[[skill]]
+name = "coe-readiness"
+should_trigger = [
+  "The leadership team wants to launch an AI CoE next quarter. Before we announce anything, are we actually ready?",
+  "We tried an AI working group last year and it fizzled out. What needs to be in place before we try a CoE again?",
+  "Our IT director has offered to run the AI CoE because nobody in the business volunteered. Is that enough to get started?",
+  "Check whether our finance division has what it needs to launch its own AI CoE as a spoke under the group hub.",
+]
+should_not_trigger = [
+  { prompt = "We have just bought Copilot licences for 800 staff. Are we ready to roll them out?", expected = "copilot-adoption:adoption-readiness" },
+  { prompt = "Our AI CoE has been running for a year. How mature is it and what should we fix next?", expected = "ai-centre-of-excellence:coe-maturity-assessment" },
+]
+
+[[skill]]
+name = "coe-sponsor-role"
+should_trigger = [
+  "Who should sponsor our AI CoE, and what exactly do we need them to do?",
+  "Our CoE sponsor only reads the monthly report and every real decision gets deferred. How do we fix the sponsor role?",
+  "Write a one-page commitment for the COO as executive sponsor of the AI CoE, including what her delegate can decide.",
+  "Our CoE sponsor is moving to a new job next month. How do we hand over sponsorship without losing momentum?",
+]
+should_not_trigger = [
+  { prompt = "Help our chief executive start using Copilot in her own work so she can lead by example.", expected = "copilot-adoption:executive-enablement" },
+  { prompt = "Who should be accountable for each activity from intake to release across our AI lifecycle?", expected = "ai-centre-of-excellence:coe-raci" },
+]
+
+[[skill]]
+name = "coe-team-design"
+should_trigger = [
+  "The CoE structure is agreed. What roles do we need in the core team, what skills, and how much time should each give?",
+  "Everyone in our AI CoE is a technology enthusiast. Nobody does process or knowledge work. How should we redesign the team?",
+  "Draft the terms of reference for our CoE team, covering membership, time commitments, backfill and how we work together.",
+  "Our CoE members do this work in the evenings because their managers never agreed any time. How do we set the team up properly?",
+]
+should_not_trigger = [
+  { prompt = "Should our CoE be central, hub-and-spoke or federated, and how should ideas flow from intake to delivery?", expected = "ai-centre-of-excellence:coe-operating-model" },
+  { prompt = "Write the terms of reference and agenda for our monthly AI steering committee.", expected = "ai-centre-of-excellence:coe-cadence" },
+]
+
+[[skill]]
+name = "coe-champion-integration"
+should_trigger = [
+  "We have a Champions network and an AI CoE, but they never talk to each other. How should Champions plug into the CoE?",
+  "How should our knowledge, process, adoption and AI champions each contribute to the CoE's pillars?",
+  "Our Champions have started building and releasing department agents on behalf of the CoE. Where should their role stop?",
+  "Champions send ideas to the CoE and never hear back. Design how work and feedback should flow between them.",
+]
+should_not_trigger = [
+  { prompt = "Design our Champions programme from scratch, including the journey, boundaries and time commitment.", expected = "champions:champion-programme-design" },
+  { prompt = "Plan the next round of Champion Challenges and how they will be assessed.", expected = "champions:champion-challenges" },
+]
+
+[[skill]]
+name = "coe-opportunity-pipeline"
+should_trigger = [
+  "We have 60 AI ideas sitting in a spreadsheet and nobody decides anything. How should our CoE run its opportunity pipeline?",
+  "Teams keep starting AI pilots without going through the CoE's assessment. Set up stages and exit criteria that stop this.",
+  "Who should own the CoE's opportunity management pillar, and what service levels should we promise submitters?",
+  "Steering cannot see where ideas get stuck. Give us a pipeline view and work-in-progress limits for the CoE.",
+]
+should_not_trigger = [
+  { prompt = "Score and rank the 25 opportunities in our backlog so steering can choose what goes next.", expected = "opportunity-management:opportunity-prioritisation" },
+  { prompt = "Design a simple form so any employee can submit an AI idea.", expected = "opportunity-management:idea-capture" },
+]
+
+[[skill]]
+name = "coe-portfolio-management"
+should_trigger = [
+  "We have around 40 agents and flows live across the business and nobody can tell me who owns half of them. How do we manage the portfolio?",
+  "Three departments have built almost the same HR policy agent. How should the CoE decide which to keep?",
+  "Steering wants a quarterly view of every live and planned AI solution, what it costs, what it delivers and what we should retire.",
+  "Several of our agents are past their review dates. Set up a portfolio review that decides keep, fix, consolidate or retire.",
+]
+should_not_trigger = [
+  { prompt = "Should the bid-writing agent pilot be scaled to all divisions or stopped?", expected = "opportunity-management:scale-or-stop" },
+  { prompt = "Rebalance our backlog between quick wins and strategic bets for next quarter.", expected = "opportunity-management:portfolio-balancing" },
+]
+
+[[skill]]
+name = "coe-knowledge-pillar"
+should_trigger = [
+  "Our CoE charter lists knowledge management as a pillar but nobody runs it. What should the pillar actually do?",
+  "Our agents keep quoting last year's policies. How should the CoE make sure the content they rely on stays owned and current?",
+  "Set up a knowledge asset register for our CoE before we start building agents.",
+  "When users report wrong answers from our agents, how should the CoE get the underlying documents fixed by their owners?",
+]
+should_not_trigger = [
+  { prompt = "Check whether the three SharePoint libraries our HR agent will use are ready to ground on.", expected = "m365-agents:knowledge-source-readiness" },
+  { prompt = "Define the standard documents must meet before any agent can ground on them.", expected = "knowledge-management:knowledge-grounding-standards" },
+]
+
+[[skill]]
+name = "coe-delivery-model"
+should_trigger = [
+  "Our backlog has approved agent ideas but no consistent way to get them built. How should the CoE deliver agents and automations?",
+  "Business makers, our CoE team and two partners all build agents differently. Define delivery routes and one definition of done.",
+  "Agents keep going live with no tests and no support route. What should done mean for our CoE, by risk tier?",
+  "We want the CoE to stop building everything itself and enable makers safely instead. How do we set that up?",
+]
+should_not_trigger = [
+  { prompt = "Design the scope, knowledge sources and actions for our procurement agent.", expected = "m365-agents:agent-use-case-design" },
+  { prompt = "Set up solutions, pipelines and environments for moving our Copilot Studio agents from development to production.", expected = "copilot-studio:studio-alm" },
+]
+
+[[skill]]
+name = "coe-value-tracking"
+should_trigger = [
+  "The sponsor asks what our AI CoE has actually delivered so far, and all we have are anecdotes. How do we track value?",
+  "Set up a value ledger for every agent and automation the CoE has released, showing estimate, baseline and measured result.",
+  "Different people quote different savings for the same agent. How should the CoE report value consistently and honestly?",
+  "Our first CoE value review is next month. What should we bring and how do we handle figures we cannot prove?",
+]
+should_not_trigger = [
+  { prompt = "Build a KPI scorecard for our AI CoE covering adoption, quality, governance and value.", expected = "ai-centre-of-excellence:coe-kpi-framework" },
+  { prompt = "Build a full ROI model for our Copilot investment with assumptions and ranges.", expected = "value-realisation:roi-model" },
+]
+
+[[skill]]
+name = "coe-launch-roadmap"
+should_trigger = [
+  "Our AI CoE charter is signed. Give us a dated launch plan for the first few months with milestones and exit criteria.",
+  "What should our new CoE do in its first ninety days, and how do we choose the first quick wins?",
+  "Our CoE launch has drifted and nobody knows what the next milestone is. Replan it from establish through to scale.",
+  "When should we announce the CoE to the business, and what needs to be working before we do?",
+]
+should_not_trigger = [
+  { prompt = "Build our organisation-wide AI roadmap for the next eighteen months across adoption, building and scaling.", expected = "ai-strategy:ai-roadmap" },
+  { prompt = "Plan a phased Copilot rollout to our 2,000 staff with onboarding and reinforcement.", expected = "copilot-adoption:launch-plan" },
+]
+
+[[skill]]
+name = "coe-maturity-assessment"
+should_trigger = [
+  "Our AI CoE has been running for eighteen months. Assess how mature it is and tell us the next three things to fix.",
+  "We are thinking of moving our CoE to hub and spoke. Is it mature enough?",
+  "The sponsor wants an honest annual review of the CoE based on evidence, not the team's own opinion.",
+  "Our CoE is very busy but steering cannot say what has improved. Run a maturity check on how it operates.",
+]
+should_not_trigger = [
+  { prompt = "Assess our organisation's overall AI maturity and which archetype we fit.", expected = "ai-strategy:ai-maturity-assessment" },
+  { prompt = "Is our Champions programme still healthy, or does it need renewing?", expected = "champions:champions-health-check" },
 ]

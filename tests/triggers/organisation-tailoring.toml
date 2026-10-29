@@ -41,9 +41,58 @@ name = "transformation-pack"
 should_trigger = [
   "We are a 600-person UK organisation. We have Microsoft 365 Copilot but usage is inconsistent, departments are starting to build agents, and management wants an AI Centre of Excellence. Help us.",
   "We are a 40-person design practice with Copilot Chat and patchy use. What should our AI programme look like?",
-  "Our profile has changed since last quarter's AI pack. Refresh it and tell me what changes before you overwrite anything.",
+  "Build our Microsoft AI transformation pack from this profile, at the depth our edition needs.",
 ]
 should_not_trigger = [
   { prompt = "Just draft the CoE charter for our sponsor to sign.", expected = "ai-centre-of-excellence:coe-charter" },
-  { prompt = "Set up the stage gates, RAID log and budget tracking to run our agreed AI programme.", expected = "programme-management:*" },
+  { prompt = "Our profile has changed since last quarter's AI pack. Refresh it and tell me what changes before you overwrite anything.", expected = "organisation-tailoring:transformation-pack-refresh" },
+  { prompt = "Set up the stage gates, RAID log and budget tracking to run our agreed AI programme.", expected = "programme-management:stage-gates" },
+]
+
+[[skill]]
+name = "operating-model-tailoring"
+should_trigger = [
+  "The operating model you proposed is far too heavy for a 40-person firm. Which parts should we combine, substitute or defer?",
+  "We are Scale edition with agents emerging and very little spare capacity. Right-size the AI operating model for us and explain each choice.",
+  "We have just merged with a regulated business. Does the weight of our AI operating model need to change, and where?",
+]
+should_not_trigger = [
+  { prompt = "Should our AI organisation be central, hub-and-spoke or federated, and who decides, builds and supports?", expected = "ai-strategy:ai-operating-model" },
+  { prompt = "Given our profile, are we a Starter, Scale or Enterprise organisation, and what archetype?", expected = "organisation-tailoring:edition-and-archetype" },
+]
+
+[[skill]]
+name = "ai-role-catalogue"
+should_trigger = [
+  "The operating model talks about an Agent Product Owner and a Knowledge Owner. What do these roles do, and which of our job titles should hold them?",
+  "Give us a catalogue of the roles an AI transformation needs, with responsibilities, separation rules and typical time commitment.",
+  "Map our declared job roles to the AI roles in the pack and show where one job holds several roles or none.",
+]
+should_not_trigger = [
+  { prompt = "Who in our organisation should own each part of this AI programme? We have only named a sponsor so far.", expected = "organisation-tailoring:ownership-map" },
+  { prompt = "Build a RACI for agent intake, release approval and knowledge ownership in our CoE.", expected = "ai-centre-of-excellence:coe-raci" },
+]
+
+[[skill]]
+name = "capability-gap-analysis"
+should_trigger = [
+  "Can we actually staff this AI pack? Compare what it needs by role and quarter with the time our people have declared.",
+  "Capacity is our main constraint. Where are the capability and capacity gaps in our AI programme, and should we develop, recruit or use a partner?",
+  "Before we commit to delivery dates, check whether our knowledge owners, reviewers and makers can carry the plan.",
+]
+should_not_trigger = [
+  { prompt = "Run a full evidenced AI maturity assessment across strategy, data, skills and governance.", expected = "ai-strategy:ai-maturity-assessment" },
+  { prompt = "Show which roles are accountable for adoption, Champions, governance and agents, and list the appointments we need to make.", expected = "organisation-tailoring:ownership-map" },
+]
+
+[[skill]]
+name = "transformation-pack-refresh"
+should_trigger = [
+  "Our AI pack is a year old and we have since acquired another company. Compare the old and new profile and tell us which documents must change.",
+  "Departments have started building agents since our pack was produced. What is material in that change, and which of our agreed decisions are affected?",
+  "CopilotForge has updated several skills and templates. Refresh our existing pack but keep the sections we rewrote ourselves.",
+]
+should_not_trigger = [
+  { prompt = "We are a 40-person design practice with Copilot Chat and patchy use. What should our AI programme look like?", expected = "organisation-tailoring:transformation-pack" },
+  { prompt = "We have merged with another firm and now have three business units. Update our AI profile.", expected = "organisation-tailoring:ai-profile-intake" },
 ]

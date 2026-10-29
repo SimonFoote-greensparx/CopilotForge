@@ -51,3 +51,68 @@ should_not_trigger = [
   { prompt = "Score these fifteen AI ideas so we know which matter most.", expected = "opportunity-management:opportunity-prioritisation" },
   { prompt = "Plan the communications and training waves for rolling Copilot out to the sales team in March.", expected = "copilot-adoption:launch-plan" },
 ]
+
+[[skill]]
+name = "ai-vision"
+should_trigger = [
+  "Our chief executive wants a one-line statement of what AI means for us that she can use at the staff conference. Can you help?",
+  "How ambitious should we be about AI? Some directors want to transform services, others just want people using Copilot safely.",
+  "Finance talks about AI as cost cutting and HR talks about it as empowerment. Help the leadership team agree one picture.",
+  "Draft an AI vision and a handful of guiding principles we can share with all staff before we set targets.",
+]
+should_not_trigger = [
+  { prompt = "We have a vision. Now turn it into four measurable outcomes with owners and baselines.", expected = "ai-strategy:strategic-outcomes" },
+  { prompt = "Plan how we tell staff about the AI vision through managers and town halls over the next two months.", expected = "change-and-communications:ai-communication-strategy" },
+]
+
+[[skill]]
+name = "executive-sponsorship"
+should_trigger = [
+  "Who should sponsor our AI programme, the CIO or the chief operating officer?",
+  "Our AI sponsor has missed the last three steering meetings and decisions are piling up. What do we do?",
+  "Write a sponsor agreement setting out what we need from the executive who owns the AI programme.",
+  "Our sponsor is moving to a new role in the spring. How do we handle succession without the programme losing momentum?",
+]
+should_not_trigger = [
+  { prompt = "Our directors have Copilot licences but never use them. Can we run some hands-on sessions for the exec team?", expected = "copilot-adoption:executive-enablement" },
+  { prompt = "What role should the sponsor play in the CoE steering group and which CoE decisions are theirs?", expected = "ai-centre-of-excellence:coe-sponsor-role" },
+]
+
+[[skill]]
+name = "investment-case"
+should_trigger = [
+  "The board wants to know how much we should invest in AI over the next three years and what we get back. Can you build the case?",
+  "We got budget for Copilot licences but nothing for training, Champions or knowledge clean-up. How do we make the case for the rest?",
+  "Put together funding options for our AI programme, from doing the minimum to scaling custom solutions, with release points.",
+  "Finance asked how the AI programme will be funded and charged across divisions. Help me write that up for the budget round.",
+]
+should_not_trigger = [
+  { prompt = "We need approval to build one claims-triage agent. Write the business case for it.", expected = "opportunity-management:business-case" },
+  { prompt = "Build a detailed ROI model with assumptions and sensitivity for our knowledge agent.", expected = "value-realisation:roi-model" },
+]
+
+[[skill]]
+name = "platform-strategy"
+should_trigger = [
+  "Which Microsoft AI platforms should we offer and to whom? Copilot Studio, Foundry, Cowork, the lot are on the table.",
+  "Teams are building in Copilot Studio and Foundry with no agreed position. We need an organisation-wide stance on the platform mix.",
+  "Should Foundry be open to anyone or restricted to a specialist engineering team? Same question for Agent Builder.",
+  "Microsoft just changed the agent lineup again. Does our platform position still hold?",
+]
+should_not_trigger = [
+  { prompt = "For this HR onboarding agent specifically, should we build in Copilot Studio or Foundry?", expected = "ai-architecture:platform-selection" },
+  { prompt = "Design the Power Platform environments and zones for our agent makers.", expected = "platform-governance:ai-environment-strategy" },
+]
+
+[[skill]]
+name = "strategy-refresh"
+should_trigger = [
+  "Our AI strategy is a year old. Run the annual review and tell us what should change.",
+  "Two of our four AI outcomes are badly off track. Should we change the strategy or something else?",
+  "Microsoft has retired a product our roadmap relied on, and new regulation has arrived. Do we need to revisit the AI strategy?",
+  "We have moved from explorer to builder since the strategy was written. Update it and record what changed.",
+]
+should_not_trigger = [
+  { prompt = "Re-sequence next quarter's AI initiatives because the knowledge owners are overloaded.", expected = "ai-strategy:ai-roadmap" },
+  { prompt = "Our organisation profile changed after the merger. Regenerate the transformation pack.", expected = "organisation-tailoring:transformation-pack-refresh" },
+]
