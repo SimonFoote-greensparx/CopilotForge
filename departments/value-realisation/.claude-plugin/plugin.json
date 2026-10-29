@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-value-realisation",
+  "version": "0.2.0",
+  "description": "CopilotForge Value Realisation. Define baselines, measures and ownership so adoption and deployed solutions create demonstrable value.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "transformation",
+    "value-realisation"
+  ]
+}
