@@ -92,3 +92,25 @@ last_reviewed = "2026-10-29"
 
 [source.usage]
 classification = "cite-only"
+[[source]]
+id = "ms-foundry-models"
+name = "Microsoft Foundry Models overview"
+url = "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview"
+
+[source.authority]
+publisher = "Microsoft"
+type = "product-documentation"
+authoritative_for = "The Foundry model catalogue, including models sold by Azure and third-party models from partners and the community, deployment options and model lifecycle."
+
+[source.scope]
+products = ["ai-foundry"]
+departments = ["ai-foundry", "ai-strategy", "opportunity-management", "security-privacy"]
+jurisdiction = "Global"
+
+[source.freshness]
+volatility = "high"
+review_interval = "30d"
+last_reviewed = "2026-10-29"
+
+[source.usage]
+classification = "cite-only"

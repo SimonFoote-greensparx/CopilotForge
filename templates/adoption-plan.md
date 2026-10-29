@@ -19,6 +19,8 @@ never for named individuals.
 | Adoption lead | [To confirm: name and role] |
 | Outcome the sponsor wants | [To confirm: one sentence, with a measure] |
 | IT owner for technical enablement | [To confirm: name and role] |
+| Linked Champions programme | [To confirm: charter reference, or "none yet"] |
+| Linked Centre of Excellence or intake route | [To confirm] |
 | Plan status | Draft / Agreed by sponsor / Superseded |
 | Date agreed | [To confirm: date] |
 
@@ -60,14 +62,26 @@ Overall recommendation to the sponsor: Launch / Launch to a narrower audience / 
 |---|---|---|---|---|---|
 | [To confirm] | [To confirm] | [To confirm] | [To confirm: rhythm and who runs them] | [To confirm] | [To confirm: date] |
 
+Recurring learning calendar. Sessions are open to the whole workforce and recorded; where a Champions programme exists,
+mark which sessions count towards its journey (see the `champion-capability-framework`).
+
+| Session | Rhythm | Personas | Counts towards the Champion journey? | Owner |
+|---|---|---|---|---|
+| Getting started and approved use | [To confirm] | All | [To confirm: for example joining the community] | [To confirm] |
+| Copilot Chat | [To confirm] | All | [To confirm] | [To confirm] |
+| Copilot in the Microsoft 365 apps, including Teams | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Agent awareness | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
 ## 6. Support model and feedback loop
 
 | Type of need | Where it goes | Owner |
 |---|---|---|
-| "How do I" questions | Champions, office hours, scenario catalogue | [To confirm] |
+| "How do I" questions | Champions (first-line peer guidance), office hours, scenario catalogue | [To confirm] |
+| Formal training | Learning calendar above, not Champions | [To confirm] |
 | Faults | IT service desk | [To confirm] |
 | Suspected data exposure | [To confirm: agreed security route] | [To confirm] |
 | Ideas needing more than individual use | Opportunity intake | [To confirm] |
+| Larger or higher-risk solutions | Centre of Excellence | [To confirm] |
 
 Feedback channel: [To confirm]. Review rhythm: [To confirm]. How changes are published to users: [To confirm]
 
@@ -81,7 +95,7 @@ suppressed or combined.
 | Layer | Measure | Baseline (taken before launch) | Source | Owner | Reporting rhythm |
 |---|---|---|---|---|---|
 | Usage | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
-| Capability | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Capability | [To confirm: may include Champion community size and milestone conversion at programme level] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 | Behaviour change | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 | Outcomes | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 

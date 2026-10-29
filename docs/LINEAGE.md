@@ -6,7 +6,7 @@ CopilotForge is a successor *pattern* to D365Forge, not a fork or a new version 
 |---|---|---|
 | Models | The team that delivers Dynamics 365 Customer Engagement | The organisation that transforms a business with Microsoft AI |
 | Repository | https://github.com/SimonFoote-greensparx/D365Forge | https://github.com/SimonFoote-greensparx/CopilotForge |
-| Website | https://d365forge.ai/ | To be decided (open decision O1) |
+| Website | https://d365forge.ai/ | https://copilotforge.ai/ |
 | Plugins | Department names | `copilotforge-<department>` |
 
 ## What CopilotForge keeps from D365Forge
@@ -27,6 +27,8 @@ organisation profiles with a tailoring engine, edition overlays, and one local c
 
 ## Separation rules
 
-- No D365Forge file is copied into this repository, and no CopilotForge change is ever made in D365Forge.
+- No D365Forge content (skills, templates, programmes, documentation) is copied into this repository, and no CopilotForge
+  change is ever made in D365Forge. Some build tooling (for example the Markdown renderer, Cowork packager and website
+  builders) is adapted from the same author's MIT-licensed D365Forge scripts and maintained independently here.
 - CopilotForge skill and plugin names never reuse D365Forge names (`data/reserved-names.toml`, decision D9).
 - Each project has its own maintainer skills in Copilot Cowork.

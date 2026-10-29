@@ -17,6 +17,8 @@ not from this template. Product capabilities and licensing must be checked again
 
 [To confirm: two sentences from the sponsor on why the organisation wants people to use AI, and use it safely.]
 
+AI assists decision making. People remain accountable for outcomes.
+
 ## A2. Approved tools
 
 | Tool | Approved for | Not approved for |
@@ -52,7 +54,17 @@ and a register entry. Start here: [To confirm: intake route].
 
 [To confirm: for example business-owned, proportionate, human accountability explicit, govern once and repeat everywhere.]
 
-## B2. Risk tiers and minimum controls
+## B2. Governance areas
+
+| Area | Question it answers | Owning role | Minimum control by tier |
+|---|---|---|---|
+| Security | Can only the right people and systems reach the solution and what it reaches? | [To confirm: information security role] | [To confirm] |
+| Privacy | Is personal data used lawfully, minimally and transparently? | [To confirm: data protection role] | [To confirm] |
+| Data ownership | Does every knowledge source and data set have a business owner who keeps it current? | [To confirm: business and knowledge owners] | [To confirm] |
+| Compliance | Does the solution meet policy, contract and regulatory obligations? | [To confirm: compliance or legal role] | [To confirm] |
+| Human accountability | Which named role answers for each outcome the solution informs? | [To confirm: business owner] | [To confirm] |
+
+## B3. Risk tiers and minimum controls
 
 Classify by the highest applicable factor: reach, data sensitivity, autonomy, impact on people and external exposure.
 Each tier inherits the controls of the tiers below it.
@@ -67,18 +79,23 @@ Each tier inherits the controls of the tiers below it.
 
 Target decision times: tier 0 none; tier 1 [To confirm]; tier 2 [To confirm]; tier 3 and 4 [To confirm].
 
-## B3. Uses we will not build
+## B4. Uses we will not build
 
 - [To confirm]
 - [To confirm]
 
-## B4. Solution register fields
+## B5. Agent portfolio register fields
+
+Categories: Microsoft 365 agents, Copilot Studio agents, automations, integrations. [To confirm: any further categories.]
 
 | Field | Required from tier |
 |---|---|
 | Solution name and purpose | 1 |
+| Category | 1 |
 | Business owner (role) | 1 |
 | Knowledge owner (role) and knowledge sources | 1 |
+| Technical owner (role) | 1 |
+| Platform | 1 |
 | Audience and reach | 1 |
 | Data sensitivity | 1 |
 | Risk tier and who classified it | 1 |
@@ -87,9 +104,24 @@ Target decision times: tier 0 none; tier 1 [To confirm]; tier 2 [To confirm]; ti
 | Release date and release decision reference | 1 |
 | Support route | 2 |
 | Review date | 1 |
+| Measured value against baseline | 2 |
 | Status (active, suspended, retired) | 1 |
 
-## B5. Ownership and lifecycle rules
+## B6. Knowledge asset register fields
+
+Every document an agent or automation relies on carries these fields. Layers: policies and standards; procedures;
+templates and guidance; FAQs and lessons learned; the agents and automations built on them.
+
+| Field | Value |
+|---|---|
+| Asset name and layer | [To confirm] |
+| Owner (role) | [To confirm] |
+| Review date | [To confirm] |
+| Version | [To confirm] |
+| Classification | [To confirm: per the organisation's classification scheme] |
+| Used by (solutions in the portfolio register) | [To confirm] |
+
+## B7. Ownership and lifecycle rules
 
 | Event | Rule |
 |---|---|
@@ -98,7 +130,7 @@ Target decision times: tier 0 none; tier 1 [To confirm]; tier 2 [To confirm]; ti
 | Periodic review | Tier 1 every [To confirm]; tier 2 every [To confirm]; tier 3 and 4 every [To confirm] |
 | No use or no owner for [To confirm: period] | Retire after notice to the last known owner |
 
-## B6. Reviewer gates
+## B8. Reviewer gates
 
 | Gate | From tier | Blocking | Held by (role) until the reviewer department exists |
 |---|---|---|---|
@@ -110,21 +142,21 @@ Target decision times: tier 0 none; tier 1 [To confirm]; tier 2 [To confirm]; ti
 A blocking finding is not traded off against a date. Disagreement goes to [To confirm: accountable executive role] and
 is recorded in writing.
 
-## B7. Platform controls mapped to tiers
+## B9. Platform controls mapped to tiers
 
 | Tier | Platform control in use | Confirmed by (role) and date |
 |---|---|---|
 | [To confirm] | [To confirm: control, checked against current Microsoft documentation] | [To confirm] |
 
-## B8. Exceptions and escalation
+## B10. Exceptions and escalation
 
 [To confirm: how an exception is requested, who decides, how long it lasts and where it is recorded.]
 
-## B9. Standards cross-reference (optional)
+## B11. Standards cross-reference (optional)
 
 [To confirm: only if needed, for example a mapping to a recognised AI risk management framework or management system standard.]
 
-## B10. Approval
+## B12. Approval
 
 | Role | Decision | Date |
 |---|---|---|

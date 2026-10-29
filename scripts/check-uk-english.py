@@ -40,7 +40,8 @@ ALLOW = [
 FILES = (glob.glob(path("departments", "*", "skills", "*", "SKILL.md")) + glob.glob(path("reviewers", "*", "skills", "*", "SKILL.md"))
          + glob.glob(path("templates", "*.md")) + glob.glob(path("docs", "*.md")) + glob.glob(path("*.md"))
          + glob.glob(path("programmes", "*", "*.yaml")) + glob.glob(path("editions", "*", "*.yaml"))
-         + glob.glob(path("archetypes", "*", "*.yaml")) + glob.glob(path("cowork", "*.md")) + glob.glob(path("data", "*.yaml")))
+         + glob.glob(path("archetypes", "*", "*.yaml")) + glob.glob(path("cowork", "*.md")) + glob.glob(path("data", "*.yaml")) + glob.glob(path("site", "*.html"))
+         + [path("scripts", "_site.py")])
 STRIP = re.compile(r"```.*?```|`[^`\n]*`|https?://\S+|\]\([^)]*\)", re.S)
 WORD = re.compile(r"\b(" + "|".join(sorted(US_TO_UK, key=len, reverse=True)) + r")\b", re.I)
 

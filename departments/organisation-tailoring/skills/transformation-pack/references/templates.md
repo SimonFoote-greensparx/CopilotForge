@@ -24,6 +24,8 @@ never for named individuals.
 | Adoption lead | [To confirm: name and role] |
 | Outcome the sponsor wants | [To confirm: one sentence, with a measure] |
 | IT owner for technical enablement | [To confirm: name and role] |
+| Linked Champions programme | [To confirm: charter reference, or "none yet"] |
+| Linked Centre of Excellence or intake route | [To confirm] |
 | Plan status | Draft / Agreed by sponsor / Superseded |
 | Date agreed | [To confirm: date] |
 
@@ -65,14 +67,26 @@ Overall recommendation to the sponsor: Launch / Launch to a narrower audience / 
 |---|---|---|---|---|---|
 | [To confirm] | [To confirm] | [To confirm] | [To confirm: rhythm and who runs them] | [To confirm] | [To confirm: date] |
 
+Recurring learning calendar. Sessions are open to the whole workforce and recorded; where a Champions programme exists,
+mark which sessions count towards its journey (see the `champion-capability-framework`).
+
+| Session | Rhythm | Personas | Counts towards the Champion journey? | Owner |
+|---|---|---|---|---|
+| Getting started and approved use | [To confirm] | All | [To confirm: for example joining the community] | [To confirm] |
+| Copilot Chat | [To confirm] | All | [To confirm] | [To confirm] |
+| Copilot in the Microsoft 365 apps, including Teams | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Agent awareness | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+
 ## 6. Support model and feedback loop
 
 | Type of need | Where it goes | Owner |
 |---|---|---|
-| "How do I" questions | Champions, office hours, scenario catalogue | [To confirm] |
+| "How do I" questions | Champions (first-line peer guidance), office hours, scenario catalogue | [To confirm] |
+| Formal training | Learning calendar above, not Champions | [To confirm] |
 | Faults | IT service desk | [To confirm] |
 | Suspected data exposure | [To confirm: agreed security route] | [To confirm] |
 | Ideas needing more than individual use | Opportunity intake | [To confirm] |
+| Larger or higher-risk solutions | Centre of Excellence | [To confirm] |
 
 Feedback channel: [To confirm]. Review rhythm: [To confirm]. How changes are published to users: [To confirm]
 
@@ -86,7 +100,7 @@ suppressed or combined.
 | Layer | Measure | Baseline (taken before launch) | Source | Owner | Reporting rhythm |
 |---|---|---|---|---|---|
 | Usage | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
-| Capability | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Capability | [To confirm: may include Champion community size and milestone conversion at programme level] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 | Behaviour change | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 | Outcomes | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 
@@ -359,6 +373,8 @@ not from this template. Product capabilities and licensing must be checked again
 
 [To confirm: two sentences from the sponsor on why the organisation wants people to use AI, and use it safely.]
 
+AI assists decision making. People remain accountable for outcomes.
+
 ## A2. Approved tools
 
 | Tool | Approved for | Not approved for |
@@ -394,7 +410,17 @@ and a register entry. Start here: [To confirm: intake route].
 
 [To confirm: for example business-owned, proportionate, human accountability explicit, govern once and repeat everywhere.]
 
-## B2. Risk tiers and minimum controls
+## B2. Governance areas
+
+| Area | Question it answers | Owning role | Minimum control by tier |
+|---|---|---|---|
+| Security | Can only the right people and systems reach the solution and what it reaches? | [To confirm: information security role] | [To confirm] |
+| Privacy | Is personal data used lawfully, minimally and transparently? | [To confirm: data protection role] | [To confirm] |
+| Data ownership | Does every knowledge source and data set have a business owner who keeps it current? | [To confirm: business and knowledge owners] | [To confirm] |
+| Compliance | Does the solution meet policy, contract and regulatory obligations? | [To confirm: compliance or legal role] | [To confirm] |
+| Human accountability | Which named role answers for each outcome the solution informs? | [To confirm: business owner] | [To confirm] |
+
+## B3. Risk tiers and minimum controls
 
 Classify by the highest applicable factor: reach, data sensitivity, autonomy, impact on people and external exposure.
 Each tier inherits the controls of the tiers below it.
@@ -409,18 +435,23 @@ Each tier inherits the controls of the tiers below it.
 
 Target decision times: tier 0 none; tier 1 [To confirm]; tier 2 [To confirm]; tier 3 and 4 [To confirm].
 
-## B3. Uses we will not build
+## B4. Uses we will not build
 
 - [To confirm]
 - [To confirm]
 
-## B4. Solution register fields
+## B5. Agent portfolio register fields
+
+Categories: Microsoft 365 agents, Copilot Studio agents, automations, integrations. [To confirm: any further categories.]
 
 | Field | Required from tier |
 |---|---|
 | Solution name and purpose | 1 |
+| Category | 1 |
 | Business owner (role) | 1 |
 | Knowledge owner (role) and knowledge sources | 1 |
+| Technical owner (role) | 1 |
+| Platform | 1 |
 | Audience and reach | 1 |
 | Data sensitivity | 1 |
 | Risk tier and who classified it | 1 |
@@ -429,9 +460,24 @@ Target decision times: tier 0 none; tier 1 [To confirm]; tier 2 [To confirm]; ti
 | Release date and release decision reference | 1 |
 | Support route | 2 |
 | Review date | 1 |
+| Measured value against baseline | 2 |
 | Status (active, suspended, retired) | 1 |
 
-## B5. Ownership and lifecycle rules
+## B6. Knowledge asset register fields
+
+Every document an agent or automation relies on carries these fields. Layers: policies and standards; procedures;
+templates and guidance; FAQs and lessons learned; the agents and automations built on them.
+
+| Field | Value |
+|---|---|
+| Asset name and layer | [To confirm] |
+| Owner (role) | [To confirm] |
+| Review date | [To confirm] |
+| Version | [To confirm] |
+| Classification | [To confirm: per the organisation's classification scheme] |
+| Used by (solutions in the portfolio register) | [To confirm] |
+
+## B7. Ownership and lifecycle rules
 
 | Event | Rule |
 |---|---|
@@ -440,7 +486,7 @@ Target decision times: tier 0 none; tier 1 [To confirm]; tier 2 [To confirm]; ti
 | Periodic review | Tier 1 every [To confirm]; tier 2 every [To confirm]; tier 3 and 4 every [To confirm] |
 | No use or no owner for [To confirm: period] | Retire after notice to the last known owner |
 
-## B6. Reviewer gates
+## B8. Reviewer gates
 
 | Gate | From tier | Blocking | Held by (role) until the reviewer department exists |
 |---|---|---|---|
@@ -452,21 +498,21 @@ Target decision times: tier 0 none; tier 1 [To confirm]; tier 2 [To confirm]; ti
 A blocking finding is not traded off against a date. Disagreement goes to [To confirm: accountable executive role] and
 is recorded in writing.
 
-## B7. Platform controls mapped to tiers
+## B9. Platform controls mapped to tiers
 
 | Tier | Platform control in use | Confirmed by (role) and date |
 |---|---|---|
 | [To confirm] | [To confirm: control, checked against current Microsoft documentation] | [To confirm] |
 
-## B8. Exceptions and escalation
+## B10. Exceptions and escalation
 
 [To confirm: how an exception is requested, who decides, how long it lasts and where it is recorded.]
 
-## B9. Standards cross-reference (optional)
+## B11. Standards cross-reference (optional)
 
 [To confirm: only if needed, for example a mapping to a recognised AI risk management framework or management system standard.]
 
-## B10. Approval
+## B12. Approval
 
 | Role | Decision | Date |
 |---|---|---|
@@ -852,13 +898,13 @@ Record each platform capability a committed initiative depends on and the source
 
 Template id: `champion-capability-framework`
 
-Responsible skills: `champions:capability-framework` (sections 1 to 4) and `champions:evidence-assessment`
-(sections 5 and 6).
+Responsible skills: `champions:capability-framework` (sections 1 to 5) and `champions:evidence-assessment`
+(sections 6 and 7).
 
-Use this framework to define what a Champion can demonstrably do and how evidence is assessed. Every fact the
-organisation must supply is marked `[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill
-it with a guess. Example content is fictional and is there to be replaced or deleted. The framework assesses evidence
-of practice, never the person, and is never used to rank anyone.
+Use this framework to define what a Champion can demonstrably do, how they show it, how evidence is assessed and how
+progress is recorded. Every fact the organisation must supply is marked `[To confirm: ...]`; replace the marker when
+the fact is confirmed, and never fill it with a guess. Example content is fictional and is there to be replaced or
+deleted. The framework assesses evidence of practice, never the person, and is never used to rank anyone.
 
 ## 1. Framework details
 
@@ -866,26 +912,35 @@ of practice, never the person, and is never used to rank anyone.
 |---|---|
 | Framework owner | [To confirm: name and role] |
 | Approved tools for Champions | [To confirm: reference to the approved tools list] |
-| Agent building allowed for Champions? | [To confirm: Yes, under which governance / No, level 3 covers using and evaluating approved agents] |
+| Agent building allowed for Champions? | [To confirm: Yes, under which governance / No, the agent capability covers judging use cases and evaluating approved agents] |
+| Self-service guidance or advisor agent that uses this framework | [To confirm: what it is and who owns it] |
 | Version and date | [To confirm] |
 | Next review | [To confirm: date] |
 
-## 2. Capability levels
+## 2. Capability cards
 
-| Level | A Champion at this level can | Observable evidence |
-|---|---|---|
-| 1. Verified Chat capability | Use Copilot Chat safely for real tasks, choose what not to share, and verify output | Two or three real, non-sensitive examples with prompt, output, the check applied and the result |
-| 2. Verified productivity capability | Use Copilot in daily apps to improve a recurring task, and teach it to a colleague | A before-and-after account, a reusable prompt pattern, and evidence a colleague used it |
-| 3. Verified agent capability | Use approved agents well, recognise when a need justifies an agent, and, where approved, build a simple governed one | Evaluation notes on an approved agent, or a governed build with owner, test questions and intake record |
+Training is one route, not the gate. Both options lead to the same verification criteria.
 
-Local adjustments to the levels: [To confirm]
+| Element | Chat capability | Productivity capability | Agent capability |
+|---|---|---|---|
+| Objective | Use Copilot Chat effectively and safely for real tasks - clear prompts, refinement, relevant context, verified output | Use Copilot across the Microsoft 365 apps to produce useful, validated outputs from recurring work, and help a colleague do the same | Explain what agents are, judge good and poor use cases and, where approved, configure a basic agent and test its behaviour |
+| Training option | [To confirm: session plus guided exercise on own non-sensitive work] | [To confirm] | [To confirm] |
+| Evidence option | Two or three real examples with prompt, refinement, output, check applied and what changed | Before-and-after account of a recurring task, a reusable prompt pattern and evidence a colleague used it | A note on one good and one poor agent candidate, plus a governed basic build with owner and tests, or evaluation notes on an approved agent |
+| Verification criteria | Every rubric dimension at least Meets; refinement and choice of context visible | Every dimension at least Meets; output validated against its source; transfer shown | Every dimension at least Meets; sound use-case reasoning; tests with expected and observed behaviour; intake record for any build |
+| Outcome | Chat verified; tracker updated; next milestone is productivity | Productivity verified; pattern offered to the scenario catalogue; next milestone is agents | Agent verified; eligible for the Champion Challenge |
 
-## 3. Routes to each level
+Local adjustments to the capabilities: [To confirm]
 
-| Route | Who it suits | What it includes |
-|---|---|---|
-| Structured learning | People building capability | [To confirm: sessions, practice exercises, guided first submission] |
-| Evidence submission | Experienced colleagues | [To confirm: direct submission against the rubric] |
+## 3. Learning session map
+
+Sessions stay open to the whole workforce. The guided exercise, not attendance, is what counts as evidence.
+
+| Session | Rhythm | Open to | Counts towards | Owner |
+|---|---|---|---|---|
+| Getting started and approved use | [To confirm] | Everyone | Joining the community | [To confirm] |
+| Copilot Chat | [To confirm] | Everyone | Chat capability, training option | [To confirm] |
+| Copilot in the Microsoft 365 apps, including meetings and collaboration in Teams | [To confirm] | Everyone | Productivity capability, training option | [To confirm] |
+| Agent design and evaluation | [To confirm] | Everyone; building limited to approved makers | Agent capability, training option | [To confirm] |
 
 ## 4. Submission guide
 
@@ -898,8 +953,8 @@ Local adjustments to the levels: [To confirm]
 
 ## 5. Evidence rubric
 
-Rate each dimension from the evidence alone. A level is verified when every dimension is at least Meets. Strong is
-used for feedback, not ranking.
+Rate each dimension from the evidence alone. A capability is verified when every dimension is at least Meets and its
+specific verification criteria are met. Strong is used for feedback, not ranking.
 
 | Dimension | Not yet | Meets | Strong |
 |---|---|---|---|
@@ -909,9 +964,9 @@ used for feedback, not ranking.
 | Transferability | Only the submitter could repeat it | Someone else could reuse the pattern | A colleague has already reused it |
 | Reflection | No account of limitations | Says what did not work and why | Shows how the approach was improved as a result |
 
-> Fictional example: a submission shows a prompt used to summarise a supplier contract, the summary produced, and a
-> note that the person compared every date and value against the contract before using it. Verification is rated
-> Meets.
+> Fictional example: a submission shows a prompt used to summarise a supplier contract, a refined second prompt, the
+> summary produced, and a note that the person compared every date and value against the contract before using it.
+> Verification is rated Meets.
 
 ## 6. Assessment procedure
 
@@ -921,11 +976,33 @@ used for feedback, not ranking.
 | Assessor pool and training date | [To confirm] |
 | Calibration rhythm | [To confirm: for example quarterly and when new assessors join] |
 | Conflict rule | Assessors do not assess people they manage or know well; reassign |
-| Second assessor | When unsure between ratings, for level 3 and for disputed cases |
+| Both routes | Guided exercises and direct submissions are assessed against the same criteria |
+| Second assessor | When unsure between ratings, for the agent capability and for disputed cases |
+| Champion Challenge | Assessed on impact, reusability, quality and strategic alignment, using the `champion-challenge-catalogue` |
 | Outcomes | Verified / Not yet (feedback and invitation to resubmit) / Returned unassessed (sensitive or incomplete evidence) |
-| Feedback standard | Specific feedback on every dimension; for each Not yet, what would reach Meets |
-| Appeals | Heard by an assessor not involved originally, against the same rubric; [To confirm: how to request] |
-| Aggregate reporting | Submissions, share verified at first submission, turnaround, appeal rate, assessor agreement |
+| Feedback standard | Specific feedback on every dimension; for each Not yet, what would reach Meets; always the next milestone |
+| Appeals | Heard by an assessor not involved originally, against the same criteria; [To confirm: how to request] |
+| Decisions | Made by trained human assessors; no agent or automated check decides verification |
+| Aggregate reporting | Submissions, share verified at first submission, turnaround, milestone conversion, appeal rate, assessor agreement |
+
+## 7. Progress tracker
+
+One row per participant, one column per journey stage. Each cell is Not started, In progress, Submitted, Not yet, or
+Verified or complete with a date.
+
+| Field | Entry |
+|---|---|
+| Where the tracker is kept | [To confirm: restricted location] |
+| Who updates it, and how soon after an outcome | [To confirm] |
+| Who can see what | Participants see their own row; assessors and the programme owner see all rows; everyone else sees aggregates only |
+| Used by self-service guidance or an advisor agent? | [To confirm: if yes, each participant sees only their own status] |
+| Retention and alumni handling | [To confirm: agreed with the data protection lead] |
+| Never used for | Performance management, pay, promotion or league tables |
+
+| Participant (fictional example) | Join | Chat | Productivity | Agent | Challenge | Recognised |
+|---|---|---|---|---|---|---|
+| Fictional example: participant A | Complete | Verified | Submitted | Not started | Not started | No |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
 
@@ -936,55 +1013,71 @@ used for feedback, not ranking.
 
 Template id: `champion-challenge-catalogue`
 
-Responsible skill: `champions:champion-challenges`. Larger opportunities found through challenges are routed to
-`opportunity-management:problem-framing`.
+Responsible skill: `champions:champion-challenges`. Completed Challenges are assessed through
+`champions:evidence-assessment`, and larger opportunities are routed to `opportunity-management:problem-framing`.
 
-Use this catalogue to record proven challenge ideas, check each new challenge for safety and scope, and track
-completed challenges and their reusable assets. Every fact the organisation must supply is marked `[To confirm: ...]`;
-replace the marker when the fact is confirmed, and never fill it with a guess. Example rows are fictional and are there
-to be replaced or deleted.
+Use this catalogue to publish the Challenge options, record proven Challenge ideas, check each new Challenge for safety
+and scope, assess completed Challenges and track their reusable assets. A Challenge is stage 5 of the Champion
+journey, taken once Chat, productivity and agent capability are verified. Every fact the organisation must supply is
+marked `[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it with a guess. Example rows
+are fictional and are there to be replaced or deleted.
 
 ## 1. Catalogue details
 
 | Field | Entry |
 |---|---|
 | Catalogue owner | [To confirm: programme owner or delegate] |
-| Approved tools by capability level | [To confirm: reference to the approved tools list] |
+| Approved tools for Champions | [To confirm: reference to the approved tools list] |
+| Agent governance that applies to business agent Challenges | [To confirm] |
 | Where assets are published | [To confirm: scenario catalogue or community library] |
+| Current strategic priorities used to judge alignment | [To confirm: for example the adoption plan and CoE portfolio] |
 | Next review | [To confirm: date] |
 
-## 2. Challenge catalogue
+## 2. Challenge options
 
-| Ref | Challenge | Level | Typical problem | Reusable asset | Status |
+| Option | What the Champion delivers | Reusable asset | Offered here? |
+|---|---|---|---|
+| Envisioning workshop | Facilitates a team session to find where Copilot helps its real work | Workshop outline and scenario candidates | Yes / No |
+| Team training | Runs a practical session on the scenarios that matter to a team | Session materials, recording, linked guidance | Yes / No |
+| Business agent | Configures a simple governed agent for a team need, where approved | Agent with owner, knowledge source, tests and intake record | Yes / No |
+| Reusable prompt library | Curates tested prompt patterns for a role or process | Patterns with verification step, owner and review date | Yes / No |
+| Departmental playbook | Documents how a department uses Copilot well in recurring work | Playbook of scenarios, guidance and checks | Yes / No |
+| Support for the Centre of Excellence | Contributes to CoE work, such as testing an agent, documenting a pattern or preparing intake material | Test notes, pattern write-up or intake summaries | Yes / No |
+| [To confirm: local option] | [To confirm] | [To confirm] | Yes / No |
+
+## 3. Proven Challenges
+
+| Ref | Option | Challenge | Typical need | Reusable asset | Status |
 |---|---|---|---|---|---|
-| Fictional example: C1 | Make the weekly team report faster to produce | Chat | Report takes most of a morning to compile | Prompt pattern with a verification step | Proven |
-| Fictional example: C2 | Redesign meeting follow-up for a project team | Productivity | Actions are lost after meetings | One-page guide and catalogue scenario | Proven |
+| Fictional example: C1 | Reusable prompt library | Prompt patterns for the weekly team report | Report takes most of a morning to compile | Three patterns, each with a verification step | Proven |
+| Fictional example: C2 | Departmental playbook | How the projects team runs meeting follow-up with Copilot | Actions are lost after meetings | Two-page playbook and a catalogue scenario | Proven |
 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | Idea / Proven / Retired |
 
-## 3. Scope and safety check
+## 4. Scope and safety check
 
-Complete before any challenge starts. A "No" routes the work to opportunity intake rather than rejecting it.
+Complete before any Challenge starts. A "No" routes the work to opportunity intake rather than rejecting it.
 
 | Check | Answer | Notes |
 |---|---|---|
-| Real, recurring problem confirmed by a named team owner | Yes / No | [To confirm: owner] |
-| Uses only tools approved for the Champion's level | Yes / No | [To confirm] |
+| All three capabilities verified | Yes / No | [To confirm: tracker reference] |
+| Real, recurring need confirmed by a named owner | Yes / No | [To confirm: owner] |
+| Uses only tools approved for Champions | Yes / No | [To confirm] |
 | Uses only content the team already handles; no special category or client-confidential data | Yes / No | [To confirm] |
-| Stays within the team or community; nothing externally facing | Yes / No | [To confirm] |
+| Stays within the organisation; nothing externally facing | Yes / No | [To confirm] |
 | Completable in a few weeks within the agreed Champion time | Yes / No | [To confirm] |
-| Produces a reusable asset | Yes / No | [To confirm] |
+| Produces a reusable asset with a maintainer | Yes / No | [To confirm] |
 | Manager has agreed the time | Yes / No | [To confirm] |
 | Checked by | [To confirm: name and role] | [To confirm: date] |
 
-## 4. Challenge record
+## 5. Challenge record
 
-Copy this block for each challenge.
+Copy this block for each Challenge.
 
 | Field | Entry |
 |---|---|
-| Challenge reference | [To confirm] |
+| Challenge reference and option | [To confirm] |
 | Champion (role and team) | [To confirm] |
-| Problem statement agreed with the owner | [To confirm] |
+| Need agreed with the owner | [To confirm] |
 | Owner's measure of improvement and baseline | [To confirm] |
 | Tools used | [To confirm] |
 | Midway check-in | [To confirm: date and who] |
@@ -994,9 +1087,21 @@ Copy this block for each challenge.
 | Asset owner and review date | [To confirm] |
 | Showcased | [To confirm: event and date] |
 
-## 5. Opportunities routed to intake
+## 6. Challenge assessment
 
-| Ref | Originating challenge | Why it is outside challenge scope | Intake reference | Champion credited |
+Rate each criterion Not yet, Meets or Strong. All four at Meets completes stage 5. Strong is feedback, not ranking.
+
+| Criterion | Meets looks like | Rating | Evidence and feedback |
+|---|---|---|---|
+| Impact | The owner confirms a real improvement or benefit against their stated measure | [To confirm] | [To confirm] |
+| Reusability | Another team could use the asset with little change | [To confirm] | [To confirm] |
+| Quality | Accurate, checked for sensitive content, consistent with approved-use guidance | [To confirm] | [To confirm] |
+| Strategic alignment | Supports a priority scenario, the adoption plan or the CoE portfolio | [To confirm] | [To confirm] |
+| Assessed by | [To confirm: assessor role] | Outcome: Complete / Not yet | [To confirm: date] |
+
+## 7. Opportunities routed to intake
+
+| Ref | Originating Challenge | Why it is outside Challenge scope | Intake reference | Champion credited |
 |---|---|---|---|---|
 | Fictional example: O1 | C2 | Needs a connector to the project system and use beyond the team | Fictional example: intake 042 | Yes |
 | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
@@ -1010,13 +1115,13 @@ Copy this block for each challenge.
 
 Template id: `champion-programme-charter`
 
-Responsible skills: `champions:champion-programme-design` (sections 1 to 7) and
-`champions:recognition-and-progression` (sections 8 to 10).
+Responsible skills: `champions:champion-programme-design` (sections 1 to 10) and
+`champions:recognition-and-progression` (sections 11 to 13).
 
-Use this charter to set up or reset a Copilot Champions programme. Every fact the organisation must supply is marked
-`[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it with a guess. Example content is
-fictional and is there to be replaced or deleted. Champions are selected on declared interest, skills and
-availability, and Champion metrics are reported at programme level only.
+Use this charter to set up, reset or replicate a Copilot Champions programme. Every fact the organisation must supply
+is marked `[To confirm: ...]`; replace the marker when the fact is confirmed, and never fill it with a guess. Example
+content is fictional and is there to be replaced or deleted. Champions are selected on declared interest, skills and
+availability, and Champion measures are reported at programme level only, never as individual rankings.
 
 ## 1. Programme details
 
@@ -1030,26 +1135,54 @@ availability, and Champion metrics are reported at programme level only.
 | Charter status | Draft / Agreed by sponsor / Superseded |
 | Review date | [To confirm: date] |
 
-## 2. Purpose
+## 2. Purpose and Champion behaviours
 
-What the organisation will be able to do because Champions exist, in a sentence the sponsor would repeat.
+What the organisation will be able to do because Champions exist, in a sentence the sponsor would repeat, and the
+behaviours a recognised Champion demonstrates.
 
 > Fictional example: "Every team has someone who can show colleagues how to use Copilot safely in their own work, and
 > good ideas reach the right place quickly."
 
-[To confirm: purpose statement]
+Purpose: [To confirm: purpose statement]
 
-## 3. Operating boundary
+Behaviours a Champion demonstrates: [To confirm: for example models verification, shares tested prompts, routes ideas
+to intake]
+
+## 3. Position in the AI operating model
+
+| Layer | Purpose | Owner in this organisation |
+|---|---|---|
+| Foundation adoption programme | Broad access, onboarding and safe everyday use across the workforce | [To confirm] |
+| Champions programme | Local capability, embedded peer support and practical role-based adoption | [To confirm] |
+| Centre of Excellence | Prioritisation, governance and delivery of larger or higher-risk AI and automation | [To confirm] |
+
+Gaps in either neighbouring layer, and the risk they create for Champions: [To confirm]
+
+## 4. The journey
+
+| Stage | What the participant does | Route or evidence | Designed in |
+|---|---|---|---|
+| 1. Join the community | Declares interest, agrees time with their manager, joins the community | Manager agreement | This charter |
+| 2. Verify Chat capability | Shows effective prompting, refinement, context use and responsible practice | Training option or evidence option | `champion-capability-framework` |
+| 3. Verify productivity capability | Creates useful, validated outputs with Copilot across the Microsoft 365 apps | Training option or evidence option | `champion-capability-framework` |
+| 4. Verify agent capability | Explains agents, judges use cases and, where approved, configures and tests a basic agent | Training option or evidence option | `champion-capability-framework` |
+| 5. Complete a Champion Challenge | Delivers one practical contribution with a reusable asset | Challenge assessment | `champion-challenge-catalogue` |
+| 6. Earn recognition and keep contributing | Models responsible use, shares practice, supports colleagues | Sections 11 and 12 | This charter |
+
+Local changes to the journey: [To confirm]
+
+## 5. Operating boundary
 
 | Champions do | Champions do not | Where that work goes instead |
 |---|---|---|
-| Model responsible AI behaviour in their own work | Replace technical support, architects or formal solution approval | [To confirm: IT service desk, architecture route] |
-| Share approved prompts, scenarios, examples and success stories | Own enterprise governance or policy decisions | [To confirm: governance owner] |
-| Provide first-line peer guidance in their team | Release high-risk or externally facing solutions without controls | [To confirm: intake and risk classification] |
-| Spot opportunities and route them to intake | Become an ungoverned queue for every AI request | [To confirm: opportunity intake route] |
-| Support community learning and feedback | Act as the sole owner of adoption or business change | [To confirm: adoption lead] |
+| Model safe, responsible AI behaviour in their own work | Replace technical support or formal training | [To confirm: service desk, learning team] |
+| Share prompts, success stories and practical examples | Approve solutions or production releases | [To confirm: release or governance route] |
+| Give first-line peer guidance in their team | Act as solution architects | [To confirm: architecture route] |
+| Promote approved tools and the organisation's AI policies | Own enterprise governance or policy decisions | [To confirm: governance owner] |
+| Spot opportunities and route them to the right place | Build high-risk or externally facing solutions outside the Centre of Excellence and its technical controls | [To confirm: intake and risk classification] |
+| Take part in the community and give feedback | Become an ungoverned queue for every AI request | [To confirm: opportunity intake route] |
 
-## 4. Time commitment
+## 6. Time commitment
 
 | Field | Entry |
 |---|---|
@@ -1057,16 +1190,17 @@ What the organisation will be able to do because Champions exist, in a sentence 
 | Confirmed with each Champion's manager | [To confirm: how and when this is recorded] |
 | First review of the commitment | [To confirm: date] |
 
-## 5. Routes to Champion capability
+## 7. Routes to Champion capability
+
+Training is one route, not the gate. Both routes meet the same verification criteria in the
+`champion-capability-framework`.
 
 | Route | For whom | How it works |
 |---|---|---|
-| Structured learning | People building capability | [To confirm: sessions, practice and guided first submission] |
-| Evidence submission | Experienced colleagues | [To confirm: direct submission against the rubric] |
+| Training option | People building capability | [To confirm: session plus a guided exercise on their own work] |
+| Evidence option | Experienced colleagues | [To confirm: direct submission of practical evidence] |
 
-Both routes meet the same evidence standard in the `champion-capability-framework`.
-
-## 6. Network shape and coverage
+## 8. Network shape and coverage
 
 | Field | Entry |
 |---|---|
@@ -1074,30 +1208,51 @@ Both routes meet the same evidence standard in the `champion-capability-framewor
 | Target coverage | [To confirm: for example one Champion per team, including frontline teams] |
 | Local leads | [To confirm] |
 
-## 7. Community design
+## 9. Community and support infrastructure
 
-| Element | Entry |
-|---|---|
-| Community space | [To confirm: channel or community] |
-| Regular call | [To confirm: rhythm and who runs it] |
-| Showcases with the sponsor | [To confirm: rhythm] |
-| How good material reaches the scenario catalogue | [To confirm] |
-| Link to the Centre of Excellence | [To confirm] |
+Build each element before launch.
 
-## 8. Recognition and progression
+| Element | Entry | Owner | Ready before launch? |
+|---|---|---|---|
+| Dedicated community channel | [To confirm: space, rhythm, moderation] | [To confirm] | Yes / No |
+| Recurring learning sessions open to the wider business | [To confirm: calendar and which sessions count towards which stage] | [To confirm] | Yes / No |
+| Progress tracker | [To confirm: location, statuses, who can see what, retention] | [To confirm] | Yes / No |
+| Self-service guidance | [To confirm: published guide, or an advisor agent designed through `m365-agents:agent-use-case-design`] | [To confirm] | Yes / No |
+| Challenge options and criteria | [To confirm: reference to the challenge catalogue] | [To confirm] | Yes / No |
+| Showcases and leadership visibility | [To confirm: rhythm and sponsor role] | [To confirm] | Yes / No |
+| How good material reaches the scenario catalogue | [To confirm] | [To confirm] | Yes / No |
 
-| Stage | Entry evidence | Recognition |
+## 10. Keep, adapt and measure
+
+Complete this when replicating a model from another business unit or organisation.
+
+| Decision | Default | Local decision |
 |---|---|---|
-| 1. Join the community | Declared interest and manager agreement to time | [To confirm] |
-| 2. Verify capabilities | Levels verified against the rubric | [To confirm: for example a badge per level] |
-| 3. Complete a challenge | Completed Champion Challenge with a reusable asset | [To confirm: for example a showcase] |
-| 4. Earn Champion recognition | Verified capability plus a completed challenge | [To confirm] |
-| 5. Continue contributing | Ongoing contribution over the renewal period | [To confirm] |
+| Keep | Evidence-led progression, dual routes, practical challenge, visible recognition, community support, clear boundaries | [To confirm] |
+| Adapt | Capability areas, challenge options, badge design, advanced-access incentives, channels, specialist pathways | [To confirm] |
+| Measure | Community size, milestone conversion, completion time, challenge outputs, peer-support activity, adoption indicators, reusable assets | [To confirm] |
+
+## 11. Recognition and progression
+
+Recognition follows demonstrated capability and contribution, never attendance alone.
+
+| Stage | Entry evidence | Recognition | What it opens |
+|---|---|---|---|
+| 1. Join the community | Declared interest and manager agreement to time | [To confirm] | Community, learning sessions, resources |
+| 2 to 4. Verify each capability | Capability verified against its criteria | [To confirm: for example a badge per capability] | The next capability; after stage 4, the Challenge |
+| 5. Complete a Champion Challenge | Challenge meets impact, reusability, quality and strategic alignment | [To confirm: for example a showcase] | Eligibility for recognition |
+| 6. Earn recognition and keep contributing | Stages 2 to 5 complete | [To confirm] | [To confirm: advanced materials, pilots, specialist pathways] |
+
+| Benefit | What it means here | Owner who has agreed to run it |
+|---|---|---|
+| Advanced materials | [To confirm] | [To confirm] |
+| Pilots | [To confirm] | [To confirm] |
+| Specialist pathways | [To confirm: for example maker or Centre of Excellence contributor routes] | [To confirm] |
 
 HR position on recognition and development conversations: [To confirm: agreed with HR; no link to pay or promotion
 unless HR has explicitly agreed]
 
-## 9. Renewal
+## 12. Renewal
 
 | Field | Entry |
 |---|---|
@@ -1105,20 +1260,21 @@ unless HR has explicitly agreed]
 | What renewal requires | [To confirm: evidence of continued contribution; light refresh if the framework changed] |
 | Alumni status and route back | [To confirm] |
 
-## 10. Programme health check and metrics
+## 13. Programme health check and measures
 
-Rate each area Healthy, Watch or Act, with evidence. Metrics are programme-level only, applying the agreed minimum
-group size of [To confirm: size].
+Rate each area Healthy, Watch or Act, with evidence. Measures are programme-level only, applying the agreed minimum
+group size of [To confirm: size]. No individual is ranked.
 
 | Area | Measure | Baseline | Current | Rating | Action and owner |
 |---|---|---|---|---|---|
-| Coverage | Teams, locations and personas with a Champion | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
-| Capability | Champions verified at each level | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
-| Contribution | Challenges completed, assets reused, opportunities routed | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
-| Community | Participation trends, questions answered | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
-| Boundaries | Signs of drift into support or approval work | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Coverage | Community size and spread across teams, locations and personas | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Capability | Milestone conversion between stages; typical completion time | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Contribution | Challenge outputs, reusable assets published and reused, opportunities routed | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Community | Peer-support activity, sessions run by Champions | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Adoption | Team-level adoption indicators where Champions are active (context, not proof of cause) | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Boundaries | Signs of drift into support, training or approval work | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 
-## 11. Approval
+## 14. Approval
 
 | Role | Name | Decision | Date |
 |---|---|---|---|
@@ -1136,7 +1292,8 @@ group size of [To confirm: size].
 Template id: `coe-charter`
 
 Responsible skill: `ai-centre-of-excellence:coe-charter`. The cadence section is completed with
-`ai-centre-of-excellence:coe-cadence`.
+`ai-centre-of-excellence:coe-cadence`, and the structure and launch roadmap sections with
+`ai-centre-of-excellence:coe-operating-model`.
 
 How to use this template: complete every section in your own words. Replace each `[To confirm: ...]` marker only with a
 fact your organisation has agreed. Use roles, never personal names. For a Starter organisation, complete the sections
@@ -1147,7 +1304,8 @@ marked "Starter" as the terms of reference for an AI working group and leave the
 | Field | Value |
 |---|---|
 | Organisation | [To confirm: organisation name or alias] |
-| Form | [To confirm: AI working group (Starter) / core CoE team (Scale) / hub and spoke (Enterprise)] |
+| Form | [To confirm: AI working group (Starter) / business-owned CoE (Scale) / hub and spoke (Enterprise)] |
+| Owning business unit (the unit that benefits) | [To confirm: business unit] |
 | Executive sponsor (role) | [To confirm: sponsor role] |
 | CoE or working-group lead (role) | [To confirm: lead role] |
 | Version and date | [To confirm: version, date] |
@@ -1167,7 +1325,17 @@ One sentence a department head would recognise.
 | [To confirm: outcome 1] | [To confirm: role] | [To confirm: baseline or "to be captured by" date] | [To confirm: target] |
 | [To confirm: outcome 2] | [To confirm: role] | [To confirm] | [To confirm] |
 
-## 4. Scope across the six pillars
+## 4. Who owns what (Starter)
+
+| Party | Owns or leads | What that means here |
+|---|---|---|
+| The business | Priorities, knowledge, outcomes, adoption, return on investment | [To confirm] |
+| AI and IT enablement | Governance, architecture, security, technical delivery, support | [To confirm] |
+| Executive sponsor | Funding, decisions, resource allocation, adoption support | [To confirm] |
+
+## 5. Scope across the six pillars
+
+Govern once, repeat everywhere: a control or pattern agreed in one pillar for one team is reused by the next.
 
 | Pillar | Status now | What the CoE does in this pillar | Deferred until |
 |---|---|---|---|
@@ -1178,7 +1346,7 @@ One sentence a department head would recognise.
 | Adoption and change | Active / Deferred | [To confirm] | [To confirm] |
 | Governance | Active / Deferred | [To confirm] | [To confirm] |
 
-## 5. Principles and what they mean here (Starter)
+## 6. Principles and what they mean here (Starter)
 
 | Principle | Consequence in this organisation |
 |---|---|
@@ -1188,11 +1356,21 @@ One sentence a department head would recognise.
 | Govern once | [To confirm] |
 | Repeat everywhere | [To confirm] |
 
-## 6. Sponsorship
+## 7. Sponsorship (Starter)
 
-What the sponsor commits to do: [To confirm: chair steering / attend quarterly / unblock / accept tier 4 risk / fund].
+The sponsor is an active decision maker, not a recipient of reports. Tick what the sponsor has agreed to do.
 
-## 7. Decision rights
+| Commitment | Agreed |
+|---|---|
+| Attend steering (or send a named delegate with authority to decide) | [To confirm] |
+| Make priority decisions between competing opportunities | [To confirm] |
+| Remove blockers the CoE cannot clear itself | [To confirm] |
+| Secure resources (people, time, funding) | [To confirm] |
+| Drive adoption visibly in the business | [To confirm] |
+| Resolve conflicts between teams | [To confirm] |
+| Accept residual risk at tier 4 | [To confirm] |
+
+## 8. Decision rights
 
 | Decision | CoE decides | CoE recommends, other body decides | Never the CoE's decision |
 |---|---|---|---|
@@ -1206,7 +1384,7 @@ What the sponsor commits to do: [To confirm: chair steering / attend quarterly /
 
 Mark each row with the deciding role: [To confirm].
 
-## 8. Interfaces with existing forums
+## 9. Interfaces with existing forums
 
 | Existing forum or function (role) | What passes between it and the CoE |
 |---|---|
@@ -1214,37 +1392,59 @@ Mark each row with the deciding role: [To confirm].
 | [To confirm: for example, data protection officer] | [To confirm] |
 | [To confirm: for example, architecture board or IT leadership] | [To confirm] |
 
-## 9. What the CoE is not (Starter)
+## 10. What the CoE is and is not (Starter)
 
-- Not an IT project: the business owns priorities, knowledge, adoption and benefits.
-- Not a monthly reporting group: forums exist to take decisions.
-- Not a technology experiment: work starts from a business outcome.
-- Not a request queue: ideas arrive with an owner and a framed problem; the CoE provides method, assurance and patterns.
+The CoE is:
 
-## 10. Membership (Starter)
+- a business transformation capability, owned by the business unit that benefits;
+- a structured delivery function with one backlog;
+- a governance framework applied in proportion to risk;
+- the home of opportunity management and knowledge management;
+- the place where value and return are measured against baselines.
+
+The CoE is not:
+
+- an IT project: the business owns priorities, knowledge, adoption and benefits;
+- a monthly reporting group: forums exist to take decisions;
+- a technology experiment: work starts from a business outcome;
+- a queue of requests for the central AI team: ideas arrive with an owner and a framed problem; the CoE provides method, assurance and patterns.
+
+## 11. Structure and membership (Starter)
+
+Sizes are typical starting points; record real time, not aspirations.
 
 | Role | From (function) | Time commitment | Responsibilities |
 |---|---|---|---|
-| [To confirm: lead role] | [To confirm] | [To confirm: days per month] | [To confirm] |
-| [To confirm: business representative] | [To confirm] | [To confirm] | [To confirm] |
+| Executive sponsor | [To confirm: business executive role] | [To confirm] | Funding, decisions, resources, adoption support |
+| CoE lead | [To confirm: role in the owning business unit] | [To confirm: days per month] | Backlog, cadence, scorecard |
+| Core team member (often three to five in total) | [To confirm] | [To confirm] | [To confirm] |
+| Knowledge champion | [To confirm] | [To confirm] | Keeps documentation owned, current and of good quality |
+| Process champion | [To confirm] | [To confirm] | Spots opportunities and measures benefits |
+| Adoption champion | [To confirm] | [To confirm] | Promotes use and shares success stories |
+| AI champion | [To confirm] | [To confirm] | Supports agent testing and experimentation |
+| Central AI enablement (support, not owner) | [To confirm: function] | [To confirm] | Advisor, coach, governance and technical specialist support |
 
-## 11. Cadence and terms of reference
+## 12. Cadence and terms of reference
 
-Completed with `ai-centre-of-excellence:coe-cadence`. One block per forum.
+Completed with `ai-centre-of-excellence:coe-cadence`. One column per forum. Lengths and frequencies shown are typical
+starting points; a Starter working group may merge the first two columns.
 
-| Field | Steering | Portfolio and design review | Community | Value review |
+| Field | Working group | Steering committee | Strategy review | Community |
 |---|---|---|---|---|
 | Purpose | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
-| Decisions taken | [To confirm] | [To confirm] | None (sharing forum) | [To confirm] |
-| Chair (role) | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
-| Members (roles) | [To confirm] | [To confirm] | Open | [To confirm] |
-| Quorum | [To confirm] | [To confirm] | Not applicable | [To confirm] |
-| Frequency | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Decisions taken | [To confirm: triage, routing, tier, delegated release] | [To confirm: priorities, funding, risk acceptance, escalations] | [To confirm: roadmap, scale-or-stop] | None (sharing forum) |
+| Chair (role) | [To confirm] | [To confirm: executive sponsor] | [To confirm] | [To confirm] |
+| Members (roles) | [To confirm] | [To confirm: sponsor mandatory] | [To confirm] | Open |
+| Quorum | [To confirm] | [To confirm: sponsor or named delegate who can decide] | [To confirm] | Not applicable |
+| Frequency and length | [To confirm: typically weekly, 30 minutes] | [To confirm: typically monthly, 60 minutes] | [To confirm: typically quarterly, 90 minutes] | [To confirm] |
 | Inputs and deadline | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 | Outputs and where published | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 
-Standing steering agenda: decisions required (with papers); risks and escalations; scorecard exceptions; items for
-information by exception.
+Standing agendas:
+
+- Working group: new opportunities; delivery updates by exception; risks; knowledge gaps.
+- Steering committee: return achieved against baseline; priority decisions; funding requests; new opportunities above delegated limits; escalations.
+- Strategy review: roadmap; adoption; value delivered; future priorities.
 
 ### Decision log
 
@@ -1252,11 +1452,49 @@ information by exception.
 |---|---|---|---|---|---|---|---|---|
 | [To confirm] | | | | | | | | |
 
-## 12. Changing this charter
+## 13. Collaboration space
+
+Completed with `ai-centre-of-excellence:coe-operating-model`. Use tools the organisation already runs.
+
+| Area | Used for | Tool or list in this area | Owner (role) |
+|---|---|---|---|
+| General | Announcements and updates | Gallery of live agents and automations | [To confirm] |
+| Opportunities | Ideas and prioritisation | Backlog board | [To confirm] |
+| Knowledge management | Documentation and ownership | Knowledge asset register | [To confirm] |
+| Agent development | Agent design and testing | [To confirm] | [To confirm] |
+| Automation | Workflow and automation discussion | [To confirm] | [To confirm] |
+| Governance | Policies and compliance | [To confirm] | [To confirm] |
+| Success stories | Sharing value and outcomes | [To confirm] | [To confirm] |
+
+## 14. Launch roadmap
+
+Completed with `ai-centre-of-excellence:coe-operating-model`. Timings are typical; move on when exit items are met.
+
+| Phase | Typical timing | Exit items | Planned dates |
+|---|---|---|---|
+| Establish | Month 1 | Sponsor confirmed; lead and core team named; collaboration space set up | [To confirm] |
+| Foundation | Month 2 | Backlog live; knowledge asset register started; first opportunities framed | [To confirm] |
+| Deliver | Months 3-4 | Quick wins live; first agents or automations deployed; value measured against baseline | [To confirm] |
+| Scale | Month 5 onwards | Reusable assets; wider rollout; adoption growing | [To confirm] |
+
+## 15. Launch commitments (Starter)
+
+| Commitment | What it means here | Agreed by (role) |
+|---|---|---|
+| Active sponsorship | [To confirm] | [To confirm] |
+| Champion participation | [To confirm: time agreed with managers] | [To confirm] |
+| Knowledge ownership | [To confirm] | [To confirm] |
+| Opportunity prioritisation through one backlog | [To confirm] | [To confirm] |
+| Return measured against baselines | [To confirm] | [To confirm] |
+| Continuous improvement | [To confirm] | [To confirm] |
+
+Commitment principle: the goal is not to build AI; it is to build business capability supported by AI and automation.
+
+## 16. Changing this charter
 
 [To confirm: who may propose changes, which forum agrees them, and how often the charter is reviewed.]
 
-## 13. Sign-off
+## 17. Sign-off
 
 | Role | Decision | Date |
 |---|---|---|
@@ -1312,25 +1550,41 @@ only measures.
 | GV1 | [To confirm] | [To confirm] | | | |
 | VA1 | [To confirm] | [To confirm] | | | |
 
-## 4. Baseline capture plan
+## 4. Sponsor dashboard (four quadrants)
+
+A one-page view for steering, drawn from the measures above. Value measures are never shown alone: each time, cost or
+revenue figure states its method and sits beside an outcome measure from the work. Champion participation is shown as
+coverage across teams, never by person.
+
+| Quadrant | Draws on families | Measures shown (IDs) | Status | Headline commentary |
+|---|---|---|---|---|
+| Value | Value | [To confirm: for example hours released, cost reduction, revenue impact, each with method] | | |
+| Adoption | Adoption, capability | [To confirm: for example active use by team, share of teams with an active Champion] | | |
+| Capability | Portfolio flow, capability | [To confirm: for example opportunities submitted and share reaching a decision, agents delivered with owner and baseline] | | |
+| Governance | Governance, quality | [To confirm: for example compliance with tier controls, reviews completed on schedule] | | |
+
+Return on investment, where shown: estimate at intake [To confirm] against value achieved [To confirm], with method and
+confidence for each.
+
+## 5. Baseline capture plan
 
 | ID | Baseline missing because | Capture method | Captured by (date) | Responsible role |
 |---|---|---|---|---|
 | [To confirm] | | | | |
 
-## 5. Rejected measures
+## 6. Rejected measures
 
 | Measure considered | Reason rejected (no baseline, no owner, no decision, below minimum group size, vanity) |
 |---|---|
 | [To confirm] | |
 
-## 6. Decisions taken from this scorecard
+## 7. Decisions taken from this scorecard
 
 | Date | Forum | Decision | Measures relied on |
 |---|---|---|---|
 | [To confirm] | | | |
 
-## 7. Caveats
+## 8. Caveats
 
 This scorecard does not prove that AI caused a change in outcomes. Early adoption gains may not yet show in value
 measures. Self-reported time savings are perceptions and are reported alongside measures from the work itself.
@@ -1352,6 +1606,24 @@ remove rows, then fill each cell with R (responsible), A (accountable), C (consu
 exactly one A. Reviewers are C or hold a gate, never A for what they review. Champions are never A for approval or
 release. Mark roles that do not yet exist `[To confirm: role to be appointed]`.
 
+## Summary RACI (one page for the sponsor)
+
+A typical starting allocation for a business-owned CoE, where the CoE lead sits in the business unit that benefits.
+Challenge it locally; do not adopt it unchanged. Each row has exactly one A.
+
+| Activity | Executive sponsor | CoE lead | Champions | Central AI enablement |
+|---|---|---|---|---|
+| Prioritisation | A | R | C | C |
+| Funding | A | C | I | I |
+| Delivery | I | A | R | C |
+| Knowledge management | I | A | R | C |
+| Governance | C | C | I | A |
+| Adoption | C | A | R | C |
+| [To confirm: any further summary row] | | | | |
+
+Agreed summary allocations: [To confirm: changes made and why]. The detailed matrix below still gives each solution's
+business owner the A for its benefit and each knowledge owner the A for their content.
+
 ## Roles
 
 | Column | Role title in this organisation | Filled or vacant |
@@ -1365,7 +1637,10 @@ release. Mark roles that do not yet exist `[To confirm: role to be appointed]`.
 | IS | Information security (gate holder) | [To confirm] |
 | DP | Data protection (gate holder) | [To confirm] |
 | AL | Adoption lead | [To confirm] |
-| CH | Champions | [To confirm] |
+| CH | Champions (knowledge, process, adoption and AI champion roles) | [To confirm] |
+
+The central AI enablement function (advisor, coach, governance and technical specialist support) usually supplies the
+PL, IS and DP roles, or works beside them: [To confirm: how it maps to these columns].
 
 ## Opportunity lifecycle
 
@@ -1462,6 +1737,8 @@ One canvas per opportunity, carried from intake to decision. An opportunity does
 | Expected outcome | [To confirm: change sought in the measure] |
 | Strategic outcome supported | [To confirm: outcome reference, or "none"] |
 | Possible duplicates elsewhere | [To confirm: references, or "none found"] |
+| Early problem type (process issue, education gap, repetitive task, knowledge issue, business data workflow) | [To confirm: type, a signal for suitability rather than a decision] |
+| Backlog entry reference and stage | [To confirm: reference; capture, assessment, delivery, live or value tracking] |
 
 Fictional example, for illustration only: "Contract managers spend most of Monday compiling site reports from emails,
 and a third of reports arrive late."
@@ -1509,6 +1786,9 @@ beyond its creator is at least tier 1. Tiers are a proposed CopilotForge convent
 | Redesign options considered (reach, data, autonomy) | [To confirm: options and decision] |
 | Security and privacy record (tier 2 and above) | [To confirm: ai-risk-assessment reference] |
 | Re-classification triggers | Wider audience, new data or connectors, new actions, external exposure, change of owner, incident |
+| Governance areas checked (security, privacy, data ownership, compliance, human accountability) | [To confirm: answer or gap for each] |
+| Human role accountable for outcomes | [To confirm: role] |
+| Data and knowledge owners | [To confirm: roles] |
 | Classified by (role) and date | [To confirm: role and date] |
 | Tier lowered? Rationale and risk owner | [To confirm: rationale, or "not lowered"] |
 
@@ -1521,6 +1801,9 @@ beyond its creator is at least tier 1. Tiers are a proposed CopilotForge convent
 | Expected outcome and baseline (or plan) | [To confirm: yes or no] |
 | Initial risk classification | [To confirm: yes or no] |
 | Explicit suitability decision | [To confirm: yes or no] |
+| Backlog entry with owner, priority, estimated value, return estimate and status | [To confirm: yes or no] |
+
+No entry in the backlog means no project.
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
 
@@ -1597,12 +1880,30 @@ Fictional example row, for illustration only:
 # Prioritisation matrix
 
 Template id: `prioritisation-matrix`
-Responsible skill: `opportunity-management:opportunity-prioritisation`
+Responsible skill: `opportunity-management:opportunity-prioritisation`. Backlog entries are first captured with
+`opportunity-management:problem-framing`.
 
 Use this template to score and balance the opportunity backlog for a horizon. Scores are structured judgement, not
 measurement; each one needs a sentence of evidence. Never score or rank the people who raised ideas.
 
-## 1. Cycle details
+## 1. Backlog register
+
+One visible board for the whole CoE. No entry in the backlog means no project: nothing is resourced unless it is here.
+Value and return are ranges with a confidence level, never single invented figures.
+
+| Reference | Opportunity | Business owner (role) | Stage | Priority | Estimated value (range, confidence) | Return estimate (range, confidence) | Status | Next decision and date |
+|---|---|---|---|---|---|---|---|---|
+| [To confirm: reference] | [To confirm: short title] | [To confirm: role] | [To confirm: capture, assessment, delivery, live or value tracking] | [To confirm: set at prioritisation] | [To confirm] | [To confirm: set at assessment] | [To confirm: for example active, waiting, parked, stopped] | [To confirm] |
+
+| Stage | Lifecycle stages | Leaves the stage when |
+|---|---|---|
+| Capture | Identify | Business owner named and problem framed |
+| Assessment | Assess, Prioritise | Suitability, risk tier, value and return estimates and priority recorded |
+| Delivery | Build, Deploy | Resources allocated and release gates passed |
+| Live | Deploy | In use and registered in the portfolio with its owners |
+| Value tracking | Measure, Improve | Benefits measured against baseline and a scale-or-stop decision taken |
+
+## 2. Cycle details
 
 | Field | Value |
 |---|---|
@@ -1612,7 +1913,7 @@ measurement; each one needs a sentence of evidence. Never score or rank the peop
 | Strategic outcomes in priority order | [To confirm: outcome references] |
 | Capacity available (scarce roles) | [To confirm: summary from the roadmap capacity check] |
 
-## 2. Weights
+## 3. Weights
 
 Agree and record weights before any opportunity is scored. Do not change them mid-cycle.
 
@@ -1624,7 +1925,7 @@ Agree and record weights before any opportunity is scored. Do not change them mi
 | Readiness (owner, knowledge, data) | 20% | [To confirm: weight] | [To confirm: reason] |
 | Risk (inverted, from the risk tier) | 10% | [To confirm: weight] | [To confirm: reason] |
 
-## 3. Admission check
+## 4. Admission check
 
 Only opportunities with all five items are scored. Others are returned with the gap.
 
@@ -1632,7 +1933,7 @@ Only opportunities with all five items are scored. Others are returned with the 
 |---|---|---|---|---|---|---|
 | [To confirm: reference] | [To confirm: yes or no] | [To confirm: yes or no] | [To confirm: yes or no] | [To confirm: yes or no] | [To confirm: yes or no] | [To confirm: yes or no] |
 
-## 4. Scores
+## 5. Scores
 
 Score 1 to 5. Record the evidence beside each score in the notes column or an attached sheet.
 
@@ -1640,13 +1941,13 @@ Score 1 to 5. Record the evidence beside each score in the notes column or an at
 |---|---|---|---|---|---|---|---|---|
 | [To confirm: reference] | [To confirm: score] | [To confirm: score] | [To confirm: score] | [To confirm: score] | [To confirm: score] | [To confirm: total] | [To confirm: range and confidence] | [To confirm: notes] |
 
-## 5. Portfolio placement and decision
+## 6. Portfolio placement and decision
 
 | Opportunity | Quadrant (quick win, strategic bet, foundation-first, park) | Decision (proceed, foundation-first, wait for capacity, park) | Reason | Owner told on |
 |---|---|---|---|---|
 | [To confirm: reference] | [To confirm: quadrant] | [To confirm: decision] | [To confirm: reason] | [To confirm: date] |
 
-## 6. Portfolio balance
+## 7. Portfolio balance
 
 | Check | Result |
 |---|---|
@@ -1657,7 +1958,7 @@ Score 1 to 5. Record the evidence beside each score in the notes column or an at
 | Spread across journeys (Adopt AI, Build with AI, Scale AI) | [To confirm: summary] |
 | Opportunities serving no agreed outcome | [To confirm: number, should be zero among those proceeding] |
 
-## 7. Returned and parked items
+## 8. Returned and parked items
 
 | Opportunity | Status | Gap or reason | Next step |
 |---|---|---|---|
@@ -1796,10 +2097,10 @@ Personas are defined by ways of working, never by seniority or personal characte
 Score each criterion 1 to 3. Prioritise scenarios scoring 10 or more with Verifiability and Data safety both at least 2.
 Data safety of 1 means a security and privacy review before publication.
 
-| Ref | Persona | Scenario | Frequency | Value | Verifiability | Data safety | Total | Priority |
-|---|---|---|---|---|---|---|---|---|
-| Fictional example: S1 | Frontline | Turn rough shift notes into a structured handover | 3 | 3 | 3 | 3 | 12 | Starting set |
-| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Ref | Persona | Scenario | Source | Frequency | Value | Verifiability | Data safety | Total | Priority |
+|---|---|---|---|---|---|---|---|---|---|
+| Fictional example: S1 | Frontline | Turn rough shift notes into a structured handover | Discovery | 3 | 3 | 3 | 3 | 12 | Starting set |
+| [To confirm] | [To confirm] | [To confirm] | Discovery / Champion Challenge / Workshop | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 
 ## 4. Scenario entries
 
@@ -1810,6 +2111,7 @@ Copy this block for each priority scenario.
 | Field | Entry |
 |---|---|
 | Persona | [To confirm] |
+| Source | [To confirm: discovery, or Champion Challenge or workshop reference, contributor by role] |
 | Task in the user's words | [To confirm] |
 | Input the user provides | [To confirm: content they already handle; no special category data] |
 | Copilot experience used | [To confirm: as confirmed by IT for this persona] |
@@ -1831,6 +2133,16 @@ Copy this block for each priority scenario.
 | Ref | Scenario | Reason not yet prioritised | Referred to opportunity intake? | Owner |
 |---|---|---|---|---|
 | [To confirm] | [To confirm] | [To confirm] | Yes / No | [To confirm] |
+
+## 6. Champion contributions
+
+Prompt libraries, departmental playbooks and workshop outputs from the `champion-challenge-catalogue` pass the same
+scoring, real-user test and verification step before they join the catalogue.
+
+| Ref | Challenge or workshop reference | Contribution | Contributor (role) | Review outcome | Added as scenario refs |
+|---|---|---|---|---|---|
+| Fictional example: K1 | Fictional example: C1 | Prompt patterns for the weekly team report | Team coordinator | Accepted after test | Fictional example: S7 |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | Accepted / Revise / Not added | [To confirm] |
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
 

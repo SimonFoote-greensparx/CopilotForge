@@ -15,7 +15,8 @@ documents land in your own OneDrive. Cowork changes regularly; if a menu has mov
 ## Add departments as plugins
 
 1. Choose the departments you need (table below).
-2. Download `cowork/plugins/copilotforge-<department>.zip` from the repository.
+2. Download `copilotforge-<department>.zip` from the website's Downloads page (https://copilotforge.ai/downloads.html),
+   or from `cowork/plugins/` in the repository.
 3. In Copilot Cowork select **Customize** > **Plugins** > **Upload plugin** and choose the archive.
 4. Share it with **Only you** to try it, or with specific colleagues.
 5. Start a new conversation.

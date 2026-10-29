@@ -7,4 +7,5 @@ python3 scripts/build-port.py
 python3 scripts/build-sources.py
 python3 scripts/build-catalogue.py
 python3 scripts/build-cowork.py
+python3 scripts/build-site.py
 bash scripts/check-all.sh

@@ -23,6 +23,9 @@ run "Generation: skill source files"                    python3 scripts/build-so
 run "Generation: catalogue, README and roadmap tables"  python3 scripts/build-catalogue.py --check
 run "Generation: tailoring bundles"                     python3 scripts/build-bundles.py --check
 run "Generation: Copilot Cowork packages"               python3 scripts/build-cowork.py --check
+run "Generation: website pages"                        python3 scripts/build-site.py --check
+run "Website: programme builder agrees with tailoring"  python3 scripts/check-programme-builder.py
+run "Website: hosted build and link check"             python3 scripts/build-hosting.py --out dist/check-website --zip dist/check-website.zip
 printf '\n'
 if [ "$fail" -eq 0 ]; then printf 'All checks passed.\n'; else printf 'Checks failed.\n'; fi
 exit "$fail"
