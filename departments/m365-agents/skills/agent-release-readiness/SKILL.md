@@ -38,7 +38,7 @@ answers when it is wrong, and a year later nobody knows who built it or whether 
 - Producing the test evidence and evaluation results - use `m365-agents:agent-testing`.
 - Reviewing data exposure, connectors or privacy as the reviewer - use `security-privacy:data-exposure-review`, `security-privacy:connector-review` or `security-privacy:privacy-assessment`.
 - Deciding whether to scale, continue or stop an agent on value evidence - use `opportunity-management:scale-or-stop`.
-- Running monitoring, incidents and retirement day to day - the `ai-operations` department (planned).
+- Running monitoring, incidents and retirement day to day - use `ai-operations:ai-solution-monitoring`.
 
 ## Questions to ask first
 
@@ -67,8 +67,8 @@ Check each line; every line must pass for the tier before release.
 | Named business owner and knowledge owners | Required | Required | Required | Required, with executive sponsor |
 | Support route and fix owner | Owner contact | Service desk route | Service desk with response targets | Plus incident response and escalation |
 | Sharing scope | Named team | Named groups matching brief | Named groups; no organisation-wide sharing without design review | Formally approved audience |
-| Test evidence | Owner sign-off | Threshold met, permission tests | Plus `evaluation-quality` (planned) | Plus independent assurance |
-| Reviewer evidence | Not mandatory | `security-privacy` | Plus `responsible-ai` and `design-authority` (planned) | Plus executive risk acceptance |
+| Test evidence | Owner sign-off | Threshold met, permission tests | Plus `evaluation-quality:ai-release-evidence` | Plus independent assurance |
+| Reviewer evidence | Not mandatory | `security-privacy` | Plus `responsible-ai:ai-impact-assessment` and `design-authority:ai-design-review` | Plus executive risk acceptance |
 | Communications | Owner tells the team | Audience brief with limits | Plus manager briefing | Plus external transparency where relevant |
 | Monitoring and review date | Review date | Usage and feedback, quarterly review | Plus quality monitoring and continuity | Plus human oversight records |
 | Retirement criteria | Recorded | Recorded | Recorded with data disposal | Recorded with exit plan |
@@ -142,7 +142,7 @@ reviewer approved, because widening sharing after review invalidates the review.
 
 ## Responsible AI considerations
 
-From risk tier 3, release requires the `responsible-ai` department's (planned) outcome, including human oversight
+From risk tier 3, release requires the outcome of `responsible-ai:ai-impact-assessment`, including human oversight
 arrangements. Users must be told they are using an agent and that they remain accountable for what they do with its output.
 
 ## Evaluation requirements
@@ -174,16 +174,16 @@ tier 3 and 4. Link the register to the portfolio and to operations for monitorin
 
 ## Hand-offs
 
-- To the `ai-operations` department (planned) for monitoring, incidents, review and retirement.
+- To `ai-operations:ai-solution-monitoring` for monitoring, incidents, review and retirement.
 - To `opportunity-management:scale-or-stop` at the review date.
 - To `copilot-adoption:launch-plan` where the agent is part of a wider adoption launch.
 - Back to `m365-agents:agent-testing` for regression after any post-release change.
 
 ## Reviewer gates
 
-From risk tier 2, `security-privacy` and `evaluation-quality` (planned) must pass the agent; from tier 3,
-`responsible-ai` and `design-authority` (planned) as well. Blocking findings stop release and are not traded against
-dates. Until the planned departments exist, the CoE lead records their questions and the responses on the checklist.
+From risk tier 2, `security-privacy` and `evaluation-quality:ai-release-evidence` must pass the agent; from tier 3,
+`responsible-ai:ai-impact-assessment` and `design-authority:ai-design-review` as well. Blocking findings stop release
+and are not traded against dates. Each reviewer records its questions and the responses on the checklist.
 
 ## Failure modes
 

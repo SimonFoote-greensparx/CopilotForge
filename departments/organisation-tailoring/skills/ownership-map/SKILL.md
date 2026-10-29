@@ -1,6 +1,6 @@
 ---
 name: ownership-map
-description: Produces a role-based ownership map for an AI programme from declared roles only - the accountable role for each engaged department and each pack artefact, named owners only where the organisation has declared them, and the capability and capacity gaps to close. Use when a transformation pack needs owners, when a sponsor asks who will do this work, or when nobody can say who owns adoption, governance or agents.
+description: Produces a role-based ownership map for an AI programme from declared roles only - the accountable role for each engaged department and each pack artefact, named owners only where the organisation has declared them, and roles left without an owner. Use when a transformation pack needs owners, when a sponsor asks who will do this work, or when nobody can say who owns adoption, governance or agents.
 license: CC-BY-4.0
 metadata:
   department: organisation-tailoring
@@ -35,6 +35,7 @@ names, when one willing person is given everything, or when they drift into asse
 
 ## When not to use
 
+- A full analysis of capability and capacity gaps against the programme - use `organisation-tailoring:capability-gap-analysis`.
 - A detailed RACI for each CoE activity - use `ai-centre-of-excellence:coe-raci`.
 - Designing the CoE team and its shape - use `ai-centre-of-excellence:coe-operating-model`.
 - Assessing Champion capability through evidence - use `champions:evidence-assessment`.
@@ -66,7 +67,7 @@ If a role has not been declared, write the department's lead role from `referenc
 | Role declared and filled | Accountable role plus the declared owner as given (role or alias) |
 | Role declared but vacant | Accountable role, "named owner: to confirm", gap recorded with the role who decides the appointment |
 | Role not declared | Department lead role from `references/departments.json`, "named owner: to confirm" |
-| Department is planned, not built | Lead role recorded, with a note on who holds the responsibility in the meantime (usually the CoE lead) |
+| Department engaged in a later phase | Lead role recorded, with a note on who holds the responsibility in the meantime (usually the CoE lead) |
 | Reviewer-class department | A reviewer role independent of the delivery owner; never the same role as the solution owner |
 | One role is accountable for more than three departments | Flag a capacity risk, whatever the role's seniority |
 
@@ -109,7 +110,7 @@ organisation's own storage with access limited to the programme team.
 
 - An ownership map on the `ownership-map` template: engaged departments with accountable role, declared owner or "to confirm", time available and gap type; artefacts with accountable role.
 - A gap list classified as capability, capacity or vacancy, with the role who decides each appointment.
-- A note of departments that are planned in CopilotForge and who covers them meanwhile.
+- A note of departments engaged in a later phase and who covers them meanwhile.
 
 ## Microsoft platform considerations
 
@@ -124,7 +125,8 @@ adoption programme has a business-side accountable role and not only an IT one.
 ## Knowledge considerations
 
 Where agents or knowledge-heavy scenarios are in scope, include knowledge owners as a role family, even if unnamed. The
-`knowledge-management` department (planned) has a Knowledge Manager lead role; until it is built, the CoE lead holds it.
+`knowledge-management` department has a Knowledge Manager lead role, defined through
+`knowledge-management:knowledge-owner-model`; where that role is vacant, record the gap and who decides the appointment.
 
 ## Security and privacy considerations
 
@@ -151,7 +153,7 @@ CoE or working-group lead through `ai-centre-of-excellence:coe-kpi-framework`. N
 ### Starter
 
 Five to eight rows. One person may hold several lead roles; record that honestly and note the partner's part. The
-working-group lead covers planned departments.
+working-group lead covers departments engaged in a later phase.
 
 ### Scale
 

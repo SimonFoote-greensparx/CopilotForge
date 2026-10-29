@@ -38,7 +38,7 @@ already knows one tool.
 - Confirming the risk tier that governs the build - use `opportunity-management:risk-classification`.
 - Judging whether the knowledge the agent will ground on is fit to use - use `m365-agents:knowledge-source-readiness`.
 - Writing the test plan and evaluation set - use `m365-agents:agent-testing`.
-- Detailed topic, action, authentication and ALM design for a Copilot Studio build - the `copilot-studio` department (planned).
+- Detailed topic, action, authentication and ALM design for a Copilot Studio build - use `copilot-studio:studio-agent-design`.
 
 ## Questions to ask first
 
@@ -138,8 +138,8 @@ writing the scope; they become the first advocates and the first honest testers.
 ## Knowledge considerations
 
 The agent's quality is capped by its knowledge. Every source needs an owner and a readiness verdict before build;
-unowned or stale sources are preconditions to fix, routed through `m365-agents:knowledge-source-readiness` and, once it
-exists, the `knowledge-management` department. Prefer a small, curated source over a whole site.
+unowned or stale sources are preconditions to fix, routed through `m365-agents:knowledge-source-readiness` and
+`knowledge-management:knowledge-lifecycle`. Prefer a small, curated source over a whole site.
 
 ## Security and privacy considerations
 
@@ -150,7 +150,7 @@ reviewer through `security-privacy:data-exposure-review` and `security-privacy:c
 ## Responsible AI considerations
 
 If the agent's answers could inform decisions about people, money, safety or rights, write explicit human oversight
-into the scope and mark the case for the `responsible-ai` department (planned) via risk classification. Users must be
+into the scope and mark the case for `responsible-ai:ai-impact-assessment` via risk classification. Users must be
 able to tell they are dealing with an agent and where its answers come from.
 
 ## Evaluation requirements
@@ -186,13 +186,13 @@ at risk tier 2 or above. Track briefs in the portfolio so overlapping agents are
 - To `m365-agents:knowledge-source-readiness` for each knowledge source named in the brief.
 - To `m365-agents:agent-testing` with the seed questions and behaviour rules.
 - To `security-privacy:data-exposure-review` and `security-privacy:connector-review` from risk tier 2.
-- To the `copilot-studio` department (planned) for detailed design of Copilot Studio builds.
+- To `copilot-studio:studio-agent-design` for detailed design of Copilot Studio builds.
 
 ## Reviewer gates
 
 From risk tier 2, the brief is reviewed by `security-privacy` for knowledge exposure, sharing scope and actions, and by
-`design-authority` (planned) for route choice and duplication. Until `design-authority` exists, the CoE lead records the
-route challenge and response on the brief.
+`design-authority:platform-fit-review` for route choice and duplication, with the route challenge and response recorded
+on the brief.
 
 ## Failure modes
 

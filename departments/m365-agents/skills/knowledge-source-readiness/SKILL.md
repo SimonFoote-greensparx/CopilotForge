@@ -37,8 +37,8 @@ the same policy and a folder of salary data shared with everyone.
 - Writing the agent's purpose, scope and source list in the first place - use `m365-agents:agent-use-case-design`.
 - Testing whether the agent's answers are correct and grounded - use `m365-agents:agent-testing`.
 - The formal security review of what the agent can expose from tier 2 - use `security-privacy:data-exposure-review`.
-- Fixing the content, owner model and lifecycle across the organisation's knowledge estate - the `knowledge-management` department (planned).
-- Classification schemes and data ownership beyond the agent's own sources - the `data-governance` department (planned).
+- Fixing the content, owner model and lifecycle across the organisation's knowledge estate - use `knowledge-management:knowledge-lifecycle`.
+- Classification schemes and data ownership beyond the agent's own sources - use `data-governance:data-classification-for-ai`.
 
 ## Questions to ask first
 
@@ -105,7 +105,7 @@ Agree a review cycle with each owner and link it to the agent's review date, so 
 check. Write the verdicts into the knowledge section of the agent brief, with conditions, owners and dates.
 
 Finally, be honest about what this skill cannot fix. Cleaning a sprawling site, rationalising versions or designing an
-owner model across the estate is knowledge management work. Hand it to the `knowledge-management` department (planned)
+owner model across the estate is knowledge management work. Hand it to `knowledge-management:knowledge-cleanup`
 and keep the agent's scope to the sources that are ready now. A narrower agent on good knowledge beats a broad agent on
 poor knowledge every time.
 
@@ -131,8 +131,8 @@ current.
 
 ## Knowledge considerations
 
-This skill is the knowledge check for an individual agent. Problems that span many agents or sites belong to the
-`knowledge-management` department (planned); record them as estate-level findings so they are not fixed one agent at a
+This skill is the knowledge check for an individual agent. Problems that span many agents or sites belong to
+`knowledge-management:knowledge-readiness-assessment`; record them as estate-level findings so they are not fixed one agent at a
 time.
 
 ## Security and privacy considerations
@@ -171,7 +171,7 @@ with a shared list of owned, ready sources.
 
 ### Enterprise
 
-Feed verdicts into the knowledge inventory run by the `knowledge-management` department (planned), and require an
+Feed verdicts into the knowledge inventory run through `knowledge-management:knowledge-inventory`, and require an
 in-date verdict at each agent review. Use oversharing reports from the platform team to prioritise checks.
 
 ## Hand-offs
@@ -179,7 +179,7 @@ in-date verdict at each agent review. Use oversharing reports from the platform 
 - Back to `m365-agents:agent-use-case-design` with verdicts and any scope change.
 - To `m365-agents:agent-testing` with contradictions and coverage gaps as test cases.
 - To `security-privacy:data-exposure-review` for oversharing from risk tier 2, and `security-privacy:privacy-assessment` for personal data.
-- To the `knowledge-management` department (planned) for estate-wide clean-up.
+- To `knowledge-management:knowledge-cleanup` for estate-wide clean-up.
 
 ## Reviewer gates
 

@@ -38,7 +38,7 @@ problems that were really broken processes, and by choosing a pro-code platform 
 - Classifying the risk tier of a solution already chosen - use `opportunity-management:risk-classification`.
 - Ranking suitable opportunities against each other - use `opportunity-management:opportunity-prioritisation`.
 - Designing the agent once the agent pattern is chosen - use `m365-agents:agent-use-case-design`.
-- Formal architecture and platform conformance for tier 2 and above - the `design-authority` and `ai-architecture` departments (planned).
+- Formal architecture and platform conformance for tier 2 and above - use `design-authority:architecture-conformance` and `ai-architecture:platform-selection`.
 
 ## Questions to ask first
 
@@ -154,7 +154,7 @@ gate forward.
 ## Responsible AI considerations
 
 Ask whether the output informs decisions about people, money, safety or rights. If so, the solution needs explicit human
-oversight whatever the rung, and the case moves to the `responsible-ai` department (planned) through risk
+oversight whatever the rung, and the case moves to `responsible-ai:ai-impact-assessment` through risk
 classification. Some uses should not be built at all; record that outcome plainly.
 
 ## Evaluation requirements
@@ -194,8 +194,8 @@ Federate first-pass suitability to business-unit spokes using the shared ladder,
 
 ## Reviewer gates
 
-From risk tier 2, the rung choice is open to challenge by `design-authority` (planned) for unnecessary AI or the wrong
-platform. Until that department is built, the CoE lead records the challenge and the response on the decision record.
+From risk tier 2, the rung choice is open to challenge by `design-authority:ai-necessity-challenge` for unnecessary AI
+or the wrong platform, and the challenge and the response are recorded on the decision record.
 
 ## Failure modes
 

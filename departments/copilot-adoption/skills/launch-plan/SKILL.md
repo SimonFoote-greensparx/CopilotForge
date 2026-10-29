@@ -39,8 +39,8 @@ which is when habits form or fade.
 - Finding and prioritising the scenarios each persona will be onboarded with - use `copilot-adoption:scenario-discovery`.
 - Defining adoption measures, baselines and reporting rules - use `copilot-adoption:adoption-measurement`.
 - Designing the Champions programme that supports the launch - use `champions:champion-programme-design`.
-- Detailed communications campaigns and manager change toolkits - the `change-and-communications` department (planned).
-- Formal curricula and learning pathways - the `learning-and-skills` department (planned).
+- Detailed communications campaigns and manager change toolkits - use `change-and-communications:adoption-campaign-plan` and `change-and-communications:manager-enablement`.
+- Formal curricula and learning pathways - use `learning-and-skills:ai-role-curriculum`.
 
 ## Questions to ask first
 
@@ -144,8 +144,8 @@ briefings and for reinforcement that stops after the first month. Celebrate team
 ## Knowledge considerations
 
 Onboarding exposes weak knowledge quickly, because the first thing people ask Copilot about is their own policies and
-procedures. Log where answers were poor because content was stale or missing, and pass it to the `knowledge-management`
-department (planned).
+procedures. Log where answers were poor because content was stale or missing, and pass it to
+`knowledge-management:knowledge-gap-analysis`.
 
 ## Security and privacy considerations
 

@@ -37,7 +37,7 @@ attempts an exhaustive test that never finishes and is never repeated.
 - Writing the agent's scope, behaviour rules and seed questions - use `m365-agents:agent-use-case-design`.
 - Checking whether knowledge sources are owned, current and correctly shared - use `m365-agents:knowledge-source-readiness`.
 - Deciding whether the agent can be released and who supports it - use `m365-agents:agent-release-readiness`.
-- Formal evaluation strategy, golden datasets, red teaming and release evidence for tier 3 and above - the `evaluation-quality` department (planned).
+- Formal evaluation strategy, golden datasets, red teaming and release evidence for tier 3 and above - use `evaluation-quality:ai-evaluation-strategy`.
 
 ## Questions to ask first
 
@@ -65,7 +65,7 @@ Depth rises with risk tier. Each tier includes everything above it.
 |---|---|---|---|
 | 1 | 15-25 questions | In-scope answers, three refusal cases, one change re-run | Agent owner |
 | 2 | 30-60 questions | Adds groundedness checks, out-of-scope probes, permission tests with two or more user profiles, regression set | Business owner, with `security-privacy` evidence |
-| 3 | 60 or more, with variants | Adds adversarial prompts, action confirmation tests, failure handling, monitoring baseline | Business owner, `evaluation-quality` (planned) |
+| 3 | 60 or more, with variants | Adds adversarial prompts, action confirmation tests, failure handling, monitoring baseline | Business owner, `evaluation-quality:ai-release-evidence` |
 | 4 | Agreed with `evaluation-quality` | Adds independent testing and human oversight tests | Accountable executive |
 
 Score each answer on four dimensions: correct (matches the expected answer in substance), grounded (supported by a cited
@@ -138,8 +138,8 @@ Permission-trimming and action tests provide evidence for the `security-privacy`
 ## Responsible AI considerations
 
 Include questions that probe for unfair, speculative or overconfident answers about people, and check that the agent
-signals uncertainty and cites sources. For agents touching decisions about people, the `responsible-ai` department
-(planned) sets additional tests from tier 3.
+signals uncertainty and cites sources. For agents touching decisions about people,
+`responsible-ai:fairness-review` sets additional tests from tier 3.
 
 ## Evaluation requirements
 
@@ -165,21 +165,21 @@ regression packs with the agent's record so testing survives a change of owner.
 
 ### Enterprise
 
-Hand tier 3 and 4 agents to the `evaluation-quality` department (planned) for formal evaluation and red teaming, and
-automate regression runs where the route supports it. Report pass-rate trends across the portfolio.
+Hand tier 3 and 4 agents to `evaluation-quality:ai-evaluation-strategy` and `evaluation-quality:red-team-plan` for
+formal evaluation and red teaming, and automate regression runs where the route supports it. Report pass-rate trends across the portfolio.
 
 ## Hand-offs
 
 - To `m365-agents:agent-release-readiness` with the test evidence and the owner's decision.
 - To `security-privacy:data-exposure-review` with permission-trimming results from tier 2.
 - Back to `m365-agents:knowledge-source-readiness` for knowledge-caused failures.
-- To the `evaluation-quality` department (planned) for tier 3 and above.
+- To `evaluation-quality:ai-evaluation-strategy` for tier 3 and above.
 
 ## Reviewer gates
 
-From risk tier 2, `evaluation-quality` (planned) reviews the evaluation set and threshold, and `security-privacy` reviews
-permission-trimming and action test evidence. Until `evaluation-quality` exists, the CoE lead checks that the threshold
-was agreed before results were seen.
+From risk tier 2, `evaluation-quality:ai-quality-rubric` reviews the evaluation set and threshold, and `security-privacy`
+reviews permission-trimming and action test evidence. The reviewer checks that the threshold was agreed before results
+were seen.
 
 ## Failure modes
 

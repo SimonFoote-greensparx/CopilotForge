@@ -144,8 +144,8 @@ judged fairly. Recognise those who raised ideas, including Champions, whether or
 ## Knowledge considerations
 
 Knowledge readiness is scored explicitly, not assumed. Where poor or unowned knowledge holds back a high-value
-opportunity, the foundation-first route sends the gap to the knowledge owner and the `knowledge-management` department
-(planned), with the opportunity re-scored once it is fixed.
+opportunity, the foundation-first route sends the gap to the knowledge owner and
+`knowledge-management:content-quality`, with the opportunity re-scored once it is fixed.
 
 ## Security and privacy considerations
 

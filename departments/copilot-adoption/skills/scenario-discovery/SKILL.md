@@ -40,7 +40,7 @@ nobody's working week.
 - Framing a significant business problem with an owner and measure - use `opportunity-management:problem-framing`.
 - Planning the launch waves and onboarding around the scenarios - use `copilot-adoption:launch-plan`.
 - Turning a scenario into a practical Champion Challenge - use `champions:champion-challenges`.
-- Designing formal role-based curricula - the `learning-and-skills` department (planned).
+- Designing formal role-based curricula - use `learning-and-skills:ai-role-curriculum`.
 
 ## Questions to ask first
 
@@ -141,7 +141,7 @@ let Champions contribute new ones through a light review, and retire scenarios t
 ## Knowledge considerations
 
 Many scenarios depend on finding the right document or policy. Where a scenario fails because content is stale,
-duplicated or unowned, record the gap and pass it to the `knowledge-management` department (planned) rather than
+duplicated or unowned, record the gap and pass it to `knowledge-management:knowledge-cleanup` rather than
 working around it in the prompt.
 
 ## Security and privacy considerations

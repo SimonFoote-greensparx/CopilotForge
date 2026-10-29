@@ -152,13 +152,12 @@ protection officer; this skill does not decide it.
 ## Responsible AI considerations
 
 Uses that inform decisions about people, money, safety or rights rate at least 3 for impact. Tier 3 and 4 require
-review by the `responsible-ai` department (planned); until it exists, the CoE convenes the data protection officer,
-the business owner and an independent senior reviewer. Some uses should not be built; record that conclusion plainly.
+review through `responsible-ai:ai-impact-assessment`. Some uses should not be built; record that conclusion plainly.
 
 ## Evaluation requirements
 
 State the evaluation evidence the tier demands. Tier 1 needs basic test evidence from the owner; tier 2 and above need
-an agreed evaluation set and acceptance threshold reviewed through the `evaluation-quality` gate (planned); tiers 3 and
+an agreed evaluation set and acceptance threshold reviewed through `evaluation-quality:ai-quality-rubric`; tiers 3 and
 4 also need ongoing monitoring after launch.
 
 ## Value measures
@@ -194,8 +193,8 @@ tier 4 requires recorded executive risk acceptance.
 ## Reviewer gates
 
 The tier decides the gates. From tier 2, `security-privacy` blocks release until data exposure and access are reviewed,
-`evaluation-quality` (planned) checks the evaluation evidence, and `design-authority` (planned) challenges architecture
-and platform choice. From tier 3, `responsible-ai` (planned) blocks release until oversight, fairness and transparency
+`evaluation-quality:ai-release-evidence` checks the evaluation evidence, and `design-authority:ai-design-review`
+challenges architecture and platform choice. From tier 3, `responsible-ai:ai-impact-assessment` blocks release until oversight, fairness and transparency
 are reviewed. Disagreement about the tier itself escalates to the accountable executive.
 
 ## Failure modes

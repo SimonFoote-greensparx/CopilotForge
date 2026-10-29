@@ -37,7 +37,7 @@ hide weak results instead of learning from them.
 - Measuring organisation-wide Copilot adoption - use `copilot-adoption:adoption-measurement`.
 - Checking that an agent is ready for its first release - use `m365-agents:agent-release-readiness`.
 - Re-ranking the whole backlog - use `opportunity-management:opportunity-prioritisation`.
-- Building detailed benefits models and post-implementation reviews across the portfolio - the `value-realisation` department (planned).
+- Building detailed benefits models and post-implementation reviews across the portfolio - use `value-realisation:post-implementation-review`.
 
 ## Questions to ask first
 
@@ -149,13 +149,13 @@ and outputs created during the pilot are retained or deleted.
 
 Ask whether the pilot revealed unintended effects on people, such as uneven quality for some groups, over-reliance, or
 decisions taken without the intended human check. Such findings block scaling until addressed, and for tier 3 and 4
-solutions they go to the `responsible-ai` department (planned).
+solutions they go to `responsible-ai:ai-impact-assessment`.
 
 ## Evaluation requirements
 
 The quality dimension relies on evaluation evidence against the threshold agreed before the pilot. For tier 2 and
 above, scaling requires an evaluation set representative of the wider audience, not only the pilot group, reviewed
-through the `evaluation-quality` gate (planned).
+through `evaluation-quality:golden-dataset`.
 
 ## Value measures
 
@@ -190,8 +190,8 @@ and for any cross-unit scale-up. Predicted versus realised value is reported to 
 ## Reviewer gates
 
 Scaling at tier 2 and above cannot proceed until `security-privacy` has reviewed the wider access and
-`evaluation-quality` (planned) has accepted evaluation evidence for the wider audience. Where re-classification moves
-the solution to tier 3 or 4, the `responsible-ai` gate (planned) also applies. A stop decision needs no gate.
+`evaluation-quality:ai-release-evidence` has accepted evaluation evidence for the wider audience. Where
+re-classification moves the solution to tier 3 or 4, `responsible-ai:ai-impact-assessment` also applies. A stop decision needs no gate.
 
 ## Failure modes
 

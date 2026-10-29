@@ -134,7 +134,7 @@ data protection officer decides how long the profile is kept.
 ## Responsible AI considerations
 
 Not applicable in depth at intake, which records context rather than assessing a use; capture the regulatory notes and
-any known high-impact uses so later skills can route them to the `responsible-ai` department (planned).
+any known high-impact uses so later skills can route them to `responsible-ai:ai-impact-assessment`.
 
 ## Evaluation requirements
 

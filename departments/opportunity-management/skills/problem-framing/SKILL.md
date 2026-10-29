@@ -141,7 +141,7 @@ feel like a result rather than a rejection.
 ## Knowledge considerations
 
 Ask where the information involved in the work lives and who keeps it current. Unowned or scattered knowledge is
-recorded as an early signal for suitability and for the `knowledge-management` department (planned); it is often the
+recorded as an early signal for suitability and for `knowledge-management:knowledge-inventory`; it is often the
 real problem.
 
 ## Security and privacy considerations
