@@ -1,6 +1,6 @@
 ---
 name: transformation-pack
-description: Orchestrates a tailored AI transformation pack from a confirmed profile - assessment, target operating model, adoption and Champions programmes, CoE, opportunity process, agent delivery, governance, roadmap, ownership map, templates and success measures - at the depth the edition sets, and explains material changes on refresh. Use when an organisation asks for help adopting Copilot, scaling agents or setting up an AI CoE.
+description: Orchestrates a tailored AI transformation pack from a confirmed profile - assessment, target operating model, adoption and Champions programmes, CoE, opportunity process, agent delivery, governance, roadmap, ownership map, templates and success measures - at the depth the edition sets, each artefact naming its responsible skill and sources. Use when an organisation asks for help adopting Copilot, scaling agents or setting up an AI CoE.
 license: CC-BY-4.0
 metadata:
   department: organisation-tailoring
@@ -30,15 +30,15 @@ a refresh silently overwrites decisions the organisation has already taken.
 
 - An organisation asks for end-to-end help with Microsoft AI adoption, agents, governance or a CoE.
 - A confirmed edition and archetype exist and the sponsor wants the documents.
-- A pack exists and the profile has changed, so it needs refreshing with changes explained.
 - A sponsor asks what the whole programme looks like before committing to one part.
 
 ## When not to use
 
+- Refreshing an existing pack after the profile changes - use `organisation-tailoring:transformation-pack-refresh`.
 - Building or validating the profile - use `organisation-tailoring:ai-profile-intake`.
 - Choosing edition, overlay and archetype - use `organisation-tailoring:edition-and-archetype`.
 - A single artefact on its own, such as a CoE charter - use its owning skill, for example `ai-centre-of-excellence:coe-charter`.
-- Programme mobilisation, RAID and stage gates for running the pack once agreed - the `programme-management` department (planned).
+- Programme mobilisation, RAID and stage gates for running the pack once agreed - use `programme-management:programme-charter`.
 
 ## Questions to ask first
 
@@ -131,7 +131,7 @@ heavier structures. Present the pack as the organisation's plan, owned by its sp
 ## Knowledge considerations
 
 Where the weak-knowledge signal appears, put knowledge ownership and quality work before agent delivery in the roadmap,
-and say so in the covering note. Until the `knowledge-management` department is built, the CoE or working group owns it.
+and say so in the covering note. Plan that work with `knowledge-management:knowledge-readiness-assessment`.
 
 ## Security and privacy considerations
 
@@ -141,7 +141,7 @@ programme team. Carry the `security-privacy` gate from risk tier 2 into every re
 ## Responsible AI considerations
 
 State in the pack that editions and archetypes are proposed CopilotForge classifications, that some uses will not be
-built, and that tier 3 and 4 solutions need the `responsible-ai` review (planned department) with an accountable executive.
+built, and that tier 3 and 4 solutions need review through `responsible-ai:ai-impact-assessment` with an accountable executive.
 
 ## Evaluation requirements
 
@@ -175,13 +175,13 @@ overlay is formal, and portfolio-level value tracking.
 
 - To each responsible skill named in the index, for example `ai-strategy:ai-roadmap`, `copilot-adoption:launch-plan`, `champions:champion-programme-design` and `ai-centre-of-excellence:coe-governance-model`.
 - To `organisation-tailoring:ownership-map` for accountable roles on every artefact.
-- To the `programme-management` department (planned) to run the programme once agreed.
+- To `programme-management:programme-charter` to run the programme once agreed.
 
 ## Reviewer gates
 
 The pack carries programme gates rather than passing one itself: `security-privacy` blocking from risk tier 2, and the
-`evaluation-quality`, `design-authority` and `responsible-ai` gates where the agent-factory programme applies. Planned
-reviewer departments are held by the CoE lead until built.
+`evaluation-quality:ai-release-evidence`, `design-authority:ai-design-review` and `responsible-ai:ai-impact-assessment`
+gates where the agent-factory programme applies.
 
 ## Failure modes
 

@@ -50,6 +50,42 @@
           "stage": "Measure",
           "template": "coe-kpi-scorecard",
           "title": "Adoption measures and baseline"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "communications-plan",
+          "skill": "change-and-communications:ai-communication-strategy",
+          "stage": "Enable",
+          "template": "ai-communications-plan",
+          "title": "Communications plan"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "learning-plan",
+          "skill": "learning-and-skills:ai-role-curriculum",
+          "stage": "Enable",
+          "template": "ai-learning-plan",
+          "title": "Role-based learning plan"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "support-model",
+          "skill": "copilot-adoption:adoption-support-model",
+          "stage": "Launch",
+          "template": "adoption-support-model",
+          "title": "User support model"
         }
       ],
       "gates": [],
@@ -60,13 +96,13 @@
         "Launch",
         "Measure"
       ],
-      "planned_departments": [
+      "purpose": "Turn licences into consistent, responsible, role-based use with measurable outcomes.",
+      "status": "skeleton",
+      "supporting_departments": [
         "learning-and-skills",
         "change-and-communications",
         "value-realisation"
       ],
-      "purpose": "Turn licences into consistent, responsible, role-based use with measurable outcomes.",
-      "status": "skeleton",
       "title": "Copilot Adoption"
     },
     "agent-factory": {
@@ -154,6 +190,54 @@
           "stage": "Improve",
           "template": "scale-or-stop-review",
           "title": "Scale-or-stop review"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "knowledge-readiness-report",
+          "skill": "knowledge-management:knowledge-readiness-assessment",
+          "stage": "Deliver",
+          "template": "knowledge-readiness-report",
+          "title": "Knowledge readiness report"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "evaluation-plan",
+          "skill": "evaluation-quality:ai-evaluation-strategy",
+          "stage": "Assure",
+          "template": "evaluation-plan",
+          "title": "Agent evaluation plan"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "agent-card",
+          "skill": "m365-agents:agent-ownership",
+          "stage": "Launch",
+          "template": "agent-card",
+          "title": "Agent card and ownership"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "support-and-monitoring",
+          "skill": "ai-operations:ai-support-model",
+          "stage": "Launch",
+          "template": "support-and-monitoring-plan",
+          "title": "Support and monitoring plan"
         }
       ],
       "gates": [
@@ -194,15 +278,15 @@
         "Launch",
         "Improve"
       ],
-      "planned_departments": [
+      "purpose": "Give every agent idea one route from intake to retirement, with knowledge readiness, testing, reviewer gates and an owner.",
+      "status": "skeleton",
+      "supporting_departments": [
         "knowledge-management",
         "platform-governance",
         "ai-operations",
         "evaluation-quality",
         "copilot-studio"
       ],
-      "purpose": "Give every agent idea one route from intake to retirement, with knowledge readiness, testing, reviewer gates and an owner.",
-      "status": "skeleton",
       "title": "Agent Factory"
     },
     "ai-coe": {
@@ -266,6 +350,30 @@
           "stage": "Measure",
           "template": "coe-kpi-scorecard",
           "title": "KPI framework and scorecard"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "omit"
+          },
+          "id": "coe-terms-of-reference",
+          "skill": "ai-centre-of-excellence:coe-team-design",
+          "stage": "Mobilise",
+          "template": "coe-terms-of-reference",
+          "title": "CoE terms of reference"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "coe-launch-plan",
+          "skill": "ai-centre-of-excellence:coe-launch-roadmap",
+          "stage": "Mobilise",
+          "template": "coe-launch-plan",
+          "title": "CoE launch plan"
         }
       ],
       "gates": [],
@@ -276,12 +384,12 @@
         "Measure",
         "Improve"
       ],
-      "planned_departments": [
+      "purpose": "Establish a business-owned, AI-enabled operating model that governs once and repeats everywhere.",
+      "status": "skeleton",
+      "supporting_departments": [
         "value-realisation",
         "programme-management"
       ],
-      "purpose": "Establish a business-owned, AI-enabled operating model that governs once and repeats everywhere.",
-      "status": "skeleton",
       "title": "AI Centre of Excellence"
     },
     "ai-transformation": {
@@ -321,6 +429,30 @@
           "stage": "Mobilise",
           "template": "transformation-pack-index",
           "title": "Transformation pack index and success measures"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "omit"
+          },
+          "id": "programme-charter",
+          "skill": "programme-management:programme-charter",
+          "stage": "Mobilise",
+          "template": "programme-charter",
+          "title": "Programme charter"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "benefits-plan",
+          "skill": "value-realisation:benefit-realisation-plan",
+          "stage": "Measure",
+          "template": "benefits-register",
+          "title": "Benefits register and realisation plan"
         }
       ],
       "gates": [
@@ -444,6 +576,18 @@
           "stage": "Scale",
           "template": "champion-programme-charter",
           "title": "Recognition and progression model"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "champion-guide",
+          "skill": "champions:champion-recruitment",
+          "stage": "Mobilise",
+          "template": "champion-guide",
+          "title": "Champion guide"
         }
       ],
       "gates": [],
@@ -454,12 +598,12 @@
         "Measure",
         "Scale"
       ],
-      "planned_departments": [
+      "purpose": "Build distributed capability through an evidence-led Champion community with clear operating boundaries.",
+      "status": "skeleton",
+      "supporting_departments": [
         "learning-and-skills",
         "change-and-communications"
       ],
-      "purpose": "Build distributed capability through an evidence-led Champion community with clear operating boundaries.",
-      "status": "skeleton",
       "title": "Copilot Champions"
     },
     "discovery": {
@@ -561,6 +705,42 @@
           "stage": "Assure",
           "template": "ai-risk-assessment",
           "title": "Privacy assessment"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "light"
+          },
+          "id": "solution-inventory",
+          "skill": "platform-governance:ai-solution-inventory",
+          "stage": "Launch",
+          "template": "ai-governance-starter",
+          "title": "AI solution inventory"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "omit"
+          },
+          "id": "environment-zoning",
+          "skill": "platform-governance:ai-environment-strategy",
+          "stage": "Mobilise",
+          "template": "environment-zoning-plan",
+          "title": "Environment zoning plan"
+        },
+        {
+          "depth": {
+            "enterprise": "full",
+            "scale": "standard",
+            "starter": "omit"
+          },
+          "id": "impact-assessment",
+          "skill": "responsible-ai:ai-impact-assessment",
+          "stage": "Assure",
+          "template": "ai-impact-assessment-record",
+          "title": "AI impact assessment"
         }
       ],
       "gates": [
@@ -568,6 +748,13 @@
           "blocking": true,
           "from_risk_tier": 2,
           "reviewer": "security-privacy",
+          "skippable": false,
+          "stage": "Assure"
+        },
+        {
+          "blocking": true,
+          "from_risk_tier": 3,
+          "reviewer": "responsible-ai",
           "skippable": false,
           "stage": "Assure"
         }
@@ -579,14 +766,14 @@
         "Launch",
         "Improve"
       ],
-      "planned_departments": [
+      "purpose": "Put proportionate controls in place, rising with impact, reach, data sensitivity and autonomy.",
+      "status": "skeleton",
+      "supporting_departments": [
         "platform-governance",
         "responsible-ai",
         "data-governance",
         "design-authority"
       ],
-      "purpose": "Put proportionate controls in place, rising with impact, reach, data sensitivity and autonomy.",
-      "status": "skeleton",
       "title": "AI Governance"
     }
   }
