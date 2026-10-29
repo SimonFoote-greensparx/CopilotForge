@@ -12,13 +12,13 @@ instructions are in [custom-instructions.md](custom-instructions.md).
 | Department | Plugin name | Skills | Size |
 |---|---|---|---|
 | [AI Strategy](plugins/copilotforge-ai-strategy.zip) | `copilotforge-ai-strategy` | 4 | 59 KB |
-| [Opportunity Management](plugins/copilotforge-opportunity-management.zip) | `copilotforge-opportunity-management` | 5 | 73 KB |
-| [Copilot Adoption](plugins/copilotforge-copilot-adoption.zip) | `copilotforge-copilot-adoption` | 4 | 57 KB |
-| [Champions](plugins/copilotforge-champions.zip) | `copilotforge-champions` | 5 | 68 KB |
+| [Opportunity Management](plugins/copilotforge-opportunity-management.zip) | `copilotforge-opportunity-management` | 5 | 80 KB |
+| [Copilot Adoption](plugins/copilotforge-copilot-adoption.zip) | `copilotforge-copilot-adoption` | 4 | 61 KB |
+| [Champions](plugins/copilotforge-champions.zip) | `copilotforge-champions` | 5 | 86 KB |
 | [Microsoft 365 Agents](plugins/copilotforge-m365-agents.zip) | `copilotforge-m365-agents` | 4 | 63 KB |
 | [Security and Privacy](plugins/copilotforge-security-privacy.zip) | `copilotforge-security-privacy` | 3 | 49 KB |
-| [AI Centre of Excellence](plugins/copilotforge-ai-centre-of-excellence.zip) | `copilotforge-ai-centre-of-excellence` | 6 | 92 KB |
-| [Organisation Tailoring](plugins/copilotforge-organisation-tailoring.zip) | `copilotforge-organisation-tailoring` | 4 | 203 KB |
+| [AI Centre of Excellence](plugins/copilotforge-ai-centre-of-excellence.zip) | `copilotforge-ai-centre-of-excellence` | 6 | 105 KB |
+| [Organisation Tailoring](plugins/copilotforge-organisation-tailoring.zip) | `copilotforge-organisation-tailoring` | 4 | 225 KB |
 
 The archives are regenerated from the skills by `python3 scripts/build-cowork.py`; never edit them by hand.
 

@@ -101,7 +101,7 @@
           "platforms": "copilot-chat, m365-copilot, m365-agents, copilot-cowork, copilot-code, copilot-studio, ai-foundry, power-platform",
           "edition-support": "starter, scale, enterprise",
           "reviewers": "design-authority",
-          "sources": "ms-agents-extensibility, ms-agents-compare, ms-copilot-studio-zoned-governance, ms-responsible-ai"
+          "sources": "ms-agents-extensibility, ms-agents-compare, ms-copilot-studio-zoned-governance, ms-foundry-models, ms-responsible-ai"
         },
         {
           "id": "opportunity-management:opportunity-prioritisation",
@@ -317,7 +317,7 @@
         {
           "id": "champions:capability-framework",
           "name": "capability-framework",
-          "description": "Defines the Champion capability levels - verified Chat capability, productivity capability and agent capability - each with observable evidence and an evidence rubric, and offers two routes to each level, structured learning or direct evidence submission. Use when setting what a Champion must be able to do, when Champion status needs to mean something, or when experienced colleagues want to skip training.",
+          "description": "Defines the three Champion capabilities - Chat, productivity and agents - each with an objective, a training option, an evidence option, verification criteria and an outcome, so training is one route rather than the gate, and maps learning sessions open to the wider business onto the journey. Use when setting what a Champion must show, when status needs to mean something, or when experienced colleagues want to skip training.",
           "status": "draft",
           "lifecycle": "Enable, Measure",
           "maturity": "adopter, builder, scaler, ai-enterprise",
@@ -325,12 +325,12 @@
           "platforms": "copilot-chat, m365-copilot, copilot-cowork, m365-agents",
           "edition-support": "starter, scale, enterprise",
           "reviewers": "none",
-          "sources": "ms-champion-best-practice, ms-copilot-overview, ms-copilot-adoption-hub"
+          "sources": "ms-champion-best-practice, ms-copilot-overview, ms-copilot-adoption-hub, ms-agent-builder"
         },
         {
           "id": "champions:champion-challenges",
           "name": "champion-challenges",
-          "description": "Designs practical Champion Challenges in which a verified Champion solves a real team problem using safe, approved tools, producing reusable assets such as prompt patterns or guides, and routing any larger opportunity to intake. Use when Champions are ready to apply their capability, when the community needs fresh practical work, or when a challenge idea needs checking for safety and scope.",
+          "description": "Designs the Champion Challenge - one practical contribution after the three capabilities are verified, such as an envisioning workshop, team training, a governed business agent, a prompt library, a departmental playbook or support for the Centre of Excellence - with a safety and scope check and assessment on impact, reusability, quality and strategic alignment. Use when Champions are ready to contribute or a challenge idea needs checking.",
           "status": "draft",
           "lifecycle": "Enable, Deliver, Scale",
           "maturity": "adopter, builder, scaler, ai-enterprise",
@@ -343,7 +343,7 @@
         {
           "id": "champions:champion-programme-design",
           "name": "champion-programme-design",
-          "description": "Designs an evidence-led Copilot Champions programme - purpose, charter, operating boundaries stating what Champions do and do not do, executive sponsorship, a time commitment agreed with managers, and community design. Use when starting a Champion network, when an existing network has become an unpaid help desk, or when Champion status has come to mean attendance rather than capability.",
+          "description": "Designs an evidence-led Copilot Champions programme as a progression system - purpose, the six-stage journey, operating boundaries, its place between the adoption programme and the Centre of Excellence, sponsorship, agreed time, community, tracker and self-service guidance. Use when starting or replicating a Champion network, when Champions have become an unpaid help desk, or when status means attendance.",
           "status": "draft",
           "lifecycle": "Mobilise, Enable",
           "maturity": "explorer, adopter, scaler, ai-enterprise",
@@ -351,12 +351,12 @@
           "platforms": "copilot-chat, m365-copilot, copilot-cowork, m365-agents",
           "edition-support": "starter, scale, enterprise",
           "reviewers": "none",
-          "sources": "ms-champion-programme, ms-champion-best-practice, ms-copilot-adoption-hub"
+          "sources": "ms-champion-programme, ms-champion-best-practice, ms-copilot-adoption-hub, ms-agent-builder"
         },
         {
           "id": "champions:evidence-assessment",
           "name": "evidence-assessment",
-          "description": "Sets up fair, consistent assessment of Champion evidence against the capability rubric, by trained assessors who assess the evidence rather than the person, give useful feedback, handle resubmissions and appeals, and never rank anyone. Use when Champion submissions start arriving, when assessors disagree, or when someone challenges a decision about their evidence.",
+          "description": "Sets up fair, consistent assessment of Champion evidence against each capability's verification criteria and of Champion Challenges, by trained assessors who assess the evidence rather than the person, keep a restricted progress tracker, give useful feedback, handle appeals and never rank anyone. Use when submissions start arriving, when assessors disagree, when progress status is unclear or when a decision is challenged.",
           "status": "draft",
           "lifecycle": "Enable, Assure",
           "maturity": "adopter, builder, scaler, ai-enterprise",
@@ -369,7 +369,7 @@
         {
           "id": "champions:recognition-and-progression",
           "name": "recognition-and-progression",
-          "description": "Designs how Champions are recognised and progress - join, verify capabilities, complete a challenge, earn recognition and keep contributing - with renewal so status stays current, a regular programme health check and Champion metrics reported at programme level only. Use when designing Champion recognition, when status has gone stale, or when a sponsor asks whether the Champions programme is healthy.",
+          "description": "Designs how Champions progress through the six-stage journey to recognised Champion, with recognition linked to demonstrated contribution, access to advanced materials, pilots and specialist pathways, renewal, a regular programme health check and programme-level measures such as milestone conversion. Use when designing Champion recognition, when status has gone stale, or when a sponsor asks whether the programme is healthy.",
           "status": "draft",
           "lifecycle": "Measure, Scale, Improve",
           "maturity": "adopter, scaler, ai-enterprise",
@@ -965,7 +965,7 @@
         {
           "id": "ai-centre-of-excellence:coe-cadence",
           "name": "coe-cadence",
-          "description": "Sets the meeting cadence and terms of reference for an AI CoE - steering, portfolio and design review, community and value review - with agendas, inputs, outputs and a decision log, sized to the edition. Use when a new CoE needs its forums set up, when meetings have become status updates that decide nothing, or when decisions are being taken in corridors and nobody can find them later.",
+          "description": "Sets the meeting cadence and terms of reference for an AI CoE - a weekly working group, monthly steering where the sponsor decides, a quarterly strategy review and a community forum - with agendas, a decision log and sizing by edition. Use when a new CoE needs its forums set up, when meetings have become status updates that decide nothing, or when decisions are being taken in corridors and nobody can find them later.",
           "status": "draft",
           "lifecycle": "Mobilise, Scale, Measure, Improve",
           "maturity": "adopter, builder, scaler, ai-enterprise",
@@ -978,7 +978,7 @@
         {
           "id": "ai-centre-of-excellence:coe-charter",
           "name": "coe-charter",
-          "description": "Drafts the charter for an AI Centre of Excellence - purpose, scope across the six pillars, principles, sponsorship, decision rights and what the CoE is not - or the lighter terms of an AI working group for a small organisation. Use when management asks for an AI CoE, when an existing group has drifted into a reporting forum or request queue, or when a sponsor needs one page to agree before people are appointed.",
+          "description": "Drafts the charter for an AI Centre of Excellence - purpose, who owns what between the business, AI enablement and the sponsor, scope across the six pillars, decision rights, launch commitments and what the CoE is not - or the lighter terms of an AI working group. Use when leadership asks for an AI CoE, when a group has drifted into a reporting forum or request queue, or when a sponsor needs one page to agree before people are appointed.",
           "status": "draft",
           "lifecycle": "Mobilise, Scale",
           "maturity": "adopter, builder, scaler, ai-enterprise",
@@ -991,7 +991,7 @@
         {
           "id": "ai-centre-of-excellence:coe-governance-model",
           "name": "coe-governance-model",
-          "description": "Writes a proportionate AI governance framework and acceptable-use starter - progressive risk tiers 0 to 4 with minimum controls, a solution register, ownership and lifecycle controls, and reviewer gates - so low-risk experimentation is not blocked. Use when there is no approved AI policy, when departments are building agents with no register or owner, or when governance is so heavy that people work around it.",
+          "description": "Writes a proportionate AI governance framework and acceptable-use starter - five governance areas, progressive risk tiers 0 to 4 with minimum controls, an agent portfolio register with business, knowledge and technical owners, and reviewer gates - so low-risk experimentation is not blocked. Use when there is no approved AI policy, when departments build agents with no register or owner, or when governance is so heavy people work around it.",
           "status": "draft",
           "lifecycle": "Mobilise, Assure, Launch, Improve",
           "maturity": "explorer, adopter, builder, scaler, ai-enterprise",
@@ -1004,7 +1004,7 @@
         {
           "id": "ai-centre-of-excellence:coe-kpi-framework",
           "name": "coe-kpi-framework",
-          "description": "Builds a KPI framework and scorecard for an AI CoE across adoption, capability, portfolio flow, quality, governance and value, each measure with a baseline, target, source and business owner, reported at team level. Use when a sponsor asks how they will know AI is working, when reporting relies on licence counts or hours saved, or when the steering group needs a scorecard before its first value review.",
+          "description": "Builds a KPI framework and scorecard for an AI CoE across adoption, capability, portfolio flow, quality, governance and value, each measure with a baseline, target, source and owner, rolled up into a four-quadrant sponsor dashboard at team level. Use when a sponsor asks how they will know AI is working, when reporting relies on licence counts or hours saved, or when steering needs a scorecard before its first value review.",
           "status": "draft",
           "lifecycle": "Measure, Scale, Improve",
           "maturity": "adopter, builder, scaler, ai-enterprise",
@@ -1017,7 +1017,7 @@
         {
           "id": "ai-centre-of-excellence:coe-operating-model",
           "name": "coe-operating-model",
-          "description": "Designs how an AI Centre of Excellence actually runs - the core team and business roles, a central, hub-and-spoke or federated shape chosen by edition, and the flow from intake through the opportunity lifecycle to the right delivery route, linked to the Champion community. Use when a charter is agreed and the CoE now needs people, routes and a workable flow, or when an existing CoE has become a bottleneck.",
+          "description": "Designs how an AI Centre of Excellence runs - a business-owned structure with sponsor, lead, core team, four Champion roles and central AI enablement support, its shape by edition, the collaboration space, the intake-to-delivery flow and a phased launch. Use when a charter is agreed and the CoE now needs people, routes and a workable flow, or when an existing CoE has become a bottleneck.",
           "status": "draft",
           "lifecycle": "Mobilise, Scale, Improve",
           "maturity": "adopter, builder, scaler, ai-enterprise",
@@ -1266,6 +1266,7 @@
     "ms-copilot-studio-security-governance",
     "ms-copilot-studio-zoned-governance",
     "ms-declarative-agents",
+    "ms-foundry-models",
     "ms-managed-environments",
     "ms-responsible-ai",
     "nist-ai-rmf"

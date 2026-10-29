@@ -52,6 +52,7 @@ when a review is overdue. Link checking runs in the separate links workflow beca
 | `ms-copilot-studio-security-governance` | [Copilot Studio security and governance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance) | Microsoft | high | 30d | 2026-10-29 | cite-only |
 | `ms-copilot-studio-zoned-governance` | [Implement a zoned governance strategy (Copilot Studio guidance)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2) | Microsoft | medium | 90d | 2026-10-29 | cite-only |
 | `ms-declarative-agents` | [Declarative agents for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/overview-declarative-agent) | Microsoft | high | 30d | 2026-10-29 | cite-only |
+| `ms-foundry-models` | [Microsoft Foundry Models overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview) | Microsoft | high | 30d | 2026-10-29 | cite-only |
 | `ms-managed-environments` | [Managed Environments overview](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview) | Microsoft | high | 45d | 2026-10-29 | cite-only |
 | `ms-responsible-ai` | [Microsoft Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai) | Microsoft | low | 365d | 2026-10-29 | cite-only |
 | `nist-ai-rmf` | [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | National Institute of Standards and Technology | low | 365d | 2026-10-29 | cite-only |

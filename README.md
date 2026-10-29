@@ -1,6 +1,6 @@
 # CopilotForge
 
-**Your Microsoft AI transformation team, as installable AI skills.**
+**Your Microsoft AI transformation team, as installable AI skills.** Website: https://copilotforge.ai/
 
 CopilotForge is an open-source library of specialised AI skills, programmes, templates and delivery patterns that
 together model the team and operating capability an organisation needs to go from "we want to use AI" to "we have a
@@ -16,6 +16,12 @@ It is organised around three connected journeys:
 
 > **Status: walking skeleton (v0.1, phase 1).** Eight of the 27 departments in the target design are active, with
 > first-draft skills. Every skill is `status: draft` until reviewed. See [ROADMAP.md](ROADMAP.md).
+
+## Scope
+
+CopilotForge covers Microsoft AI only: Copilot Chat and Microsoft 365 Copilot, agents, Copilot Cowork, Copilot Code,
+Copilot Studio, Microsoft Foundry (including third-party models available through Microsoft), Power Platform automation
+and the Microsoft governance stack (decision D22).
 
 ## The flagship request
 
@@ -110,7 +116,7 @@ Download a department archive from [`cowork/plugins/`](cowork/plugins/) and uplo
 | `catalogue/`, `data/`, `schemas/` | The department catalogue, tailoring rules and JSON schemas. |
 | `scripts/` | Generators and checks. `bash scripts/build-all.sh` regenerates and checks everything. |
 | `cowork/` | Generated Copilot Cowork plugin archives and suggested custom instructions. |
-| `site/` | The future public website, generated from this tree (phase 6). |
+| `site/` | The website's core pages and assets. `python3 scripts/build-hosting.py` builds the full site for https://copilotforge.ai/ (see [docs/HOSTING.md](docs/HOSTING.md)). |
 
 Maintainers (human or AI) start with [COWORK.md](COWORK.md), then [ARCHITECTURE.md](ARCHITECTURE.md) and
 [DECISIONS.md](DECISIONS.md).
