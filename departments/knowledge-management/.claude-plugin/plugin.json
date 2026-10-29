@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-knowledge-management",
+  "version": "0.2.0",
+  "description": "CopilotForge Knowledge Management. Make organisational knowledge discoverable, owned, current, classified and suitable for AI grounding.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "adoption",
+    "knowledge-management"
+  ]
+}
