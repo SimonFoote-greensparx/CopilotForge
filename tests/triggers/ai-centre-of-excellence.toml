@@ -1,0 +1,74 @@
+# Trigger tests for the ai-centre-of-excellence department (design brief 13 and 17).
+
+[[skill]]
+name = "coe-charter"
+should_trigger = [
+  "Our board wants an AI Centre of Excellence. Can you draft the charter so the COO can sign it off?",
+  "We set up an AI group six months ago and it has become a monthly show-and-tell. Help us reset what it is for and what it can decide.",
+  "We are only 35 people. What should the terms of reference for a small AI working group say?",
+]
+should_not_trigger = [
+  { prompt = "Who should be accountable for approving a department's agent before it goes live? Build us the matrix.", expected = "ai-centre-of-excellence:coe-raci" },
+  { prompt = "Write our organisation-wide target operating model for AI across strategy, adoption, delivery and operations.", expected = "ai-strategy:ai-operating-model" },
+]
+
+[[skill]]
+name = "coe-operating-model"
+should_trigger = [
+  "The CoE charter is signed. Now how should the team be structured and how does an idea get from intake to a live agent?",
+  "Our three divisions all build their own agents. Should our CoE be central, hub-and-spoke or federated?",
+  "Every request lands on the two people in the CoE and the queue is months long. Redesign how work flows through it.",
+]
+should_not_trigger = [
+  { prompt = "Design the Champions network: who joins, what they do and how they are recognised.", expected = "champions:champion-programme-design" },
+  { prompt = "Give us a scoring model to rank the 25 AI ideas in our backlog.", expected = "opportunity-management:opportunity-prioritisation" },
+]
+
+[[skill]]
+name = "coe-raci"
+should_trigger = [
+  "Nobody can tell me who signs off an agent before it is shared across the company. Draw up a RACI for our AI work.",
+  "IT keeps being asked to report the benefits of Copilot. Who should actually be accountable for what across the AI lifecycle?",
+  "We need responsibilities for intake, risk classification, release and knowledge ownership agreed before our first CoE steering meeting.",
+]
+should_not_trigger = [
+  { prompt = "Map which role is accountable for each department and artefact in our transformation pack, and where we have gaps.", expected = "organisation-tailoring:ownership-map" },
+  { prompt = "What controls should a tier 2 agent need before release?", expected = "ai-centre-of-excellence:coe-governance-model" },
+]
+
+[[skill]]
+name = "coe-cadence"
+should_trigger = [
+  "What meetings should our AI CoE run, how often, and what should each one decide?",
+  "Our AI steering group just reads out status updates. Rewrite its terms of reference and agenda so it takes decisions.",
+  "Set up a decision log and standing agendas for our AI steering, triage and value review meetings.",
+]
+should_not_trigger = [
+  { prompt = "Plan a quarterly programme of Champion challenges to keep the community active.", expected = "champions:champion-challenges" },
+  { prompt = "Set up RAID logs, stage gates and supplier governance for the whole transformation programme.", expected = "programme-management:*" },
+]
+
+[[skill]]
+name = "coe-kpi-framework"
+should_trigger = [
+  "The CFO asks how we will know the AI investment is working. Our only numbers are licences assigned and active users.",
+  "Build a KPI scorecard for our AI CoE covering adoption, quality, governance and value, with baselines and owners.",
+  "We report hours saved from a survey and nobody believes it. What should we measure instead?",
+]
+should_not_trigger = [
+  { prompt = "Should the bid-writing agent pilot be scaled to all divisions or stopped?", expected = "opportunity-management:scale-or-stop" },
+  { prompt = "Build a full ROI model and benefits realisation plan for our Copilot rollout.", expected = "value-realisation:*" },
+]
+
+[[skill]]
+name = "coe-governance-model"
+should_trigger = [
+  "We have no AI policy and people are pasting client data into free chatbots. Draft an acceptable-use starter and a governance framework.",
+  "Departments have built fourteen agents and nobody knows who owns them. How do we govern this without stopping everyone experimenting?",
+  "Our AI approval process treats a personal Copilot prompt the same as a customer-facing bot. Design proportionate risk tiers.",
+]
+should_not_trigger = [
+  { prompt = "Which risk tier is our HR policy agent, given it will be shared with all staff?", expected = "opportunity-management:risk-classification" },
+  { prompt = "Review whether our sales agent exposes confidential contract documents to people who should not see them.", expected = "security-privacy:data-exposure-review" },
+  { prompt = "Configure our Power Platform environments, connector policies and maker controls.", expected = "platform-governance:*" },
+]

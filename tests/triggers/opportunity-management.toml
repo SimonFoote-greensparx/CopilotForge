@@ -1,0 +1,65 @@
+# Trigger tests for the opportunity-management department (design brief 13 and 17).
+
+[[skill]]
+name = "ai-suitability"
+should_trigger = [
+  "Our finance team wants an agent to chase overdue invoices. Is AI even the right answer here?",
+  "Should this be a Copilot prompt, a Cowork task, an agent or a Power Automate flow?",
+  "The bid team has asked for a Foundry solution to draft proposals. Can you test whether that is justified?",
+]
+should_not_trigger = [
+  { prompt = "Rank these twelve AI ideas so the steering group can pick three for next quarter.", expected = "opportunity-management:opportunity-prioritisation" },
+  { prompt = "Write the instructions and knowledge plan for our HR policy agent.", expected = "m365-agents:agent-use-case-design" },
+]
+
+[[skill]]
+name = "problem-framing"
+should_trigger = [
+  "Operations have asked for an agent for onboarding. Before anyone builds anything, what's the actual problem?",
+  "Someone dropped an AI idea in the intake form with just 'use Copilot for reports'. How do I turn it into something we can assess?",
+  "Help me write a proper problem statement, owner and baseline for this request from the claims team.",
+  "Our pilot has been running for two months and nobody can say what it was meant to improve. Can we reframe it?",
+]
+should_not_trigger = [
+  { prompt = "The problem is framed and owned. Is AI actually the right answer, or should we fix the process?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Find everyday Copilot use cases for our account managers.", expected = "copilot-adoption:scenario-discovery" },
+]
+
+[[skill]]
+name = "risk-classification"
+should_trigger = [
+  "Which risk tier is an HR agent that answers staff questions about their own absence records?",
+  "We want to publish our team's policy agent to the whole company. Does that change the reviews it needs?",
+  "What governance and which reviews does a customer-facing chatbot need before go-live?",
+  "Is a shared prompt library for the bid team tier 0 or tier 1, and what does that mean we must do?",
+]
+should_not_trigger = [
+  { prompt = "Review what content our new agent could expose through its SharePoint sources.", expected = "security-privacy:data-exposure-review" },
+  { prompt = "Do we need a DPIA for this agent that processes employee data?", expected = "security-privacy:privacy-assessment" },
+]
+
+[[skill]]
+name = "opportunity-prioritisation"
+should_trigger = [
+  "Score our AI idea backlog on value, effort and risk so leadership can choose what to fund.",
+  "We've got forty AI requests in the backlog and capacity for five. How should we choose?",
+  "Help us balance quick wins against bigger bets in our AI portfolio this year.",
+  "Why is the legal team's idea still waiting? I need a fair, transparent way of deciding what goes next.",
+]
+should_not_trigger = [
+  { prompt = "Should this idea be a Copilot prompt or a full agent?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Our pilot finished last month. Should we roll it out to the whole region or close it down?", expected = "opportunity-management:scale-or-stop" },
+]
+
+[[skill]]
+name = "scale-or-stop"
+should_trigger = [
+  "Our six-week contracts agent pilot has ended. Do we roll it out to every region or stop it?",
+  "The sponsor wants the policy agent rolled out to everyone, but answer quality was patchy in the pilot. How do we decide?",
+  "This AI project has been 'in pilot' for nine months. How do we force an evidence-based decision on it?",
+  "Usage is great but nobody can show it saved any time. Should we iterate, pivot or kill it?",
+]
+should_not_trigger = [
+  { prompt = "How is Copilot usage trending across departments since launch?", expected = "copilot-adoption:adoption-measurement" },
+  { prompt = "Check our HR agent is ready to release to staff next week.", expected = "m365-agents:agent-release-readiness" },
+]

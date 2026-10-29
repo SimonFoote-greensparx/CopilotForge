@@ -1,0 +1,38 @@
+# Trigger tests for the security-privacy reviewer department (design brief 13 and 17).
+
+[[skill]]
+name = "data-exposure-review"
+should_trigger = [
+  "We are about to switch on Copilot for everyone. What overshared content could suddenly become easy to find?",
+  "Do the security gate review for the HR agent: what can it reach, who is it shared with and could anyone see confidential files?",
+  "Someone asked the projects agent a question and got a summary of a board paper. Review the data exposure.",
+  "The maker wants to share the finance agent organisation-wide and add web search. Is that acceptable from a security view?",
+]
+should_not_trigger = [
+  { prompt = "Is the agent's knowledge source owned, current and reviewed on a cycle before we build?", expected = "m365-agents:knowledge-source-readiness" },
+  { prompt = "Do we need a DPIA for the agent that summarises employee grievance transcripts?", expected = "security-privacy:privacy-assessment" },
+]
+
+[[skill]]
+name = "connector-review"
+should_trigger = [
+  "Our agent creates tickets in the service desk system using the maker's account. Review that before release.",
+  "A team wants to connect an MCP server from a vendor to their Copilot Studio agent. What should security check?",
+  "Review the connectors in this flow: it reads SharePoint, posts to Teams and sends data to an external API.",
+]
+should_not_trigger = [
+  { prompt = "Set our organisation-wide connector policy and environment strategy for all makers.", expected = "platform-governance:*" },
+  { prompt = "Check whether the agent's grounding content is overshared to people who should not see it.", expected = "security-privacy:data-exposure-review" },
+]
+
+[[skill]]
+name = "privacy-assessment"
+should_trigger = [
+  "Our recruitment agent summarises candidate CVs. What privacy checks do we need under UK GDPR before release?",
+  "How long should we keep agent transcripts, and do people need to be told their questions are stored?",
+  "We want to ground an agent on old customer complaint files. Is that a compatible purpose, and do we need a DPIA?",
+]
+should_not_trigger = [
+  { prompt = "Assess whether our performance-review assistant treats different groups of staff fairly and has proper human oversight.", expected = "responsible-ai:*" },
+  { prompt = "Review whether the agent's API call to the CRM runs under user or maker credentials.", expected = "security-privacy:connector-review" },
+]

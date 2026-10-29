@@ -1,0 +1,52 @@
+# Reviewer tests for security-privacy (design brief 17: reviewer tests). Each case is a submission the reviewer must judge.
+# All submissions are fictional. At least three cases must block and at least two must not, to prove proportionality.
+reviewer: security-privacy
+cases:
+  - id: SP-01
+    skill: security-privacy:data-exposure-review
+    risk_tier: 2
+    submission: "A people team agent for 4,000 staff grounds on the entire HR SharePoint site. The site's archive folder holds disciplinary letters and salary review spreadsheets shared with all employees through an inherited permission. The maker has added an instruction telling the agent not to discuss pay or conduct cases."
+    expected_verdict: blocking
+    expected_reason: "Overshared personal and confidential content becomes discoverable through permission-trimmed grounding; agent instructions are not a control. Fix permissions at source or remove the archive from scope before release."
+  - id: SP-02
+    skill: security-privacy:data-exposure-review
+    risk_tier: 2
+    submission: "A facilities agent for one regional office grounds on a curated library of twelve published building guides, owned by the facilities manager, readable only by the office's staff group. The agent is shared with the same group. Permission-trimming tests were run with an office user and a user from another region; the second user could not use the agent. Two guides are unlabelled but contain no sensitive content."
+    expected_verdict: advisory
+    expected_reason: "Exposure matches the audience and is evidenced by permission tests; the only finding is incomplete labelling of low-sensitivity content, which is advisory with an owner and a date."
+  - id: SP-03
+    skill: security-privacy:connector-review
+    risk_tier: 2
+    submission: "An IT self-service agent shared with all staff resets account settings and creates tickets through a connection created with the maker's credentials. The maker holds an administrator role in the ticketing system. Actions run without asking the user to confirm."
+    expected_verdict: blocking
+    expected_reason: "Maker credentials embedded in a shared agent give every user the maker's administrative rights, breaking least privilege, and write actions run without user confirmation. Switch to user authentication or a narrowly scoped service identity and add confirmation."
+  - id: SP-04
+    skill: security-privacy:connector-review
+    risk_tier: 3
+    submission: "A claims triage agent calls a third-party MCP server, hosted by a small vendor, to enrich claims with external data. Claim details including customer names and addresses are sent to the server. There is no supplier assessment or data processing agreement, and the server's tool list is not pinned."
+    expected_verdict: blocking
+    expected_reason: "Personal data leaves the tenant to an unvetted external service with no agreement or assessment, and unpinned tools can change behaviour silently. Vet and contract the supplier, minimise the data sent and restrict and pin the exposed tools, or remove the server."
+  - id: SP-05
+    skill: security-privacy:connector-review
+    risk_tier: 2
+    submission: "A project status agent reads items from one SharePoint list using the signed-in user's identity and has no write actions. The environment's data policy permits the connector. The maker has not yet documented the connector inventory in the release checklist, though it is described in the design."
+    expected_verdict: advisory
+    expected_reason: "Read-only access under user authentication within data policy carries low risk; the missing inventory entry is a documentation gap to close with an owner and date, not a release blocker."
+  - id: SP-06
+    skill: security-privacy:privacy-assessment
+    risk_tier: 3
+    submission: "A recruitment agent summarises candidate CVs and suggests a shortlist ranking for hiring managers. Conversation transcripts are retained with no defined period. Candidates are not told AI is used. No DPIA screening has been done and the DPO has not been consulted."
+    expected_verdict: blocking
+    expected_reason: "AI output informs decisions about individuals without transparency, lawful basis confirmed by the DPO, defined retention or DPIA; screening indicates likely high risk under UK GDPR and ICO guidance. Complete a DPIA with the DPO, update notices, set retention and design meaningful human review with responsible-ai."
+  - id: SP-07
+    skill: security-privacy:privacy-assessment
+    risk_tier: 2
+    submission: "A policy question agent grounds only on published, non-personal policy documents. Users are told on first use that they are using AI and that questions are kept for 30 days for quality review, after which they are deleted; the DPO has confirmed the basis and recorded it. The privacy notice for staff has not yet been updated to mention the agent."
+    expected_verdict: advisory
+    expected_reason: "Processing is minimal, retention is defined and the DPO has confirmed the basis; the outdated staff privacy notice is an advisory transparency finding with an owner and date."
+  - id: SP-08
+    skill: security-privacy:data-exposure-review
+    risk_tier: 1
+    submission: "A team of six uses a shared prompt pattern and a team agent grounded on their own project folder, shared only with the team. Folder permissions match team membership, and the owner has signed the knowledge verdict."
+    expected_verdict: pass
+    expected_reason: "Tier 1 with audience and permissions aligned; no exposure finding, and the review is advisory at this tier. Over-blocking would be disproportionate."

@@ -1,0 +1,51 @@
+# Trigger tests for the m365-agents department (design brief 13 and 17).
+
+[[skill]]
+name = "agent-use-case-design"
+should_trigger = [
+  "The steering group approved our absence-policy agent. What do we need to write down before the maker starts building?",
+  "Help me scope an agent for line managers: who it is for, what it should refuse, what knowledge it uses and who owns it.",
+  "Should we build our IT onboarding agent in Agent Builder or Copilot Studio, or reuse the one the service desk already has?",
+  "Our sales enablement agent has grown to answer everything. Can you help me rewrite its purpose and out-of-scope list?",
+]
+should_not_trigger = [
+  { prompt = "Is an agent even the right answer for chasing overdue invoices, or should we fix the process?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Write twenty test questions with expected answers for the HR policy agent before we release it.", expected = "m365-agents:agent-testing" },
+]
+
+[[skill]]
+name = "knowledge-source-readiness"
+should_trigger = [
+  "The maker wants to point the agent at the whole HR SharePoint site. Is that content fit to ground on?",
+  "Before we build, check whether the policy library has an owner, is up to date and is only shared with the right people.",
+  "Our procurement agent keeps quoting last year's thresholds. Can you assess the knowledge it is using?",
+]
+should_not_trigger = [
+  { prompt = "Clean up and redesign the information architecture of our whole intranet so it is ready for AI.", expected = "knowledge-management:*" },
+  { prompt = "Do a formal security review of what confidential content our finance agent could expose to staff.", expected = "security-privacy:data-exposure-review" },
+]
+
+[[skill]]
+name = "agent-testing"
+should_trigger = [
+  "How should we test the facilities agent before release, and what pass rate should the business owner sign off?",
+  "We changed the instructions on the benefits agent. What do we need to re-run to make sure nothing broke?",
+  "Design tests that prove a user outside the finance team cannot get answers from finance-only documents through the agent.",
+  "Build a small evaluation set of real questions, expected answers and refusal cases for our onboarding agent.",
+]
+should_not_trigger = [
+  { prompt = "The agent passed testing. Is it ready to share with the whole business unit and who supports it?", expected = "m365-agents:agent-release-readiness" },
+  { prompt = "Design a red-team programme and golden dataset strategy for our customer-facing AI service.", expected = "evaluation-quality:*" },
+]
+
+[[skill]]
+name = "agent-release-readiness"
+should_trigger = [
+  "Our travel policy agent passed its tests. What has to be in place before we share it with every office?",
+  "Run the release checklist for the contracts agent: owner, support, sharing scope, reviewer sign-offs and review date.",
+  "Nobody seems to own the onboarding agent anymore. What do we need to sort out to keep it live or retire it?",
+]
+should_not_trigger = [
+  { prompt = "The agent has been live six months. Should we scale it to other regions or stop it based on the value evidence?", expected = "opportunity-management:scale-or-stop" },
+  { prompt = "Review the connectors and Power Automate actions our agent uses for security before release.", expected = "security-privacy:connector-review" },
+]

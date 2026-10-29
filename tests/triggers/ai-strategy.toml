@@ -1,0 +1,53 @@
+# Trigger tests for the ai-strategy department (design brief 13 and 17).
+
+[[skill]]
+name = "ai-maturity-assessment"
+should_trigger = [
+  "Before we write an AI strategy I want an honest view of where we actually are. Can you run a maturity assessment?",
+  "Our board thinks we're advanced with AI because we bought licences for everyone. How do we test that with evidence?",
+  "We did an AI readiness survey last year where every department rated itself four out of five. How should we reassess properly?",
+  "Which archetype are we really, explorer or builder? Plenty of agents are being built but nobody owns them.",
+]
+should_not_trigger = [
+  { prompt = "Here is our organisation profile. Which CopilotForge edition should we use for the transformation pack?", expected = "organisation-tailoring:edition-and-archetype" },
+  { prompt = "Is the finance team ready for the Copilot launch next month?", expected = "copilot-adoption:adoption-readiness" },
+]
+
+[[skill]]
+name = "strategic-outcomes"
+should_trigger = [
+  "The executive team wants an AI strategy. Help us agree what business results we're actually aiming for.",
+  "We have pilots everywhere but no idea what success means. Can we pin down three or four outcomes with measures?",
+  "Draft AI principles for us that would genuinely change decisions, and a list of things we won't use AI for.",
+  "What should I expect from our executive sponsor for the AI programme beyond signing off the budget?",
+]
+should_not_trigger = [
+  { prompt = "Turn our agreed outcomes into a quarter-by-quarter plan for the next eighteen months.", expected = "ai-strategy:ai-roadmap" },
+  { prompt = "Write our acceptable-use policy for Copilot and the controls behind it.", expected = "ai-centre-of-excellence:coe-governance-model" },
+]
+
+[[skill]]
+name = "ai-operating-model"
+should_trigger = [
+  "Should AI be run centrally by IT or should each business unit do its own thing? We have six divisions.",
+  "Agents are popping up all over and nobody knows who supports them once they're live. What operating model do we need?",
+  "Before we set up a CoE, how does it fit into the wider way we organise AI across the group?",
+  "Compare hub-and-spoke and federated models for AI for a mid-sized organisation like ours.",
+]
+should_not_trigger = [
+  { prompt = "Draft the charter, mandate and membership for our AI Centre of Excellence.", expected = "ai-centre-of-excellence:coe-charter" },
+  { prompt = "Who is responsible, accountable, consulted and informed for each CoE activity?", expected = "ai-centre-of-excellence:coe-raci" },
+]
+
+[[skill]]
+name = "ai-roadmap"
+should_trigger = [
+  "We've agreed our AI outcomes. Now build us a roadmap for the next two years.",
+  "Three agent projects all need the same knowledge owners next quarter. Help me re-sequence the AI plan.",
+  "Our AI roadmap has become a list of tools. How do we rebuild it around adoption, building and scaling?",
+  "Lay out the next four quarters of AI work with dependencies and review points for the steering group.",
+]
+should_not_trigger = [
+  { prompt = "Score these fifteen AI ideas so we know which matter most.", expected = "opportunity-management:opportunity-prioritisation" },
+  { prompt = "Plan the communications and training waves for rolling Copilot out to the sales team in March.", expected = "copilot-adoption:launch-plan" },
+]

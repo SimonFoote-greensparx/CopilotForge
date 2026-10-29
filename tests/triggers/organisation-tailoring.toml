@@ -1,0 +1,49 @@
+# Trigger tests for the organisation-tailoring department (design brief 9, 13 and 17).
+
+[[skill]]
+name = "ai-profile-intake"
+should_trigger = [
+  "Before you advise us on Copilot, what do you need to know about our organisation?",
+  "Here is our organisation profile YAML. Can you check it is valid before we build anything from it?",
+  "We have merged with another firm and now have three business units. Update our AI profile.",
+]
+should_not_trigger = [
+  { prompt = "Given our profile, are we a Starter, Scale or Enterprise organisation, and what archetype?", expected = "organisation-tailoring:edition-and-archetype" },
+  { prompt = "Run a full evidenced AI maturity assessment across strategy, data, skills and governance.", expected = "ai-strategy:ai-maturity-assessment" },
+]
+
+[[skill]]
+name = "edition-and-archetype"
+should_trigger = [
+  "Our profile is done. Which edition should we use and where are we on the maturity path?",
+  "Why did the recommendation give us a Starter programme when we expected a full CoE?",
+  "Some departments are already building agents but most staff barely use Copilot. Are we an adopter or a builder?",
+]
+should_not_trigger = [
+  { prompt = "Produce all the documents for our AI transformation now that the sponsor has confirmed the edition.", expected = "organisation-tailoring:transformation-pack" },
+  { prompt = "Design our CoE as hub-and-spoke across the four divisions.", expected = "ai-centre-of-excellence:coe-operating-model" },
+]
+
+[[skill]]
+name = "ownership-map"
+should_trigger = [
+  "Who in our organisation should own each part of this AI programme? We have only named a sponsor so far.",
+  "Show which roles are accountable for adoption, Champions, governance and agents, and where we have nobody with time.",
+  "Map the departments our transformation pack engages to accountable roles and list the appointments we need to make.",
+]
+should_not_trigger = [
+  { prompt = "Build a RACI for agent intake, release approval and knowledge ownership in our CoE.", expected = "ai-centre-of-excellence:coe-raci" },
+  { prompt = "Assess which of our Champions have shown enough evidence to move up a level.", expected = "champions:evidence-assessment" },
+]
+
+[[skill]]
+name = "transformation-pack"
+should_trigger = [
+  "We are a 600-person UK organisation. We have Microsoft 365 Copilot but usage is inconsistent, departments are starting to build agents, and management wants an AI Centre of Excellence. Help us.",
+  "We are a 40-person design practice with Copilot Chat and patchy use. What should our AI programme look like?",
+  "Our profile has changed since last quarter's AI pack. Refresh it and tell me what changes before you overwrite anything.",
+]
+should_not_trigger = [
+  { prompt = "Just draft the CoE charter for our sponsor to sign.", expected = "ai-centre-of-excellence:coe-charter" },
+  { prompt = "Set up the stage gates, RAID log and budget tracking to run our agreed AI programme.", expected = "programme-management:*" },
+]

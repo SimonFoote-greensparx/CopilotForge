@@ -1,0 +1,49 @@
+# Trigger tests for the copilot-adoption department (design brief 13 and 17).
+
+[[skill]]
+name = "adoption-readiness"
+should_trigger = [
+  "We've just bought 400 Copilot licences. Are we actually ready to switch them on next month?",
+  "Half the people we gave Copilot to haven't opened it. Can you work out what we missed before launch?",
+  "Before the logistics division joins the rollout, check sponsorship, support and whether their SharePoint is overshared.",
+]
+should_not_trigger = [
+  { prompt = "Plan the rollout waves and the manager briefings for our Copilot launch in January.", expected = "copilot-adoption:launch-plan" },
+  { prompt = "How many Copilot licences should we buy for the sales team, and which plan do they need?", expected = "platform-governance:*" },
+]
+
+[[skill]]
+name = "scenario-discovery"
+should_trigger = [
+  "Our people say they don't know what to use Copilot for. Help us find real use cases for each role.",
+  "Build a set of personas for our desk, hybrid and warehouse staff and the Copilot scenarios that suit each.",
+  "Which Copilot scenarios should claims handlers start with, and what prompt patterns should we give them?",
+]
+should_not_trigger = [
+  { prompt = "The procurement team wants an agent that reads every supplier contract. Is that the right answer?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Turn our best team use case into a practical challenge for Champions to complete.", expected = "champions:champion-challenges" },
+]
+
+[[skill]]
+name = "launch-plan"
+should_trigger = [
+  "The board wants everyone on Copilot on the same day. Give me a phased plan instead with onboarding by role.",
+  "We launched Copilot in March and usage has dropped off. What should reinforcement look like now?",
+  "Plan executive and manager enablement, office hours and the support model for our Copilot rollout.",
+]
+should_not_trigger = [
+  { prompt = "What should we measure to show the board whether Copilot is working?", expected = "copilot-adoption:adoption-measurement" },
+  { prompt = "Write the charter for our new Copilot Champions network.", expected = "champions:champion-programme-design" },
+]
+
+[[skill]]
+name = "adoption-measurement"
+should_trigger = [
+  "Our sponsor asks whether Copilot is working and all we have is licence counts. What should we measure?",
+  "HR want a dashboard of each person's Copilot usage. How should we measure adoption without doing that?",
+  "Set baselines and adoption measures before the finance team starts using Copilot.",
+]
+should_not_trigger = [
+  { prompt = "Is our Champions programme healthy, and how many Champions have verified each level?", expected = "champions:recognition-and-progression" },
+  { prompt = "Build the ROI model and benefits case for our Copilot investment.", expected = "value-realisation:*" },
+]
