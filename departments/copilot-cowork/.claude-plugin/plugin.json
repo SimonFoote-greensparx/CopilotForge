@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-copilot-cowork",
+  "version": "0.2.0",
+  "description": "CopilotForge Copilot Cowork. Design safe, effective delegation of complex work with explicit context, checkpoints and review.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "delivery",
+    "copilot-cowork"
+  ]
+}
