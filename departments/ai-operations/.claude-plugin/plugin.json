@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-ai-operations",
+  "version": "0.2.0",
+  "description": "CopilotForge AI Operations. Operate deployed agents and AI solutions throughout support, monitoring, review, improvement and retirement.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "assurance",
+    "ai-operations"
+  ]
+}
