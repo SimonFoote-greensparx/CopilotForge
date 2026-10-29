@@ -1,0 +1,52 @@
+# Reviewer tests for design-authority (design brief 17: reviewer tests). Each case is a submission the reviewer must judge.
+# All submissions are fictional. At least three cases must block and at least two must not, to prove proportionality.
+reviewer: design-authority
+cases:
+  - id: DA-01
+    skill: design-authority:ai-design-review
+    risk_tier: 3
+    submission: "A claims triage agent that updates claim records in a line-of-business system arrives at the design gate. The pack contains a brief, a platform decision record and slides. There is no identity map, no interface catalogue and no evaluation approach. The team says these will be written during build."
+    expected_verdict: blocking
+    expected_reason: "Core design artefacts for a tier 3 solution with write actions are missing; identity, interfaces and evaluation cannot be inferred from slides. Return the pack as incomplete and review when the identity map, interface catalogue and evaluation approach are supplied."
+  - id: DA-02
+    skill: design-authority:ai-necessity-challenge
+    risk_tier: 2
+    submission: "A finance team proposes a custom Foundry model to decide which invoices need director approval. The rule in the finance policy is a single value threshold per cost centre. The suitability record selected a declarative agent for answering finance questions and does not mention approvals."
+    expected_verdict: blocking
+    expected_reason: "A model would make a decision that a stated deterministic rule already covers, with consequences if wrong, and the design has drifted from the suitability record. Use a flow applying the threshold rule, and revisit suitability for any remaining language task."
+  - id: DA-03
+    skill: design-authority:platform-fit-review
+    risk_tier: 2
+    submission: "A service desk agent for all staff is built in a route where the ticket creation action can only run under the maker's connection. The maker is a service desk administrator. The decision record lists only the chosen platform and no rejected options."
+    expected_verdict: blocking
+    expected_reason: "The platform as configured cannot meet the identity requirement: every user would act with the maker's administrative rights. Choose a route supporting user authentication or a scoped service identity with an entitlement check, and complete the decision record with the options considered."
+  - id: DA-04
+    skill: design-authority:architecture-conformance
+    risk_tier: 2
+    submission: "A knowledge agent follows the organisation's knowledge agent reference, version 2. It uses curated, owned SharePoint libraries with user identity and sits in the managed production zone. The team used a different naming convention for the environment than the reference recommends."
+    expected_verdict: advisory
+    expected_reason: "Fixed decisions and mandatory controls conform; the naming difference is a recommended practice only. Record an advisory finding with an owner and date."
+  - id: DA-05
+    skill: design-authority:supportability-review
+    risk_tier: 2
+    submission: "A partner built a policy agent for 3,000 staff. The partner's contract ends at go-live. The named technical owner was assigned at a steering meeting they did not attend and has not accepted the role. Two knowledge sources have no owner, and the flow behind the feedback button runs on the partner consultant's account."
+    expected_verdict: blocking
+    expected_reason: "No accepted technical owner, unowned knowledge sources and a dependency on an external personal account make the solution unsupportable after go-live. Confirm owners' acceptance, assign knowledge owners, move the flow to an owned identity and require handover evidence before release."
+  - id: DA-06
+    skill: design-authority:ai-change-impact-review
+    risk_tier: 2
+    submission: "The owner of a live tier 2 HR policy agent replaces the leave policy document with the newly approved version in the same owned library. Instructions, audience, actions and model are unchanged. A spot-check of five leave questions from the evaluation set gave correct, cited answers."
+    expected_verdict: pass
+    expected_reason: "A routine update within an owned source with no change to audience, actions, identity or autonomy is a minor change; owner sign-off and a spot-check are proportionate. Over-reviewing would be disproportionate."
+  - id: DA-07
+    skill: design-authority:ai-change-impact-review
+    risk_tier: 2
+    submission: "The team plans to move a live agent to a newer model version next week because the current version is being retired. They describe the newer version as an improvement and plan no evaluation. There is no recorded way to switch back."
+    expected_verdict: blocking
+    expected_reason: "A model version change is material: behaviour, refusal and groundedness can change. Run regression evaluation against the existing set and thresholds and confirm a rollback route before release; plan the change ahead of the retirement date."
+  - id: DA-08
+    skill: design-authority:platform-fit-review
+    risk_tier: 2
+    submission: "A departmental knowledge agent is built in Copilot Studio on the approved platform list, using user authentication and curated sources. The decision record considered Agent Builder and rejected it because the agent must also run on the intranet site. Agent Builder might have been cheaper for the Teams audience alone."
+    expected_verdict: advisory
+    expected_reason: "The choice is reasoned, approved and operable, and meets identity and data requirements; the cost comparison is an advisory note. Blocking on reviewer preference would be inappropriate."

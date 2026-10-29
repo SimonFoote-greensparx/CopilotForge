@@ -1,0 +1,187 @@
+# Trigger tests for the ai-foundry department.
+
+[[skill]]
+name = "foundry-solution-assessment"
+should_trigger = [
+  "Our data science team wants to build a custom claims triage solution in Foundry. Is that really justified, or would a Copilot Studio agent do?",
+  "A partner has quoted for a pro-code AI build on Azure. What would we be committing to in skills, running cost and support?",
+  "Our Copilot Studio agent keeps hitting limits with retrieval. Should we move it to Foundry, and are we ready to own that?",
+]
+should_not_trigger = [
+  { prompt = "We have a framed problem from the finance team. Is AI the right answer at all, or should we fix the process?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "Foundry is approved. Which model from the catalogue should we use for contract extraction?", expected = "ai-foundry:model-selection" },
+]
+
+[[skill]]
+name = "foundry-agent-architecture"
+should_trigger = [
+  "The Foundry agent for supplier queries is approved. Help me design its tools, identity, state and where it will be published.",
+  "Our agent prototype works in the Foundry playground. What does the production architecture need to look like?",
+  "Should this be one Foundry agent or three specialist agents, and which identity should each act with?",
+]
+should_not_trigger = [
+  { prompt = "Write the input schema, description and confirmation rule for the agent's create-refund function.", expected = "ai-foundry:foundry-tool-design" },
+  { prompt = "Design an HR agent in Copilot Studio with topics and knowledge sources.", expected = "copilot-studio:studio-agent-design" },
+]
+
+[[skill]]
+name = "agentic-workflow-design"
+should_trigger = [
+  "We want a set of Foundry agents to process supplier invoices end to end overnight with nobody watching. How much should they decide on their own?",
+  "Our autonomous agent prototype keeps looping and calling the same tool. How do we put budgets and stop conditions around it?",
+  "Which steps of this onboarding process should be agentic and which should just be code, and where do people need to approve?",
+]
+should_not_trigger = [
+  { prompt = "Design the hand-offs between our three Copilot Studio agents for the service desk.", expected = "copilot-studio:multi-agent-design" },
+  { prompt = "Build a Power Automate flow that routes incoming forms and uses AI to classify them.", expected = "automation:flow-design-patterns" },
+]
+
+[[skill]]
+name = "foundry-cost-management"
+should_trigger = [
+  "Our Foundry token spend doubled last month and nobody can explain why. Where do we start?",
+  "Finance wants a running-cost estimate and cost per resolved case for the new claims agent before we go live.",
+  "Should we buy reserved throughput for our document extraction workload or stay on pay-as-you-go?",
+]
+should_not_trigger = [
+  { prompt = "How many Copilot licences do we need for the sales division, and do agents need extra capacity?", expected = "platform-governance:ai-licensing-and-capacity" },
+  { prompt = "Track the AI programme's overall budget and people capacity for the next two quarters.", expected = "programme-management:budget-and-capacity" },
+]
+
+[[skill]]
+name = "foundry-deployment-architecture"
+should_trigger = [
+  "Customer data must stay in our geography. Which Foundry deployment type and region should we use for the chosen model?",
+  "Users get rate-limit errors every morning at peak. Do we need more quota, reserved capacity or a second region?",
+  "How should we lay out Foundry projects, environments and private endpoints to move this prototype into production?",
+]
+should_not_trigger = [
+  { prompt = "Set up the pipeline that promotes prompts, tools and model configuration from test to production.", expected = "ai-engineering:ai-ci-cd" },
+  { prompt = "Which model in the Foundry catalogue is best for summarising long technical reports?", expected = "ai-foundry:model-selection" },
+]
+
+[[skill]]
+name = "foundry-grounding-strategy"
+should_trigger = [
+  "Our Foundry agent needs product manuals, live order status and pricing data. How should each reach the model?",
+  "The team wants to fine-tune a model on our HR policies so it knows them. Is that the right approach?",
+  "Answers from our custom AI app are confident but out of date and uncited. Is our grounding wrong?",
+]
+should_not_trigger = [
+  { prompt = "Retrieval is the chosen approach. Help me design chunking, embeddings and hybrid ranking for the index.", expected = "ai-foundry:retrieval-design" },
+  { prompt = "Which SharePoint sites should our Microsoft 365 declarative agent ground on?", expected = "m365-agents:agent-grounding" },
+]
+
+[[skill]]
+name = "foundry-observability"
+should_trigger = [
+  "Our Foundry agent took a strange action yesterday and we can't reconstruct why from the logs. What should we be tracing?",
+  "Before production, how do we design tracing for model calls, retrieval and tool calls without storing everyone's prompts forever?",
+  "Dashboards say the agent is healthy, but users say answers are getting worse. How do we make quality visible in production?",
+]
+should_not_trigger = [
+  { prompt = "Set up on-call alerting and service health monitoring for all our live agents and automations.", expected = "ai-operations:ai-solution-monitoring" },
+  { prompt = "Which Copilot Studio analytics should we review each month to improve our HR agent?", expected = "copilot-studio:studio-analytics" },
+]
+
+[[skill]]
+name = "foundry-production-readiness"
+should_trigger = [
+  "Our Foundry claims agent is due to go live in two weeks. What evidence do we need before we can say go?",
+  "A partner is handing over the custom AI solution they built for us. How do we decide whether to accept it into service?",
+  "The pilot is about to widen to the whole service team and gain a write action. Is it production ready?",
+]
+should_not_trigger = [
+  { prompt = "Our declarative agent for the policy team is about to be shared with everyone. What should we check first?", expected = "m365-agents:agent-release-readiness" },
+  { prompt = "Compile the formal evaluation evidence pack for the design gate on this tier 3 solution.", expected = "evaluation-quality:ai-release-evidence" },
+]
+
+[[skill]]
+name = "model-selection"
+should_trigger = [
+  "Our Foundry claims extractor needs a model. How do we get from the whole catalogue to a shortlist we can defend?",
+  "The data science team wants to use a third-party model from the Foundry catalogue for contract summaries. What do we need to check before we allow it?",
+  "The model behind our document triage solution is being retired next quarter. How should we pick the replacement and a fallback?",
+  "We default to the biggest model for everything in Foundry and it's slow and expensive. How should we choose a smaller one for classification?",
+]
+should_not_trigger = [
+  { prompt = "Run a fair head-to-head of the three shortlisted models on our own invoices, with thresholds set up front.", expected = "ai-foundry:model-evaluation" },
+  { prompt = "Should this solution be built in Copilot Studio or Microsoft Foundry at all?", expected = "ai-architecture:platform-selection" },
+]
+
+[[skill]]
+name = "foundry-tool-design"
+should_trigger = [
+  "Our Foundry agent needs a function to look up customer orders. How should we write its description and input schema so the model calls it properly?",
+  "The developers want to hand the whole CRM API to the Foundry agent as one tool. Is that a good idea, and what should we do instead?",
+  "The agent keeps passing dates in the wrong format and retrying a failing lookup in a loop. How do we redesign the tool contract?",
+  "We're about to give our Foundry agent its first tool that sends emails. What controls does that function need?",
+]
+should_not_trigger = [
+  { prompt = "A supplier offers an MCP server for their logistics platform. Can we plug it straight into our Foundry agent?", expected = "ai-foundry:mcp-integration" },
+  { prompt = "Design the actions our Copilot Studio agent will call to raise service desk tickets.", expected = "copilot-studio:studio-actions-and-tools" },
+]
+
+[[skill]]
+name = "foundry-prompt-engineering"
+should_trigger = [
+  "The system prompt for our Foundry summariser was tuned in the playground and is now three pages of patches. How do we make it production-grade?",
+  "Someone edited the prompt in the portal last week and the downstream system started failing to parse the JSON. How should we manage prompt changes?",
+  "How do we structure and version the system prompt for our Foundry agent so it stays in scope and doesn't follow instructions inside uploaded documents?",
+  "We're moving the Foundry solution to a new model version. Do we need to re-tune and re-test the system prompt?",
+]
+should_not_trigger = [
+  { prompt = "Write the instructions for our declarative HR agent in Microsoft 365 Copilot.", expected = "m365-agents:agent-instructions" },
+  { prompt = "Our staff get vague answers from Copilot in Word. Can you put together prompting tips for them?", expected = "m365-copilot:prompting-practice" },
+]
+
+[[skill]]
+name = "foundry-safety-evaluation"
+should_trigger = [
+  "Our public-facing Foundry assistant goes live next month. Which content filter settings should we use and how do we test them?",
+  "Users say the Foundry agent blocks perfectly normal questions about medication. Should we loosen the content filters?",
+  "What safety evaluations should we run in the pipeline for our Foundry model deployment before each release?",
+  "The Foundry solution produced an offensive reply to a customer yesterday. How do we review the safety controls and re-test?",
+]
+should_not_trigger = [
+  { prompt = "Plan a red-team exercise for our tier 4 benefits eligibility agent before release.", expected = "evaluation-quality:red-team-plan" },
+  { prompt = "Review the prompt injection and data exfiltration test evidence for the agent at the security gate.", expected = "security-privacy:ai-security-testing" },
+]
+
+[[skill]]
+name = "mcp-integration"
+should_trigger = [
+  "A developer found a community MCP server for project management and wants to connect it to our Foundry agent. What should we check first?",
+  "We want to expose our internal pricing service over MCP so several Foundry agents can use it. How do we do that safely?",
+  "The vendor added three new tools to the MCP server our Foundry agent uses. Do we need to do anything?",
+]
+should_not_trigger = [
+  { prompt = "Review the MCP servers and connectors the procurement agent uses before it goes to the security gate.", expected = "security-privacy:connector-review" },
+  { prompt = "Write the input and output schema for a function our Foundry agent calls to create a draft purchase order.", expected = "ai-foundry:foundry-tool-design" },
+]
+
+[[skill]]
+name = "model-evaluation"
+should_trigger = [
+  "We've shortlisted three models for extracting fields from supplier invoices in Foundry. How do we compare them fairly?",
+  "Is the smaller model good enough for our ticket classification, and how much quality do we lose compared with the current one?",
+  "The new model version gives different answers on each run. How many runs and what measures do we need before we switch?",
+  "Can we trust a model grader to score the open answers in our comparison, or do people need to score them?",
+]
+should_not_trigger = [
+  { prompt = "Set up the evaluation runs so they happen automatically in the pipeline on every pull request.", expected = "ai-engineering:evaluation-harness" },
+  { prompt = "Review whether our overall evaluation strategy is good enough for a tier 3 solution.", expected = "evaluation-quality:ai-evaluation-strategy" },
+]
+
+[[skill]]
+name = "retrieval-design"
+should_trigger = [
+  "How should we chunk long technical manuals with lots of tables for the Foundry search index?",
+  "Our custom retrieval keeps missing policy sections that definitely exist. Should we use hybrid search or change the chunking?",
+  "The Foundry assistant quoted a document the user doesn't have access to. How do we keep permissions in the index?",
+  "Withdrawn procedures are still showing up in answers from our Azure search index. How should refresh and deletion work?",
+]
+should_not_trigger = [
+  { prompt = "Which SharePoint libraries should our Copilot Studio agent use as knowledge, and how should we describe them?", expected = "copilot-studio:studio-knowledge-architecture" },
+  { prompt = "Test whether the answers our retrieval solution gives are actually supported by the documents it cites.", expected = "evaluation-quality:groundedness-testing" },
+]

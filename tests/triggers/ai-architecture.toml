@@ -1,0 +1,86 @@
+# Trigger tests for the ai-architecture department (design brief 13 and 17).
+
+[[skill]]
+name = "platform-selection"
+should_trigger = [
+  "Our makers want to build the site report agent in Copilot Studio but the engineers say Foundry. How do we decide for this one?",
+  "Suitability says this should be an agent. Which Microsoft platform should we build it on, and can you write up the decision?",
+  "The HR policy agent we built in Agent Builder now needs to create cases in our HR system. Has it outgrown its platform?",
+  "A partner has proposed a custom Foundry build for our contract Q&A tool. Help us test whether that's the right platform.",
+]
+should_not_trigger = [
+  { prompt = "Which Microsoft AI platforms should the organisation approve overall for the next two years?", expected = "ai-strategy:platform-strategy" },
+  { prompt = "Do we need AI for this invoice routing problem at all, or is it a process fix?", expected = "opportunity-management:ai-suitability" },
+]
+
+[[skill]]
+name = "ai-reference-architecture"
+should_trigger = [
+  "Every team designs its knowledge agents differently. Can we write a standard reference design they all start from?",
+  "We've now built three agents that read and write CRM data. Turn what worked into a reusable reference architecture.",
+  "Our reference design for Copilot Studio agents is two years old. Review and update it with an owner and review date.",
+]
+should_not_trigger = [
+  { prompt = "Check whether this claims agent's design actually follows our reference architecture before the gate.", expected = "design-authority:architecture-conformance" },
+  { prompt = "Write the coding and repository standards for our pro-code AI solutions.", expected = "ai-engineering:ai-engineering-standards" },
+]
+
+[[skill]]
+name = "ai-integration-patterns"
+should_trigger = [
+  "Our agent needs to look up orders in the ERP and raise returns. What's the right way to connect it?",
+  "Should the agent update three systems itself or call a flow to do it? We need a safe pattern for multi-step writes.",
+  "Several agents want to talk to the finance system. Should we build one shared API or MCP server instead of separate connections?",
+]
+should_not_trigger = [
+  { prompt = "Review the connectors on this agent before release: whose credentials do they run on?", expected = "security-privacy:connector-review" },
+  { prompt = "Set the organisation's data policy for which connectors makers can use in each environment.", expected = "platform-governance:connector-policy" },
+]
+
+[[skill]]
+name = "ai-identity-design"
+should_trigger = [
+  "The agent needs to run overnight with no user signed in. Which identity should it use, and who owns it?",
+  "Map out whose identity each step of this solution runs under, from the user's question to the ticketing system.",
+  "Should we give our agent its own Entra identity or keep everything on the signed-in user?",
+]
+should_not_trigger = [
+  { prompt = "Do the security gate review of identity and access for the payroll agent.", expected = "security-privacy:ai-identity-and-access-review" },
+  { prompt = "How do we store secrets and use managed identities in our Foundry repo?", expected = "ai-engineering:secrets-and-identity" },
+]
+
+[[skill]]
+name = "grounding-patterns"
+should_trigger = [
+  "The answers our agent needs are in SharePoint, a CRM and a data warehouse. What's the right way to ground on all three?",
+  "A team wants to copy our policy library into a separate search index for their agent. Is that the right pattern?",
+  "Three teams have each built their own index over the same product catalogue. How should we architect grounding across them?",
+]
+should_not_trigger = [
+  { prompt = "Design the chunking and indexing for our custom retrieval in Foundry.", expected = "ai-foundry:retrieval-design" },
+  { prompt = "Check whether this SharePoint library is owned, current and permissioned well enough for the agent to use.", expected = "m365-agents:knowledge-source-readiness" },
+]
+
+[[skill]]
+name = "environment-topology"
+should_trigger = [
+  "Our first agent spans Copilot Studio and an Azure model deployment. How should environments and subscriptions be laid out?",
+  "We have data residency commitments. Where can our model deployments, indexes and logs live?",
+  "A pilot's dev environment is now serving production. Design a proper dev, test and prod topology across Power Platform and Azure.",
+]
+should_not_trigger = [
+  { prompt = "Decide our governance zones and who is allowed to build agents where.", expected = "platform-governance:ai-environment-strategy" },
+  { prompt = "Set up dev, test and prod environments and routing for our Copilot Studio makers.", expected = "copilot-studio:studio-environments" },
+]
+
+[[skill]]
+name = "ai-non-functional-requirements"
+should_trigger = [
+  "Before we build the contact centre agent, how fast, accurate and available does it actually need to be?",
+  "The pilot is becoming a real service. Write down the non-functional requirements, including cost per conversation.",
+  "Users say the agent is too slow and sometimes wrong, but we never agreed any targets. Help us set them.",
+]
+should_not_trigger = [
+  { prompt = "Build the quality rubric and acceptance thresholds for our evaluation set.", expected = "evaluation-quality:ai-quality-rubric" },
+  { prompt = "Engineer the agent to hit its latency targets under peak load.", expected = "ai-engineering:ai-performance-engineering" },
+]

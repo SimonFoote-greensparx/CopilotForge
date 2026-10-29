@@ -1,0 +1,109 @@
+# Trigger tests for the automation department (design brief 13 and 17).
+
+[[skill]]
+name = "automation-assessment"
+should_trigger = [
+  "Accounts payable want to automate invoice processing with AI. Which steps actually need AI and which are just moving data?",
+  "Three teams have sent automation requests this month. How do we judge them consistently before anyone builds a flow?",
+  "The service desk asked for AI to read every ticket email. Is that really needed or would a form and a simple flow do?",
+]
+should_not_trigger = [
+  { prompt = "Is this even an AI problem, or should we just fix the approval policy and train people?", expected = "opportunity-management:ai-suitability" },
+  { prompt = "We've agreed to automate onboarding. Help us redesign the process and write down the rules before the build.", expected = "automation:automation-process-design" },
+]
+
+[[skill]]
+name = "automation-process-design"
+should_trigger = [
+  "Every region handles supplier onboarding differently. We need one future-state process before we automate it.",
+  "Before the maker starts on the claims flow, help us remove the pointless steps and agree who owns the odd cases.",
+  "Fill in the automation design for our purchase request process, including which steps are human, flow or AI.",
+]
+should_not_trigger = [
+  { prompt = "How should the maker structure the flow with scopes, environment variables and connection references?", expected = "automation:flow-design-patterns" },
+  { prompt = "Design the checkpoints in a multi-step Cowork task that drafts our monthly board pack.", expected = "copilot-cowork:multi-step-work-design" },
+]
+
+[[skill]]
+name = "flow-design-patterns"
+should_trigger = [
+  "Our Power Automate flow passes the AI extraction text straight into Dataverse and sometimes writes garbage. How should we build it properly?",
+  "What patterns should makers follow for flows with AI steps so they can be moved from dev to production?",
+  "The order flow ran twice for the same email and created duplicate orders. How do we stop that in the design?",
+]
+should_not_trigger = [
+  { prompt = "Our Copilot Studio agent needs to call a flow to book a room. How do we design that action?", expected = "copilot-studio:power-automate-actions" },
+  { prompt = "Which connectors is this flow allowed to use in production and whose connection should it run on?", expected = "automation:automation-connector-governance" },
+]
+
+[[skill]]
+name = "human-in-the-loop"
+should_trigger = [
+  "The AI drafts refund decisions in our flow. Where should a person approve, and what should the approval card show them?",
+  "Approvals in the expenses automation sit for a week when the manager is on leave. How should timeouts and delegates work?",
+  "Reviewers are approving the AI-extracted invoices in seconds. Are our review steps real oversight or rubber stamps?",
+]
+should_not_trigger = [
+  { prompt = "Formally review the human oversight for our tier 3 eligibility automation before release.", expected = "responsible-ai:human-oversight" },
+  { prompt = "Where should a person check in on a Cowork task that prepares the quarterly supplier report?", expected = "copilot-cowork:human-checkpoint-design" },
+]
+
+[[skill]]
+name = "exception-handling"
+should_trigger = [
+  "When the AI step returns broken JSON our flow just crashes. How should we handle bad AI output and retries?",
+  "The flow failed halfway and half the records were updated. How do we design it so partial runs can recover?",
+  "Exceptions from the onboarding automation go to a shared mailbox nobody reads. How should we route them?",
+]
+should_not_trigger = [
+  { prompt = "Our Foundry service needs circuit breakers and a fallback model when the main deployment is throttled.", expected = "ai-engineering:ai-resilience" },
+  { prompt = "Set up alerts so the owner knows when the invoice flow stops running.", expected = "automation:automation-monitoring" },
+]
+
+[[skill]]
+name = "automation-connector-governance"
+should_trigger = [
+  "The maker needs a third-party file sharing connector that our production environment blocks. How do we handle the request?",
+  "Half our production flows run on the personal connections of people who built them. What should we change?",
+  "Before this automation goes live, check its connectors against the environment policy and set up proper service accounts.",
+]
+should_not_trigger = [
+  { prompt = "Write the organisation-wide data policies for which connectors can be combined in each environment.", expected = "platform-governance:connector-policy" },
+  { prompt = "Do the security review of the connectors and actions our tier 2 agent uses.", expected = "security-privacy:connector-review" },
+]
+
+[[skill]]
+name = "desktop-automation"
+should_trigger = [
+  "Our old claims system has no API, only green screens. Should we use desktop flows to key the data in?",
+  "The desktop flow broke again after the vendor updated their app. How do we make these less fragile?",
+  "We want desktop flows to run unattended overnight on a server. What do we need for machines and credentials?",
+]
+should_not_trigger = [
+  { prompt = "Which integration pattern should we use to connect our agent to the ERP system's APIs?", expected = "ai-architecture:ai-integration-patterns" },
+  { prompt = "Which steps in the onboarding process are worth automating at all?", expected = "automation:automation-assessment" },
+]
+
+[[skill]]
+name = "automation-monitoring"
+should_trigger = [
+  "The invoice flow stopped triggering three weeks ago and nobody noticed. What monitoring should it have had?",
+  "How do we tell whether the AI classification in our routing flow is getting worse over time?",
+  "We're handing the automation to the operations team. What alerts should be set up and who should get them?",
+]
+should_not_trigger = [
+  { prompt = "Set up operational monitoring and alerting across all our live agents and AI services.", expected = "ai-operations:ai-solution-monitoring" },
+  { prompt = "How much time has the invoice automation actually saved since go-live?", expected = "automation:automation-value" },
+]
+
+[[skill]]
+name = "automation-value"
+should_trigger = [
+  "The sponsor wants to know what the invoice automation has delivered. How do we measure it properly?",
+  "Our report says the flow saved 4,000 hours because it ran 8,000 times. Is that a credible figure?",
+  "The AI triage flow has been live six months. Should we extend it, fix it or switch it off based on the numbers?",
+]
+should_not_trigger = [
+  { prompt = "Measure whether our HR policy agent is delivering the value in its hypothesis.", expected = "m365-agents:agent-value-measurement" },
+  { prompt = "Agree with finance which automation savings are cashable and how we count them.", expected = "value-realisation:financial-benefits" },
+]

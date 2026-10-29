@@ -1,0 +1,52 @@
+# Reviewer tests for evaluation-quality (design brief 17: reviewer tests). Each case is a submission the reviewer must judge.
+# All submissions are fictional. At least three cases must block and at least two must not, to prove proportionality.
+reviewer: evaluation-quality
+cases:
+  - id: EQ-01
+    skill: evaluation-quality:ai-quality-rubric
+    risk_tier: 2
+    submission: "A benefits question agent for all staff was tested on 40 questions. Correctness came out at 78%. After seeing the results, the maker and business owner agreed a correctness threshold of 75% and recorded it as met. No zero-tolerance list exists."
+    expected_verdict: blocking
+    expected_reason: "The threshold was set after results were seen and there is no zero-tolerance list, so the evidence cannot show the agent meets an agreed standard. Re-agree thresholds and zero-tolerance failures with the business owner, then re-run on a fresh or held-out sample."
+  - id: EQ-02
+    skill: evaluation-quality:ai-evaluation-strategy
+    risk_tier: 2
+    submission: "A facilities agent for one region has an evaluation plan with four dimensions, 35 questions collected from users and confirmed by the facilities manager, thresholds signed and dated a week before the first run, refusal and out-of-scope items, and a regression trigger list. The plan does not record why the correctness threshold was set where it is."
+    expected_verdict: advisory
+    expected_reason: "The strategy meets every tier 2 requirement; the missing rationale for one threshold is an advisory documentation finding with an owner and date."
+  - id: EQ-03
+    skill: evaluation-quality:groundedness-testing
+    risk_tier: 3
+    submission: "A policy agent used by line managers cites a source on every answer, so the team reports groundedness as 100%. Nobody checked whether the cited passages support the claims, and knowledge-silent questions were not included. Two versions of the disciplinary policy are both in the grounding library."
+    expected_verdict: blocking
+    expected_reason: "Citation presence is not evidence of support; claim-level checks and silence handling are untested on a high-consequence topic, and superseded content remains reachable. Run claim-level and silence tests and retire the old policy version at source."
+  - id: EQ-04
+    skill: evaluation-quality:ai-evaluation-strategy
+    risk_tier: 3
+    submission: "A Foundry solution that drafts responses to customer complaints is evaluated entirely by an AI grader scoring 500 synthetic questions. The grader has never been compared with human reviewers, and no real complaint wording was used."
+    expected_verdict: blocking
+    expected_reason: "Uncalibrated AI-assisted grading is not evidence, and a synthetic-only dataset does not represent real users. Calibrate the grader against human scores on a sample and add real, de-identified complaint wording to the dataset."
+  - id: EQ-05
+    skill: evaluation-quality:regression-evaluation
+    risk_tier: 2
+    submission: "After a wording change to the tone section of an IT help agent's instructions, the team re-ran the 15-item regression subset plus refusal items three times. Results were within the normal variation recorded at baseline on every dimension, with no zero-tolerance breach. The full set was not re-run, and the scope decision is recorded."
+    expected_verdict: pass
+    expected_reason: "The scope is proportionate to the change and recorded, results are within known variation and no zero-tolerance item failed. Requiring a full re-run would be disproportionate."
+  - id: EQ-06
+    skill: evaluation-quality:red-team-plan
+    risk_tier: 4
+    submission: "A customer-facing payments agent that can issue refunds is due for release. The red team consists of the three engineers who built it, working for two hours against the production environment with real customer records. Findings were noted in a chat thread."
+    expected_verdict: blocking
+    expected_reason: "No independent members, testing against production with real personal data, and findings without reproduction steps. Rerun in a non-production environment with test identities, a mixed and partly independent team, rules of engagement and a findings log."
+  - id: EQ-07
+    skill: evaluation-quality:ai-release-evidence
+    risk_tier: 2
+    submission: "A project status agent's release pack includes the approved plan, dataset v3, rubric v2, thresholds dated before testing, results above threshold on all dimensions, groundedness checks and a monitoring baseline. The known limits statement exists but is only in the pack, not yet visible to users."
+    expected_verdict: advisory
+    expected_reason: "Evidence is complete and traceable for tier 2; publishing the known limits to users is an advisory finding to close before or shortly after launch, with an owner."
+  - id: EQ-08
+    skill: evaluation-quality:ai-safety-testing
+    risk_tier: 2
+    submission: "A maintenance guidance agent for site engineers was safety tested with a generic harmful-content list only. During testing it once suggested bypassing a lockout step to save time. The team marked this as a minor accuracy issue because overall pass rates were high."
+    expected_verdict: blocking
+    expected_reason: "Unsafe domain advice on a safety-critical topic is blocking regardless of overall pass rate, and the test set lacks a domain harm catalogue. Fix the cause, build domain safety items with an expert and re-test."

@@ -1,0 +1,121 @@
+# Trigger tests for the ai-engineering department (design brief 13 and 17).
+
+[[skill]]
+name = "ai-solution-repository"
+should_trigger = [
+  "We're starting a Foundry solution. How should the repo be laid out for prompts, evals, infra and config?",
+  "Our system prompts are edited in the portal and nobody knows what changed last week. Where should they live?",
+  "Create a standard repository template every custom AI team in the organisation should start from.",
+]
+should_not_trigger = [
+  { prompt = "What instructions and context files should we give the coding agent so it follows our conventions?", expected = "copilot-code:repository-context" },
+  { prompt = "Set up the pipeline that runs evaluation and deploys the solution to test and production.", expected = "ai-engineering:ai-ci-cd" },
+]
+
+[[skill]]
+name = "ai-api-and-tooling"
+should_trigger = [
+  "We want to give our agent access to the case management API. It has fifty endpoints. How should we expose it as tools?",
+  "Design an API that lets other systems call our document classification service.",
+  "The model keeps calling the update tool with made-up IDs. How should the tool contract and validation work?",
+]
+should_not_trigger = [
+  { prompt = "Connect a third-party MCP server to our Foundry agent safely.", expected = "ai-foundry:mcp-integration" },
+  { prompt = "Which actions should our Copilot Studio agent have and how should they be configured?", expected = "copilot-studio:studio-actions-and-tools" },
+]
+
+[[skill]]
+name = "evaluation-harness"
+should_trigger = [
+  "We test the assistant by trying ten questions by hand before each release. How do we automate evaluation properly?",
+  "Build the code that runs our golden dataset against the deployed solution and scores it against the thresholds.",
+  "Our eval scores change every run even when nothing changed. How do we make the harness reproducible?",
+]
+should_not_trigger = [
+  { prompt = "What should our evaluation strategy be and which quality dimensions matter for this service?", expected = "evaluation-quality:ai-evaluation-strategy" },
+  { prompt = "Compare three catalogue models for summarising contracts and pick one.", expected = "ai-foundry:model-evaluation" },
+]
+
+[[skill]]
+name = "ai-ci-cd"
+should_trigger = [
+  "Set up GitHub Actions for our Foundry solution so prompt and model changes are evaluated before production.",
+  "The model version we use is being retired. How should we test and release the upgrade?",
+  "Someone changed the system prompt directly in production. How do we make every change go through a pipeline with rollback?",
+]
+should_not_trigger = [
+  { prompt = "How do we move our Copilot Studio agent from dev to test to production in solutions?", expected = "copilot-studio:studio-alm" },
+  { prompt = "Write the release policy saying who approves AI releases at each risk tier.", expected = "platform-governance:ai-release-policy" },
+]
+
+[[skill]]
+name = "secrets-and-identity"
+should_trigger = [
+  "There's a model API key in our config file. How should the app authenticate to Foundry without keys?",
+  "Our retrieval service runs as a service principal that can read every SharePoint site. How do we fix that?",
+  "Set up managed identities, Key Vault and role assignments for our AI solution across dev and prod.",
+]
+should_not_trigger = [
+  { prompt = "Review identity and access for our tier 3 AI service before release as the security gate.", expected = "security-privacy:ai-identity-and-access-review" },
+  { prompt = "Design the overall identity architecture for users, agents and services across the AI estate.", expected = "ai-architecture:ai-identity-design" },
+]
+
+[[skill]]
+name = "ai-telemetry"
+should_trigger = [
+  "A user says the assistant gave a wrong answer yesterday and we can't tell why. What should we be logging?",
+  "Should we store full prompts and responses in our logs, and if so with what redaction and retention?",
+  "Design tracing for our agent so we can follow a request through retrieval, model calls and tools.",
+]
+should_not_trigger = [
+  { prompt = "Turn on tracing and monitoring for our Foundry Agent Service agents in the portal.", expected = "ai-foundry:foundry-observability" },
+  { prompt = "Review how long we keep prompts, responses and transcripts as the privacy gate.", expected = "security-privacy:ai-interaction-retention" },
+]
+
+[[skill]]
+name = "ai-solution-testing"
+should_trigger = [
+  "Our tests call the live model every time and fail randomly. How should we structure testing for the AI service?",
+  "What test layers does a custom RAG solution need beyond trying prompts by hand?",
+  "How do we test what happens when the model returns malformed output or the content filter blocks a request?",
+]
+should_not_trigger = [
+  { prompt = "Validate the app the coding agent built against the original requirements.", expected = "copilot-code:application-validation" },
+  { prompt = "Plan a prompt injection and security testing exercise as the security reviewer.", expected = "security-privacy:ai-security-testing" },
+]
+
+[[skill]]
+name = "ai-performance-engineering"
+should_trigger = [
+  "Our assistant takes 25 seconds to answer and people give up. Where do we start making it faster?",
+  "We're rolling out to 5,000 more staff next month. Will we hit throttling and how do we plan capacity?",
+  "Can we use a smaller model for the routing step to cut latency without hurting quality?",
+]
+should_not_trigger = [
+  { prompt = "Set the latency, availability and scale requirements for our new AI solution.", expected = "ai-architecture:ai-non-functional-requirements" },
+  { prompt = "Our Foundry bill doubled. Help us manage model and platform costs.", expected = "ai-foundry:foundry-cost-management" },
+]
+
+[[skill]]
+name = "ai-resilience"
+should_trigger = [
+  "When the model deployment is throttled our service retries everything and falls over. How should we handle it?",
+  "What should our assistant do when the model or the search index is down?",
+  "Can we fail over to a different model automatically if the primary one is unavailable?",
+]
+should_not_trigger = [
+  { prompt = "How does the business keep working if the AI service is unavailable for several days?", expected = "ai-operations:ai-continuity" },
+  { prompt = "Our Power Automate flow needs retry rules and an exception queue for failed AI steps.", expected = "automation:exception-handling" },
+]
+
+[[skill]]
+name = "ai-engineering-standards"
+should_trigger = [
+  "We're starting to build custom AI solutions in several teams. What engineering standards should they all follow?",
+  "Reviews keep finding keys in code and prompts edited in production. Can we set standards so this stops?",
+  "Our AI engineering standards are a year old and Foundry has changed a lot. How should we refresh them?",
+]
+should_not_trigger = [
+  { prompt = "Review whether this Foundry solution conforms to our reference architecture and standards.", expected = "design-authority:architecture-conformance" },
+  { prompt = "Set the review standards for code written by the AI coding agent.", expected = "copilot-code:generated-code-review" },
+]

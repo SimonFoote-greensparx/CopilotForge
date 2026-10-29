@@ -1,0 +1,97 @@
+# Trigger tests for the ai-operations department (design brief 13 and 17).
+
+[[skill]]
+name = "ai-support-model"
+should_trigger = [
+  "The procurement agent goes live next week. Who supports it when it gives a wrong answer?",
+  "Wrong-answer tickets keep bouncing between the service desk and IT. How should support for our agents work?",
+  "The maker who built three of our agents is leaving. How do we hand over support?",
+]
+should_not_trigger = [
+  { prompt = "Design a support model to help staff use Copilot in Word and Outlook through self-help and Champions.", expected = "copilot-adoption:adoption-support-model" },
+  { prompt = "Review whether the proposed design can be supported before we approve the build.", expected = "design-authority:supportability-review" },
+]
+
+[[skill]]
+name = "ai-solution-monitoring"
+should_trigger = [
+  "What should we monitor for the live claims agent, and who should get the alerts?",
+  "Users found the agent was broken before we did. How do we set up monitoring that catches it first?",
+  "How do we tell whether answer quality is drifting after release, not just whether the agent is up?",
+]
+should_not_trigger = [
+  { prompt = "Give admins a view of all agents, makers and AI usage across the tenant.", expected = "platform-governance:ai-admin-monitoring" },
+  { prompt = "Set up tracing for our Foundry agent's tool calls in production.", expected = "ai-foundry:foundry-observability" },
+]
+
+[[skill]]
+name = "ai-incident-management"
+should_trigger = [
+  "The HR agent just showed someone another employee's grievance details. What do we do right now?",
+  "Our agent sent customers a wrong refund commitment. How do we handle this as an incident?",
+  "Write our incident procedure for AI failures and harmful outputs before we go live.",
+]
+should_not_trigger = [
+  { prompt = "Are we ready to handle a security or privacy breach involving our AI solutions?", expected = "security-privacy:ai-incident-readiness" },
+  { prompt = "What happens to the work if the agent is unavailable for a week?", expected = "ai-operations:ai-continuity" },
+]
+
+[[skill]]
+name = "ai-feedback-loop"
+should_trigger = [
+  "We have hundreds of thumbs-down ratings on the policy agent and nobody reads them. How do we act on feedback?",
+  "Users say nothing happens when they report a bad answer. How do we close the loop with them?",
+  "Set up a way to collect and triage user feedback for our new agent.",
+]
+should_not_trigger = [
+  { prompt = "Use Copilot Studio analytics to find which topics escalate most often.", expected = "copilot-studio:studio-analytics" },
+  { prompt = "How do we measure Copilot adoption across departments?", expected = "copilot-adoption:adoption-measurement" },
+]
+
+[[skill]]
+name = "knowledge-refresh"
+should_trigger = [
+  "The expenses policy changed today. How do we make sure the agent answers from the new version?",
+  "The intranet team is migrating the HR site. What happens to the agents grounded on it?",
+  "Users say the agent still quotes last year's leave rules even though the page was updated.",
+]
+should_not_trigger = [
+  { prompt = "Set review cycles and owners for all policy content across the intranet.", expected = "knowledge-management:knowledge-review-cycles" },
+  { prompt = "Plan a clean-up of outdated and duplicate documents across our SharePoint estate.", expected = "knowledge-management:knowledge-cleanup" },
+]
+
+[[skill]]
+name = "ai-review-calendar"
+should_trigger = [
+  "None of our live agents have review dates. Set up a schedule for reviewing them.",
+  "What should a quarterly review of a live agent cover, and who should attend?",
+  "We have forty agents and no idea which are still used or owned. How do we review them regularly?",
+]
+should_not_trigger = [
+  { prompt = "The pilot has finished. Should we scale, iterate or stop the agent?", expected = "opportunity-management:scale-or-stop" },
+  { prompt = "Set up the CoE's weekly working group and monthly steering meetings.", expected = "ai-centre-of-excellence:coe-cadence" },
+]
+
+[[skill]]
+name = "ai-continuity"
+should_trigger = [
+  "The triage agent now handles all incoming requests. What do we do if it's down or we have to switch it off?",
+  "Microsoft is retiring the model our Foundry solution uses. How do we plan for that?",
+  "We closed the old shared mailbox when the agent went live. Is that a continuity risk?",
+]
+should_not_trigger = [
+  { prompt = "Design retries, timeouts and graceful degradation in our pro-code AI service.", expected = "ai-engineering:ai-resilience" },
+  { prompt = "Which model should replace the current one for summarising contracts?", expected = "ai-foundry:model-selection" },
+]
+
+[[skill]]
+name = "ai-solution-retirement"
+should_trigger = [
+  "We've decided to retire the old travel agent. What do we need to do to switch it off safely?",
+  "How do we decommission an agent so its connections and service account don't keep access?",
+  "Retiring the claims bot: what happens to its transcripts and evaluation data?",
+]
+should_not_trigger = [
+  { prompt = "Should we stop the pilot agent or keep iterating on it?", expected = "opportunity-management:scale-or-stop" },
+  { prompt = "Plan how a Copilot Studio agent moves from development through release to retirement.", expected = "copilot-studio:studio-agent-lifecycle" },
+]
