@@ -1,0 +1,10 @@
+id: discovery
+title: Microsoft AI Discovery
+status: skeleton
+purpose: Understand context, ambition, current use and maturity, then agree outcomes and a first roadmap before any product decision.
+lifecycle: [Discover, Envision, Mobilise]
+artefacts:
+  - {id: maturity-assessment, title: AI maturity assessment, skill: "ai-strategy:ai-maturity-assessment", template: ai-maturity-assessment, stage: Discover, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: strategic-outcomes, title: Strategic outcomes and AI principles, skill: "ai-strategy:strategic-outcomes", template: ai-roadmap, stage: Envision, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: roadmap, title: Prioritised AI roadmap, skill: "ai-strategy:ai-roadmap", template: ai-roadmap, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+gates: []

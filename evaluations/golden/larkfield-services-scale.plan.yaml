@@ -1,0 +1,316 @@
+# Golden tailoring plan. Regenerate with python3 scripts/check-profiles.py --update after review.
+profile: profiles/samples/larkfield-services-scale.yaml
+organisation: Larkfield Services (fictional)
+fictional: true
+edition:
+  id: scale
+  rule: E3-scale-default
+  rationale: Between Starter and Enterprise. Repeatable intake, Champions, agent ownership and formal measures are worth their
+    overhead.
+  coe_form: A small core CoE team with business representatives and a monthly steering cadence.
+  champions_form: A formal, evidence-led Champions programme with challenges and recognition.
+  governance_form: Risk-tiered intake, a solution register and reviewer gates from risk tier 2, with security and privacy
+    review blocking release.
+assurance_overlay:
+  id: proportionate
+  rule: A2-proportionate-assurance
+  rationale: Controls rise with risk tier, reach, data sensitivity and autonomy (progressive governance).
+archetype:
+  id: adopter
+  rule: R2-adopter
+  rationale: Copilot is deployed but use is inconsistent or unsupported by a Champion community, so adoption is the binding
+    constraint.
+  output_emphasis: Personas, Champions, role-based learning, adoption measures and repeatable scenarios.
+emerging_signals:
+- signal: agents-emerging
+  rule: S1-agents-emerging
+  note: Staff are already building agents, so an agent intake and lifecycle route is needed now, not later.
+- signal: shadow-ai
+  rule: S2-shadow-ai
+  note: Unsanctioned AI use is suspected or known, so an approved-use starter and safe alternatives come first.
+- signal: coe-requested
+  rule: S3-coe-requested
+  note: Leadership wants a Centre of Excellence or an ambition that needs one.
+- signal: weak-knowledge
+  rule: S5-weak-knowledge
+  note: Knowledge ownership or quality is weak, so agents grounded on it will be unreliable until it is fixed.
+programmes:
+- ai-transformation
+- discovery
+- adoption
+- champions
+- ai-coe
+- agent-factory
+- governance
+substitutions: {}
+artefacts:
+- programme: adoption
+  artefact: adoption-readiness
+  title: Adoption readiness assessment
+  depth: standard
+  stage: Discover
+  skill: copilot-adoption:adoption-readiness
+  template: adoption-plan
+- programme: discovery
+  artefact: maturity-assessment
+  title: AI maturity assessment
+  depth: standard
+  stage: Discover
+  skill: ai-strategy:ai-maturity-assessment
+  template: ai-maturity-assessment
+- programme: agent-factory
+  artefact: ai-suitability
+  title: AI suitability decision
+  depth: standard
+  stage: Envision
+  skill: opportunity-management:ai-suitability
+  template: opportunity-canvas
+- programme: agent-factory
+  artefact: opportunity-process
+  title: Opportunity intake and prioritisation process
+  depth: standard
+  stage: Envision
+  skill: opportunity-management:opportunity-prioritisation
+  template: prioritisation-matrix
+- programme: discovery
+  artefact: strategic-outcomes
+  title: Strategic outcomes and AI principles
+  depth: standard
+  stage: Envision
+  skill: ai-strategy:strategic-outcomes
+  template: ai-roadmap
+- programme: ai-coe
+  artefact: coe-charter
+  title: CoE charter
+  depth: standard
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-charter
+  template: coe-charter
+- programme: ai-coe
+  artefact: coe-operating-model
+  title: CoE operating model
+  depth: standard
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-operating-model
+  template: ai-operating-model
+- programme: ai-coe
+  artefact: coe-raci
+  title: CoE RACI
+  depth: standard
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-raci
+  template: coe-raci
+- programme: ai-transformation
+  artefact: operating-model
+  title: Target operating model
+  depth: standard
+  stage: Mobilise
+  skill: ai-strategy:ai-operating-model
+  template: ai-operating-model
+- programme: ai-transformation
+  artefact: ownership-map
+  title: Ownership map
+  depth: standard
+  stage: Mobilise
+  skill: organisation-tailoring:ownership-map
+  template: ownership-map
+- programme: ai-transformation
+  artefact: pack-index
+  title: Transformation pack index and success measures
+  depth: standard
+  stage: Mobilise
+  skill: organisation-tailoring:transformation-pack
+  template: transformation-pack-index
+- programme: champions
+  artefact: champion-charter
+  title: Champions programme charter
+  depth: standard
+  stage: Mobilise
+  skill: champions:champion-programme-design
+  template: champion-programme-charter
+- programme: discovery
+  artefact: roadmap
+  title: Prioritised AI roadmap
+  depth: standard
+  stage: Mobilise
+  skill: ai-strategy:ai-roadmap
+  template: ai-roadmap
+- programme: governance
+  artefact: governance-framework
+  title: AI governance framework and acceptable-use starter
+  depth: standard
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-governance-model
+  template: ai-governance-starter
+- programme: adoption
+  artefact: scenario-catalogue
+  title: Persona and scenario catalogue
+  depth: standard
+  stage: Enable
+  skill: copilot-adoption:scenario-discovery
+  template: scenario-catalogue
+- programme: champions
+  artefact: capability-framework
+  title: Champion capability framework and evidence rubric
+  depth: standard
+  stage: Enable
+  skill: champions:capability-framework
+  template: champion-capability-framework
+- programme: champions
+  artefact: challenge-catalogue
+  title: Champion Challenge catalogue
+  depth: standard
+  stage: Enable
+  skill: champions:champion-challenges
+  template: champion-challenge-catalogue
+- programme: agent-factory
+  artefact: agent-brief
+  title: Agent brief and use-case design
+  depth: standard
+  stage: Deliver
+  skill: m365-agents:agent-use-case-design
+  template: agent-brief
+- programme: agent-factory
+  artefact: knowledge-readiness
+  title: Knowledge source readiness
+  depth: standard
+  stage: Deliver
+  skill: m365-agents:knowledge-source-readiness
+  template: agent-brief
+- programme: agent-factory
+  artefact: agent-test-plan
+  title: Agent test plan and evaluation set
+  depth: standard
+  stage: Assure
+  skill: m365-agents:agent-testing
+  template: agent-release-checklist
+- programme: governance
+  artefact: data-exposure-review
+  title: Data exposure review
+  depth: standard
+  stage: Assure
+  skill: security-privacy:data-exposure-review
+  template: ai-risk-assessment
+- programme: governance
+  artefact: privacy-assessment
+  title: Privacy assessment
+  depth: standard
+  stage: Assure
+  skill: security-privacy:privacy-assessment
+  template: ai-risk-assessment
+- programme: governance
+  artefact: risk-classification
+  title: Risk tier classification
+  depth: standard
+  stage: Assure
+  skill: opportunity-management:risk-classification
+  template: ai-risk-assessment
+- programme: adoption
+  artefact: adoption-programme
+  title: Adoption programme and launch plan
+  depth: standard
+  stage: Launch
+  skill: copilot-adoption:launch-plan
+  template: adoption-plan
+- programme: agent-factory
+  artefact: agent-release
+  title: Agent release readiness and ownership
+  depth: standard
+  stage: Launch
+  skill: m365-agents:agent-release-readiness
+  template: agent-release-checklist
+- programme: adoption
+  artefact: adoption-measures
+  title: Adoption measures and baseline
+  depth: standard
+  stage: Measure
+  skill: copilot-adoption:adoption-measurement
+  template: coe-kpi-scorecard
+- programme: ai-coe
+  artefact: kpi-framework
+  title: KPI framework and scorecard
+  depth: standard
+  stage: Measure
+  skill: ai-centre-of-excellence:coe-kpi-framework
+  template: coe-kpi-scorecard
+- programme: ai-coe
+  artefact: coe-cadence
+  title: Governance cadence and terms of reference
+  depth: standard
+  stage: Scale
+  skill: ai-centre-of-excellence:coe-cadence
+  template: coe-charter
+- programme: champions
+  artefact: recognition-model
+  title: Recognition and progression model
+  depth: standard
+  stage: Scale
+  skill: champions:recognition-and-progression
+  template: champion-programme-charter
+- programme: agent-factory
+  artefact: scale-or-stop
+  title: Scale-or-stop review
+  depth: standard
+  stage: Improve
+  skill: opportunity-management:scale-or-stop
+  template: scale-or-stop-review
+reviewer_gates:
+- reviewer: design-authority
+  stage: Deliver
+  from_risk_tier: 2
+  blocking: true
+  evidence: proportionate
+  reviewer_status: contract-only (department planned)
+- reviewer: evaluation-quality
+  stage: Assure
+  from_risk_tier: 2
+  blocking: true
+  evidence: proportionate
+  reviewer_status: contract-only (department planned)
+- reviewer: responsible-ai
+  stage: Assure
+  from_risk_tier: 3
+  blocking: true
+  evidence: proportionate
+  reviewer_status: contract-only (department planned)
+- reviewer: security-privacy
+  stage: Assure
+  from_risk_tier: 2
+  blocking: true
+  evidence: proportionate
+  reviewer_status: active
+ownership_map:
+- department: ai-centre-of-excellence
+  accountable_role: AI CoE Lead
+  named_owner: to confirm from declared roles
+- department: ai-strategy
+  accountable_role: AI Strategy Lead
+  named_owner: to confirm from declared roles
+- department: champions
+  accountable_role: Champions Programme Owner
+  named_owner: to confirm from declared roles
+- department: copilot-adoption
+  accountable_role: Adoption Lead
+  named_owner: to confirm from declared roles
+- department: design-authority
+  accountable_role: AI Design Authority
+  named_owner: to confirm from declared roles
+- department: evaluation-quality
+  accountable_role: AI Evaluation Lead
+  named_owner: to confirm from declared roles
+- department: m365-agents
+  accountable_role: Agent Product Owner
+  named_owner: to confirm from declared roles
+- department: opportunity-management
+  accountable_role: AI Portfolio Manager
+  named_owner: to confirm from declared roles
+- department: organisation-tailoring
+  accountable_role: Transformation Architect
+  named_owner: to confirm from declared roles
+- department: responsible-ai
+  accountable_role: Responsible AI Reviewer
+  named_owner: to confirm from declared roles
+- department: security-privacy
+  accountable_role: Security and Privacy Reviewer
+  named_owner: to confirm from declared roles
+to_confirm: []

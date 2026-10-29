@@ -1,0 +1,21 @@
+id: ai-transformation
+title: AI Transformation
+status: skeleton
+purpose: The superset programme. Orchestrates strategy, adoption, Champions, CoE, delivery, assurance, operations and value realisation into one coherent transformation pack (decision D10).
+lifecycle: [Discover, Envision, Mobilise, Enable, Deliver, Assure, Launch, Measure, Scale, Improve]
+journey: [ai-profile-intake, edition-and-archetype, ai-maturity-assessment, strategic-outcomes, adoption-readiness, champion-programme-design, coe-charter, opportunity-prioritisation, agent-use-case-design, coe-governance-model, adoption-measurement]
+includes:
+  - {programme: discovery}
+  - {programme: adoption}
+  - {programme: champions}
+  - {programme: ai-coe}
+  - {programme: agent-factory, when: {any_of: [{signal: agents-emerging}, {archetype_at_least: builder}]}}
+  - {programme: governance}
+artefacts:
+  - {id: operating-model, title: Target operating model, skill: "ai-strategy:ai-operating-model", template: ai-operating-model, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: ownership-map, title: Ownership map, skill: "organisation-tailoring:ownership-map", template: ownership-map, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: pack-index, title: Transformation pack index and success measures, skill: "organisation-tailoring:transformation-pack", template: transformation-pack-index, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+starter_substitutions:
+  ai-coe: "Starter organisations get an AI working group instead of a CoE. The coe-charter and coe-raci artefacts are produced in light form."
+gates:
+  - {reviewer: security-privacy, stage: Assure, from_risk_tier: 2, blocking: true, skippable: false}

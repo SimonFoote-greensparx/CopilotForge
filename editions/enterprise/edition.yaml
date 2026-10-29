@@ -1,0 +1,8 @@
+id: enterprise
+title: Enterprise
+typical_context: Large or multi-business-unit organisation.
+design_emphasis: Federated governance, formal assurance, multiple platforms and environments, portfolio management, production operations and benefits realisation.
+coe_form: A hub-and-spoke CoE with a central hub and business-unit spokes, reporting to an executive board.
+champions_form: Federated Champion communities per business unit, with a shared capability framework.
+governance_form: Federated policy, formal reviewer boards, auditable evidence at every gate and executive risk acceptance for tier 4.
+depth_default: full

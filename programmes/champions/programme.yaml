@@ -1,0 +1,12 @@
+id: champions
+title: Copilot Champions
+status: skeleton
+purpose: Build distributed capability through an evidence-led Champion community with clear operating boundaries.
+lifecycle: [Mobilise, Enable, Measure, Scale]
+artefacts:
+  - {id: champion-charter, title: Champions programme charter, skill: "champions:champion-programme-design", template: champion-programme-charter, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: capability-framework, title: Champion capability framework and evidence rubric, skill: "champions:capability-framework", template: champion-capability-framework, stage: Enable, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: challenge-catalogue, title: Champion Challenge catalogue, skill: "champions:champion-challenges", template: champion-challenge-catalogue, stage: Enable, depth: {starter: omit, scale: standard, enterprise: full}}
+  - {id: recognition-model, title: Recognition and progression model, skill: "champions:recognition-and-progression", template: champion-programme-charter, stage: Scale, depth: {starter: light, scale: standard, enterprise: full}}
+planned_departments: [learning-and-skills, change-and-communications]
+gates: []

@@ -1,0 +1,25 @@
+# v1 acceptance assertions over the golden tailoring plans (design brief sections 17.2 and 20.3).
+# Checked by scripts/check-profiles.py. The golden prompt:
+#   "We are a 600-person UK organisation. We have Microsoft 365 Copilot but usage is inconsistent, departments are
+#    starting to build agents, and management wants an AI Centre of Excellence. Help us."
+cases:
+  - id: golden-600
+    sample: larkfield-services-scale
+    expect:
+      edition: scale
+      archetype: adopter
+      programmes_include: [discovery, adoption, champions, ai-coe, agent-factory, governance]
+      artefacts_include: [maturity-assessment, operating-model, adoption-programme, champion-charter, coe-charter,
+                          opportunity-process, agent-brief, agent-release, governance-framework, roadmap, ownership-map,
+                          pack-index, adoption-measures, kpi-framework]
+      gates_include: [security-privacy, responsible-ai, evaluation-quality, design-authority]
+  - id: contrast-40
+    sample: ashby-studio-starter
+    expect:
+      edition: starter
+      archetype: adopter
+      programmes_include: [discovery, adoption, champions, ai-coe, governance]
+      programmes_exclude: [agent-factory]
+      artefacts_exclude: [kpi-framework, challenge-catalogue, agent-brief]
+proportionality:
+  - {larger: larkfield-services-scale, smaller: ashby-studio-starter}

@@ -1,0 +1,8 @@
+id: starter
+title: Starter
+typical_context: Small organisation or a department beginning adoption.
+design_emphasis: Simple roles, minimal governance overhead, safe use, high-value scenarios, practical templates and partner support where needed.
+coe_form: An AI working group of three to five people meeting monthly, with the sponsor attending quarterly.
+champions_form: An informal network of volunteers with a light evidence route.
+governance_form: An acceptable-use starter, a named owner for anything shared, and reviewer gates only from risk tier 2.
+depth_default: light

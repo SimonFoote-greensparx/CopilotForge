@@ -1,0 +1,19 @@
+id: agent-factory
+title: Agent Factory
+status: skeleton
+purpose: Give every agent idea one route from intake to retirement, with knowledge readiness, testing, reviewer gates and an owner.
+lifecycle: [Envision, Deliver, Assure, Launch, Improve]
+artefacts:
+  - {id: opportunity-process, title: Opportunity intake and prioritisation process, skill: "opportunity-management:opportunity-prioritisation", template: prioritisation-matrix, stage: Envision, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: ai-suitability, title: AI suitability decision, skill: "opportunity-management:ai-suitability", template: opportunity-canvas, stage: Envision, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: agent-brief, title: Agent brief and use-case design, skill: "m365-agents:agent-use-case-design", template: agent-brief, stage: Deliver, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: knowledge-readiness, title: Knowledge source readiness, skill: "m365-agents:knowledge-source-readiness", template: agent-brief, stage: Deliver, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: agent-test-plan, title: Agent test plan and evaluation set, skill: "m365-agents:agent-testing", template: agent-release-checklist, stage: Assure, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: agent-release, title: Agent release readiness and ownership, skill: "m365-agents:agent-release-readiness", template: agent-release-checklist, stage: Launch, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: scale-or-stop, title: Scale-or-stop review, skill: "opportunity-management:scale-or-stop", template: scale-or-stop-review, stage: Improve, depth: {starter: omit, scale: standard, enterprise: full}}
+planned_departments: [knowledge-management, platform-governance, ai-operations, evaluation-quality, copilot-studio]
+gates:
+  - {reviewer: security-privacy, stage: Assure, from_risk_tier: 2, blocking: true, skippable: false}
+  - {reviewer: responsible-ai, stage: Assure, from_risk_tier: 3, blocking: true, skippable: false}
+  - {reviewer: evaluation-quality, stage: Assure, from_risk_tier: 2, blocking: true, skippable: false}
+  - {reviewer: design-authority, stage: Deliver, from_risk_tier: 2, blocking: true, skippable: false}

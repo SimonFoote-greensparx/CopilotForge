@@ -1,0 +1,230 @@
+# Golden tailoring plan. Regenerate with python3 scripts/check-profiles.py --update after review.
+profile: profiles/samples/ashby-studio-starter.yaml
+organisation: Ashby Studio (fictional)
+fictional: true
+edition:
+  id: starter
+  rule: E2-starter-size
+  rationale: Fewer than 250 people in a single business unit without high regulatory expectations can run a light, owner-led
+    programme.
+  coe_form: An AI working group of three to five people meeting monthly, with the sponsor attending quarterly.
+  champions_form: An informal network of volunteers with a light evidence route.
+  governance_form: An acceptable-use starter, a named owner for anything shared, and reviewer gates only from risk tier 2.
+assurance_overlay:
+  id: proportionate
+  rule: A2-proportionate-assurance
+  rationale: Controls rise with risk tier, reach, data sensitivity and autonomy (progressive governance).
+archetype:
+  id: adopter
+  rule: R2-adopter
+  rationale: Copilot is deployed but use is inconsistent or unsupported by a Champion community, so adoption is the binding
+    constraint.
+  output_emphasis: Personas, Champions, role-based learning, adoption measures and repeatable scenarios.
+emerging_signals:
+- signal: shadow-ai
+  rule: S2-shadow-ai
+  note: Unsanctioned AI use is suspected or known, so an approved-use starter and safe alternatives come first.
+- signal: no-ai-policy
+  rule: S4-no-ai-policy
+  note: There is no approved AI acceptable-use policy.
+programmes:
+- ai-transformation
+- discovery
+- adoption
+- champions
+- ai-coe
+- governance
+substitutions:
+  ai-coe: Starter organisations get an AI working group instead of a CoE. The coe-charter and coe-raci artefacts are produced
+    in light form.
+artefacts:
+- programme: adoption
+  artefact: adoption-readiness
+  title: Adoption readiness assessment
+  depth: light
+  stage: Discover
+  skill: copilot-adoption:adoption-readiness
+  template: adoption-plan
+- programme: discovery
+  artefact: maturity-assessment
+  title: AI maturity assessment
+  depth: light
+  stage: Discover
+  skill: ai-strategy:ai-maturity-assessment
+  template: ai-maturity-assessment
+- programme: discovery
+  artefact: strategic-outcomes
+  title: Strategic outcomes and AI principles
+  depth: light
+  stage: Envision
+  skill: ai-strategy:strategic-outcomes
+  template: ai-roadmap
+- programme: ai-coe
+  artefact: coe-charter
+  title: CoE charter
+  depth: light
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-charter
+  template: coe-charter
+- programme: ai-coe
+  artefact: coe-operating-model
+  title: CoE operating model
+  depth: light
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-operating-model
+  template: ai-operating-model
+- programme: ai-coe
+  artefact: coe-raci
+  title: CoE RACI
+  depth: light
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-raci
+  template: coe-raci
+- programme: ai-transformation
+  artefact: operating-model
+  title: Target operating model
+  depth: light
+  stage: Mobilise
+  skill: ai-strategy:ai-operating-model
+  template: ai-operating-model
+- programme: ai-transformation
+  artefact: ownership-map
+  title: Ownership map
+  depth: light
+  stage: Mobilise
+  skill: organisation-tailoring:ownership-map
+  template: ownership-map
+- programme: ai-transformation
+  artefact: pack-index
+  title: Transformation pack index and success measures
+  depth: light
+  stage: Mobilise
+  skill: organisation-tailoring:transformation-pack
+  template: transformation-pack-index
+- programme: champions
+  artefact: champion-charter
+  title: Champions programme charter
+  depth: light
+  stage: Mobilise
+  skill: champions:champion-programme-design
+  template: champion-programme-charter
+- programme: discovery
+  artefact: roadmap
+  title: Prioritised AI roadmap
+  depth: light
+  stage: Mobilise
+  skill: ai-strategy:ai-roadmap
+  template: ai-roadmap
+- programme: governance
+  artefact: governance-framework
+  title: AI governance framework and acceptable-use starter
+  depth: light
+  stage: Mobilise
+  skill: ai-centre-of-excellence:coe-governance-model
+  template: ai-governance-starter
+- programme: adoption
+  artefact: scenario-catalogue
+  title: Persona and scenario catalogue
+  depth: light
+  stage: Enable
+  skill: copilot-adoption:scenario-discovery
+  template: scenario-catalogue
+- programme: champions
+  artefact: capability-framework
+  title: Champion capability framework and evidence rubric
+  depth: light
+  stage: Enable
+  skill: champions:capability-framework
+  template: champion-capability-framework
+- programme: governance
+  artefact: data-exposure-review
+  title: Data exposure review
+  depth: light
+  stage: Assure
+  skill: security-privacy:data-exposure-review
+  template: ai-risk-assessment
+- programme: governance
+  artefact: privacy-assessment
+  title: Privacy assessment
+  depth: light
+  stage: Assure
+  skill: security-privacy:privacy-assessment
+  template: ai-risk-assessment
+- programme: governance
+  artefact: risk-classification
+  title: Risk tier classification
+  depth: light
+  stage: Assure
+  skill: opportunity-management:risk-classification
+  template: ai-risk-assessment
+- programme: adoption
+  artefact: adoption-programme
+  title: Adoption programme and launch plan
+  depth: light
+  stage: Launch
+  skill: copilot-adoption:launch-plan
+  template: adoption-plan
+- programme: adoption
+  artefact: adoption-measures
+  title: Adoption measures and baseline
+  depth: light
+  stage: Measure
+  skill: copilot-adoption:adoption-measurement
+  template: coe-kpi-scorecard
+- programme: ai-coe
+  artefact: coe-cadence
+  title: Governance cadence and terms of reference
+  depth: light
+  stage: Scale
+  skill: ai-centre-of-excellence:coe-cadence
+  template: coe-charter
+- programme: champions
+  artefact: recognition-model
+  title: Recognition and progression model
+  depth: light
+  stage: Scale
+  skill: champions:recognition-and-progression
+  template: champion-programme-charter
+reviewer_gates:
+- reviewer: security-privacy
+  stage: Assure
+  from_risk_tier: 2
+  blocking: true
+  evidence: proportionate
+  reviewer_status: active
+ownership_map:
+- department: ai-centre-of-excellence
+  accountable_role: AI CoE Lead
+  named_owner: to confirm from declared roles
+- department: ai-strategy
+  accountable_role: AI Strategy Lead
+  named_owner: to confirm from declared roles
+- department: champions
+  accountable_role: Champions Programme Owner
+  named_owner: to confirm from declared roles
+- department: copilot-adoption
+  accountable_role: Adoption Lead
+  named_owner: to confirm from declared roles
+- department: opportunity-management
+  accountable_role: AI Portfolio Manager
+  named_owner: to confirm from declared roles
+- department: organisation-tailoring
+  accountable_role: Transformation Architect
+  named_owner: to confirm from declared roles
+- department: security-privacy
+  accountable_role: Security and Privacy Reviewer
+  named_owner: to confirm from declared roles
+to_confirm:
+- organisation.maturity_target
+- people.personas
+- knowledge.ownership_model
+- knowledge.quality
+- data.sensitivity
+- governance.security
+- governance.privacy
+- governance.responsible_ai
+- adoption.measurement
+- portfolio.candidate_opportunities
+- constraints.budget
+- constraints.timeline
+- constraints.capacity

@@ -1,0 +1,13 @@
+id: ai-coe
+title: AI Centre of Excellence
+status: skeleton
+purpose: Establish a business-owned, AI-enabled operating model that governs once and repeats everywhere.
+lifecycle: [Mobilise, Scale, Measure, Improve]
+artefacts:
+  - {id: coe-charter, title: CoE charter, skill: "ai-centre-of-excellence:coe-charter", template: coe-charter, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: coe-operating-model, title: CoE operating model, skill: "ai-centre-of-excellence:coe-operating-model", template: ai-operating-model, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: coe-raci, title: CoE RACI, skill: "ai-centre-of-excellence:coe-raci", template: coe-raci, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: coe-cadence, title: Governance cadence and terms of reference, skill: "ai-centre-of-excellence:coe-cadence", template: coe-charter, stage: Scale, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: kpi-framework, title: KPI framework and scorecard, skill: "ai-centre-of-excellence:coe-kpi-framework", template: coe-kpi-scorecard, stage: Measure, depth: {starter: omit, scale: standard, enterprise: full}}
+planned_departments: [value-realisation, programme-management]
+gates: []

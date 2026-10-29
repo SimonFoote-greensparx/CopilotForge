@@ -1,0 +1,89 @@
+# FICTIONAL SAMPLE. Larkfield Services does not exist. Any resemblance to a real organisation is coincidental.
+# The canonical v1 acceptance organisation (design brief section 17.2): a 600-person UK organisation with Microsoft 365
+# Copilot, inconsistent usage, departments starting to build agents, and management asking for an AI Centre of Excellence.
+profile_version: "1.0"
+fictional: true
+organisation:
+  name: Larkfield Services (fictional)
+  size: medium
+  sector: Facilities and property services
+  countries: [United Kingdom]
+  business_units: 3
+  regulatory_context:
+    level: medium
+    notes: UK GDPR; client contracts in the public sector carry information-security clauses.
+  ai_ambition: scale
+  goals:
+    - Make Copilot part of everyday work in every department, not only for early enthusiasts.
+    - Bring the agents departments are building into one safe, owned route.
+    - Set up an AI Centre of Excellence that the business, not IT, leads.
+  executive_sponsor: Chief Operating Officer
+  target_outcomes:
+    - Consistent weekly use of Copilot across office-based roles.
+    - Faster turnaround of client proposals and contract summaries.
+    - A visible, prioritised pipeline of AI opportunities with named business owners.
+  maturity_target: builder
+people:
+  workforce_size: 600
+  personas:
+    - {name: Contract managers, headcount: 60, work_pattern: hybrid}
+    - {name: Bid and proposal team, headcount: 15, work_pattern: desk}
+    - {name: Finance and HR, headcount: 45, work_pattern: hybrid}
+    - {name: Site supervisors, headcount: 120, work_pattern: frontline}
+    - {name: Service desk, headcount: 30, work_pattern: desk}
+  digital_skills: medium
+  ai_experience: low
+microsoft_estate:
+  microsoft_365: true
+  copilot:
+    chat_enabled: true
+    m365_copilot_licences: 150
+    usage_pattern: inconsistent
+  power_platform: personal
+  azure: true
+  fabric: false
+  github: false
+  dynamics: false
+ai_usage:
+  current_tools: [Copilot Chat, Microsoft 365 Copilot]
+  current_agents: 14
+  shadow_ai: suspected
+  existing_pilots: [Bid writing assistant pilot]
+knowledge:
+  repositories: [SharePoint intranet, Team sites, Policy library]
+  ownership_model: partial
+  quality: medium
+  classification: partial
+data:
+  major_sources: [Contract repository, Finance system, Service desk tickets]
+  sensitivity: medium
+governance:
+  ai_policy: draft
+  policies: [Information security policy, Data protection policy]
+  security: medium
+  privacy: medium
+  responsible_ai: low
+  approved_tools: [Copilot Chat, Microsoft 365 Copilot]
+  coe: forming
+adoption:
+  training: low
+  champions: informal
+  communities: true
+  communications: low
+  measurement: low
+delivery:
+  internal_capability: low
+  partners: true
+  developers: few
+  makers: few
+portfolio:
+  candidate_opportunities: 25
+  live_agents: 6
+  automations: 10
+  custom_ai_in_production: false
+  portfolio_managed: false
+constraints:
+  budget: medium
+  timeline: First CoE steering meeting within three months.
+  capacity: low
+  regulatory: [UK GDPR]

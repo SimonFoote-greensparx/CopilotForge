@@ -1,0 +1,13 @@
+id: governance
+title: AI Governance
+status: skeleton
+purpose: Put proportionate controls in place, rising with impact, reach, data sensitivity and autonomy.
+lifecycle: [Mobilise, Assure, Launch, Improve]
+artefacts:
+  - {id: governance-framework, title: AI governance framework and acceptable-use starter, skill: "ai-centre-of-excellence:coe-governance-model", template: ai-governance-starter, stage: Mobilise, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: risk-classification, title: Risk tier classification, skill: "opportunity-management:risk-classification", template: ai-risk-assessment, stage: Assure, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: data-exposure-review, title: Data exposure review, skill: "security-privacy:data-exposure-review", template: ai-risk-assessment, stage: Assure, depth: {starter: light, scale: standard, enterprise: full}}
+  - {id: privacy-assessment, title: Privacy assessment, skill: "security-privacy:privacy-assessment", template: ai-risk-assessment, stage: Assure, depth: {starter: light, scale: standard, enterprise: full}}
+planned_departments: [platform-governance, responsible-ai, data-governance, design-authority]
+gates:
+  - {reviewer: security-privacy, stage: Assure, from_risk_tier: 2, blocking: true, skippable: false}

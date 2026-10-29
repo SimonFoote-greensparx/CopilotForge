@@ -1,0 +1,47 @@
+# FICTIONAL SAMPLE. Ashby Studio does not exist. Any resemblance to a real organisation is coincidental.
+# The proportionality contrast for the v1 acceptance scenario (design brief section 17.2): the same request from a
+# 40-person organisation must produce materially lighter recommendations.
+profile_version: "1.0"
+fictional: true
+organisation:
+  name: Ashby Studio (fictional)
+  size: small
+  sector: Architecture and design practice
+  countries: [United Kingdom]
+  business_units: 1
+  regulatory_context:
+    level: low
+  ai_ambition: adopt
+  goals:
+    - Use Copilot to save time on proposals, meeting notes and project documentation.
+  executive_sponsor: Managing Partner
+  target_outcomes:
+    - Every member of staff confident with Copilot Chat for drafting and summarising.
+people:
+  workforce_size: 40
+  digital_skills: medium
+  ai_experience: low
+microsoft_estate:
+  microsoft_365: true
+  copilot:
+    chat_enabled: true
+    m365_copilot_licences: 10
+    usage_pattern: inconsistent
+  power_platform: none
+  azure: false
+  github: false
+  dynamics: false
+ai_usage:
+  current_tools: [Copilot Chat]
+  current_agents: 0
+  shadow_ai: suspected
+governance:
+  ai_policy: none
+  coe: none
+adoption:
+  champions: none
+delivery:
+  internal_capability: low
+  partners: true
+  developers: none
+  makers: none
