@@ -1,6 +1,6 @@
 ---
 name: coe-operating-model
-description: Designs how an AI Centre of Excellence actually runs - the core team and business roles, a central, hub-and-spoke or federated shape chosen by edition, and the flow from intake through the opportunity lifecycle to the right delivery route, linked to the Champion community. Use when a charter is agreed and the CoE now needs people, routes and a workable flow, or when an existing CoE has become a bottleneck.
+description: Designs how an AI Centre of Excellence runs - a business-owned structure with sponsor, lead, core team, four Champion roles and central AI enablement support, its shape by edition, the collaboration space, the intake-to-delivery flow and a phased launch. Use when a charter is agreed and the CoE now needs people, routes and a workable flow, or when an existing CoE has become a bottleneck.
 license: CC-BY-4.0
 metadata:
   department: ai-centre-of-excellence
@@ -48,6 +48,7 @@ standards to federate.
 3. Which delivery routes exist now: individual Copilot use, published prompts, agents built by makers, partner builds, automation, pro-code?
 4. How much CoE capacity is real, in roles and days per week, not aspirations?
 5. Which existing teams (IT service desk, architecture, information security, change) must the flow connect to?
+6. Which business unit benefits most and will own the CoE, and what can a central AI enablement function offer it?
 
 ## Required inputs
 
@@ -65,56 +66,80 @@ Choose the shape from the edition and number of business units, then check it ag
 
 | Shape | Typical edition | Choose when | Not yet if |
 |---|---|---|---|
-| Central working group | Starter | One business unit, few ideas, little internal build capability | Ideas are arriving faster than the group can triage monthly |
-| Core team with business representatives (central hub) | Scale | Several departments, steady flow of ideas, some makers | No business representative can give regular time |
-| Hub and spoke | Scale to Enterprise | Two or more business units with their own priorities and a spoke lead each | Shared intake criteria and risk tiers are not yet stable |
-| Federated | Enterprise | Spokes run their own intake and tier 0-2 release under hub standards; hub runs tier 3-4 assurance and the portfolio | Spokes lack trained reviewers or a shared register |
+| AI working group | Starter | One business unit, few ideas, little internal build capability | Ideas are arriving faster than the group can triage |
+| Business-owned CoE with central enablement support | Scale | Several departments, steady flow of ideas, some makers | No business unit will own it and give a lead real time |
+| Hub and spoke | Scale to Enterprise | Two or more business units with their own priorities and a CoE lead each | Shared intake criteria and risk tiers are not yet stable |
+| Federated | Enterprise | Spokes run intake and tier 0-2 release under hub standards; hub runs tier 3-4 assurance and the portfolio | Spokes lack trained reviewers or a shared register |
+
+Staff each CoE from the business unit that benefits. Sizes are typical starting points, scaled to the edition.
+
+| Role | Held by | Does |
+|---|---|---|
+| Executive sponsor | Business executive | Funds, decides priorities, removes blockers, drives adoption |
+| CoE lead | Business manager in the owning unit | Runs the backlog, the cadence and the scorecard |
+| Core team (often three to five) | Business people with process, knowledge and delivery skills | Assess, build or commission, deploy and measure |
+| Champions network | Volunteers with agreed time, in four roles | Knowledge champion keeps content owned and current; process champion spots opportunities and measures benefit; adoption champion promotes use and shares success stories; AI champion supports agent testing and experimentation |
+| Central AI enablement | Specialist function serving every CoE | Advises, coaches, governs and provides technical specialists; never owns the CoE |
 
 Route every idea by the outcome of suitability and risk tier.
 
 | Route | Typical risk tier | Who delivers | CoE involvement |
 |---|---|---|---|
+| Process change or training | Not applicable | The owning team | Records the outcome in the backlog |
 | Adoption scenario (individual Copilot use) | 0 | The team, helped by Champions | Publishes the scenario |
 | Shared prompt, Cowork task or team agent | 1 | Business maker with named owner | Light registration |
-| Organisational agent or automation | 2 | Makers or partner with CoE support | Full intake, reviewer gates |
+| Organisational agent or automation | 2 | Makers or partner with central enablement support | Full intake, reviewer gates |
 | Business-critical or external solution | 3-4 | Specialist team or partner | Formal assurance and executive acceptance |
+
+Launch in phases, moving on only when the exit items are met. Durations are typical, not commitments.
+
+| Phase | Typical timing | Exit items |
+|---|---|---|
+| Establish | Month 1 | Sponsor confirmed, lead and core team named, collaboration space set up |
+| Foundation | Month 2 | Backlog live, knowledge asset register started, first opportunities framed |
+| Deliver | Months 3-4 | Quick wins live, first agents or automations deployed, value measured against baseline |
+| Scale | Month 5 onwards | Patterns reused by other teams, wider rollout, adoption growing |
 
 ## Practitioner approach
 
 Start from the flow, not the organisation chart. Draw the opportunity lifecycle - Identify, Assess, Prioritise, Build,
 Deploy, Measure, Improve - across the page, and for each stage write who does the work today, who should do it, and what
-leaves the stage. This exposes the real design questions faster than debating titles.
+leaves the stage. Lay the six pillars (opportunity management, knowledge management, agent development, automation,
+adoption and change, governance) against it, so each stage has a pillar that owns its method and the CoE governs once
+and repeats everywhere.
 
-Design intake first. Give the organisation one front door: a short form or Teams channel that asks for the business
-owner, the problem, the expected outcome and who is affected. Champions are the main feeders; they spot opportunities
-and route them, but they do not approve or build high-risk solutions and must not become a second queue. Set the rule
-from the charter in operational terms: nothing enters delivery without a named business owner, a framed problem, an
-expected outcome, an initial risk tier and a recorded reason why AI beats process change, ordinary automation, training
-or an existing capability.
+Design intake first. Give the organisation one front door that asks for the business owner, the problem, the expected
+outcome and who is affected. The rule is simple: no backlog entry, no project. Nothing is resourced unless it sits in
+the backlog with an owner, a priority, an estimated value, a return estimate and a status.
 
-Then design triage and routing. Most ideas should leave quickly: to an adoption scenario, to a published prompt, to a
-process fix or to a team-owned tier 1 agent with light registration. Only tier 2 and above should pass through full CoE
-assurance. A CoE that applies tier 3 controls to everything is the commonest reason makers go around it.
+Then design triage and routing. Most ideas should leave quickly: to a process fix, training, an adoption scenario, a
+published prompt or a team-owned tier 1 agent. Only tier 2 and above should pass through full assurance. A CoE that
+applies tier 3 controls to everything is the commonest reason makers go around it.
 
-Now size the team. A Scale CoE usually needs a CoE lead, a portfolio and intake role, an adoption and Champions lead, a
-platform and governance role working with IT, and business representatives from each major function. Several roles may
-be held by one person part-time; record the time honestly. Add specialist roles (evaluation, architecture, responsible
-AI) only when the portfolio needs them, and borrow from partners first.
+Now staff it, using the structure table. Ownership sits with the benefiting business unit; the central AI enablement
+function supports as advisor, coach, governance and technical specialist. Give each Champion one of the four defined
+roles, so nobody is a vague "AI enthusiast", and agree their time with their manager. Champions feed and support; they
+do not approve or own high-risk solutions. Record time honestly, and borrow specialist roles from partners first.
 
-Choose the shape using the decision framework. Hub and spoke is right when business units genuinely run their own
-priorities and each can name a spoke lead; until then, a central hub with business representatives is safer. Federation
-is earned when shared intake criteria, risk tiers and a single solution register have run for several cycles.
+Set up the collaboration space before the first meeting, using tools the organisation already runs. A simple structure
+works: a general area for announcements with a gallery of live agents and automations; an opportunities area holding
+the backlog board; areas for knowledge management (with the knowledge asset register), agent development, automation
+and governance; and a success stories area where value is shared. Visible work stops the CoE becoming a private queue.
 
-Finally, connect the model to the organisation-wide operating model on the `ai-operating-model` template, so the CoE is
-one part of how AI runs rather than a parallel structure. Show interfaces with the service desk for support, with
-information security for reviews, and with change and communications for launches. Write down what will trigger a
-redesign, such as a new business unit or a doubling of intake.
+Choose the shape using the decision framework. Hub and spoke is right when business units run their own priorities and
+each can name a CoE lead; federation is earned when shared criteria, tiers and one register have run for several cycles.
+
+Plan the launch in the four phases, and do not start Deliver until the backlog and knowledge register exist. Connect the
+model to the organisation-wide operating model on the `ai-operating-model` template, and write down what will trigger a
+redesign, such as a new business unit or a doubling of intake. The aim is business capability supported by AI.
 
 ## Outputs
 
-- A CoE operating model section for the `ai-operating-model` template: shape chosen with rationale, team roles with time commitment, intake-to-delivery flow across the lifecycle, routing table by risk tier, interfaces with existing teams and triggers for redesign.
+- A CoE operating model section for the `ai-operating-model` template: shape chosen with rationale, structure and roles with time commitment, Champion role allocation, intake-to-delivery flow across the lifecycle and pillars, routing table, interfaces with existing teams and triggers for redesign.
+- A collaboration space design: areas, the live solution gallery, the backlog board and the knowledge asset register, each with an owner role.
+- A phased launch roadmap with exit items, recorded in the launch section of the `coe-charter` template.
 - Membership and decision rights reflected back into the `coe-charter` template where they changed.
-- A first-month action list, including the inventory of existing agents and automations.
+- A first-month action list for the Establish phase, including the inventory of existing agents and automations.
 
 ## Microsoft platform considerations
 
@@ -126,12 +151,17 @@ capability in `references/sources.md` before committing to a component.
 ## Adoption considerations
 
 The model must make the easy path the safe path. Publish the front door, the typical time to a decision and examples of
-ideas that went each route. Link Champions explicitly as feeders and peer guides, using `champions:champion-programme-design`.
+ideas that went each route. Link the four Champion roles to `champions:champion-programme-design`, which owns
+recruitment, time agreements and recognition; Champion contribution is recognised there, never used to judge individual
+performance. Use the success stories area to show peers real results.
 
 ## Knowledge considerations
 
 Make knowledge ownership part of intake for anything at tier 1 or above: which sources the solution will use and who
-owns them. Weak knowledge is a routing outcome in its own right, sending the idea to fix content first.
+owns them. Keep a knowledge asset register in layers (policies and standards, procedures, templates and guidance, FAQs
+and lessons learned, then the agents and automations built on them), each item with an owner, a review date, version
+control and a classification. Weak knowledge is a routing outcome in its own right, sending the idea to fix content
+first; the `knowledge-management` department (planned) will own the standard.
 
 ## Security and privacy considerations
 
@@ -158,8 +188,8 @@ fixes, and solutions released with an owner and baseline. Report at team level t
 
 ### Starter
 
-A working group triages ideas monthly from one shared list. Most route to adoption scenarios or partner help. No spokes,
-no formal portfolio.
+An AI working group triages ideas from one shared list in a single shared space. Champion roles may be combined in one
+or two people. Most ideas route to adoption scenarios, process fixes or partner help. No spokes, no formal portfolio.
 
 ### Scale
 
@@ -168,15 +198,17 @@ reviewer gates from tier 2. Consider spokes once two business units each have a 
 
 ### Enterprise
 
-Hub and spoke or federated: spokes own intake and tier 0-2 decisions under hub standards; the hub runs tier 3-4
-assurance, the portfolio, shared patterns and the register across units.
+Hub and spoke or federated: each business unit runs its own CoE, owning intake and tier 0-2 decisions under hub
+standards; the hub runs tier 3-4 assurance, the portfolio, shared patterns and one register across units, and the
+central AI enablement function serves every spoke.
 
 ## Hand-offs
 
 - To `ai-centre-of-excellence:coe-raci` to assign responsibilities across the flow.
 - To `ai-centre-of-excellence:coe-cadence` to set the meetings the flow depends on.
 - To `opportunity-management:problem-framing` as the first step after intake.
-- To `champions:champion-programme-design` for the Champion feeder role.
+- To `champions:champion-programme-design` for recruiting and supporting the four Champion roles.
+- To `opportunity-management:opportunity-prioritisation` to run the backlog the flow feeds.
 
 ## Reviewer gates
 
@@ -189,7 +221,8 @@ challenge in the steering decision log.
 - The CoE builds everything itself, intake backs up and departments build around it.
 - Tier 3 controls are applied to tier 1 ideas, so makers stop registering anything.
 - Spokes are created before shared criteria exist, so each unit invents its own governance.
-- Champions become an informal request queue and burn out.
+- Champions become an informal request queue and burn out, or carry a vague title with no defined role.
+- The central AI team is treated as owner, so business units wait for it instead of leading.
 
 ## Sources
 
@@ -200,4 +233,5 @@ challenge in the steering decision log.
 - Let an idea enter delivery without a named business owner and a framed problem.
 - Design a federated model before shared intake criteria, risk tiers and a register exist.
 - Make Champions approvers or the owners of high-risk solutions.
+- Resource work that has no entry in the backlog.
 - Assume capacity the organisation has not committed.

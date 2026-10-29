@@ -1,6 +1,6 @@
 ---
 name: coe-governance-model
-description: Writes a proportionate AI governance framework and acceptable-use starter - progressive risk tiers 0 to 4 with minimum controls, a solution register, ownership and lifecycle controls, and reviewer gates - so low-risk experimentation is not blocked. Use when there is no approved AI policy, when departments are building agents with no register or owner, or when governance is so heavy that people work around it.
+description: Writes a proportionate AI governance framework and acceptable-use starter - five governance areas, progressive risk tiers 0 to 4 with minimum controls, an agent portfolio register with business, knowledge and technical owners, and reviewer gates - so low-risk experimentation is not blocked. Use when there is no approved AI policy, when departments build agents with no register or owner, or when governance is so heavy people work around it.
 license: CC-BY-4.0
 metadata:
   department: ai-centre-of-excellence
@@ -64,6 +64,18 @@ regulatory requirement, and send legal questions to the organisation's legal adv
 
 ## Decision framework
 
+Cover five governance areas, each with a named owning role, so nothing falls between functions.
+
+| Area | Question it answers | Typical owning role |
+|---|---|---|
+| Security | Can only the right people and systems reach the solution and what it reaches? | Information security |
+| Privacy | Is personal data used lawfully, minimally and transparently? | Data protection officer |
+| Data ownership | Does every knowledge source and data set have a business owner who keeps it current? | Business and knowledge owners |
+| Compliance | Does the solution meet policy, contract and regulatory obligations? | Compliance or legal adviser |
+| Human accountability | Which named role answers for each outcome the solution informs? | The business owner |
+
+The accountability principle sits above all five: AI assists decision making; humans remain accountable for outcomes.
+
 Classify by the highest applicable factor (reach, data sensitivity, autonomy, impact on people, external exposure).
 Each tier inherits the controls below it.
 
@@ -80,7 +92,8 @@ decision should take days, not months. If not, the controls are mis-sized.
 
 ## Practitioner approach
 
-Write the acceptable-use starter first, because it protects people now. Keep it to two pages in plain language: which
+Write the acceptable-use starter first, because it protects people now. Open it with the accountability principle in
+plain words: AI helps people decide, and people stay accountable for what they decide and send. Keep it to two pages in plain language: which
 tools are approved and for what, what data must not go into unapproved tools, that people check outputs before relying on
 them, that AI-generated content is labelled where it matters, how to share a useful prompt, and where to take a new idea.
 Offer the approved alternative alongside each prohibition; banning tools without one simply moves use out of sight.
@@ -89,11 +102,17 @@ Then build the tier model above. Adapt the factors to the organisation, but keep
 that the CoE governs once and repeats everywhere. Classify five or six real examples from the inventory with the
 business owners present; this calibrates the tiers and shows people the model is fair.
 
-Set up the solution register next. Every tier 1 and above solution has an entry: name, purpose, business owner,
-knowledge owner, audience, knowledge sources, data sensitivity, tier, reviews completed, release date, review date and
-status. The register is the backbone of lifecycle control: it drives periodic review, re-classification when audience or
+Set up the solution register next, run as an agent portfolio. Every tier 1 and above solution has an entry: name,
+category (Microsoft 365 agent, Copilot Studio agent, automation or integration), purpose, business owner, knowledge
+owner, technical owner, platform, audience, knowledge sources, data sensitivity, tier, reviews completed, release date,
+review date, measured value against baseline and status. Three named owners matter: the business owner answers for the
+outcome, the knowledge owner for the content, the technical owner for the build and its support. The register is the backbone of lifecycle control: it drives periodic review, re-classification when audience or
 data changes, and retirement of unused or ownerless solutions. Make registration the condition for sharing beyond the
 builder.
+
+Map the five governance areas onto the tiers so each area has a minimum control at each tier and an owning role, and
+the CoE governs once and repeats everywhere. Treat knowledge as governed content too: every document an agent relies on
+carries an owner, a review date, version control and a classification, recorded in the knowledge asset register.
 
 Define ownership and lifecycle controls: an owner leaving triggers reassignment within a set period or suspension;
 every solution has a review date proportionate to its tier; solutions with no use or no owner for an agreed period are
@@ -112,7 +131,8 @@ Close with what governance cannot do: it does not make an unsuitable use accepta
 ## Outputs
 
 - An AI governance framework and acceptable-use starter on the `ai-governance-starter` template: principles, approved tools, data rules, tier model with minimum controls, reviewer gates, release authority, register fields, ownership and lifecycle rules, exception and escalation route.
-- A populated solution register seeded from the current inventory, each entry with a provisional tier.
+- The five governance areas with owning roles and the accountability statement, in the same template.
+- A populated agent portfolio register seeded from the current inventory, each entry with category, the three owners, platform, provisional tier, review date and a measured-value field.
 - A short list of current solutions needing action (no owner, wrong tier, missing review).
 
 ## Microsoft platform considerations
@@ -151,8 +171,8 @@ with an acceptance threshold agreed by the business owner; tier 3 and 4 add ongo
 
 ## Value measures
 
-Measure governance by proportion and coverage: register coverage of known solutions, share of shared solutions with an
-owner, median decision time by tier, and blocking findings resolved before release. The CoE lead owns them, reported
+Measure governance by proportion and coverage: register coverage of known solutions, share of shared solutions with a
+business, knowledge and technical owner, share of portfolio entries with measured value recorded, median decision time by tier, and blocking findings resolved before release. The CoE lead owns them, reported
 through `ai-centre-of-excellence:coe-kpi-framework`.
 
 ## Scale notes
@@ -191,6 +211,8 @@ from tier 3. Planned reviewer departments are held by the CoE lead until built.
 - Agents are registered at launch but never reviewed, and their owners and knowledge drift away.
 - A prohibition without an approved alternative, so shadow AI grows.
 - Tier classification is done by the builder alone and always comes out low.
+- The register records a technical owner but no business or knowledge owner, so nobody answers for outcomes or content.
+- Privacy and security are covered but data ownership and human accountability are left implicit, and nobody owns a wrong answer.
 
 ## Sources
 
@@ -202,3 +224,4 @@ from tier 3. Planned reviewer departments are held by the CoE lead until built.
 - Allow a tier 2 or higher release while a blocking `security-privacy` finding is open.
 - Assert that a platform control exists or is licensed without checking the current source.
 - Give legal or regulatory conclusions; refer them to the legal adviser or data protection officer.
+- Imply that an AI system, rather than a named human role, is accountable for an outcome.

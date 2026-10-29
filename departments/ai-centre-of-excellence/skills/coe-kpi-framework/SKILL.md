@@ -1,6 +1,6 @@
 ---
 name: coe-kpi-framework
-description: Builds a KPI framework and scorecard for an AI CoE across adoption, capability, portfolio flow, quality, governance and value, each measure with a baseline, target, source and business owner, reported at team level. Use when a sponsor asks how they will know AI is working, when reporting relies on licence counts or hours saved, or when the steering group needs a scorecard before its first value review.
+description: Builds a KPI framework and scorecard for an AI CoE across adoption, capability, portfolio flow, quality, governance and value, each measure with a baseline, target, source and owner, rolled up into a four-quadrant sponsor dashboard at team level. Use when a sponsor asks how they will know AI is working, when reporting relies on licence counts or hours saved, or when steering needs a scorecard before its first value review.
 license: CC-BY-4.0
 metadata:
   department: ai-centre-of-excellence
@@ -82,6 +82,16 @@ Select two to four measures per family, at least one leading and one lagging, an
 
 Licence counts and hours saved may appear as context, never as the only measures of success.
 
+For the sponsor, roll the six families up into a four-quadrant dashboard on one page. Each quadrant shows two or three
+measures and their status; the detail stays in the framework.
+
+| Quadrant | Draws on | Typical measures |
+|---|---|---|
+| Value | Value | Hours released, cost reduction or revenue impact, each with its method stated, shown beside an outcome measure from the work and never alone |
+| Adoption | Adoption, capability | Active use by team or role; Champion participation as the share of teams with an active Champion |
+| Capability | Portfolio flow, capability | Opportunities submitted and the share reaching a decision; agents and automations delivered with an owner and baseline |
+| Governance | Governance, quality | Compliance with the tier controls; reviews completed on schedule; evaluation pass rate at release |
+
 ## Practitioner approach
 
 Start at the value end. Take each strategic outcome and ask its business owner what would show it improving: proposal
@@ -100,6 +110,16 @@ Settle aggregation and privacy before any data is collected. Usage data is repor
 minimum group size; the scorecard never ranks individuals or names low users. Ask the data protection officer and HR to
 confirm the position and record it on the scorecard.
 
+Present the result to the sponsor as the four-quadrant dashboard: value, adoption, capability and governance. The
+quadrants answer the questions a sponsor actually asks - is it worth it, are people using it, are we getting better at
+delivering it, and is it safe - and keep any one number from dominating. Count delivery capability as outcomes, not
+volume: opportunities submitted matter only alongside how many reach a decision, and agents delivered only alongside
+how many have an owner, a baseline and measured value in the portfolio register. Report Champion participation as
+coverage across teams, never as a league table of people.
+
+Where the sponsor asks for return on investment, show the estimate made at intake beside the value achieved, with the
+method and confidence of each. A return figure without its baseline and method should not appear on the dashboard.
+
 For each measure write: definition, family, leading or lagging, baseline and date, target and date, data source,
 collection frequency, owner and the forum that acts on it. Then build the scorecard: a one-page view grouped by family,
 with status against target and a short commentary by the owner.
@@ -113,6 +133,7 @@ show in outcomes. Write that caveat on the scorecard itself so it is not over-re
 ## Outputs
 
 - A KPI framework and scorecard on the `coe-kpi-scorecard` template: measures by family with definition, baseline, target, source, frequency, owner and acting forum.
+- A one-page sponsor dashboard on the same template, grouping the measures into value, adoption, capability and governance quadrants.
 - A baseline capture plan for measures that lack one.
 - A recorded data protection and aggregation position for usage data.
 
@@ -156,7 +177,7 @@ scorecard each cycle and that every value measure has a baseline and a business 
 
 ### Starter
 
-Five or six measures on one page, reviewed twice a year: weekly active use by team, two or three outcome measures from
+Five or six measures on one page, grouped loosely into the four quadrants and reviewed twice a year: weekly active use by team, two or three outcome measures from
 target scenarios, and whether the acceptable-use starter is in place. The full KPI framework is omitted.
 
 ### Scale
@@ -166,7 +187,7 @@ adoption reporting.
 
 ### Enterprise
 
-A hub framework with spoke scorecards that roll up, portfolio-level value tracking, and links to benefits realisation
+A hub framework with spoke scorecards and dashboards that roll up quadrant by quadrant, portfolio-level value tracking, and links to benefits realisation
 through the `value-realisation` department (planned).
 
 ## Hand-offs
@@ -186,6 +207,8 @@ Not applicable as a release gate, because the scorecard is a reporting instrumen
 - No baselines are captured before launch, and benefits can never be shown.
 - Usage reporting slides into naming individuals, and trust in the programme collapses.
 - The CoE reports benefits the business never agreed, and they are dismissed at renewal.
+- The value quadrant shows only hours saved, so the dashboard is challenged the first time a finance lead asks how it was calculated.
+- Opportunities submitted and agents delivered rise every month while value stays flat, and nobody notices because volume looks like progress.
 
 ## Sources
 

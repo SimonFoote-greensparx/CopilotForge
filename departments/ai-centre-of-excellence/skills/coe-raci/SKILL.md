@@ -73,21 +73,42 @@ Apply these rules to every row before the RACI is accepted.
 | A can say no | The A has the authority and information to refuse | Escalate or move the A |
 | Champions bounded | Champions are R or C for peer guidance and routing, never A for approval or release | Reassign |
 
-Cover these activity groups at minimum: opportunity lifecycle (Identify, Assess, Prioritise, Build, Deploy, Measure,
+Start with a one-page summary the sponsor can hold in their head, then detail it. A typical starting allocation for a
+business-owned CoE, where the CoE lead sits in the benefiting business unit, is below; challenge it locally rather than
+copying it.
+
+| Activity | Executive sponsor | CoE lead | Champions | Central AI enablement |
+|---|---|---|---|---|
+| Prioritisation | A | R | C | C |
+| Funding | A | C | I | I |
+| Delivery | I | A | R | C |
+| Knowledge management | I | A | R | C |
+| Governance | C | C | I | A |
+| Adoption | C | A | R | C |
+
+Individual solution benefits and knowledge content still sit with each solution's business owner and knowledge owner in
+the detailed matrix. Cover these activity groups at minimum: opportunity lifecycle (Identify, Assess, Prioritise, Build, Deploy, Measure,
 Improve), governance decisions (risk tier, release by tier, exceptions, risk acceptance), knowledge ownership, platform
 and register, adoption and Champions, and value reporting.
 
 ## Practitioner approach
 
-List activities before roles. Walk the opportunity lifecycle and write each activity as a verb and object: "frame the
-problem", "classify the risk tier", "approve release of a tier 2 agent", "maintain the knowledge source", "report the
+Begin with the summary. Six rows - prioritisation, funding, delivery, knowledge management, governance and adoption -
+across the sponsor, the CoE lead, Champions and the central AI enablement function show at a glance that the business
+leads and enablement supports. If the sponsor will not hold the A for prioritisation and funding, the CoE has no
+authority, and that is a charter problem to fix before going further. A clear summary is also what stops AI delivery
+turning into a request queue for the central team.
+
+Then list detailed activities before roles. Walk the opportunity lifecycle and write each activity as a verb and
+object: "frame the problem", "classify the risk tier", "approve release of a tier 2 agent", "maintain the knowledge source", "report the
 benefit". Add the governance decisions and the recurring work - reviewing the register, retiring unused agents,
 updating the acceptable-use starter. Twenty-five to forty rows is usually right for a Scale organisation; more than
 sixty and nobody will read it.
 
-Then list roles, using the titles the organisation uses. Typical columns are executive sponsor, CoE lead, business
-owner, knowledge owner, maker or delivery team, platform or IT lead, information security, data protection, Champions
-and, where used, a delivery partner. In a hub-and-spoke model add a spoke lead column.
+Next, list roles, using the titles the organisation uses. Typical columns are executive sponsor, CoE lead, business
+owner, knowledge owner, maker or delivery team, platform or IT lead, information security, data protection, the central
+AI enablement function, Champions (split into knowledge, process, adoption and AI champion roles where that helps) and,
+where used, a delivery partner. In a hub-and-spoke model add a spoke lead column.
 
 Fill the A column first, one row at a time, asking "who answers for this if it goes wrong?". This is where the
 principle bites. The business owner is accountable for the problem statement, the priority within their area, the
@@ -108,7 +129,8 @@ or when an incident reveals a gap.
 
 ## Outputs
 
-- A RACI matrix on the `coe-raci` template: activities grouped by lifecycle stage, governance, knowledge, release and value; roles as columns; one A per row.
+- A one-page summary RACI on the `coe-raci` template across prioritisation, funding, delivery, knowledge management, governance and adoption, for the sponsor.
+- A detailed RACI matrix on the `coe-raci` template: activities grouped by lifecycle stage, governance, knowledge, release and value; roles as columns; one A per row.
 - A short list of role gaps marked `[To confirm]` with the proposed owner of the appointment decision.
 - A record of the steering decision agreeing the RACI and its review date.
 
@@ -155,7 +177,7 @@ through `ai-centre-of-excellence:coe-kpi-framework`.
 
 ### Starter
 
-A single page of fifteen to twenty rows and five or six roles. The sponsor or managing role is often A for release; that
+The six-row summary plus a single page of fifteen to twenty rows and five or six roles. The sponsor or managing role is often A for release; that
 is fine if it is written down.
 
 ### Scale
@@ -185,6 +207,7 @@ should confirm its own rows before the RACI is agreed.
 - IT is accountable for benefits, so the business never measures them.
 - The RACI names people, and is out of date the first time someone moves role.
 - Champions end up accountable for approvals they have neither the authority nor the time to give.
+- The central AI enablement function is A for delivery and adoption, so business units queue requests instead of leading.
 
 ## Sources
 

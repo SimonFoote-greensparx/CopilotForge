@@ -74,7 +74,7 @@ not the average.
 | Technical enablement | IT confirms prerequisites for the audience and owns the remaining items | Yes |
 | Data and permissions hygiene | Oversharing on the audience's main content reviewed and high-risk locations remediated or restricted | Yes |
 | Approved-use guidance | Short, written guidance on what is approved, what is not and how to verify output | Yes |
-| Support | A route for questions, issues and suspected data exposure, with owners | Yes |
+| Support | A route for questions, issues and suspected data exposure, with owners, plus a plan for local peer support | Yes |
 | Communications | A plan to tell people why, what, how and where to get help | No for a pilot; yes for broad launch |
 
 Any critical area at Not ready means "do not launch to this audience yet". Partly ready areas may launch with a dated
@@ -104,7 +104,9 @@ it to the `security-privacy` department. This is the area most often waved throu
 Then check the human scaffolding. Is there short, plain approved-use guidance that tells people what they may use
 Copilot for, what they must not paste or ask, and that they remain responsible for checking output? Is there a support
 route that distinguishes "how do I" questions from faults and from suspected data exposure? Is there a communications
-plan that explains the purpose before the feature list?
+plan that explains the purpose before the feature list? Is there, or will there be, a Champions network to give local
+peer support, and a Centre of Excellence or intake route for ideas bigger than individual use? Without both, every
+question and every promising idea lands on the central adoption team.
 
 Write the assessment as evidence, a rating and a gap for each area, then a short overall recommendation. For each gap,
 name an owner and a date, and say whether it blocks launch. Share it with the sponsor in a conversation rather than by
@@ -129,7 +131,8 @@ entitlements; refer licensing questions to the Microsoft licensing guide or a li
 ## Adoption considerations
 
 Readiness is the first adoption intervention, not a gate before it. Involve managers and likely Champions early,
-because they will explain the gaps to their teams. Treat low usage of assigned licences as a signal to investigate with
+because they will explain the gaps to their teams. Readiness covers the foundation layer of adoption; a Champions
+programme adds local capability on top, and the Centre of Excellence handles larger or higher-risk work. Treat low usage of assigned licences as a signal to investigate with
 teams, never as evidence against individuals.
 
 ## Knowledge considerations
@@ -184,6 +187,7 @@ programme risk log.
 - To `copilot-adoption:scenario-discovery` once the audience is agreed, to find the scenarios that will make the launch worthwhile.
 - To `copilot-adoption:launch-plan` with the gap list and mitigations.
 - To `copilot-adoption:adoption-measurement` with the readiness baseline.
+- To `champions:champion-programme-design` when no peer support network exists or is planned.
 - To the `security-privacy` department for oversharing, labelling and access findings.
 
 ## Reviewer gates

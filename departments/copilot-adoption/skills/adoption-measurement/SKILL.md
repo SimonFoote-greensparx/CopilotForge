@@ -65,7 +65,7 @@ Measure all four layers, and do not claim value from the first layer alone.
 | Layer | What it shows | Typical measures | Source |
 |---|---|---|---|
 | Usage | Whether people are using Copilot at all | Active users as a share of licensed users; breadth of apps used | Organisation's usage reporting, aggregated |
-| Capability | Whether people can use it well and safely | Self-assessed confidence; scenarios people report using; Champion evidence at programme level | Short pulse surveys, Champion programme data |
+| Capability | Whether people can use it well and safely | Self-assessed confidence; scenarios people report using; Champion community size, milestone conversion and reusable assets at programme level | Short pulse surveys, Champion programme data |
 | Behaviour change | Whether ways of working have shifted | Share of teams using priority scenarios routinely; verification habits reported | Team surveys, manager check-ins, sampling |
 | Outcomes | Whether the work is better | Time to complete, delay, rework or quality for priority scenarios against baseline | Owner-led sampling and existing business measures |
 
@@ -94,7 +94,9 @@ what. Make it explicit that adoption data will not be used to judge individual p
 to staff builds the trust that honest survey answers depend on.
 
 Build the measures layer by layer. Usage comes from the organisation's own reporting, aggregated by team or role.
-Capability comes from short pulse surveys and, at programme level, from Champion evidence. Behaviour change is
+Capability comes from short pulse surveys and, at programme level, from the Champions programme: how many people
+have joined, how many have moved through each verified capability, and how many reusable assets they have produced.
+Take these as aggregates from `champions:recognition-and-progression`, never from the tracker's individual rows. Behaviour change is
 best seen through simple questions to teams and managers about which scenarios have become routine. Outcomes come from
 the owner's sampling against the baseline, or from business measures the organisation already tracks.
 
@@ -173,6 +175,7 @@ from data protection, HR and works councils where applicable, and consistent sup
 - To `ai-centre-of-excellence:coe-operating-model` so adoption measures feed the CoE scorecard and portfolio decisions.
 - To `copilot-adoption:launch-plan` with findings that should change the next wave.
 - To `copilot-adoption:scenario-discovery` when scenarios need refreshing.
+- To `champions:recognition-and-progression` with team-level adoption indicators for the Champions health check.
 - To the `value-realisation` department (planned) for financial benefit and return on investment work.
 
 ## Reviewer gates
@@ -187,6 +190,7 @@ usage is a blocking finding.
 - Baselines are not taken before launch, so outcome claims cannot be supported later.
 - Usage dashboards drift into individual-level views, trust collapses and survey answers stop being honest.
 - Small teams are reported separately, making individuals identifiable.
+- Adoption gains in teams with Champions are claimed as caused by the Champions, without evidence beyond correlation.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 ---
 name: coe-charter
-description: Drafts the charter for an AI Centre of Excellence - purpose, scope across the six pillars, principles, sponsorship, decision rights and what the CoE is not - or the lighter terms of an AI working group for a small organisation. Use when management asks for an AI CoE, when an existing group has drifted into a reporting forum or request queue, or when a sponsor needs one page to agree before people are appointed.
+description: Drafts the charter for an AI Centre of Excellence - purpose, who owns what between the business, AI enablement and the sponsor, scope across the six pillars, decision rights, launch commitments and what the CoE is not - or the lighter terms of an AI working group. Use when leadership asks for an AI CoE, when a group has drifted into a reporting forum or request queue, or when a sponsor needs one page to agree before people are appointed.
 license: CC-BY-4.0
 metadata:
   department: ai-centre-of-excellence
@@ -45,10 +45,10 @@ describe a committee that meets monthly, receives reports and changes nothing.
 ## Questions to ask first
 
 1. Which two or three business outcomes should the CoE move in the next twelve months, and who owns each of them?
-2. Who is the executive sponsor, and what will they personally do: chair, unblock, accept risk, fund?
+2. Who is the executive sponsor, and will they personally attend steering, take priority decisions, remove blockers, secure resources and accept risk?
 3. Which of the six pillars are in scope now, and which are deliberately deferred?
 4. What may the CoE decide on its own, what does it recommend, and what stays with business owners or existing boards?
-5. How many people, and how much of their time, can realistically be given to the CoE, and from which parts of the business?
+5. Which business unit benefits and will own the CoE, how many of its people can give real time, and what support can a central AI enablement function offer?
 6. What already exists that the CoE must work with rather than duplicate (an architecture board, a data protection function, a Power Platform CoE, a change team)?
 
 ## Required inputs
@@ -63,61 +63,72 @@ decision of the first steering meeting. Never invent a sponsor, a budget or a ma
 
 ## Decision framework
 
-Set the charter's form by edition, then check each clause against the principles.
+Settle the ownership split first, because every later clause depends on it.
 
-| Edition | Form | Sponsor role | Decision rights |
+| Party | Owns or leads | Typical consequence in the charter |
+|---|---|---|
+| The business (the unit that benefits) | Priorities, knowledge, outcomes, adoption, return on investment | Business owners propose and rank opportunities, keep knowledge current, drive use in their teams and report benefits |
+| AI and IT enablement | Governance, architecture, security, technical delivery, support | The central function sets standards, reviews risk, builds or assures what needs specialist skills and supports live solutions |
+| Executive sponsor | Funding, decisions, resource allocation, adoption support | Attends steering, takes priority decisions, removes blockers, secures people and money, drives adoption and resolves conflicts |
+
+Then set the form by edition. Team sizes are typical starting points to adjust to real capacity, not fixed rules.
+
+| Edition | Typical form | Sponsor role | Decision rights |
 |---|---|---|---|
-| Starter | AI working group of three to five people, one page of terms | Attends quarterly, approves the acceptable-use starter | Recommends; the sponsor decides |
-| Scale | Core CoE team with business representatives, two-page charter | Chairs the monthly steering group | Decides intake, risk tier and release up to tier 2; recommends above |
-| Enterprise | Hub with business-unit spokes, charter plus spoke mandates | Executive board sponsor, delegates to a CoE board | Hub sets standards; spokes decide within them; board accepts tier 4 risk |
+| Starter | AI working group: a lead and a handful of people by role, one page of terms | Takes the decisions at a short monthly slot; delegate named in writing if absent | Recommends; the sponsor decides |
+| Scale | Business-owned CoE: sponsor, CoE lead, often three to five core members, a Champions network, central AI enablement in support | Chairs the monthly steering group | Decides intake, risk tier and release up to tier 2; recommends above |
+| Enterprise | Hub and spoke: a CoE per benefiting business unit under shared hub standards | Executive board sponsor plus a sponsor per spoke | Hub sets standards once; spokes decide within them; board accepts tier 4 risk |
 
 Test every clause against the five principles. If a clause fails one, rewrite it.
 
 | Principle | Test |
 |---|---|
 | Business-owned | Does a business role own the priority, the knowledge and the benefit, not IT? |
-| AI-enabled | Does the CoE enable and assure rather than build everything itself? |
+| AI-enabled | Does the central function enable and assure rather than own or build everything? |
 | Outcome-focused | Is the clause tied to an outcome, not an activity count? |
 | Govern once | Is the control defined once and reused, not re-argued per request? |
 | Repeat everywhere | Can a second business unit adopt it unchanged? |
 
 ## Practitioner approach
 
-Begin with the sponsor, not the membership. A CoE without an executive who will chair, unblock and accept risk becomes
-an enthusiasts' club, so confirm sponsorship before drafting anything else. Ask the sponsor to state, in their own
-words, what would be different in a year if the CoE worked. Translate that into two or three outcomes with business
-owners; these head the charter and every later section must serve them.
+Begin with the sponsor, not the membership. A CoE without an executive who will decide, unblock and accept risk becomes
+an enthusiasts' club, so confirm sponsorship before drafting anything else. Be explicit that the sponsor is a decision
+maker, not a recipient of monthly reports: they attend steering, settle priority conflicts between teams, remove
+blockers and secure resources. Ask them to state what would be different in a year if the CoE worked, and translate
+that into two or three outcomes with business owners.
 
-Write the purpose as one sentence that a department head would recognise, such as "help every department use AI safely
-to improve the outcomes they already own". Then set scope using the six pillars: opportunity management, knowledge
-management, agent development, automation, adoption and change, and governance. Be explicit about which pillars are
-active now and which are deferred. A CoE that claims all six on day one with two part-time people will deliver none of
-them. For most organisations at the adopter stage, adoption and change, opportunity management and governance come
-first, with agent development following once intake and ownership exist.
+Place ownership in the business unit that benefits. The CoE lead and core members come from that unit; a central AI
+enablement function supports them as advisor, coach, governance specialist and technical specialist, but does not own
+the CoE. Write this split into the charter in one table, because the commonest drift is a CoE that slowly becomes the
+central AI team's request queue.
 
-State the principles - business-owned, AI-enabled, outcome-focused, govern once, repeat everywhere - and give each one
-a consequence in this organisation. "Business-owned" should say that every opportunity has a named business owner
-before it enters delivery and that benefits are reported by the business, not the CoE.
+Write the purpose as one sentence a department head would recognise, such as "build business capability supported by
+AI, not build AI for its own sake". Then set scope using the six pillars: opportunity management, knowledge management,
+agent development, automation, adoption and change, and governance. Mark which are active now and which are deferred.
+A CoE that claims all six on day one with two part-time people will deliver none of them. For most adopters, adoption
+and change, opportunity management and governance come first.
 
-Decision rights are where charters earn their keep. List the decisions the CoE takes (approved tools list, intake
-criteria, risk classification, release up to an agreed tier), the decisions it recommends (investment, tier 3 and 4
-releases) and those it never takes (business priorities within a department, HR matters, procurement outside its
-remit). Connect to existing forums by role or board name, so the charter adds a route rather than a rival.
+State the principles and give each a local consequence. "Govern once, repeat everywhere" should say that a control or
+pattern agreed for one team is reused by the next, not renegotiated.
 
-Write the "what the CoE is not" section plainly. It is not an IT project, a monthly reporting group, a technology
-experiment or a request queue where departments drop ideas for someone else to build. Say what happens instead: ideas
-arrive with an owner and a framed problem, and the CoE provides method, assurance and reusable patterns.
+Decision rights are where charters earn their keep. List the decisions the CoE takes (intake criteria, risk
+classification, release up to an agreed tier), those it recommends (investment, tier 3 and 4 releases) and those it
+never takes (priorities within a department, HR matters). Connect to existing forums by name, so the charter adds a
+route rather than a rival.
 
-For a Starter organisation, write terms of reference for an AI working group instead: purpose, three to five members by
-role, a monthly meeting, sponsor attendance each quarter, and the same principles in a sentence each. Do not make a
-small organisation pretend to be a large one.
+Write the "is and is not" section plainly. A CoE is a business transformation capability, a structured delivery
+function, a governance framework, and the home of opportunity management, knowledge management and value measurement.
+It is not an IT project, a monthly reporting group, a technology experiment or a queue of requests for the central AI
+team. Ideas arrive with an owner and a framed problem; the CoE supplies method, assurance and reusable patterns.
 
-Close with membership by role, time commitment, review date and how the charter is changed. Take the draft to the
-sponsor for sign-off and record the decision. A charter nobody has signed is a proposal, and should be labelled as one.
+Close with launch commitments the sponsor and members sign up to: active sponsorship, Champion participation with agreed
+time, knowledge ownership, opportunity prioritisation through one backlog, measurement of return against baselines, and
+continuous improvement. Add membership by role, time commitment and review date. A charter nobody has signed is a
+proposal, and should be labelled as one.
 
 ## Outputs
 
-- A CoE charter on the `coe-charter` template: purpose, outcomes with owners, pillar scope (active and deferred), principles with local consequences, sponsorship, decision rights, interfaces with existing forums, what the CoE is not, membership by role and review date.
+- A CoE charter on the `coe-charter` template: purpose, outcomes with owners, the ownership split between business, enablement and sponsor, pillar scope (active and deferred), principles with local consequences, sponsor commitments, decision rights, interfaces with existing forums, what the CoE is and is not, structure and membership by role, launch commitments and review date.
 - For Starter, AI working group terms of reference on the same `coe-charter` template in light form.
 - A sign-off record naming the sponsor role and the date agreed.
 
@@ -165,13 +176,14 @@ agreed cycle time, measured by the CoE lead from the decision log.
 
 ### Starter
 
-One page of working-group terms. Three to five people by role, monthly, sponsor quarterly, partner support named for
-anything beyond tier 1. Adoption, safe use and a few high-value scenarios are the whole scope.
+One page of terms for an AI working group: a lead and a few people by role, a monthly meeting with a short sponsor
+decision slot, and partner support named for anything beyond tier 1. Adoption, safe use and a few high-value scenarios
+are the whole scope. Do not make a small organisation pretend to be a large one.
 
 ### Scale
 
-A two-page charter for a small core team with business representatives, monthly steering, delegated release decisions
-up to tier 2 and a published intake route.
+A two-page charter for a business-owned CoE: sponsor, lead, a small core team (often three to five), a Champions network
+and central AI enablement in support, with monthly steering, delegated release decisions up to tier 2 and one backlog.
 
 ### Enterprise
 
@@ -196,7 +208,8 @@ correctly.
 - IT drafts and owns the charter, so departments see the CoE as an IT service and bring requests rather than ownership.
 - All six pillars are claimed with no capacity, and nothing visible happens for months.
 - Decision rights are vague, so every release is escalated and the CoE becomes a bottleneck.
-- The sponsor signs and disappears, and the CoE loses the authority to say no.
+- The sponsor signs and disappears, receiving reports instead of taking decisions, and the CoE loses the authority to say no.
+- The central AI team is written in as owner, so the benefiting business unit treats the CoE as someone else's project.
 
 ## Sources
 
@@ -208,3 +221,4 @@ correctly.
 - Give a Starter organisation a full CoE structure it cannot staff.
 - Name individuals in the charter; use roles.
 - Promise funding, headcount or decision rights the sponsor has not agreed.
+- Make the central AI enablement function the owner of a business unit's CoE.

@@ -1,6 +1,6 @@
 ---
 name: coe-cadence
-description: Sets the meeting cadence and terms of reference for an AI CoE - steering, portfolio and design review, community and value review - with agendas, inputs, outputs and a decision log, sized to the edition. Use when a new CoE needs its forums set up, when meetings have become status updates that decide nothing, or when decisions are being taken in corridors and nobody can find them later.
+description: Sets the meeting cadence and terms of reference for an AI CoE - a weekly working group, monthly steering where the sponsor decides, a quarterly strategy review and a community forum - with agendas, a decision log and sizing by edition. Use when a new CoE needs its forums set up, when meetings have become status updates that decide nothing, or when decisions are being taken in corridors and nobody can find them later.
 license: CC-BY-4.0
 metadata:
   department: ai-centre-of-excellence
@@ -60,14 +60,24 @@ dates, attendees and chairs `[To confirm]` until the sponsor agrees them.
 
 ## Decision framework
 
-Create a forum only if it has decisions to take. Use the table to size each forum by edition.
+Create a forum only if it has decisions to take. A typical starting rhythm for a business-owned CoE is three decision
+forums and one sharing forum; durations are starting points to adjust, not rules.
 
-| Forum | Purpose | Starter | Scale | Enterprise |
-|---|---|---|---|---|
-| Steering | Direction, priorities, risk acceptance, escalations | Working group monthly; sponsor quarterly | Monthly, sponsor chairs | Quarterly executive board; monthly hub steering |
-| Portfolio and design review | Intake triage, routing, risk tier, release up to delegated tier | Part of the monthly working group | Fortnightly or weekly triage | Weekly in each spoke; hub fortnightly for tier 3-4 |
-| Community | Share practice, stories, approved prompts; surface ideas | Informal channel, monthly drop-in | Monthly community call led with Champions | Per business unit, with a quarterly cross-unit event |
-| Value review | Check benefits against baselines; scale-or-stop | Twice a year | Quarterly | Quarterly per portfolio, annual review of the whole |
+| Forum | Typical length | Standing agenda | Decisions it takes |
+|---|---|---|---|
+| Working group (portfolio and design review) | 30 minutes weekly | New opportunities, delivery updates, risks, knowledge gaps | Intake triage, routing, risk tier, release up to delegated tier |
+| Steering committee, sponsor mandatory | 60 minutes monthly | Return achieved against baseline, priority decisions, funding requests, new opportunities above delegated limits, escalations | Priorities, funding, risk acceptance, escalations |
+| Strategy review | 90 minutes quarterly | Roadmap, adoption, value delivered, future priorities | Roadmap changes, scale-or-stop, next quarter's focus |
+| Community | Informal, monthly | Real work shown by Champions, what failed, new ideas to intake | None (sharing forum) |
+
+Size the rhythm by edition.
+
+| Forum | Starter | Scale | Enterprise |
+|---|---|---|---|
+| Working group | Fortnightly or monthly, often merged with steering | Weekly | Weekly in each spoke; hub fortnightly for tier 3-4 |
+| Steering | A decision slot at the monthly working group, sponsor present | Monthly, sponsor chairs | Monthly per spoke; quarterly executive board |
+| Strategy review | Twice a year | Quarterly | Quarterly per spoke, annual review of the whole portfolio |
+| Community | Informal channel | Monthly call led with Champions | Per business unit, with a quarterly cross-unit event |
 
 Each forum must answer three tests. Does it have decisions only it can take? Are its inputs ready before it meets? Does
 it publish what it decided within two working days? A forum that fails all three should be merged or stopped.
@@ -76,35 +86,40 @@ it publish what it decided within two working days? A forum that fails all three
 
 Start from the decisions, not the calendar. Take the RACI and group its decisions by how often they arise and who must be
 present. Fast, frequent decisions (triage, routing, tier 1 registration) need a short, regular slot with delegated
-authority. Slow, consequential decisions (priorities, investment, tier 3 and 4 acceptance) need the sponsor. Learning
-and sharing need a community forum that is not a decision forum at all.
+authority: the weekly working group. Slow, consequential decisions (priorities, funding, tier 3 and 4 acceptance) need
+the sponsor: the monthly steering committee. Direction and value need a longer, less frequent look: the quarterly
+strategy review. Learning and sharing need a community forum that is not a decision forum at all.
+
+Make the sponsor's attendance at steering a condition of the charter, not a courtesy. The sponsor is there to decide,
+not to receive a report; if they cannot attend, a named delegate with authority to decide attends instead. A steering
+committee that meets without its decision maker is a status meeting, and teams will notice within two cycles.
 
 Write terms of reference for each forum on one page: purpose, decisions it takes, decisions it recommends, chair and
 members by role, quorum, frequency, inputs required and by when, outputs and where they are published. Keep membership
 small; invite contributors to items rather than to the whole meeting.
 
-Design agendas around decisions. A steering agenda might be: decisions required (with papers), risks and escalations,
-scorecard exceptions, items for information by exception only. The portfolio and design review works through new intake
-against the criteria, tier 2 releases awaiting a decision, and register changes. The community forum shows real work:
-a Champion demonstrates a scenario, a team shares what failed, and new ideas are routed to intake. The value review
-compares measures with baselines and takes scale-or-stop decisions with `opportunity-management:scale-or-stop`.
+Design agendas around decisions. The working group moves through new opportunities against intake criteria, delivery
+updates by exception, risks and the knowledge gaps blocking work. Steering opens with return achieved against baselines
+from the scorecard, then priority decisions and funding requests with papers, new opportunities above delegated limits
+and escalations. The strategy review looks at the roadmap, adoption, value delivered and future priorities, and takes
+scale-or-stop decisions with `opportunity-management:scale-or-stop`. The community forum shows real work.
 
 Set up the decision log before the first meeting. Each entry records the decision, the options considered, the rationale,
-the deciding role, the date, any conditions and the review date. Publish the log where teams can see it, because a
-visible log is what stops the same question being reopened.
+the deciding role, the date, any conditions and the review date. Publish it in the CoE's collaboration space, because a
+visible log stops the same question being reopened.
 
-Protect the cadence from drift. Agree that papers not received by the deadline move to the next meeting; that status
-updates go in a written note, not airtime; and that any meeting with no decisions on its agenda is cancelled. Review the
-cadence after three cycles and again whenever the edition or operating model changes.
+Protect the cadence from drift. Papers not received by the deadline move to the next meeting; status updates go in a
+written note, not airtime; any meeting with no decisions on its agenda is cancelled. Review the cadence after three
+cycles and whenever the edition or operating model changes.
 
-For Starter organisations, one monthly working-group meeting with a standing agenda can cover triage, community and
-steering together, with the sponsor attending quarterly. That is a complete cadence, not a cut-down one.
+For Starter organisations, one meeting with a standing agenda can cover triage, community and steering together, with
+the sponsor present for the decision segment. That is a complete cadence, not a cut-down one.
 
 ## Outputs
 
 - Terms of reference for each forum, in the cadence section of the `coe-charter` template.
 - A twelve-month calendar showing forum dates, paper deadlines and the sponsor's attendance.
-- Standing agendas for steering, portfolio and design review, community and value review.
+- Standing agendas for the weekly working group, monthly steering committee, quarterly strategy review and community forum.
 - A decision log structure, with the first entries recorded.
 
 ## Microsoft platform considerations
@@ -141,21 +156,21 @@ before any tier 2 or higher release is approved.
 
 ## Value measures
 
-Track decision cycle time, the share of agenda time spent on decisions rather than updates, attendance of decision
-holders and the number of reopened decisions. The CoE lead owns these, reported through
+Track decision cycle time, the share of agenda time spent on decisions rather than updates, whether the deciding role
+(sponsor or delegate) was present at each steering meeting, and the number of reopened decisions. The CoE lead owns these, reported through
 `ai-centre-of-excellence:coe-kpi-framework`. Never report individual attendance as a performance measure.
 
 ## Scale notes
 
 ### Starter
 
-One monthly working-group meeting with a standing agenda, a shared decision log and a quarterly sponsor slot. Community
-is an informal channel.
+One working-group meeting, fortnightly or monthly, with a standing agenda, a sponsor decision slot, a shared decision
+log and a strategy review twice a year. Community is an informal channel.
 
 ### Scale
 
-Monthly steering, fortnightly or weekly triage, a monthly community call and a quarterly value review, each with one-page
-terms of reference.
+A weekly 30-minute working group, monthly 60-minute steering with the sponsor, a quarterly 90-minute strategy review and
+a monthly community call, each with one-page terms of reference. Treat the timings as a starting point.
 
 ### Enterprise
 
@@ -176,7 +191,7 @@ portfolio and design review must not approve a release that `security-privacy` h
 
 ## Failure modes
 
-- Steering becomes a monthly status report and the sponsor stops attending.
+- Steering becomes a monthly status report and the sponsor stops attending, or sends a delegate who cannot decide.
 - Triage meets monthly, so teams wait six weeks for a tier 1 decision and build around the CoE.
 - Decisions are not logged and are reopened by whoever missed the meeting.
 - The community forum is turned into a decision forum and people stop sharing failures.
