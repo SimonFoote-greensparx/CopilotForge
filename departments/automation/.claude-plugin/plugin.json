@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-automation",
+  "version": "0.2.0",
+  "description": "CopilotForge Automation. Combine AI with deterministic workflow automation where repeatability and integration matter.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "delivery",
+    "automation"
+  ]
+}
