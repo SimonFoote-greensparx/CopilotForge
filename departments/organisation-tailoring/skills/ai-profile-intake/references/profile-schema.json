@@ -1,0 +1,551 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SimonFoote-greensparx/CopilotForge/profiles/schema.json",
+  "title": "CopilotForge organisation profile",
+  "description": "A structured, reusable statement of organisational context used to tailor CopilotForge (design brief section 9). Capture only what tailoring needs. Use roles or aliases, never personal data. Real profiles stay in the organisation's own storage and are never committed to this repository.",
+  "type": "object",
+  "required": [
+    "profile_version",
+    "organisation",
+    "people",
+    "microsoft_estate",
+    "ai_usage",
+    "governance",
+    "adoption",
+    "delivery"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "profile_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "fictional": {
+      "type": "boolean",
+      "description": "True for synthetic samples. Required true for every file in profiles/samples/."
+    },
+    "organisation": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Organisation name or alias."
+        },
+        "size": {
+          "type": "string",
+          "enum": [
+            "micro",
+            "small",
+            "medium",
+            "large",
+            "very-large"
+          ],
+          "description": "Self-described size band. Tailoring uses people.workforce_size."
+        },
+        "sector": {
+          "type": "string"
+        },
+        "countries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "business_units": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of business units or divisions that run their own priorities."
+        },
+        "regulatory_context": {
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ],
+              "description": "high means formal, auditable assurance is expected by a regulator."
+            },
+            "notes": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "level"
+          ],
+          "additionalProperties": false
+        },
+        "ai_ambition": {
+          "type": "string",
+          "enum": [
+            "explore",
+            "adopt",
+            "build",
+            "scale",
+            "transform"
+          ]
+        },
+        "goals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "executive_sponsor": {
+          "type": "string",
+          "description": "Role of the sponsor, for example Chief Operating Officer. Not a personal name."
+        },
+        "target_outcomes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "maturity_target": {
+          "type": "string",
+          "enum": [
+            "explorer",
+            "adopter",
+            "builder",
+            "scaler",
+            "ai-enterprise"
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "countries",
+        "business_units",
+        "regulatory_context",
+        "ai_ambition"
+      ],
+      "additionalProperties": false
+    },
+    "people": {
+      "type": "object",
+      "properties": {
+        "workforce_size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "personas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "headcount": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "work_pattern": {
+                "type": "string",
+                "enum": [
+                  "desk",
+                  "hybrid",
+                  "frontline"
+                ]
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "digital_skills": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "ai_experience": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      },
+      "required": [
+        "workforce_size"
+      ],
+      "additionalProperties": false
+    },
+    "microsoft_estate": {
+      "type": "object",
+      "properties": {
+        "microsoft_365": {
+          "type": "boolean"
+        },
+        "copilot": {
+          "type": "object",
+          "properties": {
+            "chat_enabled": {
+              "type": "boolean"
+            },
+            "m365_copilot_licences": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "usage_pattern": {
+              "type": "string",
+              "enum": [
+                "none",
+                "pilot",
+                "inconsistent",
+                "consistent",
+                "embedded"
+              ]
+            }
+          },
+          "required": [
+            "usage_pattern"
+          ],
+          "additionalProperties": false
+        },
+        "power_platform": {
+          "type": "string",
+          "enum": [
+            "none",
+            "personal",
+            "managed",
+            "enterprise"
+          ]
+        },
+        "azure": {
+          "type": "boolean"
+        },
+        "fabric": {
+          "type": "boolean"
+        },
+        "github": {
+          "type": "boolean"
+        },
+        "dynamics": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "microsoft_365",
+        "copilot"
+      ],
+      "additionalProperties": false
+    },
+    "ai_usage": {
+      "type": "object",
+      "properties": {
+        "current_tools": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "current_agents": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Approximate number of agents built by staff, governed or not."
+        },
+        "shadow_ai": {
+          "type": "string",
+          "enum": [
+            "none",
+            "suspected",
+            "known"
+          ]
+        },
+        "existing_pilots": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "current_agents",
+        "shadow_ai"
+      ],
+      "additionalProperties": false
+    },
+    "knowledge": {
+      "type": "object",
+      "properties": {
+        "repositories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ownership_model": {
+          "type": "string",
+          "enum": [
+            "none",
+            "partial",
+            "defined"
+          ]
+        },
+        "quality": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "classification": {
+          "type": "string",
+          "enum": [
+            "none",
+            "partial",
+            "applied"
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "major_sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sensitivity": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "governance": {
+      "type": "object",
+      "properties": {
+        "ai_policy": {
+          "type": "string",
+          "enum": [
+            "none",
+            "draft",
+            "approved"
+          ]
+        },
+        "policies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "security": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "privacy": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "responsible_ai": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "approved_tools": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "coe": {
+          "type": "string",
+          "enum": [
+            "none",
+            "forming",
+            "established"
+          ]
+        }
+      },
+      "required": [
+        "ai_policy",
+        "coe"
+      ],
+      "additionalProperties": false
+    },
+    "adoption": {
+      "type": "object",
+      "properties": {
+        "training": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "champions": {
+          "type": "string",
+          "enum": [
+            "none",
+            "informal",
+            "formal"
+          ]
+        },
+        "communities": {
+          "type": "boolean"
+        },
+        "communications": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "measurement": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      },
+      "required": [
+        "champions"
+      ],
+      "additionalProperties": false
+    },
+    "delivery": {
+      "type": "object",
+      "properties": {
+        "internal_capability": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "partners": {
+          "type": "boolean"
+        },
+        "developers": {
+          "type": "string",
+          "enum": [
+            "none",
+            "few",
+            "many"
+          ]
+        },
+        "makers": {
+          "type": "string",
+          "enum": [
+            "none",
+            "few",
+            "many"
+          ]
+        }
+      },
+      "required": [
+        "makers",
+        "developers"
+      ],
+      "additionalProperties": false
+    },
+    "portfolio": {
+      "type": "object",
+      "properties": {
+        "candidate_opportunities": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "live_agents": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "automations": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "custom_ai_in_production": {
+          "type": "boolean"
+        },
+        "portfolio_managed": {
+          "type": "boolean"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "budget": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "timeline": {
+          "type": "string"
+        },
+        "capacity": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "regulatory": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  }
+}
