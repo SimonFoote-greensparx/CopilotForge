@@ -1,0 +1,17 @@
+{
+  "name": "copilotforge-responsible-ai",
+  "version": "0.2.0",
+  "description": "CopilotForge Responsible AI. Reviewer-class department that identifies impact, accountability, human oversight, unacceptable uses and mitigating controls.",
+  "author": {
+    "name": "Simon Foote"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "repository": "https://github.com/SimonFoote-greensparx/CopilotForge",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "copilotforge",
+    "microsoft-ai",
+    "assurance",
+    "responsible-ai"
+  ]
+}
