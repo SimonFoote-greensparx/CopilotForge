@@ -1,0 +1,299 @@
+# How each candidate skill in the CopilotForge design brief maps to the skill that implements it (decision D25).
+# Names differ where the candidate clashed with another CopilotForge skill or a D365Forge skill (decision D9),
+# or was too generic to route reliably. Checked by scripts/check-refs.py.
+ai-strategy:
+  ai-vision: ai-vision
+  maturity-assessment: ai-maturity-assessment
+  strategic-outcomes: strategic-outcomes
+  executive-sponsorship: executive-sponsorship
+  target-operating-model: ai-operating-model
+  investment-case: investment-case
+  platform-strategy: platform-strategy
+  roadmap: ai-roadmap
+  strategy-refresh: strategy-refresh
+opportunity-management:
+  idea-capture: idea-capture
+  problem-framing: problem-framing
+  ai-suitability: ai-suitability
+  value-hypothesis: value-hypothesis
+  effort-assessment: effort-assessment
+  risk-classification: risk-classification
+  prioritisation: opportunity-prioritisation
+  portfolio-balancing: portfolio-balancing
+  business-case: business-case
+  backlog-management: backlog-management
+  pilot-selection: pilot-selection
+  scale-or-stop: scale-or-stop
+value-realisation:
+  baseline-design: baseline-design
+  benefit-hypothesis: benefit-hypothesis
+  adoption-metrics: adoption-to-value-metrics
+  productivity-measurement: productivity-measurement
+  quality-measurement: quality-measurement
+  financial-benefits: financial-benefits
+  non-financial-benefits: non-financial-benefits
+  roi-model: roi-model
+  benefit-owner: benefit-owner
+  post-implementation-review: post-implementation-review
+  value-dashboard: value-dashboard
+  benefit-realisation-plan: benefit-realisation-plan
+programme-management:
+  programme-charter: programme-charter
+  integrated-roadmap: integrated-roadmap
+  governance-cadence: programme-board-cadence
+  raid-log: programme-risk-log
+  dependency-management: dependency-management
+  stakeholder-governance: stakeholder-governance
+  supplier-management: supplier-management
+  budget-and-capacity: budget-and-capacity
+  stage-gates: stage-gates
+  programme-health: programme-health
+copilot-adoption:
+  readiness-assessment: adoption-readiness
+  audience-segmentation: audience-segmentation
+  scenario-discovery: scenario-discovery
+  role-based-adoption: role-based-adoption
+  launch-plan: launch-plan
+  onboarding: copilot-onboarding
+  reinforcement: adoption-reinforcement
+  adoption-measurement: adoption-measurement
+  support-model: adoption-support-model
+  executive-enablement: executive-enablement
+  frontline-enablement: frontline-enablement
+champions:
+  champion-programme-design: champion-programme-design
+  champion-recruitment: champion-recruitment
+  capability-framework: capability-framework
+  community-design: champion-community-design
+  champion-learning: champion-learning
+  evidence-assessment: evidence-assessment
+  champion-challenges: champion-challenges
+  recognition-model: recognition-and-progression
+  progression-model: recognition-and-progression
+  champion-metrics: champion-metrics
+  champion-advisor: champion-advisor
+  programme-health-check: champions-health-check
+learning-and-skills:
+  skills-needs-analysis: ai-skills-needs-analysis
+  role-based-curriculum: ai-role-curriculum
+  learning-pathway: ai-learning-pathway
+  practice-labs: practice-labs
+  evidence-rubric: learning-evidence-rubric
+  facilitator-guide: facilitator-guide
+  office-hours: office-hours
+  advanced-pathways: advanced-pathways
+  skills-measurement: skills-measurement
+change-and-communications:
+  stakeholder-analysis: ai-stakeholder-mapping
+  change-impact: people-change-impact
+  communication-strategy: ai-communication-strategy
+  manager-enablement: manager-enablement
+  campaign-plan: adoption-campaign-plan
+  resistance-management: resistance-management
+  success-stories: success-stories
+  change-network: change-network
+  reinforcement-plan: behaviour-reinforcement-plan
+knowledge-management:
+  knowledge-readiness-assessment: knowledge-readiness-assessment
+  knowledge-inventory: knowledge-inventory
+  knowledge-owner-model: knowledge-owner-model
+  content-quality: content-quality
+  classification: knowledge-classification
+  review-cycles: knowledge-review-cycles
+  knowledge-cleanup: knowledge-cleanup
+  agent-knowledge-readiness: knowledge-grounding-standards
+  sharepoint-knowledge-design: sharepoint-knowledge-design
+  knowledge-gap-analysis: knowledge-gap-analysis
+  knowledge-lifecycle: knowledge-lifecycle
+  ai-ready-content: ai-ready-content
+m365-copilot:
+  readiness-assessment: copilot-technical-readiness
+  copilot-chat-adoption: copilot-chat-rollout
+  m365-copilot-adoption: m365-copilot-rollout
+  role-based-scenarios: copilot-role-scenarios
+  prompting-practice: prompting-practice
+  work-context-readiness: work-context-readiness
+  department-scenario-design: department-scenario-design
+  usage-and-adoption: copilot-usage-reporting
+  executive-enablement: copilot-for-leaders
+  frontline-enablement: copilot-for-frontline
+m365-agents:
+  agent-opportunity-assessment: agent-opportunity-assessment
+  agent-use-case-design: agent-use-case-design
+  knowledge-source-readiness: knowledge-source-readiness
+  agent-instructions: agent-instructions
+  agent-grounding: agent-grounding
+  agent-testing: agent-testing
+  agent-release-readiness: agent-release-readiness
+  agent-ownership: agent-ownership
+  agent-lifecycle: agent-lifecycle
+  agent-value-measurement: agent-value-measurement
+copilot-cowork:
+  work-delegation-design: work-delegation-design
+  cowork-use-case-assessment: cowork-use-case-assessment
+  task-context-design: task-context-design
+  human-checkpoint-design: human-checkpoint-design
+  multi-step-work-design: multi-step-work-design
+  grounding-readiness: grounding-readiness
+  cowork-governance: cowork-governance
+  workflow-validation: workflow-validation
+  delegated-work-review: delegated-work-review
+  cowork-adoption: cowork-adoption
+copilot-code:
+  code-use-case-assessment: code-use-case-assessment
+  solution-brief: code-solution-brief
+  requirements-to-build: requirements-to-build
+  repository-context: repository-context
+  prototyping: ai-assisted-prototyping
+  application-validation: application-validation
+  security-review: generated-code-security-review
+  code-review: generated-code-review
+  deployment-readiness: code-deployment-readiness
+  maintainability-review: maintainability-review
+copilot-studio:
+  agent-solution-design: studio-agent-design
+  topics-and-orchestration: topics-and-orchestration
+  knowledge-architecture: studio-knowledge-architecture
+  actions-and-tools: studio-actions-and-tools
+  connectors: studio-connectors
+  authentication: studio-authentication
+  dataverse-integration: dataverse-integration
+  power-automate-actions: power-automate-actions
+  conversation-design: conversation-design
+  testing-and-evaluation: studio-testing-and-evaluation
+  environment-strategy: studio-environments
+  alm: studio-alm
+  deployment: studio-deployment
+  analytics: studio-analytics
+  agent-lifecycle-management: studio-agent-lifecycle
+  multi-agent-design: multi-agent-design
+ai-foundry:
+  foundry-solution-assessment: foundry-solution-assessment
+  model-selection: model-selection
+  agent-architecture: foundry-agent-architecture
+  tool-design: foundry-tool-design
+  grounding-strategy: foundry-grounding-strategy
+  retrieval-design: retrieval-design
+  model-evaluation: model-evaluation
+  prompt-engineering: foundry-prompt-engineering
+  observability: foundry-observability
+  safety-evaluation: foundry-safety-evaluation
+  cost-management: foundry-cost-management
+  deployment-architecture: foundry-deployment-architecture
+  agentic-workflow-design: agentic-workflow-design
+  mcp-integration: mcp-integration
+  production-readiness: foundry-production-readiness
+automation:
+  automation-assessment: automation-assessment
+  process-design: automation-process-design
+  power-automate-patterns: flow-design-patterns
+  human-in-the-loop: human-in-the-loop
+  exception-handling: exception-handling
+  connector-governance: automation-connector-governance
+  desktop-automation: desktop-automation
+  monitoring: automation-monitoring
+  automation-value: automation-value
+ai-engineering:
+  solution-repository: ai-solution-repository
+  api-and-tooling: ai-api-and-tooling
+  evaluation-harness: evaluation-harness
+  ci-cd: ai-ci-cd
+  secrets-and-identity: secrets-and-identity
+  telemetry: ai-telemetry
+  testing: ai-solution-testing
+  performance: ai-performance-engineering
+  resilience: ai-resilience
+  engineering-standards: ai-engineering-standards
+ai-architecture:
+  platform-selection: platform-selection
+  reference-architecture: ai-reference-architecture
+  integration-patterns: ai-integration-patterns
+  identity-design: ai-identity-design
+  grounding-patterns: grounding-patterns
+  environment-topology: environment-topology
+  non-functional-requirements: ai-non-functional-requirements
+security-privacy:
+  data-exposure-review: data-exposure-review
+  identity-and-access: ai-identity-and-access-review
+  connector-review: connector-review
+  privacy-assessment: privacy-assessment
+  retention: ai-interaction-retention
+  security-testing: ai-security-testing
+  incident-readiness: ai-incident-readiness
+responsible-ai:
+  impact-assessment: ai-impact-assessment
+  human-oversight: human-oversight
+  transparency: ai-transparency
+  fairness-review: fairness-review
+  escalation-and-appeal: escalation-and-appeal
+  prohibited-use-review: prohibited-use-review
+  risk-acceptance: ai-risk-acceptance
+data-governance:
+  data-inventory: ai-data-inventory
+  classification: data-classification-for-ai
+  data-quality: ai-data-quality
+  lineage: ai-data-lineage
+  access-model: ai-data-access-model
+  retention: ai-data-retention-rules
+  data-product-readiness: data-product-readiness
+evaluation-quality:
+  evaluation-strategy: ai-evaluation-strategy
+  golden-dataset: golden-dataset
+  quality-rubric: ai-quality-rubric
+  groundedness-testing: groundedness-testing
+  safety-testing: ai-safety-testing
+  red-team-plan: red-team-plan
+  regression-evaluation: regression-evaluation
+  release-evidence: ai-release-evidence
+platform-governance:
+  environment-strategy: ai-environment-strategy
+  maker-governance: maker-governance
+  connector-policy: connector-policy
+  solution-inventory: ai-solution-inventory
+  release-policy: ai-release-policy
+  licensing-and-capacity: ai-licensing-and-capacity
+  admin-monitoring: ai-admin-monitoring
+ai-operations:
+  support-model: ai-support-model
+  monitoring: ai-solution-monitoring
+  incident-management: ai-incident-management
+  feedback-loop: ai-feedback-loop
+  knowledge-refresh: knowledge-refresh
+  review-calendar: ai-review-calendar
+  continuity: ai-continuity
+  retirement: ai-solution-retirement
+design-authority:
+  design-review: ai-design-review
+  ai-necessity-challenge: ai-necessity-challenge
+  platform-fit: platform-fit-review
+  architecture-conformance: architecture-conformance
+  supportability-review: supportability-review
+  change-impact: ai-change-impact-review
+ai-centre-of-excellence:
+  coe-readiness: coe-readiness
+  coe-charter: coe-charter
+  coe-operating-model: coe-operating-model
+  executive-sponsorship: coe-sponsor-role
+  coe-team-design: coe-team-design
+  champion-integration: coe-champion-integration
+  governance-model: coe-governance-model
+  opportunity-management: coe-opportunity-pipeline
+  portfolio-management: coe-portfolio-management
+  knowledge-management: coe-knowledge-pillar
+  delivery-model: coe-delivery-model
+  meeting-cadence: coe-cadence
+  raci: coe-raci
+  kpi-framework: coe-kpi-framework
+  value-realisation: coe-value-tracking
+  launch-roadmap: coe-launch-roadmap
+  coe-maturity-assessment: coe-maturity-assessment
+organisation-tailoring:
+  profile-intake: ai-profile-intake
+  edition-selection: edition-and-archetype
+  archetype-diagnosis: edition-and-archetype
+  operating-model-tailoring: operating-model-tailoring
+  role-catalogue: ai-role-catalogue
+  ownership-map: ownership-map
+  capability-gap-analysis: capability-gap-analysis
+  programme-pack: transformation-pack
+  pack-refresh: transformation-pack-refresh
