@@ -79,6 +79,10 @@ Anything shared beyond its creator is at least tier 1. The minimum posture then 
 | 3 Business-critical | Tier 2 plus formal architecture, privacy assessment, responsible AI review, monitoring and continuity | Tier 2 gates plus `responsible-ai` (blocking) |
 | 4 External or high-impact | Full assurance, human oversight, escalation, incident response, executive risk acceptance | All gates, plus written executive risk acceptance |
 
+Check the record against the five governance areas before closing it: security (who can reach what), privacy
+(personal data), data ownership (a named owner for every source), compliance (policy, contract and regulation) and
+human accountability (the role that answers for outcomes). An area with no answer is a gap, not a pass.
+
 These tiers are a proposed CopilotForge convention; validate them against the organisation's own policy and regulation.
 
 ## Practitioner approach
@@ -108,13 +112,16 @@ Redesign is often the best outcome. Keeping a person in the loop, narrowing the 
 sensitive library can drop a solution a full tier and make it deliverable now. Record the redesign decision and its
 reasoning so the lower tier is not later mistaken for an oversight.
 
+Name the human accountable for outcomes on every record from tier 1. AI assists the decision; a person remains
+accountable for it, and that role must be able to say no to the output.
+
 Set re-classification triggers on the record: a wider audience, new data or connectors, new actions, external exposure,
 a change of owner, or an incident. Any trigger reopens the classification before the change goes live. A tier may be
 raised by any reviewer; it may be lowered only by the risk owner with a written rationale.
 
 ## Outputs
 
-- A risk tier record on the `opportunity-canvas` template: factor ratings with evidence, tier, minimum governance posture, gates required, redesign options considered, re-classification triggers and who classified it.
+- A risk tier record on the `opportunity-canvas` template: factor ratings with evidence, tier, the five governance areas checked, the accountable human role, data owners, minimum governance posture, gates required, redesign options considered, re-classification triggers and who classified it.
 - For tier 2 and above, an opened `ai-risk-assessment` record that carries the tier and factor ratings into the security and privacy review.
 - A list of gate evidence the delivery team must produce, by gate.
 

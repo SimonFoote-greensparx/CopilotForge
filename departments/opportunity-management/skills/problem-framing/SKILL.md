@@ -71,6 +71,18 @@ An opportunity is framed when every row is satisfied. Anything less returns to t
 | Expected outcome | The change sought and its direction are stated | Success is "using AI" or "going live" |
 | Baseline | A measured value, or a dated plan to measure it | Absent with no plan |
 | Strategic fit | The outcome it supports is named, or "none" is recorded honestly | Left blank |
+| Backlog entry | Captured in the backlog with owner, status and an estimated value range | Discussed in a meeting or a chat thread but not recorded |
+
+Record an early view of the problem type as a signal for suitability, not a decision. It shapes the conversation and
+stops "AI" being assumed.
+
+| Problem type | What it looks like | Signal for `opportunity-management:ai-suitability` |
+|---|---|---|
+| Process issue | Steps, hand-offs or ownership are broken | Likely process change, no AI |
+| Education gap | People do not know how to use what they have | Likely training or an adoption scenario |
+| Repetitive task | Fixed steps on structured inputs | Likely ordinary automation |
+| Knowledge issue | People cannot find or trust answers held in owned content | Possibly an agent grounded in that content |
+| Business data workflow | Judgement over business data across systems, with actions | Possibly an agent with connectors, often paired with automation |
 
 ## Practitioner approach
 
@@ -96,13 +108,22 @@ Write the problem statement in one or two sentences using the owner's words and 
 it. "Contract managers spend most of Monday compiling site reports from emails, and a third of reports arrive late" is
 framed. "We need an agent to write site reports" is not. Then write the expected outcome as a change in that measure.
 
+Capture the opportunity in the backlog as soon as it has an owner, even before it is fully framed. The operating rule
+is that work with no backlog entry is not a project and gets no resources, which is what turns intake from a
+suggestion box into a pipeline. At capture the entry carries the business owner, a status, and a first estimated value
+as a range; the return estimate and priority are added at assessment and prioritisation, never guessed now.
+
+Note the problem type you think you are looking at, and say it out loud to the owner. Hearing "this sounds like a
+hand-off problem rather than a knowledge problem" often changes the conversation more than any canvas.
+
 Look for duplicates. If another unit has framed the same problem, merge the records and involve both owners; shared
 problems are often better candidates for reuse. Finally, link the opportunity to a strategic outcome where one fits,
 note early signs of data sensitivity or external reach for risk classification, and pass the framed opportunity on.
 
 ## Outputs
 
-- A framed opportunity on the `opportunity-canvas` template: verbatim request, problem statement, business owner, affected roles, current cost, expected outcome, baseline or baseline plan, strategic fit and early risk signals.
+- A framed opportunity on the `opportunity-canvas` template: verbatim request, problem statement, business owner, affected roles, current cost, expected outcome, baseline or baseline plan, strategic fit, early problem type and early risk signals.
+- A backlog entry at the capture stage, with owner, status and an estimated value range, on the `prioritisation-matrix` template's backlog register.
 - A short reply to the requester explaining what happens next, or which gap must be closed first.
 - Where the opportunity stops, a recorded reason (no owner, no agreed problem, duplicate) and any referral.
 
@@ -177,6 +198,7 @@ Not applicable. Framing is an intake step and releases nothing; reviewer gates a
 - The requester is recorded as owner, leaves or loses interest, and the solution is orphaned.
 - No baseline is taken, so the benefit can never be demonstrated and the initiative cannot be judged at scale-or-stop.
 - Framing becomes a bureaucratic hurdle, and people route ideas around intake.
+- Ideas agreed in meetings never reach the backlog, so work starts with no owner, no baseline and no record.
 
 ## Sources
 

@@ -31,6 +31,7 @@ which is when habits form or fade.
 - Someone proposes giving everyone access on the same day and the risks need laying out.
 - A launch has already happened, usage has faded, and reinforcement was never planned.
 - A new wave or business unit is joining and needs onboarding tailored to its personas.
+- A Champions programme exists or is planned, and the launch should share its learning sessions and community rather than run in parallel.
 
 ## When not to use
 
@@ -74,6 +75,15 @@ Choose the launch shape from the readiness position and the support capacity ava
 Each wave moves forward only when the previous wave meets its exit criteria: support demand is manageable, no open
 data exposure incidents, and feedback has been reviewed and acted on.
 
+Be clear which layer of the operating model the launch is. This skill plans the foundation layer; the other two
+layers are designed elsewhere, and the launch should connect to them, not absorb them.
+
+| Layer | What it provides | Designed in |
+|---|---|---|
+| Foundation adoption programme | Broad access, onboarding, approved-use guidance, support and safe everyday use for everyone | This skill and `copilot-adoption:adoption-readiness` |
+| Champions programme | Local peer support, role-based practice and a network of verified, capable colleagues | `champions:champion-programme-design` |
+| Centre of Excellence | Prioritisation, governance and delivery of larger or higher-risk solutions | `ai-centre-of-excellence:coe-operating-model` |
+
 ## Practitioner approach
 
 Start at the top. Executives set the tone, so plan executive enablement first: a short, private session on the
@@ -96,9 +106,16 @@ Champions alongside the adoption team, and refresh the scenario set every few we
 to share what worked in their regular meetings. Plan a check-in at around six weeks to see which scenarios stuck and
 which did not.
 
+Turn one-off sessions into a recurring learning calendar: getting started and approved use, Copilot Chat, Copilot in
+the Microsoft 365 apps, collaboration in Teams and, where relevant, agent awareness. Keep every session open to the
+whole workforce and recorded. Where a Champions programme exists, agree which sessions count towards its journey, so
+the same investment serves foundation adoption and builds the local network. Launch the Champions community before the
+first wave, so each team has someone to turn to when the trainers leave.
+
 Make the support model explicit. "How do I" questions go to Champions, office hours and the scenario catalogue. Faults
 go to the IT service desk. Suspected data exposure goes immediately to the route agreed with `security-privacy`. Ideas
-that need more than individual use go to opportunity intake. Champions are first-line peer guidance, not the help desk.
+that need more than individual use, or carry higher risk, go to opportunity intake and the Centre of Excellence.
+Champions are first-line peer guidance, not the help desk, formal training or an approval route.
 
 Close the loop. Collect feedback through a simple channel, review it weekly during each wave, and publish what changed
 as a result. People keep giving feedback only when they see it used.
@@ -108,6 +125,7 @@ as a result. People keep giving feedback only when they see it used.
 - A launch and onboarding plan in the launch section of the `adoption-plan` template: waves, audiences, dates, exit criteria and owners.
 - An executive and manager enablement plan with session outlines.
 - A reinforcement calendar of office hours, scenario refreshes and check-ins.
+- A recurring learning calendar open to the whole workforce, showing which sessions count towards the Champion journey.
 - A support model showing where each type of question goes.
 - A feedback loop description: channel, review rhythm, owner and how changes are published.
 
@@ -170,6 +188,7 @@ adoption team coordinating Champions, support and change networks. Align waves w
 
 - To `copilot-adoption:adoption-measurement` to track each wave against its baseline.
 - To `champions:champion-programme-design` when the launch needs a Champion network that does not yet exist.
+- To `champions:capability-framework` to map recurring learning sessions to the Champion capabilities.
 - To `champions:recognition-and-progression` to connect launch participation to the Champion journey.
 - To `opportunity-management:problem-framing` for ideas from users that need more than individual use.
 
@@ -183,6 +202,7 @@ readiness assessment, where `security-privacy` has already reviewed data and per
 - All effort goes into launch day, reinforcement is never scheduled, and usage fades within weeks.
 - Managers are not briefed, so teams assume experimenting is not a legitimate use of time.
 - Champions become the de facto help desk because the support model was never made explicit.
+- Learning sessions run as a one-off launch event, so new joiners and later waves have nothing to attend.
 - Frontline workers are onboarded with desk-based sessions that do not fit their shifts or devices.
 
 ## Sources

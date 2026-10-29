@@ -75,7 +75,25 @@ bet (high value and fit, lower feasibility or readiness), foundation-first (high
 readiness work is prioritised instead), or park (low value or fit). A healthy horizon has quick wins and at least one
 strategic bet, and no more strategic bets than reviewers and owners can support.
 
+Run the backlog as one visible board with five stages that follow the opportunity lifecycle. No entry in the backlog
+means no project: nothing is resourced unless it sits on the board.
+
+| Backlog stage | Lifecycle stages | Entry leaves the stage when |
+|---|---|---|
+| Capture | Identify | It has a business owner and a framed problem |
+| Assessment | Assess, Prioritise | Suitability, risk tier, value and return estimates and a priority are recorded |
+| Delivery | Build, Deploy | Resources are allocated and the solution passes its release gates |
+| Live | Deploy | It is in use, registered in the portfolio with its owners |
+| Value tracking | Measure, Improve | Benefits are measured against baseline and a scale-or-stop decision is taken |
+
+Every entry carries at least a business owner, a priority, an estimated value, a return on investment estimate and a
+status. Value and return are ranges with a confidence level, never single invented figures.
+
 ## Practitioner approach
+
+Make the backlog the single route to resources. Agree with the sponsor that the CoE will not staff, fund or build
+anything that is not on the board, and say so publicly; side requests through managers then have somewhere to go. Keep
+the board visible in the CoE's collaboration space, so anyone can see what stage their idea has reached.
 
 Hold the admission rule firmly. The fastest way to lose control of a portfolio is to rank half-formed ideas alongside
 framed ones; they look cheap because nobody has thought about them. Return incomplete items with a clear note of what
@@ -107,6 +125,7 @@ decision, and whenever the strategic outcomes change.
 
 ## Outputs
 
+- A backlog register on the `prioritisation-matrix` template: every entry with business owner, priority, estimated value range, return estimate, stage and status.
 - A scored and balanced backlog on the `prioritisation-matrix` template: admitted opportunities, scores with evidence, weights, quadrant, decision and reason, and the excluded items with their gaps.
 - A portfolio view showing the balance of quick wins, strategic bets and foundation-first work by outcome, unit and journey.
 - A short decision note for each opportunity owner.
@@ -186,6 +205,7 @@ still apply to every chosen opportunity when it reaches the Assure stage.
 - Weights are adjusted after scoring to favour a sponsor's preferred project.
 - The portfolio is all quick wins, so strategic outcomes never move, or all bets, so nothing visible lands for a year.
 - Readiness is ignored, and high-value opportunities stall on unowned knowledge mid-build.
+- Work starts through side requests that never enter the backlog, so capacity disappears and the board stops meaning anything.
 
 ## Sources
 
@@ -197,3 +217,4 @@ still apply to every chosen opportunity when it reaches the Assure stage.
 - Present weighted scores as precise measurements rather than structured judgement.
 - Change weights after seeing the scores.
 - Rank or score the people who submitted ideas.
+- Allocate resources to work that has no entry in the backlog.

@@ -75,7 +75,9 @@ Rate each dimension against the threshold agreed before the pilot as met, partly
 | Pivot | The problem is confirmed but the solution pattern or audience is wrong; return to suitability |
 | Stop | Value not met with no credible fix, or cost disproportionate, or the owner no longer accepts accountability |
 
-A scale decision always triggers re-classification, because wider reach can move the risk tier.
+A scale decision always triggers re-classification, because wider reach can move the risk tier. In a CoE, scaling
+also means reuse: a pattern proven in one team is offered to others under the controls already agreed, so the
+organisation governs once and repeats everywhere rather than rebuilding per unit.
 
 ## Practitioner approach
 
@@ -103,6 +105,11 @@ the problem, the users and the pattern. Write a short stop note: what was tried,
 learned, and what happens to users, data and any assets. Share it with the community and thank the team. Organisations
 that celebrate useful stops get more honest pilots.
 
+Close the value-tracking stage properly. Update the backlog entry and the portfolio register with the measured value,
+set beside the value and return estimated at assessment, and move the entry to its next stage. Where a solution scales,
+package what made it work - instructions, knowledge sources, test set, adoption material - as a reusable asset for the
+next unit, and share the result in the CoE's success stories space.
+
 Record the decision and its reasoning, set the next review date for anything that continues, and feed the result back
 into prioritisation and the roadmap. Over time, compare predicted value scores with actual results to improve how the
 organisation estimates value.
@@ -111,7 +118,8 @@ organisation estimates value.
 
 - A scale-or-stop review on the `scale-or-stop-review` template: hypothesis and thresholds, evidence by dimension with confidence, decision and reasoning, re-classification outcome, conditions, owner confirmation and next review date.
 - For a stop, a stop note covering learning and decommissioning steps for users, data and assets.
-- An update to the backlog and roadmap reflecting the decision.
+- An update to the backlog and roadmap reflecting the decision, and the measured value recorded against the solution in the portfolio register.
+- For a scale decision, a reusable asset pack for other units and a short success story for the CoE community.
 
 ## Microsoft platform considerations
 
@@ -191,6 +199,7 @@ the solution to tier 3 or 4, the `responsible-ai` gate (planned) also applies. A
 - Usage is taken as success while answer quality and real outcomes are never examined.
 - A pilot scales to the whole organisation without re-classification, and sensitive content is overshared.
 - Stops are treated as failures, so teams hide weak results and poor solutions linger.
+- Each business unit rebuilds a proven solution from scratch because nobody packaged it for reuse.
 
 ## Sources
 

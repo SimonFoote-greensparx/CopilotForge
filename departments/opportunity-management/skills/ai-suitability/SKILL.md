@@ -10,7 +10,7 @@ metadata:
   platforms: copilot-chat, m365-copilot, m365-agents, copilot-cowork, copilot-code, copilot-studio, ai-foundry, power-platform
   edition-support: starter, scale, enterprise
   reviewers: design-authority
-  sources: ms-agents-extensibility, ms-agents-compare, ms-copilot-studio-zoned-governance, ms-responsible-ai
+  sources: ms-agents-extensibility, ms-agents-compare, ms-copilot-studio-zoned-governance, ms-foundry-models, ms-responsible-ai
   status: draft
   authors: Simon Foote
 ---
@@ -72,6 +72,17 @@ ownership, testing and operating cost.
 | 4. Agent (declarative, built in Agent Builder or Copilot Studio) | A defined audience needs a reusable capability grounded in governed knowledge, with an owner | It needs custom models, retrieval engineering, complex orchestration or production-grade evaluation |
 | 5. Copilot Code build | The outcome is working software, scripts or repository changes | Generated code would escape normal engineering review |
 | 6. Microsoft Foundry solution | Specialist models, retrieval, tools or orchestration are genuinely required, and the organisation can operate them | The added complexity cannot be justified by value or cannot be supported |
+
+Before walking the ladder, use the problem type recorded at framing as a first pass. It points to a likely starting
+rung; the ladder still decides. Not every problem requires AI, and the first three rows usually end at rung 0 or 1.
+
+| Problem type | Usual answer | Starting rung to test |
+|---|---|---|
+| Process issue | Change the process, ownership or policy | 0 |
+| Education gap | Training, or an adoption scenario for tools people already have | 0, then 2 |
+| Repetitive task on structured inputs | Ordinary automation | 1 |
+| Knowledge issue in owned content | An agent grounded in that content, often built in Agent Builder | 4 (test 2 and 3 first) |
+| Business data workflow with judgement and actions | An agent built in Copilot Studio, with automation doing the acting | 4 with 1 (test 6 only if 4 cannot meet it) |
 
 Combine rungs when the work has distinct parts, for example an automation that routes documents and an agent that
 answers questions about them. Record the rung for each part.

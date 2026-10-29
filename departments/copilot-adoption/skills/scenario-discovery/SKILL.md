@@ -31,6 +31,7 @@ nobody's working week.
 - When usage is broad but shallow, and people say they "do not know what to use it for".
 - When a new business unit, role or frontline population joins the rollout.
 - When Champions or managers ask for role-specific examples they can share.
+- When Champion Challenges produce prompt libraries, departmental playbooks or workshop outputs that need bringing into the catalogue.
 
 ## When not to use
 
@@ -110,6 +111,11 @@ Every scenario in the catalogue must include a verification step. Copilot output
 and the catalogue should model that habit in every entry. Name the content the scenario relies on and flag where that
 content is out of date or poorly owned.
 
+Treat Champions as a standing discovery channel. Envisioning workshops they run with teams surface candidate
+scenarios, and prompt libraries and departmental playbooks from Champion Challenges are ready-made entries. Put every
+contribution through the same scoring, real-user test and verification step as any other scenario, and record its
+source so the programme can see how much the network adds.
+
 Finally, give each scenario an owner who will keep it current, and set a review date. Catalogues that are not
 maintained fill with prompts that no longer work and examples nobody recognises.
 
@@ -118,6 +124,7 @@ maintained fill with prompts that no longer work and examples nobody recognises.
 - A persona summary and a prioritised scenario catalogue on the `scenario-catalogue` template: persona, scenario, prompt pattern, verification step, score, owner and review date.
 - A starting set of three to five scenarios per persona for onboarding.
 - A backlog of lower-priority scenarios and a list of candidates referred to opportunity intake.
+- A record of scenarios contributed through Champion Challenges and workshops, with their review outcome.
 
 ## Microsoft platform considerations
 
@@ -182,7 +189,7 @@ scenario-level measures to direct investment and to feed the opportunity portfol
 
 - To `copilot-adoption:launch-plan` with the starting scenarios for each persona.
 - To `copilot-adoption:adoption-measurement` with the scenario baselines.
-- To `champions:champion-challenges` for scenarios that would make good practical challenges.
+- To `champions:champion-challenges` for scenarios that would make good workshops, prompt libraries or playbooks.
 - To `opportunity-management:problem-framing` for scenarios that have outgrown individual use.
 
 ## Reviewer gates
