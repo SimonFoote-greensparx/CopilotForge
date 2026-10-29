@@ -6,6 +6,7 @@ should_trigger = [
   "Our board wants an AI Centre of Excellence. Can you draft the charter so the COO can sign it off?",
   "We set up an AI group six months ago and it has become a monthly show-and-tell. Help us reset what it is for and what it can decide.",
   "We are only 35 people. What should the terms of reference for a small AI working group say?",
+  "Our operations director will sponsor the AI CoE. Write down what she owns, what IT enables and what the business owns, plus the launch commitments.",
 ]
 should_not_trigger = [
   { prompt = "Who should be accountable for approving a department's agent before it goes live? Build us the matrix.", expected = "ai-centre-of-excellence:coe-raci" },
@@ -18,6 +19,7 @@ should_trigger = [
   "The CoE charter is signed. Now how should the team be structured and how does an idea get from intake to a live agent?",
   "Our three divisions all build their own agents. Should our CoE be central, hub-and-spoke or federated?",
   "Every request lands on the two people in the CoE and the queue is months long. Redesign how work flows through it.",
+  "Finance wants its own AI CoE with our central AI team supporting. Who sits in it, what Teams channels do we need and what happens in the first four months?",
 ]
 should_not_trigger = [
   { prompt = "Design the Champions network: who joins, what they do and how they are recognised.", expected = "champions:champion-programme-design" },
@@ -30,6 +32,7 @@ should_trigger = [
   "Nobody can tell me who signs off an agent before it is shared across the company. Draw up a RACI for our AI work.",
   "IT keeps being asked to report the benefits of Copilot. Who should actually be accountable for what across the AI lifecycle?",
   "We need responsibilities for intake, risk classification, release and knowledge ownership agreed before our first CoE steering meeting.",
+  "Give the sponsor a one-page RACI across prioritisation, funding, delivery, knowledge, governance and adoption so AI does not turn into a request queue for IT.",
 ]
 should_not_trigger = [
   { prompt = "Map which role is accountable for each department and artefact in our transformation pack, and where we have gaps.", expected = "organisation-tailoring:ownership-map" },
@@ -42,6 +45,7 @@ should_trigger = [
   "What meetings should our AI CoE run, how often, and what should each one decide?",
   "Our AI steering group just reads out status updates. Rewrite its terms of reference and agenda so it takes decisions.",
   "Set up a decision log and standing agendas for our AI steering, triage and value review meetings.",
+  "Our sponsor keeps sending apologies to the AI steering meeting. How should a weekly working group, monthly steering and quarterly review fit together?",
 ]
 should_not_trigger = [
   { prompt = "Plan a quarterly programme of Champion challenges to keep the community active.", expected = "champions:champion-challenges" },
@@ -54,6 +58,7 @@ should_trigger = [
   "The CFO asks how we will know the AI investment is working. Our only numbers are licences assigned and active users.",
   "Build a KPI scorecard for our AI CoE covering adoption, quality, governance and value, with baselines and owners.",
   "We report hours saved from a survey and nobody believes it. What should we measure instead?",
+  "The executive team wants a one-page AI dashboard covering value, adoption, capability and governance. What goes in each box?",
 ]
 should_not_trigger = [
   { prompt = "Should the bid-writing agent pilot be scaled to all divisions or stopped?", expected = "opportunity-management:scale-or-stop" },
@@ -66,6 +71,7 @@ should_trigger = [
   "We have no AI policy and people are pasting client data into free chatbots. Draft an acceptable-use starter and a governance framework.",
   "Departments have built fourteen agents and nobody knows who owns them. How do we govern this without stopping everyone experimenting?",
   "Our AI approval process treats a personal Copilot prompt the same as a customer-facing bot. Design proportionate risk tiers.",
+  "What should our register record for every agent and automation, and who owns security, privacy, data ownership, compliance and accountability?",
 ]
 should_not_trigger = [
   { prompt = "Which risk tier is our HR policy agent, given it will be shared with all staff?", expected = "opportunity-management:risk-classification" },

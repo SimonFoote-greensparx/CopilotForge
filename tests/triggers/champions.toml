@@ -6,10 +6,13 @@ should_trigger = [
   "We want to start a Copilot Champions network. Where do we begin?",
   "Our Champions have turned into an unpaid help desk. Help us reset what they do and don't do.",
   "Draft a charter for our AI Champions with sponsorship, time commitment and how the community will run.",
+  "Our Champions model worked well in one division. What should we keep and what should we adapt to roll it out in another?",
+  "Where should Champions sit between our Copilot rollout and the AI Centre of Excellence, and what should they not do?",
 ]
 should_not_trigger = [
   { prompt = "Define what a Champion must be able to show at Chat, productivity and agent level.", expected = "champions:capability-framework" },
   { prompt = "Design the operating model for our AI Centre of Excellence.", expected = "ai-centre-of-excellence:*" },
+  { prompt = "Build an agent that tells each Champion what their requirements are and what their next milestone is.", expected = "m365-agents:agent-use-case-design" },
 ]
 
 [[skill]]
@@ -18,6 +21,7 @@ should_trigger = [
   "Being a Champion just means you attended a webinar. Can we define capability levels people actually have to evidence?",
   "Our experienced Copilot users don't want beginner training. How can they prove capability and become Champions?",
   "Write the evidence rubric for verifying Champion Chat, productivity and agent capability.",
+  "For each Champion capability, set out the objective, the training option, the evidence option and how we verify it.",
 ]
 should_not_trigger = [
   { prompt = "Two assessors gave different results on the same Champion submission. How do we make assessment consistent?", expected = "champions:evidence-assessment" },
@@ -30,6 +34,7 @@ should_trigger = [
   "The first Champion evidence submissions are arriving. How should we assess them fairly?",
   "A Champion disagrees with being marked 'not yet' on verification. What should our appeal process be?",
   "Train a group of assessors to mark Champion evidence consistently and give useful feedback.",
+  "We need a tracker showing where each participant is in the Champion journey. Who should see it and how do we keep it current?",
 ]
 should_not_trigger = [
   { prompt = "What should we give Champions as recognition once they are verified?", expected = "champions:recognition-and-progression" },
@@ -42,6 +47,7 @@ should_trigger = [
   "Our verified Champions need something practical to do next. Can you design some Champion Challenges?",
   "A Champion wants to fix her team's weekly reporting with Copilot as her challenge. Is that in scope and safe?",
   "Build a catalogue of practical challenges that solve real team problems and leave reusable prompts behind.",
+  "What options should Champions have for their final challenge, and how do we judge impact, reusability, quality and alignment?",
 ]
 should_not_trigger = [
   { prompt = "A Champion wants to build a customer-facing agent that connects to our CRM. Who should take this on?", expected = "opportunity-management:ai-suitability" },
@@ -54,6 +60,7 @@ should_trigger = [
   "How should we recognise Champions, and what does the journey from joining to recognised Champion look like?",
   "We have 200 named Champions but most stopped contributing a year ago. Should status expire?",
   "Run a health check on our Champions programme for the sponsor, without ranking individuals.",
+  "Beyond a badge, what should recognised Champions get access to - pilots, advanced material, specialist pathways?",
 ]
 should_not_trigger = [
   { prompt = "Is Copilot adoption across the business actually improving outcomes?", expected = "copilot-adoption:adoption-measurement" },

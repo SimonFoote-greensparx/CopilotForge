@@ -18,6 +18,7 @@ should_trigger = [
   "Our people say they don't know what to use Copilot for. Help us find real use cases for each role.",
   "Build a set of personas for our desk, hybrid and warehouse staff and the Copilot scenarios that suit each.",
   "Which Copilot scenarios should claims handlers start with, and what prompt patterns should we give them?",
+  "Our Champions produced a prompt library and a departmental playbook. How do we test them and add them to the scenario catalogue?",
 ]
 should_not_trigger = [
   { prompt = "The procurement team wants an agent that reads every supplier contract. Is that the right answer?", expected = "opportunity-management:ai-suitability" },
@@ -30,6 +31,7 @@ should_trigger = [
   "The board wants everyone on Copilot on the same day. Give me a phased plan instead with onboarding by role.",
   "We launched Copilot in March and usage has dropped off. What should reinforcement look like now?",
   "Plan executive and manager enablement, office hours and the support model for our Copilot rollout.",
+  "Set up a recurring Copilot learning calendar for all staff that also counts towards our Champions journey.",
 ]
 should_not_trigger = [
   { prompt = "What should we measure to show the board whether Copilot is working?", expected = "copilot-adoption:adoption-measurement" },

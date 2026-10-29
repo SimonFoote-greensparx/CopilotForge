@@ -43,25 +43,41 @@ only measures.
 | GV1 | [To confirm] | [To confirm] | | | |
 | VA1 | [To confirm] | [To confirm] | | | |
 
-## 4. Baseline capture plan
+## 4. Sponsor dashboard (four quadrants)
+
+A one-page view for steering, drawn from the measures above. Value measures are never shown alone: each time, cost or
+revenue figure states its method and sits beside an outcome measure from the work. Champion participation is shown as
+coverage across teams, never by person.
+
+| Quadrant | Draws on families | Measures shown (IDs) | Status | Headline commentary |
+|---|---|---|---|---|
+| Value | Value | [To confirm: for example hours released, cost reduction, revenue impact, each with method] | | |
+| Adoption | Adoption, capability | [To confirm: for example active use by team, share of teams with an active Champion] | | |
+| Capability | Portfolio flow, capability | [To confirm: for example opportunities submitted and share reaching a decision, agents delivered with owner and baseline] | | |
+| Governance | Governance, quality | [To confirm: for example compliance with tier controls, reviews completed on schedule] | | |
+
+Return on investment, where shown: estimate at intake [To confirm] against value achieved [To confirm], with method and
+confidence for each.
+
+## 5. Baseline capture plan
 
 | ID | Baseline missing because | Capture method | Captured by (date) | Responsible role |
 |---|---|---|---|---|
 | [To confirm] | | | | |
 
-## 5. Rejected measures
+## 6. Rejected measures
 
 | Measure considered | Reason rejected (no baseline, no owner, no decision, below minimum group size, vanity) |
 |---|---|
 | [To confirm] | |
 
-## 6. Decisions taken from this scorecard
+## 7. Decisions taken from this scorecard
 
 | Date | Forum | Decision | Measures relied on |
 |---|---|---|---|
 | [To confirm] | | | |
 
-## 7. Caveats
+## 8. Caveats
 
 This scorecard does not prove that AI caused a change in outcomes. Early adoption gains may not yet show in value
 measures. Self-reported time savings are perceptions and are reported alongside measures from the work itself.

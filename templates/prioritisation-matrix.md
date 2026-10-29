@@ -1,12 +1,30 @@
 # Prioritisation matrix
 
 Template id: `prioritisation-matrix`
-Responsible skill: `opportunity-management:opportunity-prioritisation`
+Responsible skill: `opportunity-management:opportunity-prioritisation`. Backlog entries are first captured with
+`opportunity-management:problem-framing`.
 
 Use this template to score and balance the opportunity backlog for a horizon. Scores are structured judgement, not
 measurement; each one needs a sentence of evidence. Never score or rank the people who raised ideas.
 
-## 1. Cycle details
+## 1. Backlog register
+
+One visible board for the whole CoE. No entry in the backlog means no project: nothing is resourced unless it is here.
+Value and return are ranges with a confidence level, never single invented figures.
+
+| Reference | Opportunity | Business owner (role) | Stage | Priority | Estimated value (range, confidence) | Return estimate (range, confidence) | Status | Next decision and date |
+|---|---|---|---|---|---|---|---|---|
+| [To confirm: reference] | [To confirm: short title] | [To confirm: role] | [To confirm: capture, assessment, delivery, live or value tracking] | [To confirm: set at prioritisation] | [To confirm] | [To confirm: set at assessment] | [To confirm: for example active, waiting, parked, stopped] | [To confirm] |
+
+| Stage | Lifecycle stages | Leaves the stage when |
+|---|---|---|
+| Capture | Identify | Business owner named and problem framed |
+| Assessment | Assess, Prioritise | Suitability, risk tier, value and return estimates and priority recorded |
+| Delivery | Build, Deploy | Resources allocated and release gates passed |
+| Live | Deploy | In use and registered in the portfolio with its owners |
+| Value tracking | Measure, Improve | Benefits measured against baseline and a scale-or-stop decision taken |
+
+## 2. Cycle details
 
 | Field | Value |
 |---|---|
@@ -16,7 +34,7 @@ measurement; each one needs a sentence of evidence. Never score or rank the peop
 | Strategic outcomes in priority order | [To confirm: outcome references] |
 | Capacity available (scarce roles) | [To confirm: summary from the roadmap capacity check] |
 
-## 2. Weights
+## 3. Weights
 
 Agree and record weights before any opportunity is scored. Do not change them mid-cycle.
 
@@ -28,7 +46,7 @@ Agree and record weights before any opportunity is scored. Do not change them mi
 | Readiness (owner, knowledge, data) | 20% | [To confirm: weight] | [To confirm: reason] |
 | Risk (inverted, from the risk tier) | 10% | [To confirm: weight] | [To confirm: reason] |
 
-## 3. Admission check
+## 4. Admission check
 
 Only opportunities with all five items are scored. Others are returned with the gap.
 
@@ -36,7 +54,7 @@ Only opportunities with all five items are scored. Others are returned with the 
 |---|---|---|---|---|---|---|
 | [To confirm: reference] | [To confirm: yes or no] | [To confirm: yes or no] | [To confirm: yes or no] | [To confirm: yes or no] | [To confirm: yes or no] | [To confirm: yes or no] |
 
-## 4. Scores
+## 5. Scores
 
 Score 1 to 5. Record the evidence beside each score in the notes column or an attached sheet.
 
@@ -44,13 +62,13 @@ Score 1 to 5. Record the evidence beside each score in the notes column or an at
 |---|---|---|---|---|---|---|---|---|
 | [To confirm: reference] | [To confirm: score] | [To confirm: score] | [To confirm: score] | [To confirm: score] | [To confirm: score] | [To confirm: total] | [To confirm: range and confidence] | [To confirm: notes] |
 
-## 5. Portfolio placement and decision
+## 6. Portfolio placement and decision
 
 | Opportunity | Quadrant (quick win, strategic bet, foundation-first, park) | Decision (proceed, foundation-first, wait for capacity, park) | Reason | Owner told on |
 |---|---|---|---|---|
 | [To confirm: reference] | [To confirm: quadrant] | [To confirm: decision] | [To confirm: reason] | [To confirm: date] |
 
-## 6. Portfolio balance
+## 7. Portfolio balance
 
 | Check | Result |
 |---|---|
@@ -61,7 +79,7 @@ Score 1 to 5. Record the evidence beside each score in the notes column or an at
 | Spread across journeys (Adopt AI, Build with AI, Scale AI) | [To confirm: summary] |
 | Opportunities serving no agreed outcome | [To confirm: number, should be zero among those proceeding] |
 
-## 7. Returned and parked items
+## 8. Returned and parked items
 
 | Opportunity | Status | Gap or reason | Next step |
 |---|---|---|---|

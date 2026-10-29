@@ -29,6 +29,8 @@ One canvas per opportunity, carried from intake to decision. An opportunity does
 | Expected outcome | [To confirm: change sought in the measure] |
 | Strategic outcome supported | [To confirm: outcome reference, or "none"] |
 | Possible duplicates elsewhere | [To confirm: references, or "none found"] |
+| Early problem type (process issue, education gap, repetitive task, knowledge issue, business data workflow) | [To confirm: type, a signal for suitability rather than a decision] |
+| Backlog entry reference and stage | [To confirm: reference; capture, assessment, delivery, live or value tracking] |
 
 Fictional example, for illustration only: "Contract managers spend most of Monday compiling site reports from emails,
 and a third of reports arrive late."
@@ -76,6 +78,9 @@ beyond its creator is at least tier 1. Tiers are a proposed CopilotForge convent
 | Redesign options considered (reach, data, autonomy) | [To confirm: options and decision] |
 | Security and privacy record (tier 2 and above) | [To confirm: ai-risk-assessment reference] |
 | Re-classification triggers | Wider audience, new data or connectors, new actions, external exposure, change of owner, incident |
+| Governance areas checked (security, privacy, data ownership, compliance, human accountability) | [To confirm: answer or gap for each] |
+| Human role accountable for outcomes | [To confirm: role] |
+| Data and knowledge owners | [To confirm: roles] |
 | Classified by (role) and date | [To confirm: role and date] |
 | Tier lowered? Rationale and risk owner | [To confirm: rationale, or "not lowered"] |
 
@@ -88,5 +93,8 @@ beyond its creator is at least tier 1. Tiers are a proposed CopilotForge convent
 | Expected outcome and baseline (or plan) | [To confirm: yes or no] |
 | Initial risk classification | [To confirm: yes or no] |
 | Explicit suitability decision | [To confirm: yes or no] |
+| Backlog entry with owner, priority, estimated value, return estimate and status | [To confirm: yes or no] |
+
+No entry in the backlog means no project.
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.

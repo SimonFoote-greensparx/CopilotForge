@@ -9,6 +9,24 @@ remove rows, then fill each cell with R (responsible), A (accountable), C (consu
 exactly one A. Reviewers are C or hold a gate, never A for what they review. Champions are never A for approval or
 release. Mark roles that do not yet exist `[To confirm: role to be appointed]`.
 
+## Summary RACI (one page for the sponsor)
+
+A typical starting allocation for a business-owned CoE, where the CoE lead sits in the business unit that benefits.
+Challenge it locally; do not adopt it unchanged. Each row has exactly one A.
+
+| Activity | Executive sponsor | CoE lead | Champions | Central AI enablement |
+|---|---|---|---|---|
+| Prioritisation | A | R | C | C |
+| Funding | A | C | I | I |
+| Delivery | I | A | R | C |
+| Knowledge management | I | A | R | C |
+| Governance | C | C | I | A |
+| Adoption | C | A | R | C |
+| [To confirm: any further summary row] | | | | |
+
+Agreed summary allocations: [To confirm: changes made and why]. The detailed matrix below still gives each solution's
+business owner the A for its benefit and each knowledge owner the A for their content.
+
 ## Roles
 
 | Column | Role title in this organisation | Filled or vacant |
@@ -22,7 +40,10 @@ release. Mark roles that do not yet exist `[To confirm: role to be appointed]`.
 | IS | Information security (gate holder) | [To confirm] |
 | DP | Data protection (gate holder) | [To confirm] |
 | AL | Adoption lead | [To confirm] |
-| CH | Champions | [To confirm] |
+| CH | Champions (knowledge, process, adoption and AI champion roles) | [To confirm] |
+
+The central AI enablement function (advisor, coach, governance and technical specialist support) usually supplies the
+PL, IS and DP roles, or works beside them: [To confirm: how it maps to these columns].
 
 ## Opportunity lifecycle
 

@@ -18,6 +18,7 @@ should_trigger = [
   "Operations have asked for an agent for onboarding. Before anyone builds anything, what's the actual problem?",
   "Someone dropped an AI idea in the intake form with just 'use Copilot for reports'. How do I turn it into something we can assess?",
   "Help me write a proper problem statement, owner and baseline for this request from the claims team.",
+  "A manager mentioned an idea in our CoE meeting. How do we capture it properly so it gets into the backlog with an owner?",
   "Our pilot has been running for two months and nobody can say what it was meant to improve. Can we reframe it?",
 ]
 should_not_trigger = [
@@ -45,6 +46,7 @@ should_trigger = [
   "We've got forty AI requests in the backlog and capacity for five. How should we choose?",
   "Help us balance quick wins against bigger bets in our AI portfolio this year.",
   "Why is the legal team's idea still waiting? I need a fair, transparent way of deciding what goes next.",
+  "Projects keep starting through side requests to IT. Set up a backlog where nothing is resourced unless it has an owner, value estimate, ROI estimate and status.",
 ]
 should_not_trigger = [
   { prompt = "Should this idea be a Copilot prompt or a full agent?", expected = "opportunity-management:ai-suitability" },
@@ -58,6 +60,7 @@ should_trigger = [
   "The sponsor wants the policy agent rolled out to everyone, but answer quality was patchy in the pilot. How do we decide?",
   "This AI project has been 'in pilot' for nine months. How do we force an evidence-based decision on it?",
   "Usage is great but nobody can show it saved any time. Should we iterate, pivot or kill it?",
+  "The finance agent worked well in one team. Should other business units reuse it, and what has to be true before they do?",
 ]
 should_not_trigger = [
   { prompt = "How is Copilot usage trending across departments since launch?", expected = "copilot-adoption:adoption-measurement" },

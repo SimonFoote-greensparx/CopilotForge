@@ -33,10 +33,10 @@ Personas are defined by ways of working, never by seniority or personal characte
 Score each criterion 1 to 3. Prioritise scenarios scoring 10 or more with Verifiability and Data safety both at least 2.
 Data safety of 1 means a security and privacy review before publication.
 
-| Ref | Persona | Scenario | Frequency | Value | Verifiability | Data safety | Total | Priority |
-|---|---|---|---|---|---|---|---|---|
-| Fictional example: S1 | Frontline | Turn rough shift notes into a structured handover | 3 | 3 | 3 | 3 | 12 | Starting set |
-| [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
+| Ref | Persona | Scenario | Source | Frequency | Value | Verifiability | Data safety | Total | Priority |
+|---|---|---|---|---|---|---|---|---|---|
+| Fictional example: S1 | Frontline | Turn rough shift notes into a structured handover | Discovery | 3 | 3 | 3 | 3 | 12 | Starting set |
+| [To confirm] | [To confirm] | [To confirm] | Discovery / Champion Challenge / Workshop | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] | [To confirm] |
 
 ## 4. Scenario entries
 
@@ -47,6 +47,7 @@ Copy this block for each priority scenario.
 | Field | Entry |
 |---|---|
 | Persona | [To confirm] |
+| Source | [To confirm: discovery, or Champion Challenge or workshop reference, contributor by role] |
 | Task in the user's words | [To confirm] |
 | Input the user provides | [To confirm: content they already handle; no special category data] |
 | Copilot experience used | [To confirm: as confirmed by IT for this persona] |
@@ -68,5 +69,15 @@ Copy this block for each priority scenario.
 | Ref | Scenario | Reason not yet prioritised | Referred to opportunity intake? | Owner |
 |---|---|---|---|---|
 | [To confirm] | [To confirm] | [To confirm] | Yes / No | [To confirm] |
+
+## 6. Champion contributions
+
+Prompt libraries, departmental playbooks and workshop outputs from the `champion-challenge-catalogue` pass the same
+scoring, real-user test and verification step before they join the catalogue.
+
+| Ref | Challenge or workshop reference | Contribution | Contributor (role) | Review outcome | Added as scenario refs |
+|---|---|---|---|---|---|
+| Fictional example: K1 | Fictional example: C1 | Prompt patterns for the weekly team report | Team coordinator | Accepted after test | Fictional example: S7 |
+| [To confirm] | [To confirm] | [To confirm] | [To confirm] | Accepted / Revise / Not added | [To confirm] |
 
 > Credit: Template from CopilotForge by Simon Foote (https://github.com/SimonFoote-greensparx/CopilotForge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
