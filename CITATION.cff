@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use CopilotForge, please cite it as below."
+title: "CopilotForge"
+abstract: "An open-source library of AI skills, programmes and templates that models the organisation needed to adopt, build with and scale Microsoft AI."
+type: software
+authors:
+  - family-names: "Foote"
+    given-names: "Simon"
+repository-code: "https://github.com/SimonFoote-greensparx/CopilotForge"
+license: CC-BY-4.0
+version: "0.1.0"
+date-released: "2026-10-29"
+keywords:
+  - microsoft-copilot
+  - ai-adoption
+  - ai-centre-of-excellence
+  - agent-skills
+  - copilot-cowork

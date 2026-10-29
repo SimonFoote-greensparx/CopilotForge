@@ -1,0 +1,15 @@
+# Byproducts of running the scripts.
+__pycache__/
+*.pyc
+dist/
+
+# Your organisation's own profiles and generated packs. These never belong in the repository.
+input/*
+!input/README.md
+output/*
+!output/README.md
+
+# Local editor and OS files.
+.DS_Store
+.vscode/
+.idea/

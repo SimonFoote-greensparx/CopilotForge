@@ -1,0 +1,308 @@
+# The department catalogue: the single source of truth for every department's metadata.
+# scripts/build-port.py emits plugin manifests and department READMEs from this file, and scripts/build-catalogue.py
+# emits the README tables, docs/CATALOGUE.md and catalogue/catalogue.json. Edit this file, then run
+# bash scripts/build-all.sh. Never hand-edit the generated files.
+#
+# layer:            transformation | adoption | delivery | assurance | spanning  (design brief section 3)
+# reviewer:         true for reviewer-class departments, which may block (design brief section 7.1). They live under reviewers/.
+# status:           active (has a folder and skills) | planned (catalogued, not yet built)
+# phase:            the roadmap phase in which the department is built (docs/ROADMAP.md)
+# candidate_skills: the brief's candidate list. Built skills may use a distinct name where the candidate would clash
+#                   with another CopilotForge skill or with a D365Forge skill (decision D9).
+
+[[department]]
+id = "ai-strategy"
+title = "AI Strategy"
+layer = "transformation"
+reviewer = false
+status = "active"
+phase = 1
+lead_role = "AI Strategy Lead"
+description = "Define the organisation's AI ambition, target outcomes, principles, operating model and roadmap, starting from business outcomes rather than products."
+candidate_skills = ["ai-vision", "maturity-assessment", "strategic-outcomes", "executive-sponsorship", "target-operating-model", "investment-case", "platform-strategy", "roadmap", "strategy-refresh"]
+
+[[department]]
+id = "opportunity-management"
+title = "Opportunity Management"
+layer = "transformation"
+reviewer = false
+status = "active"
+phase = 1
+lead_role = "AI Portfolio Manager"
+description = "Create a disciplined path from business problem to prioritised and governed initiative, including the decision about whether AI is the right answer at all."
+candidate_skills = ["idea-capture", "problem-framing", "ai-suitability", "value-hypothesis", "effort-assessment", "risk-classification", "prioritisation", "portfolio-balancing", "business-case", "backlog-management", "pilot-selection", "scale-or-stop"]
+
+[[department]]
+id = "value-realisation"
+title = "Value Realisation"
+layer = "transformation"
+reviewer = false
+status = "planned"
+phase = 3
+lead_role = "Benefits Realisation Lead"
+description = "Define baselines, measures and ownership so adoption and deployed solutions create demonstrable value."
+candidate_skills = ["baseline-design", "benefit-hypothesis", "adoption-metrics", "productivity-measurement", "quality-measurement", "financial-benefits", "non-financial-benefits", "roi-model", "benefit-owner", "post-implementation-review", "value-dashboard", "benefit-realisation-plan"]
+
+[[department]]
+id = "programme-management"
+title = "Programme Management"
+layer = "transformation"
+reviewer = false
+status = "planned"
+phase = 3
+lead_role = "AI Programme Manager"
+description = "Mobilise and govern a coherent adoption, delivery or transformation programme."
+candidate_skills = ["programme-charter", "integrated-roadmap", "governance-cadence", "raid-log", "dependency-management", "stakeholder-governance", "supplier-management", "budget-and-capacity", "stage-gates", "programme-health"]
+
+[[department]]
+id = "copilot-adoption"
+title = "Copilot Adoption"
+layer = "adoption"
+reviewer = false
+status = "active"
+phase = 1
+lead_role = "Adoption Lead"
+description = "Design and run organisation-wide or business-unit Microsoft AI adoption programmes, from readiness and scenarios through launch, reinforcement and measurement."
+candidate_skills = ["readiness-assessment", "audience-segmentation", "scenario-discovery", "role-based-adoption", "launch-plan", "onboarding", "reinforcement", "adoption-measurement", "support-model", "executive-enablement", "frontline-enablement"]
+
+[[department]]
+id = "champions"
+title = "Champions"
+layer = "adoption"
+reviewer = false
+status = "active"
+phase = 1
+lead_role = "Champions Programme Owner"
+description = "Create evidence-led Champion programmes that turn curiosity into capability and capability into contribution, with clear boundaries on what Champions do and do not do."
+candidate_skills = ["champion-programme-design", "champion-recruitment", "capability-framework", "community-design", "champion-learning", "evidence-assessment", "champion-challenges", "recognition-model", "progression-model", "champion-metrics", "champion-advisor", "programme-health-check"]
+
+[[department]]
+id = "learning-and-skills"
+title = "Learning and Skills"
+layer = "adoption"
+reviewer = false
+status = "planned"
+phase = 2
+lead_role = "Learning Lead"
+description = "Create role-based learning, practice, assessment and progression pathways."
+candidate_skills = ["skills-needs-analysis", "role-based-curriculum", "learning-pathway", "practice-labs", "evidence-rubric", "facilitator-guide", "office-hours", "advanced-pathways", "skills-measurement"]
+
+[[department]]
+id = "change-and-communications"
+title = "Change and Communications"
+layer = "adoption"
+reviewer = false
+status = "planned"
+phase = 2
+lead_role = "Change Lead"
+description = "Build sponsorship, communications, manager engagement, behavioural reinforcement and change readiness."
+candidate_skills = ["stakeholder-analysis", "change-impact", "communication-strategy", "manager-enablement", "campaign-plan", "resistance-management", "success-stories", "change-network", "reinforcement-plan"]
+
+[[department]]
+id = "knowledge-management"
+title = "Knowledge Management"
+layer = "adoption"
+reviewer = false
+status = "planned"
+phase = 4
+lead_role = "Knowledge Manager"
+description = "Make organisational knowledge discoverable, owned, current, classified and suitable for AI grounding."
+candidate_skills = ["knowledge-readiness-assessment", "knowledge-inventory", "knowledge-owner-model", "content-quality", "classification", "review-cycles", "knowledge-cleanup", "agent-knowledge-readiness", "sharepoint-knowledge-design", "knowledge-gap-analysis", "knowledge-lifecycle", "ai-ready-content"]
+
+[[department]]
+id = "m365-copilot"
+title = "Microsoft 365 Copilot"
+layer = "delivery"
+reviewer = false
+status = "planned"
+phase = 5
+lead_role = "Microsoft 365 Copilot Specialist"
+description = "Help organisations introduce Microsoft Copilot as an everyday working capability."
+candidate_skills = ["readiness-assessment", "copilot-chat-adoption", "m365-copilot-adoption", "role-based-scenarios", "prompting-practice", "work-context-readiness", "department-scenario-design", "usage-and-adoption", "executive-enablement", "frontline-enablement"]
+
+[[department]]
+id = "m365-agents"
+title = "Microsoft 365 Agents"
+layer = "delivery"
+reviewer = false
+status = "active"
+phase = 1
+lead_role = "Agent Product Owner"
+description = "Turn organisational knowledge and repeatable information needs into appropriately scoped, owned and tested agents with a managed lifecycle."
+candidate_skills = ["agent-opportunity-assessment", "agent-use-case-design", "knowledge-source-readiness", "agent-instructions", "agent-grounding", "agent-testing", "agent-release-readiness", "agent-ownership", "agent-lifecycle", "agent-value-measurement"]
+
+[[department]]
+id = "copilot-cowork"
+title = "Copilot Cowork"
+layer = "delivery"
+reviewer = false
+status = "planned"
+phase = 5
+lead_role = "Work Design Lead"
+description = "Design safe, effective delegation of complex work with explicit context, checkpoints and review."
+candidate_skills = ["work-delegation-design", "cowork-use-case-assessment", "task-context-design", "human-checkpoint-design", "multi-step-work-design", "grounding-readiness", "cowork-governance", "workflow-validation", "delegated-work-review", "cowork-adoption"]
+
+[[department]]
+id = "copilot-code"
+title = "Copilot Code"
+layer = "delivery"
+reviewer = false
+status = "planned"
+phase = 5
+lead_role = "Engineering Lead"
+description = "Translate desired outcomes into governed software prototypes and production-ready engineering work."
+candidate_skills = ["code-use-case-assessment", "solution-brief", "requirements-to-build", "repository-context", "prototyping", "application-validation", "security-review", "code-review", "deployment-readiness", "maintainability-review"]
+
+[[department]]
+id = "copilot-studio"
+title = "Copilot Studio"
+layer = "delivery"
+reviewer = false
+status = "planned"
+phase = 5
+lead_role = "Copilot Studio Architect"
+description = "Design and deliver low-code and enterprise agents with appropriate actions, data, ALM and lifecycle controls."
+candidate_skills = ["agent-solution-design", "topics-and-orchestration", "knowledge-architecture", "actions-and-tools", "connectors", "authentication", "dataverse-integration", "power-automate-actions", "conversation-design", "testing-and-evaluation", "environment-strategy", "alm", "deployment", "analytics", "agent-lifecycle-management", "multi-agent-design"]
+
+[[department]]
+id = "ai-foundry"
+title = "Microsoft Foundry"
+layer = "delivery"
+reviewer = false
+status = "planned"
+phase = 5
+lead_role = "AI Engineer"
+description = "Engineer specialist and custom AI solutions where configured agents are insufficient."
+candidate_skills = ["foundry-solution-assessment", "model-selection", "agent-architecture", "tool-design", "grounding-strategy", "retrieval-design", "model-evaluation", "prompt-engineering", "observability", "safety-evaluation", "cost-management", "deployment-architecture", "agentic-workflow-design", "mcp-integration", "production-readiness"]
+
+[[department]]
+id = "automation"
+title = "Automation"
+layer = "delivery"
+reviewer = false
+status = "planned"
+phase = 5
+lead_role = "Automation Lead"
+description = "Combine AI with deterministic workflow automation where repeatability and integration matter."
+candidate_skills = ["automation-assessment", "process-design", "power-automate-patterns", "human-in-the-loop", "exception-handling", "connector-governance", "desktop-automation", "monitoring", "automation-value"]
+
+[[department]]
+id = "ai-engineering"
+title = "AI Engineering"
+layer = "delivery"
+reviewer = false
+status = "planned"
+phase = 5
+lead_role = "AI Engineering Lead"
+description = "Provide pro-code engineering patterns shared across custom AI solutions."
+candidate_skills = ["solution-repository", "api-and-tooling", "evaluation-harness", "ci-cd", "secrets-and-identity", "telemetry", "testing", "performance", "resilience", "engineering-standards"]
+
+[[department]]
+id = "ai-architecture"
+title = "AI Architecture"
+layer = "assurance"
+reviewer = false
+status = "planned"
+phase = 4
+lead_role = "AI Solution Architect"
+description = "Select appropriate patterns and define target architecture across Microsoft 365, Power Platform, Azure and data services."
+candidate_skills = ["platform-selection", "reference-architecture", "integration-patterns", "identity-design", "grounding-patterns", "environment-topology", "non-functional-requirements"]
+
+[[department]]
+id = "security-privacy"
+title = "Security and Privacy"
+layer = "assurance"
+reviewer = true
+status = "active"
+phase = 1
+lead_role = "Security and Privacy Reviewer"
+description = "Reviewer-class department that assesses identity, access, data exposure, connectors, privacy and retention for AI solutions and blocks release while material risks are unresolved."
+candidate_skills = ["data-exposure-review", "identity-and-access", "connector-review", "privacy-assessment", "retention", "security-testing", "incident-readiness"]
+
+[[department]]
+id = "responsible-ai"
+title = "Responsible AI"
+layer = "assurance"
+reviewer = true
+status = "planned"
+phase = 4
+lead_role = "Responsible AI Reviewer"
+description = "Reviewer-class department that identifies impact, accountability, human oversight, unacceptable uses and mitigating controls."
+candidate_skills = ["impact-assessment", "human-oversight", "transparency", "fairness-review", "escalation-and-appeal", "prohibited-use-review", "risk-acceptance"]
+
+[[department]]
+id = "data-governance"
+title = "Data Governance"
+layer = "assurance"
+reviewer = false
+status = "planned"
+phase = 4
+lead_role = "Data Governance Lead"
+description = "Ensure the data used by AI is appropriately owned, classified, accessible, lawful and of sufficient quality."
+candidate_skills = ["data-inventory", "classification", "data-quality", "lineage", "access-model", "retention", "data-product-readiness"]
+
+[[department]]
+id = "evaluation-quality"
+title = "Evaluation and Quality"
+layer = "assurance"
+reviewer = true
+status = "planned"
+phase = 4
+lead_role = "AI Evaluation Lead"
+description = "Reviewer-class department that defines evaluation sets, acceptance criteria, failure analysis and release evidence for probabilistic systems."
+candidate_skills = ["evaluation-strategy", "golden-dataset", "quality-rubric", "groundedness-testing", "safety-testing", "red-team-plan", "regression-evaluation", "release-evidence"]
+
+[[department]]
+id = "platform-governance"
+title = "Platform Governance"
+layer = "assurance"
+reviewer = false
+status = "planned"
+phase = 4
+lead_role = "Platform Governance Lead"
+description = "Govern environments, makers, connectors, agents, deployment, licensing and portfolio visibility."
+candidate_skills = ["environment-strategy", "maker-governance", "connector-policy", "solution-inventory", "release-policy", "licensing-and-capacity", "admin-monitoring"]
+
+[[department]]
+id = "ai-operations"
+title = "AI Operations"
+layer = "assurance"
+reviewer = false
+status = "planned"
+phase = 4
+lead_role = "AI Operations Lead"
+description = "Operate deployed agents and AI solutions throughout support, monitoring, review, improvement and retirement."
+candidate_skills = ["support-model", "monitoring", "incident-management", "feedback-loop", "knowledge-refresh", "review-calendar", "continuity", "retirement"]
+
+[[department]]
+id = "design-authority"
+title = "Design Authority"
+layer = "assurance"
+reviewer = true
+status = "planned"
+phase = 4
+lead_role = "AI Design Authority"
+description = "Reviewer-class department that challenges inappropriate platform choice, unnecessary AI, fragile architecture and unsupportable designs."
+candidate_skills = ["design-review", "ai-necessity-challenge", "platform-fit", "architecture-conformance", "supportability-review", "change-impact"]
+
+[[department]]
+id = "ai-centre-of-excellence"
+title = "AI Centre of Excellence"
+layer = "spanning"
+reviewer = false
+status = "active"
+phase = 1
+lead_role = "AI CoE Lead"
+description = "Orchestrate a business-owned AI Centre of Excellence covering charter, operating model, team, governance, opportunity flow, knowledge, cadence, RACI and value measurement."
+candidate_skills = ["coe-readiness", "coe-charter", "coe-operating-model", "executive-sponsorship", "coe-team-design", "champion-integration", "governance-model", "opportunity-management", "portfolio-management", "knowledge-management", "delivery-model", "meeting-cadence", "raci", "kpi-framework", "value-realisation", "launch-roadmap", "coe-maturity-assessment"]
+
+[[department]]
+id = "organisation-tailoring"
+title = "Organisation Tailoring"
+layer = "spanning"
+reviewer = false
+status = "active"
+phase = 1
+lead_role = "Transformation Architect"
+description = "Turn an organisation profile into a recommended edition and maturity archetype, a scaled programme, an ownership map and a transformation pack."
+candidate_skills = ["profile-intake", "edition-selection", "archetype-diagnosis", "operating-model-tailoring", "role-catalogue", "ownership-map", "capability-gap-analysis", "programme-pack", "pack-refresh"]

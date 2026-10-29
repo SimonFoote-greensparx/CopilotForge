@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.zip binary
+*.png binary
+*.jpg binary
+scripts/*                 linguist-vendored
+cowork/plugins/*.zip      linguist-generated
+catalogue/catalogue.json  linguist-generated
+docs/CATALOGUE.md         linguist-generated
+departments/**/README.md  linguist-generated
+reviewers/**/README.md    linguist-generated
+departments/**/references/** linguist-generated
+reviewers/**/references/**   linguist-generated

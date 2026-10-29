@@ -1,0 +1,68 @@
+{
+  "name": "copilotforge",
+  "owner": {
+    "name": "Simon Foote"
+  },
+  "metadata": {
+    "description": "CopilotForge: your Microsoft AI transformation team as installable AI skills.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "copilotforge-ai-strategy",
+      "source": "./departments/ai-strategy",
+      "description": "CopilotForge AI Strategy. Define the organisation's AI ambition, target outcomes, principles, operating model and roadmap, starting from business outcomes rather than products.",
+      "version": "0.1.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-opportunity-management",
+      "source": "./departments/opportunity-management",
+      "description": "CopilotForge Opportunity Management. Create a disciplined path from business problem to prioritised and governed initiative, including the decision about whether AI is the right answer at all.",
+      "version": "0.1.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-copilot-adoption",
+      "source": "./departments/copilot-adoption",
+      "description": "CopilotForge Copilot Adoption. Design and run organisation-wide or business-unit Microsoft AI adoption programmes, from readiness and scenarios through launch, reinforcement and measurement.",
+      "version": "0.1.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-champions",
+      "source": "./departments/champions",
+      "description": "CopilotForge Champions. Create evidence-led Champion programmes that turn curiosity into capability and capability into contribution, with clear boundaries on what Champions do and do not do.",
+      "version": "0.1.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-m365-agents",
+      "source": "./departments/m365-agents",
+      "description": "CopilotForge Microsoft 365 Agents. Turn organisational knowledge and repeatable information needs into appropriately scoped, owned and tested agents with a managed lifecycle.",
+      "version": "0.1.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-security-privacy",
+      "source": "./reviewers/security-privacy",
+      "description": "CopilotForge Security and Privacy. Reviewer-class department that assesses identity, access, data exposure, connectors, privacy and retention for AI solutions and blocks release while material risks are unresolved.",
+      "version": "0.1.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-ai-centre-of-excellence",
+      "source": "./departments/ai-centre-of-excellence",
+      "description": "CopilotForge AI Centre of Excellence. Orchestrate a business-owned AI Centre of Excellence covering charter, operating model, team, governance, opportunity flow, knowledge, cadence, RACI and value measurement.",
+      "version": "0.1.0",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "name": "copilotforge-organisation-tailoring",
+      "source": "./departments/organisation-tailoring",
+      "description": "CopilotForge Organisation Tailoring. Turn an organisation profile into a recommended edition and maturity archetype, a scaled programme, an ownership map and a transformation pack.",
+      "version": "0.1.0",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

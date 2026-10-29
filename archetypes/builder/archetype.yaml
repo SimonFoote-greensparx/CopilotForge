@@ -1,0 +1,6 @@
+id: builder
+title: Builder
+order: 3
+state: Agents and automation are appearing.
+output_emphasis: Architecture, platform choice, agent lifecycle, evaluation, environments and governance.
+note: A proposed CopilotForge classification, not a Microsoft maturity classification.
