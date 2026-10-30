@@ -58,7 +58,8 @@ edition_cards = "".join(
     f'<div class="card"><h3>{e(ed[k]["title"])}</h3><p>{e(ed[k]["typical_context"])}</p><p class="meta">{e(ed[k]["design_emphasis"])}</p></div>'
     for k in ("starter", "scale", "enterprise"))
 home = f"""<section class="hero">
-<div><p class="kicker">{DISPLAY_NAME}</p><h1>{e(HEADLINE)}</h1><p>{e(TAGLINE)}</p>
+<div class="hero-logo"><h1><img src="assets/brand/copilotforge-logo.png" alt="{DISPLAY_NAME}" width="320" height="262"></h1></div>
+<div class="hero-text"><p class="headline">{e(HEADLINE)}</p><p>{e(TAGLINE)}</p>
 <div class="buttons"><a class="btn" href="programme-builder.html">Design my AI programme</a><a class="btn ghost" href="catalogue.html">Browse capabilities</a><a class="btn ghost" href="downloads.html">Install CopilotForge</a><a class="btn ghost" href="{REPO_URL}">View on GitHub</a></div></div>
 </section>
 {notice}

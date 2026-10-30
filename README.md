@@ -1,5 +1,7 @@
 # CopilotForge
 
+<img src="site/assets/brand/copilotforge-logo-800.png" alt="CopilotForge logo" width="360">
+
 **Your Microsoft AI transformation team, as installable AI skills.** Website: https://copilotforge.ai/
 
 CopilotForge is an open-source library of specialised AI skills, programmes, templates and delivery patterns that

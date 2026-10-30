@@ -44,6 +44,12 @@ sharper results. Plugin names start with `copilotforge-`, so they sit alongside 
 5. Confirm the recommended edition, archetype and ownership map before the pack is written.
 6. When the profile changes, ask for a refresh; the refresh explains what changed rather than silently replacing your edits.
 
+## Icon for organisation-wide packages
+
+If your Microsoft 365 administrator packages a CopilotForge plugin as an app for organisation-wide listing, use the
+CopilotForge icon as the colour icon: `site/assets/brand/copilotforge-icon-192.png` in the repository, or
+https://copilotforge.ai/assets/brand/copilotforge-icon-192.png on the website.
+
 ## Suggested custom instructions
 
 Copy [`cowork/custom-instructions.md`](../cowork/custom-instructions.md) into **Customize** > **Preferences**.
